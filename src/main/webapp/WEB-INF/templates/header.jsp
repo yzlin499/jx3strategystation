@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">首页</a></li>
-                <li><a href="#">资料站</a></li>
+                <li><a href="#">资料111111111111111111站</a></li>
                 <li><a href="#">公告社区</a></li>
                 <li><a href="#">攻略社区</a></li>
                 <li><a href="#">交易社区</a></li>
