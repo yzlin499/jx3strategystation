@@ -4,6 +4,7 @@
   Date: 2019/4/13
   Time: 0:46
   To change this template use File | Settings | File Templates.
+  param
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -17,7 +18,7 @@
 
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">首页</a></li>
+                <li><a href="#">首页</a></li>
                 <li><a href="#">资料站</a></li>
                 <li><a href="#">公告社区</a></li>
                 <li><a href="#">攻略社区</a></li>
@@ -26,30 +27,33 @@
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-
-                <li><a href="#">登录</a></li>
-                <li><a href="#">注册</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        用户名<span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">退出登录</a></li>
-                    </ul>
-                </li>
+                <c:if test="${sessionScope.user == null}">
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </c:if>
+                <c:if test="${sessionScope.user != null}">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                                ${sessionScope.user.name}<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">个人信息</a></li>
+                            <li><a href="#">个人中心</a></li>
+                            <li><a href="#">消息</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">修改密码</a></li>
+                            <li><a href="#">退出登录</a></li>
+                        </ul>
+                    </li>
+                </c:if>
             </ul>
-
             <form class="navbar-form navbar-right">
                 <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Search">
+                    <input type="text" class="form-control" placeholder="查找">
                 </div>
                 <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-zoom-in"></span></button>
             </form>
-
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+    </div>
 </nav>
