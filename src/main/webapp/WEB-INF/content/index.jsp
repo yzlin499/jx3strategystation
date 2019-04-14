@@ -1,6 +1,6 @@
 <%@ page import="top.yzlin.jx3strategystation.entity.templates.CarouselItem" %>
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.ArrayList" %><%--
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
   User: yzlin
   Date: 2019/4/13
@@ -36,8 +36,8 @@
     request.setAttribute("carouselId","carousel");
     request.setAttribute("carouselList",carouselList);
 %>
-<jsp:include page="header.jsp"/>
-<jsp:include page="carousel.jsp"/>
+<jsp:include page="templates/navbar.jsp"/>
+<jsp:include page="templates/carousel.jsp"/>
 
 </body>
 </html>

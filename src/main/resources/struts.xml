@@ -17,7 +17,7 @@
     <package name="default" extends="struts-default" namespace="/">
         <default-action-ref name="index"/>
         <action name="index">
-            <result name="success">/WEB-INF/templates/index.jsp</result>
+            <result name="success">/WEB-INF/content/index.jsp</result>
         </action>
     </package>
 </struts>

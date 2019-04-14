@@ -18,7 +18,7 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#">首页</a></li>
-                <li><a href="#">资料11站</a></li>
+                <li><a href="#">资料站</a></li>
                 <li><a href="#">公告社区</a></li>
                 <li><a href="#">攻略社区</a></li>
                 <li><a href="#">交易社区</a></li>
@@ -38,7 +38,6 @@
                         <li><a href="#">Another action</a></li>
                         <li><a href="#">Something else here</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">退出登录</a></li>
                         <li><a href="#">退出登录</a></li>
                     </ul>
                 </li>
