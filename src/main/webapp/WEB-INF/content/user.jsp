@@ -13,6 +13,6 @@
 </head>
 <body>
 <jsp:include page="templates/navbar.jsp"/>
-<p>zxczxcasdadsdasadsdsazxc</p>
+1234567
 </body>
 </html>
