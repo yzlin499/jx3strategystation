@@ -3,6 +3,7 @@ package top.yzlin.jx3strategystation.entity.user;
 public class User {
     private int userId;
     private String name;
+    private String nickName;
     private String password;
 
     public int getUserId() {
