@@ -13,5 +13,6 @@
 </head>
 <body>
 <jsp:include page="templates/navbar.jsp"/>
+1234567
 </body>
 </html>
