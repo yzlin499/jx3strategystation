@@ -13,6 +13,5 @@
 </head>
 <body>
 <jsp:include page="templates/navbar.jsp"/>
-1234567t89898
 </body>
 </html>
