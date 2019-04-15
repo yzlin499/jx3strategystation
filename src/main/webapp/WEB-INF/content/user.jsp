@@ -13,5 +13,6 @@
 </head>
 <body>
 <jsp:include page="templates/navbar.jsp"/>
+<p>asdasdasdas</p>
 </body>
 </html>
