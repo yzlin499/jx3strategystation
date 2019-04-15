@@ -9,8 +9,9 @@
 <html>
 <head>
     <title>Tiasdadstle</title>
+    <jsp:include page="templates/bootstarp-lib.jsp"/>
 </head>
 <body>
-saddsasajsdk
+<jsp:include page="templates/navbar.jsp"/>
 </body>
 </html>

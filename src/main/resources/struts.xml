@@ -19,5 +19,8 @@
         <action name="index">
             <result name="success">/WEB-INF/content/index.jsp</result>
         </action>
+        <action name="test">
+            <result name="success">/WEB-INF/content/user.jsp</result>
+        </action>
     </package>
 </struts>
