@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jx3-strategy-station" />
+        <module name="jx3strategystation" />
       </profile>
     </annotationProcessing>
   </component>

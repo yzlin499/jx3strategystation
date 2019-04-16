@@ -10,7 +10,7 @@
 <html>
 <head>
     <title>Title</title>
-    <jsp:include page="../templates/bootstarp-lib.jsp"/>
+    <jsp:include page="../templates/base-lib.jsp"/>
     <script src="<c:url value="/static/js/homepage/event.js"/>"></script>
     <style type="text/css">
         .page-header {
@@ -21,7 +21,7 @@
 <body>
 <jsp:include page="../templates/navbar.jsp"/>
 <jsp:include page="carousel.jsp"/>
-<div class="container">
+<div class="container" style="margin-top: 50px">
     <div class="row">
         <c:forEach items="${[
             ['info','攻略区','king'],
@@ -46,6 +46,6 @@
         <jsp:include page="article.jsp"/>
     </div>
 </div>
-
+<jsp:include page="../templates/footer.jsp"/>
 </body>
 </html>

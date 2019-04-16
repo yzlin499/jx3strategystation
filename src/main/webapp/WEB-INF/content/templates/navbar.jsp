@@ -52,7 +52,8 @@
                 <div class="form-group">
                     <input type="text" class="form-control" placeholder="查找">
                 </div>
-                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-zoom-in"></span></button>
+                <button type="submit" class="btn btn-default" style="font-size: 20px"><span
+                        class="glyphicon glyphicon-zoom-in"></span></button>
             </form>
         </div>
     </div>
