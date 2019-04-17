@@ -16,8 +16,17 @@
 
     <package name="default" extends="struts-default" namespace="/">
         <default-action-ref name="index"/>
-        <action name="index">
-            <result name="success">/WEB-INF/content/index.jsp</result>
+        <action name="index" class="top.yzlin.jx3strategystation.action.HomePage">
+            <result name="success">/WEB-INF/content/homepage/index.jsp</result>
+        </action>
+        <action name="newArticle" class="top.yzlin.jx3strategystation.action.HomePage">
+            <result name="success">/WEB-INF/content/homepage/article.jsp</result>
+        </action>
+    </package>
+
+    <package name="article-commit" extends="default" namespace="/commit">
+        <action name="common">
+            <result name="success">/WEB-INF/content/article/article-commit-common.jsp</result>
         </action>
     </package>
 </struts>
