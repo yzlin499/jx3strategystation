@@ -14,37 +14,12 @@
 </head>
 <body>
 <jsp:include page="../templates/navbar.jsp"/>
-<div class="container none"></div>
-<div class="row">
-    <div class="col-sm-6">
-        <div class="panel-primary">
-            <div class="panel-heading">
-                <h3>最新</h3>
-            </div>
-            <div class="panel-body">
-                <ul class="list-group">
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6">
-        <div class="panel-warning">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
             <div class="panel-primary">
                 <div class="panel-heading">
-                    <h3>新闻</h3>
+                    <h3>最新</h3>
                 </div>
                 <div class="panel-body">
                     <ul class="list-group">
@@ -63,36 +38,61 @@
                         <li class="list-group-item">实例1</li>
                     </ul>
                 </div>
-            </div>\
-        </div>
-    </div>
-</div>
-<div class="row">
-    <div class="col-sm-6">
-        <div class="panel-info">
-            <div class="panel-heading">
-                <h3>活动</h3>
-            </div>
-            <div class="panel-body">
-                <ul class="list-group">
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                    <li class="list-group-item">实例1</li>
-                </ul>
             </div>
         </div>
+        <div class="col-sm-6">
+            <div class="panel-warning">
+                <div class="panel-primary">
+                    <div class="panel-heading">
+                        <h3>新闻</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">实例1</li>
+                            <li class="list-group-item">实例1</li>
+                            <li class="list-group-item">实例1</li>
+                            <li class="list-group-item">实例1</li>
+                            <li class="list-group-item">实例1</li>
+                            <li class="list-group-item">实例1</li>
+                            <li class="list-group-item">实例1</li>
+                            <li class="list-group-item">实例1</li>
+                            <li class="list-group-item">实例1</li>
+                            <li class="list-group-item">实例1</li>
+                            <li class="list-group-item">实例1</li>
+                            <li class="list-group-item">实例1</li>
+                            <li class="list-group-item">实例1</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col-sm-6">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel-info">
+                <div class="panel-heading">
+                    <h3>活动</h3>
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">实例1</li>
+                        <li class="list-group-item">实例1</li>
+                        <li class="list-group-item">实例1</li>
+                        <li class="list-group-item">实例1</li>
+                        <li class="list-group-item">实例1</li>
+                        <li class="list-group-item">实例1</li>
+                        <li class="list-group-item">实例1</li>
+                        <li class="list-group-item">实例1</li>
+                        <li class="list-group-item">实例1</li>
+                        <li class="list-group-item">实例1</li>
+                        <li class="list-group-item">实例1</li>
+                        <li class="list-group-item">实例1</li>
+                        <li class="list-group-item">实例1</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
             <div class="panel-danger">
                 <div class="panel-heading">
                     <h3>更新</h3>
@@ -116,8 +116,8 @@
                 </div>
             </div>
         </div>
+    </div>
 </div>
-
 <jsp:include page="../templates/footer.jsp"/>
 </body>
 </html>

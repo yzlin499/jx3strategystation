@@ -1,7 +1,7 @@
 var myEditor;
 ClassicEditor.create(document.querySelector('#content'), {
         ckfinder: {
-            uploadUrl: '/'
+            uploadUrl: '/v1/api/updateImg'
         }
     }
 ).then(function (editor) {

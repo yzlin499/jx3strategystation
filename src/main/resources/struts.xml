@@ -30,6 +30,21 @@
         </action>
     </package>
 
+    <package name="json" extends="json-default" namespace="/v1/api">
+        <action name="updateImg" class="top.yzlin.jx3strategystation.action.UpdateImg">
+            <interceptor-ref name="defaultStack">
+                <param name="fileUpload.maximumSize">5000000</param>
+                <param name="fileUpload.allowedTypes">image/gif,image/x-ms-bmp,image/png,image/jpeg</param>
+                <param name="fileUpload.allowedExtensions">.jpg,.jpeg,.gif,.png,.bmp</param>
+            </interceptor-ref>
+            <result name="success" type="json">
+                　　
+                <param name="noCache">true</param>
+                <param name="excludeNullProperties">true</param>
+            </result>
+        </action>
+    </package>
+
     <package name="community" extends="default" namespace="/community">
         <action name="notice">
             <result>/WEB-INF/content/community/notice.jsp</result>
