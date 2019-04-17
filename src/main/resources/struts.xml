@@ -29,4 +29,16 @@
             <result name="success">/WEB-INF/content/article/article-commit-common.jsp</result>
         </action>
     </package>
+
+    <package name="community" extends="default" namespace="/community">
+        <action name="notice">
+            <result>/WEB-INF/content/community/notice.jsp</result>
+        </action>
+        <action name="strategy">
+            <result>/WEB-INF/content/community/strategy.jsp</result>
+        </action>
+
+    </package>
+
+
 </struts>
