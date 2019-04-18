@@ -11,5 +11,5 @@ ClassicEditor.create(document.querySelector('#content'), {
 });
 
 function showa() {
-    $('#show').append(myEditor.getData());
+    $('#show').html(myEditor.getData());
 }

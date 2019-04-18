@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+    <package name="default" extends="struts-default" namespace="/">
+        <default-action-ref name="index"/>
+        <action name="index" class="top.yzlin.jx3strategystation.action.HomePage">
+            <result name="success">/WEB-INF/content/homepage/index.jsp</result>
+        </action>
+        <action name="newArticle" class="top.yzlin.jx3strategystation.action.HomePage">
+            <result name="success">/WEB-INF/content/homepage/article.jsp</result>
+        </action>
+    </package>
+
+    <package name="article-commit" extends="default" namespace="/commit">
+        <action name="common">
+            <result name="success">/WEB-INF/content/article/article-commit-common.jsp</result>
+        </action>
+    </package>
+
+    <package name="json" extends="json-default" namespace="/v1/api">
+        <action name="updateImg" class="top.yzlin.jx3strategystation.action.UpdateImg">
+            <interceptor-ref name="defaultStack">
+                <param name="fileUpload.maximumSize">5000000</param>
+                <param name="fileUpload.allowedTypes">image/gif,image/x-ms-bmp,image/png,image/jpeg</param>
+                <param name="fileUpload.allowedExtensions">.jpg,.jpeg,.gif,.png,.bmp</param>
+            </interceptor-ref>
+            <result name="success" type="json">
+                　　
+                <param name="noCache">true</param>
+                <param name="excludeNullProperties">true</param>
+            </result>
+        </action>
+    </package>
+</struts>

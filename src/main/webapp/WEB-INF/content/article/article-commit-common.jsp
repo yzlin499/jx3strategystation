@@ -44,18 +44,7 @@
 
     <div id="show" class="ck-blurred ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline"
          contenteditable="true">
-        <p>asdadsdsadsaasdsadas</p>
-        <p>&nbsp;</p>
-        <blockquote><p>asdasda</p>
-            <figure class="image image-style-side"><img
-                    src="/upload/image/777755440e7e44edc4970235215fccaacf2ccbd51.jpg"></figure>
-            <h2>asdasdasd.</h2>
-            <p><strong>asbkjg</strong></p>
-            <p>dssdsfdsfd</p>
-            <p>
-                fsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssssfsdfdsfdsassssssssssssssssssssss</p>
-            <p>sdffdsfdsdfs</p>
-            <p>fjkhfgjk</p></blockquote>
+
     </div>
 </div>
 <script src="<c:url value="/static/js/ckeditor.js"/>"></script>
