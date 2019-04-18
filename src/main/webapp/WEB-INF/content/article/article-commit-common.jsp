@@ -15,12 +15,20 @@
         .page-header {
             border-bottom: 1px solid #d7d7d7;
         }
-
         .ck-content {
             min-height: 700px;
             max-height: 700px;
         }
     </style>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            CKEDITOR.config.readOnly = true;
+
+        });
+
+    </script>
 </head>
 <body>
 <jsp:include page="../templates/navbar.jsp"/>
@@ -39,14 +47,9 @@
     <div class="form-group">
         <div id="content"></div>
     </div>
-
-    <button onclick="showa()" class="btn btn-success">Submit</button>
-
-    <div id="show" class="ck-blurred ck ck-content ck-editor__editable ck-rounded-corners ck-editor__editable_inline"
-         contenteditable="true">
-
-    </div>
+    <button onclick="show()" class="btn btn-success">Submit</button>
 </div>
+
 <script src="<c:url value="/static/js/ckeditor.js"/>"></script>
 <script src="<c:url value="/static/js/article/editor.js"/>"></script>
 <jsp:include page="../templates/footer.jsp"/>

@@ -8,51 +8,63 @@ public class BaseArticle {
     private Community community;
     private String content;
 
-    public String getImgPath() {
-        return imgPath;
-    }
-
-    public void setImgPath(String imgPath) {
-        this.imgPath = imgPath;
-    }
-
-    public int getArticleId() {
-        return articleId;
-    }
-
     public void setArticleId(int articleId) {
         this.articleId = articleId;
-    }
-
-    public int getUserId() {
-        return userId;
     }
 
     public void setUserId(int userId) {
         this.userId = userId;
     }
 
-    public String getTitle() {
-        return title;
+    public void setImgPath(String imgPath) {
+        this.imgPath = imgPath;
     }
 
     public void setTitle(String title) {
         this.title = title;
     }
 
-    public Community getCommunity() {
-        return community;
+//    public void setCommunity(Community community) {
+//        this.community = community;
+//    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public void setCommunity(Community community) {
-        this.community = community;
+    public int getArticleId() {
+        return articleId;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public String getImgPath() {
+        return imgPath;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public Community getCommunity() {
+        return community;
     }
 
     public String getContent() {
         return content;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    @Override
+    public String toString() {
+        return "BaseArticle{" +
+                "articleId=" + articleId +
+                ", userId=" + userId +
+                ", imgPath='" + imgPath + '\'' +
+                ", title='" + title + '\'' +
+                ", community=" + community +
+                ", content='" + content + '\'' +
+                '}';
     }
 }
