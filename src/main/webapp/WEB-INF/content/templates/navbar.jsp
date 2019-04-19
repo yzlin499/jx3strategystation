@@ -28,7 +28,7 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <c:if test="${sessionScope.user == null}">
-                    <li><a href="#">登录</a></li>
+                    <li><a href="" data-toggle="modal" data-target="#myModal">登录</a></li>
                     <li><a href="#">注册</a></li>
                 </c:if>
                 <c:if test="${sessionScope.user != null}">
@@ -59,3 +59,32 @@
     </div>
 </nav>
 <div style="height: 50px"></div>
+
+
+<c:if test="${sessionScope.user == null}">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>剑网三攻略网会员登录</h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="uesrName">用户名</label>
+                            <input type="text" class="form-control input-lg" id="uesrName" placeholder="用户名">
+                        </div>
+                        <div class="form-group">
+                            <label for="psw">密 码</label>
+                            <input type="password" class="form-control input-lg" id="psw" placeholder="密码">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-info">登 录</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关 闭</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</c:if>

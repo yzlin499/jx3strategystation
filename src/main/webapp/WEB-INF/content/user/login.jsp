@@ -39,7 +39,6 @@
             <div class="modal-footer">
                 <button type="sumbit" class="sign in">登 录</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">关 闭</button>
-
             </div>
         </div>
     </div>
