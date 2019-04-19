@@ -1,0 +1,31 @@
+.row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.rounded-border {
+    border: 1px #e1e4e6 solid;
+}
+
+.ck-content {
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+}
+
+.user-info {
+    background-color: #f9f9f9;
+    padding-top: 20px;
+}
+
+.user-info img {
+    margin-bottom: 30px;
+}
