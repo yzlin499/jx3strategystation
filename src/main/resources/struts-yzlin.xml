@@ -16,6 +16,9 @@
         <action name="common">
             <result name="success">/WEB-INF/content/article/article-commit-common.jsp</result>
         </action>
+        <action name="trading">
+            <result name="success">/WEB-INF/content/article/article-commit-trading.jsp</result>
+        </action>
     </package>
 
 

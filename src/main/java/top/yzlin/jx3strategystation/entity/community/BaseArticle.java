@@ -1,8 +1,10 @@
 package top.yzlin.jx3strategystation.entity.community;
 
+import top.yzlin.jx3strategystation.entity.user.User;
+
 public class BaseArticle {
     private int articleId;
-    private int userId;
+    private User user;
     private String imgPath;
     private String title;
     private Community community;
@@ -12,8 +14,12 @@ public class BaseArticle {
         this.articleId = articleId;
     }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public void setImgPath(String imgPath) {
@@ -36,9 +42,6 @@ public class BaseArticle {
         return articleId;
     }
 
-    public int getUserId() {
-        return userId;
-    }
 
     public String getImgPath() {
         return imgPath;
@@ -60,7 +63,7 @@ public class BaseArticle {
     public String toString() {
         return "BaseArticle{" +
                 "articleId=" + articleId +
-                ", userId=" + userId +
+                ", user=" + user +
                 ", imgPath='" + imgPath + '\'' +
                 ", title='" + title + '\'' +
                 ", community=" + community +

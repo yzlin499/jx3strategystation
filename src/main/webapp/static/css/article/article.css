@@ -29,3 +29,19 @@
 .user-info img {
     margin-bottom: 30px;
 }
+
+.comment-portrait {
+    width: 45px;
+    height: auto;
+}
+
+.editor {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.editor .ck-content {
+    min-width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+}

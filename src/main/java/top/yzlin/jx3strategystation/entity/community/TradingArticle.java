@@ -5,4 +5,5 @@ public class TradingArticle extends BaseArticle {
     private int maxGold;
     private int ratio;
     private String district;
+    private String buySell;
 }

@@ -2,6 +2,7 @@ package top.yzlin.jx3strategystation.action;
 
 import com.opensymphony.xwork2.ActionSupport;
 import top.yzlin.jx3strategystation.entity.community.BaseArticle;
+import top.yzlin.jx3strategystation.entity.user.User;
 
 public class ShowArticle extends ActionSupport {
     private int articleId;
@@ -13,6 +14,10 @@ public class ShowArticle extends ActionSupport {
             article = new BaseArticle();
             article.setTitle("实例标题");
             article.setContent("<p>实例文本实例文本实例文本实例文本</p>");
+            User user = new User();
+            user.setNickName("实例用户名");
+            user.setPortrait("/static/img/test/testHead.jpg");
+            article.setUser(user);
         }
         return article;
     }

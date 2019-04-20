@@ -20,15 +20,6 @@
             max-height: 700px;
         }
     </style>
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-
-            CKEDITOR.config.readOnly = true;
-
-        });
-
-    </script>
 </head>
 <body>
 <jsp:include page="../templates/navbar.jsp"/>
@@ -47,11 +38,12 @@
     <div class="form-group">
         <div id="content"></div>
     </div>
-    <button onclick="show()" class="btn btn-success">Submit</button>
+    <button onclick="commit()" class="btn btn-success">Submit</button>
 </div>
 
 <script src="<c:url value="/static/js/ckeditor.js"/>"></script>
 <script src="<c:url value="/static/js/article/editor.js"/>"></script>
+<script src="<c:url value="/static/js/article/commit.js"/>"></script>
 <jsp:include page="../templates/footer.jsp"/>
 </body>
 </html>

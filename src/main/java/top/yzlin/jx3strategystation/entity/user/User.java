@@ -5,6 +5,23 @@ public class User {
     private String userName;
     private String nickName;
     private String password;
+    private String portrait;
+
+    public String getNickName() {
+        return nickName;
+    }
+
+    public void setNickName(String nickName) {
+        this.nickName = nickName;
+    }
+
+    public String getPortrait() {
+        return portrait;
+    }
+
+    public void setPortrait(String portrait) {
+        this.portrait = portrait;
+    }
 
     public int getUserId() {
         return userId;

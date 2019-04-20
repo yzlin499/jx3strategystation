@@ -12,6 +12,7 @@
     <title>Title</title>
     <jsp:include page="../templates/base-lib.jsp"/>
     <link href="<c:url value="/static/css/article/article.css"/>" rel="stylesheet">
+    j
 </head>
 <body>
 <jsp:include page="../templates/navbar.jsp"/>
@@ -45,7 +46,7 @@
                 <div class="row rounded-border">
                     <div class="col-md-1" style="padding: 10px">
                         <img src="<c:url value="/static/img/test/testHead.jpg"/>" alt="tou"
-                             class="img-circle img-responsive">
+                             class="img-circle comment-portrait">
                     </div>
                     <div class="col-md-11" style="margin-top:auto;margin-bottom: auto">
                         <a class="h4" href="#">实例用户名</a>
@@ -54,8 +55,18 @@
             </div>
         </div>
     </c:forEach>
+
+    <div class="row">
+        <div class="col-md-12 page-header">
+            <h2>这个评论不知道比楼主要高到哪里去</h2>
+        </div>
+        <div class="col-md-12 editor">
+            <div id="content"></div>
+        </div>
+    </div>
 </div>
 <script src="<c:url value="/static/js/ckeditor.js"/>"></script>
+<script src="<c:url value="/static/js/article/editor.js"/>"></script>
 <jsp:include page="../templates/footer.jsp"/>
 </body>
 </html>
