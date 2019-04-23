@@ -36,65 +36,31 @@
         <label for="title" class="h3">标题</label>
         <input type="text" class="form-control input-lg" id="title" placeholder="你需要一个好标题">
     </div>
-    <form class="form-inline">
-        <div class="form-group">
-            <label for="district">服区</label>
-            <select id="district" class="form-control">
-                <optgroup label="电信五区">
-                    <option>双梦</option>
-                    <option>风雪大姨妈</option>
-                    <option>唯满侠</option>
-                </optgroup>
-                <optgroup label="电信八区">
-                    <option>双梦</option>
-                    <option>风雪大姨妈</option>
-                    <option>唯满侠</option>
-                </optgroup>
-                <optgroup label="双线一区">
-                    <option>双梦</option>
-                    <option>风雪大姨妈</option>
-                    <option>唯满侠</option>
-                </optgroup>
+    <div class="form-group">
+        <label class="h3">副本</label>
+        <div class="input-group input-lg">
+            <label class="input-group-addon" for="instance-kind">副本</label>
+            <select id="instance-kind" class="form-control input-lg">
+                <option>荒血路</option>
+                <option>伊玛目</option>
+                <option>猪猪山</option>
+                <option>弹弹厅</option>
+                <option>发财峰</option>
+                <option>赚钱殿</option>
+            </select>
+            <label class="input-group-addon" for="instance-difficulty">难度</label>
+            <select id="instance-difficulty" class="form-control input-lg">
+                <option>25试炼</option>
+                <option>5人普通</option>
+                <option>5人英雄</option>
+                <option>5人挑战</option>
+                <option>10人普通</option>
+                <option>25人英雄</option>
+                <option>25人挑战</option>
             </select>
         </div>
+    </div>
 
-        <div class="form-group">
-            <label for="ratio">比率</label>
-            <div class="input-group">
-                <div class="input-group-addon">￥ 1:</div>
-                <input type="number" class="form-control" id="ratio" value="670" max="2000" min="200" step="10"
-                       placeholder="Amount">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="minGold">最低交易金额</label>
-            <div class="input-group">
-                <div class="input-group-addon">￥</div>
-                <input type="number" class="form-control" id="minGold" value="0" max="2000" min="0" step="10"
-                       placeholder="最低金额">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="maxGold">最高交易金额</label>
-            <div class="input-group">
-                <div class="input-group-addon">￥</div>
-                <input type="number" class="form-control" id="maxGold" value="0" max="10000" min="0" step="10"
-                       placeholder="最高金额">
-            </div>
-        </div>
-
-        <div class="form-group">
-            <label for="buySell">买卖方</label>
-            <select id="buySell" class="form-control">
-                <option>收金</option>
-                <option>出金</option>
-            </select>
-        </div>
-
-
-    </form>
     <div class="form-group">
         <div id="content"></div>
     </div>

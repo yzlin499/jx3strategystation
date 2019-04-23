@@ -19,6 +19,9 @@
         <action name="trading">
             <result name="success">/WEB-INF/content/article/article-commit-trading.jsp</result>
         </action>
+        <action name="strategy">
+            <result name="success">/WEB-INF/content/article/article-commit-strategy.jsp</result>
+        </action>
     </package>
 
 
