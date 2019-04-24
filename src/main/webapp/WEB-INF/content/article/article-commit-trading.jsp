@@ -38,27 +38,11 @@
     </div>
     <form class="form-inline">
         <div class="form-group">
-            <label for="district">服区</label>
-            <select id="district" class="form-control">
-                <optgroup label="电信五区">
-                    <option>双梦镇</option>
-                    <option>风雨大姨妈</option>
-                    <option>唯满侠</option>
-                    <option>华乾</option>
-                    <option>四合一</option>
-                    <option>剑胆琴心</option>
-                    <option>金榜题名</option>
-                </optgroup>
-                <optgroup label="电信八区">
-                    <option>双梦</option>
-                    <option>风雪大姨妈</option>
-                    <option>唯满侠</option>
-                </optgroup>
-                <optgroup label="双线一区">
-                    <option>双梦</option>
-                    <option>风雪大姨妈</option>
-                    <option>唯满侠</option>
-                </optgroup>
+            <label for="selectItem">服区</label>
+            <select id="selectItem" class="form-control">
+                <jsp:include page="../templates/select-item.jsp">
+                    <jsp:param name="selectList" value="district"/>
+                </jsp:include>
             </select>
         </div>
 

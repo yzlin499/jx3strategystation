@@ -3,10 +3,9 @@ package top.yzlin.test;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import top.yzlin.jx3strategystation.entity.templates.District;
+import top.yzlin.jx3strategystation.entity.templates.SelectItem;
 
 import java.util.Arrays;
 
@@ -14,11 +13,11 @@ import java.util.Arrays;
 @ContextConfiguration(locations = {"classpath:applicationConfig.xml"})
 public class TestUnit {
 
-    @Autowired
-    private District[] district;
+//    @Autowired
+//    private SelectItem[] selectItem;
 
-    @Test
-    public void fileTest() {
-        System.out.println(Arrays.toString(district));
-    }
+//    @Test
+//    public void fileTest() {
+//        System.out.println(Arrays.toString(selectItem));
+//    }
 }

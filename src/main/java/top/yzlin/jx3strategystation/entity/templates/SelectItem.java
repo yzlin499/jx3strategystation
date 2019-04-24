@@ -2,9 +2,9 @@ package top.yzlin.jx3strategystation.entity.templates;
 
 import java.util.Arrays;
 
-public class District {
+public class SelectItem {
     private String name;
-    private String[] services;
+    private String[] children;
 
     public String getName() {
         return name;
@@ -14,19 +14,19 @@ public class District {
         this.name = name;
     }
 
-    public String[] getServices() {
-        return services;
+    public String[] getChildren() {
+        return children;
     }
 
-    public void setServices(String[] services) {
-        this.services = services;
+    public void setChildren(String[] children) {
+        this.children = children;
     }
 
     @Override
     public String toString() {
-        return "District{" +
+        return "SelectItem{" +
                 "name='" + name + '\'' +
-                ", services=" + Arrays.toString(services) +
+                ", children=" + Arrays.toString(children) +
                 '}';
     }
 }
