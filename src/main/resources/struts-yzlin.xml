@@ -44,4 +44,11 @@
             </result>
         </action>
     </package>
+
+
+    <package name="test" extends="default" namespace="/test">
+        <action name="a">
+            <result>/WEB-INF/content/templates/selectItem.jsp</result>
+        </action>
+    </package>
 </struts>

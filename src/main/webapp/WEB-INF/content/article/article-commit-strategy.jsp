@@ -37,28 +37,12 @@
         <input type="text" class="form-control input-lg" id="title" placeholder="你需要一个好标题">
     </div>
     <div class="form-group">
-        <label class="h3">副本</label>
-        <div class="input-group input-lg">
-            <label class="input-group-addon" for="instance-kind">副本</label>
-            <select id="instance-kind" class="form-control input-lg">
-                <option>荒血路</option>
-                <option>伊玛目</option>
-                <option>猪猪山</option>
-                <option>弹弹厅</option>
-                <option>发财峰</option>
-                <option>赚钱殿</option>
-            </select>
-            <label class="input-group-addon" for="instance-difficulty">难度</label>
-            <select id="instance-difficulty" class="form-control input-lg">
-                <option>25试炼</option>
-                <option>5人普通</option>
-                <option>5人英雄</option>
-                <option>5人挑战</option>
-                <option>10人普通</option>
-                <option>25人英雄</option>
-                <option>25人挑战</option>
-            </select>
-        </div>
+        <label class="h3" for="instance">内容</label>
+        <select id="instance" class="form-control input-lg">
+            <jsp:include page="../templates/select-item.jsp">
+                <jsp:param name="selectList" value="strategy"/>
+            </jsp:include>
+        </select>
     </div>
 
     <div class="form-group">
