@@ -1,5 +1,12 @@
 package top.yzlin.jx3strategystation.entity.user;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "User_table")
 public class User {
     private int userId;
     private String userName;
@@ -23,6 +30,8 @@ public class User {
         this.portrait = portrait;
     }
 
+    @Id
+    @GeneratedValue
     public int getUserId() {
         return userId;
     }

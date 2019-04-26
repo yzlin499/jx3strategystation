@@ -1,12 +1,12 @@
 package top.yzlin.jx3strategystation.entity.game;
 
 public class QiXue {
-    public static final int PASSIVE=-1;
+    public static final Skill PASSIVE = null;
     private int qiXueId;
     private String name;
     private String describe;
     private SkillType[] skillTypes;
-    private int skillId=PASSIVE;
+    private Skill skill = PASSIVE;
 
     public SkillType[] getSkillTypes() {
         return skillTypes;
@@ -40,11 +40,15 @@ public class QiXue {
         this.describe = describe;
     }
 
-    public int getSkillId() {
-        return skillId;
+    public static Skill getPASSIVE() {
+        return PASSIVE;
     }
 
-    public void setSkillId(int skillId) {
-        this.skillId = skillId;
+    public Skill getSkill() {
+        return skill;
+    }
+
+    public void setSkill(Skill skill) {
+        this.skill = skill;
     }
 }
