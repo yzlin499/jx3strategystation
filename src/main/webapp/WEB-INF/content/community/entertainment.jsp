@@ -13,193 +13,135 @@
 </head>
 <body>
 <jsp:include page="../templates/navbar.jsp"/>
-<div class="jumbotron">
-    <h1>Hello, world!</h1>
-    <p>...</p>
-    <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+<div class="jumbotron" style="background: black">
+    <h1 style="color: white;font-family: 楷体">剑三休闲板块</h1>
+    <img src="\static\img\community\333.jpeg" alt="" style="width: 100%">
 </div>
-<div class="container">
-    <div class="input-group">
-        <input type="text" class="form-control input-lg"><span class="input-group-addon btn btn-primary">搜索</span>
+<br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%" >
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a> </p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%" >
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%" >
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%" >
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%" >
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a> </p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%" >
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%" >
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%" >
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%" >
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a> </p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%" >
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%" >
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%" >
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
+            </div>
+        </div>
     </div>
 </div>
-<ul class="list-group">
-    <li>
-        <div class="row row-eq-height">
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介:
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/222.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/222.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="row row-eq-height">
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="row row-eq-height">
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="row row-eq-height">
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="panel panel-primary">
-                    <img src="/static/img/111.jpg" alt="..." style="width: 100%; height: 55%" >
-                    <h3 class="panel-heading">Thumbnail label</h3>
-                    <p class="panel-body" style="width: 280px; word-wrap:break-word; word-break:break-all;overflow: hidden;">
-                        内容简介
-                    </p>
-                    <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入帖子</a> <a href="#" class="btn btn-default" role="button">返回首页</a></p>
-                </div>
-            </div>
-        </div>
-    </li>
-</ul>
 
 <div align="center">
     <nav aria-label="Page navigation">
