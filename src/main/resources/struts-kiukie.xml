@@ -12,6 +12,12 @@
         <action name="strategy">
             <result>/WEB-INF/content/community/strategy.jsp</result>
         </action>
+        <action name="entertainment">
+            <result>/WEB-INF/content/community/entertainment.jsp</result>
+        </action>
+        <action name="transaction">
+            <result>/WEB-INF/content/community/transaction.jsp</result>
+        </action>
 
     </package>
 </struts>
