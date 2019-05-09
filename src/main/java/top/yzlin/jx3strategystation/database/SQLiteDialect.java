@@ -1,4 +1,4 @@
-package top.yzlin.jx3strategystation.dialect;
+package top.yzlin.jx3strategystation.database;
 
 
 import org.hibernate.dialect.Dialect;
