@@ -13,6 +13,9 @@
         <action name="register">
             <result name="success">/WEB-INF/content/user/register.jsp</result>
         </action>
+        <action name="personalHomepage">
+            <result name="success">/WEB-INF/content/user/personalHomepage.jsp</result>
+        </action>
     </package>
 
 </struts>

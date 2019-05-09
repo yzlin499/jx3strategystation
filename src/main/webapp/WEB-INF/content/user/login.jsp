@@ -37,6 +37,7 @@
                 </form>
             </div>
             <div class="modal-footer">
+                <a herf="register.jsp">账号注册</a>
                 <button type="sumbit" class="sign in">登 录</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">关 闭</button>
             </div>
