@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -9,7 +10,7 @@
 <html>
 <head>
     <title>用户注册</title>
-    <link type="text/css" rel="stylesheet" href="/static/css/user_css/registerStyle.css">
+    <link type="text/css" rel="stylesheet" href="<c:url value="/static/css/userCss/registerStyle.css"/>">
     <jsp:include page="../templates/bootstarp-lib.jsp"/>
 </head>
 <body>
