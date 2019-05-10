@@ -1,23 +1,29 @@
 package top.yzlin.jx3strategystation.service;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import top.yzlin.jx3strategystation.dao.ArticleDAO;
 import top.yzlin.jx3strategystation.entity.community.BaseArticle;
 
-import javax.transaction.Transactional;
 
 @Service
+@Transactional(rollbackFor = Exception.class)
 public class ArticleService {
-    private ArticleDAO articleDAO;
+    private final ArticleDAO articleDAO;
 
-    @Autowired
-    public void setArticleDAO(ArticleDAO articleDAO) {
+    public ArticleService(ArticleDAO articleDAO) {
         this.articleDAO = articleDAO;
     }
 
-    @Transactional(rollbackOn = Exception.class)
-    public void saveArticleDAO(BaseArticle baseArticle) {
+    public void saveArticle(BaseArticle baseArticle) {
         articleDAO.saveArticle(baseArticle);
     }
+
+
+    public BaseArticle findArticleById(int id) {
+        return articleDAO.findArticleById(id);
+    }
+
+
+
 }

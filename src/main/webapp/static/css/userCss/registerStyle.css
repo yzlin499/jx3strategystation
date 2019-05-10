@@ -51,7 +51,7 @@
 
 .main {
     width: 100%;
-    background: url("/static/img/user_img/u1.jpg") no-repeat;
+    background: url(/static/img/user_img/u1.jpg) no-repeat;
     background-size: cover;
     float: left;
 }
