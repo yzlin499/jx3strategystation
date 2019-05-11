@@ -15,15 +15,11 @@ public class ArticleService {
         this.articleDAO = articleDAO;
     }
 
-    public void saveArticle(BaseArticle baseArticle) {
-        articleDAO.saveArticle(baseArticle);
+    public int saveArticle(BaseArticle baseArticle) {
+        return articleDAO.saveArticle(baseArticle);
     }
 
-
-    public BaseArticle findArticleById(int id) {
-        return articleDAO.findArticleById(id);
+    public BaseArticle findArticleByIdAndUserName(int articleId, String userName) {
+        return articleDAO.findArticleByIdAndUserName(articleId, userName);
     }
-
-
-
 }

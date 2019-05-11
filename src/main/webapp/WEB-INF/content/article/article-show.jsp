@@ -12,7 +12,6 @@
     <title>Title</title>
     <jsp:include page="../templates/base-lib.jsp"/>
     <link href="<c:url value="/static/css/article/article.css"/>" rel="stylesheet">
-    j
 </head>
 <body>
 <jsp:include page="../templates/navbar.jsp"/>
@@ -40,8 +39,8 @@
                      class="img-thumbnail img-responsive">
             </div>
             <div class="col-md-10 ck-content" style="padding: 35px">
-                <div class="row" style="margin-bottom: 20px;padding: 20px">
-                        ${requestScope.article.content}
+                <div class="row " style="margin-bottom: 20px;padding: 20px">
+                    <div class="ck-content">${requestScope.article.content}</div>
                 </div>
                 <div class="row rounded-border">
                     <div class="col-md-1" style="padding: 10px">

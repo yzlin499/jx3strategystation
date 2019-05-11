@@ -1,24 +1,19 @@
 package top.yzlin.jx3strategystation.action;
 
 import com.opensymphony.xwork2.ActionSupport;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import top.yzlin.jx3strategystation.entity.community.BaseArticle;
-import top.yzlin.jx3strategystation.entity.user.User;
+import top.yzlin.jx3strategystation.service.ArticleService;
 
+@Component
 public class ShowArticle extends ActionSupport {
     private int articleId;
     private String userName;
     private BaseArticle article;
+    private ArticleService articleService;
 
     public BaseArticle getArticle() {
-        if (article == null) {
-            article = new BaseArticle();
-            article.setTitle("实例标题");
-            article.setContent("<p>实例文本实例文本实例文本实例文本</p>");
-            User user = new User();
-            user.setNickName("实例用户名");
-            user.setPortrait("/static/img/test/testHead.jpg");
-            article.setUser(user);
-        }
         return article;
     }
 
@@ -42,8 +37,14 @@ public class ShowArticle extends ActionSupport {
         this.userName = userName;
     }
 
+    @Autowired
+    public void setArticleService(ArticleService articleService) {
+        this.articleService = articleService;
+    }
+
     @Override
     public String execute() throws Exception {
-        return SUCCESS;
+        article = articleService.findArticleByIdAndUserName(articleId, userName);
+        return article == null ? ERROR : SUCCESS;
     }
 }

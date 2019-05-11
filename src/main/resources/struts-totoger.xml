@@ -7,9 +7,9 @@
 <struts>
     <package name="user" extends="default" namespace="/user">
 
-        <action name="login">
-            <result name="success">/WEB-INF/content/user/login.jsp</result>
-        </action>
+        <!--        <action name="login">-->
+        <!--            <result name="success">/WEB-INF/content/user/login.jsp</result>-->
+        <!--        </action>-->
         <action name="register">
             <result name="success">/WEB-INF/content/user/register.jsp</result>
         </action>

@@ -1,28 +1,17 @@
 package top.yzlin.jx3strategystation.dao;
 
-import org.hibernate.SessionFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
+import top.yzlin.jx3strategystation.database.annotation.QueryParam;
+import top.yzlin.jx3strategystation.database.annotation.Save;
+import top.yzlin.jx3strategystation.database.annotation.Select;
 import top.yzlin.jx3strategystation.entity.user.User;
 
-@Repository
-public class UserDAO {
 
-    private final SessionFactory sessionFactory;
+public interface UserDAO {
 
-    @Autowired
-    public UserDAO(SessionFactory sessionFactory) {
-        this.sessionFactory = sessionFactory;
-    }
+    @Select("from User u where u.userName=:userName and u.password=:password")
+    User findUserByUserNameAndPassword(@QueryParam("userName") String userName,
+                                       @QueryParam("password") String password);
 
-
-    public void saveUser(User user) {
-        sessionFactory.getCurrentSession().save(user);
-    }
-
-//    @Select("from User u where u.userId=:id")
-//    User findUserById(@QueryParam("id") int id);
-//
-//    @SaveOrUpdate
-//    void deletdUser(User user);
+    @Save
+    int saveUser(User user);
 }

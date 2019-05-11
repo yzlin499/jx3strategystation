@@ -8,8 +8,11 @@ import top.yzlin.jx3strategystation.entity.community.BaseArticle;
 public interface ArticleDAO {
 
     @Save
-    void saveArticle(BaseArticle baseArticle);
+    int saveArticle(BaseArticle baseArticle);
 
-    @Select("from BaseArticle a where a.id=:id")
-    BaseArticle findArticleById(@QueryParam("id") int id);
+    @Select("from BaseArticle where articleId=:articleId and user.userName=:userName")
+    BaseArticle findArticleByIdAndUserName(@QueryParam("articleId") int articleId,
+                                           @QueryParam("userName") String userName);
+
+
 }

@@ -35,7 +35,7 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">
-                                ${sessionScope.user.name}<span class="caret"></span>
+                                ${sessionScope.user.userName}<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="#">个人信息</a></li>
@@ -43,7 +43,7 @@
                             <li><a href="#">消息</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="#">修改密码</a></li>
-                            <li><a href="#">退出登录</a></li>
+                            <li><a onclick="logOut()">退出登录</a></li>
                         </ul>
                     </li>
                 </c:if>
@@ -60,7 +60,17 @@
 </nav>
 <div style="height: 50px"></div>
 
-
 <c:if test="${sessionScope.user == null}">
     <jsp:include page="../user/login.jsp"/>
+</c:if>
+
+<c:if test="${sessionScope.user != null}">
+    <script>
+        function logOut() {
+            $.get("/v1/api/logOut", {}, function (data, status) {
+                    $(location).attr('href', '/');
+                }
+            );
+        }
+    </script>
 </c:if>
