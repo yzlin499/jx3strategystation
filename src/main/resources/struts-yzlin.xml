@@ -27,7 +27,7 @@
 
 
     <package name="article-show" extends="default" namespace="/" strict-method-invocation="false">
-        <action name="*/article/*" class="top.yzlin.jx3strategystation.action.ShowArticle">
+        <action name="*/article/*" class="top.yzlin.jx3strategystation.action.article.ShowArticle">
             <param name="userName">{1}</param>
             <param name="articleId">{2}</param>
             <result name="success">/WEB-INF/content/article/article-show.jsp</result>

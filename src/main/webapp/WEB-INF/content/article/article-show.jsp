@@ -32,16 +32,29 @@
     </nav>
 </div>
 <div class="container">
-    <c:forEach begin="1" end="2">
+    <div class="row rounded-border">
+        <div class="col-md-2 user-info">
+            <img src="<c:url value="${requestScope.article.user.portrait}"/>" alt="tou"
+                 class="img-thumbnail img-responsive">
+            <div class="text-center">${requestScope.article.user.nickName}</div>
+        </div>
+        <div class="col-md-10 ck-content" style="padding: 35px">
+            <div class="row " style="margin-bottom: 20px;padding: 20px">
+                <div class="ck-content">${requestScope.article.content}</div>
+            </div>
+        </div>
+    </div>
+
+    <c:forEach items="${requestScope.commentList}" var="comment">
         <div class="row rounded-border">
             <div class="col-md-2 user-info">
-                <img src="<c:url value="${requestScope.article.user.portrait}"/>" alt="tou"
+                <img src="<c:url value="${comment.user.portrait}"/>" alt="tou"
                      class="img-thumbnail img-responsive">
-                <div class="text-center">${requestScope.article.user.nickName}</div>
+                <div class="text-center">${comment.user.nickName}</div>
             </div>
             <div class="col-md-10 ck-content" style="padding: 35px">
                 <div class="row " style="margin-bottom: 20px;padding: 20px">
-                    <div class="ck-content">${requestScope.article.content}</div>
+                    <div class="ck-content">${comment.content}</div>
                 </div>
             </div>
         </div>

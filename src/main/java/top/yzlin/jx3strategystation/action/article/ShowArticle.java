@@ -1,10 +1,14 @@
-package top.yzlin.jx3strategystation.action;
+package top.yzlin.jx3strategystation.action.article;
 
 import com.opensymphony.xwork2.ActionSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import top.yzlin.jx3strategystation.entity.community.BaseArticle;
+import top.yzlin.jx3strategystation.entity.community.Comment;
 import top.yzlin.jx3strategystation.service.ArticleService;
+import top.yzlin.jx3strategystation.service.CommentService;
+
+import java.util.List;
 
 @Component
 public class ShowArticle extends ActionSupport {
@@ -12,6 +16,7 @@ public class ShowArticle extends ActionSupport {
     private String userName;
     private BaseArticle article;
     private ArticleService articleService;
+    private CommentService commentService;
 
     public BaseArticle getArticle() {
         return article;
@@ -35,6 +40,15 @@ public class ShowArticle extends ActionSupport {
 
     public void setUserName(String userName) {
         this.userName = userName;
+    }
+
+    public List<Comment> getCommentList() {
+        return commentService.findCommentByArticleId(articleId);
+    }
+
+    @Autowired
+    public void setCommentService(CommentService commentService) {
+        this.commentService = commentService;
     }
 
     @Autowired

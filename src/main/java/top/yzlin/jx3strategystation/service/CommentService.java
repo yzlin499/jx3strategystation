@@ -5,6 +5,8 @@ import org.springframework.transaction.annotation.Transactional;
 import top.yzlin.jx3strategystation.dao.CommentDAO;
 import top.yzlin.jx3strategystation.entity.community.Comment;
 
+import java.util.List;
+
 @Service
 @Transactional(rollbackFor = Exception.class)
 public class CommentService {
@@ -17,5 +19,9 @@ public class CommentService {
 
     public void saveComment(Comment comment) {
         commentDAO.saveComment(comment);
+    }
+
+    public List<Comment> findCommentByArticleId(int articleId) {
+        return commentDAO.findCommentByArticleId(articleId);
     }
 }

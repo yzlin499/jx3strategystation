@@ -6,9 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import top.yzlin.jx3strategystation.entity.community.BaseArticle;
-import top.yzlin.jx3strategystation.entity.community.Comment;
-import top.yzlin.jx3strategystation.entity.user.User;
 import top.yzlin.jx3strategystation.service.ArticleService;
 import top.yzlin.jx3strategystation.service.CommentService;
 import top.yzlin.jx3strategystation.service.UserService;
@@ -30,14 +27,8 @@ public class TestUnit {
 
     @Test
     public void fileTest() {
-        User user = userService.findUserByUserNameAndPassword("yzlin", "q1w2e3r4");
-        BaseArticle articleById = new BaseArticle(16);
-        Comment comment = new Comment();
-        comment.setArticle(articleById);
-        comment.setContent("<p>aaaqqqa</p>");
-        comment.setUser(user);
-        comment.setArticle(articleService.findArticleById(comment.getArticle().getArticleId()));
-        commentService.saveComment(comment);
+
+        System.out.println(commentService.findCommentByArticleId(16));
 //        Comment comment=new Comment();
 //        User user=new User();
 //        user.setUserId(1);
