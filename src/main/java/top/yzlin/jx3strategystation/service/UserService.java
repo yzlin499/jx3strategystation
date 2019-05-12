@@ -6,7 +6,7 @@ import top.yzlin.jx3strategystation.dao.UserDAO;
 import top.yzlin.jx3strategystation.entity.user.User;
 
 @Service
-@Transactional
+@Transactional(rollbackFor = Exception.class)
 public class UserService {
     private final UserDAO userDAO;
 

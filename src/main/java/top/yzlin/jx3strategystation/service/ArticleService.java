@@ -22,4 +22,11 @@ public class ArticleService {
     public BaseArticle findArticleByIdAndUserName(int articleId, String userName) {
         return articleDAO.findArticleByIdAndUserName(articleId, userName);
     }
+
+    public BaseArticle findArticleById(int id) {
+        return articleDAO.findArticleById(id);
+    }
+
+
+
 }

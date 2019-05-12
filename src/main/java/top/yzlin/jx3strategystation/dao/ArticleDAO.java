@@ -14,5 +14,6 @@ public interface ArticleDAO {
     BaseArticle findArticleByIdAndUserName(@QueryParam("articleId") int articleId,
                                            @QueryParam("userName") String userName);
 
-
+    @Select("from BaseArticle where articleId=:articleId")
+    BaseArticle findArticleById(@QueryParam("articleId") int id);
 }

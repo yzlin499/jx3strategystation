@@ -48,6 +48,11 @@
                 <param name="excludeProperties">article</param>
             </result>
         </action>
+        <action name="comment" class="commitCommentAction">
+            <result type="json">
+                <param name="excludeProperties">comment</param>
+            </result>
+        </action>
     </package>
 
     <package name="login" extends="api">

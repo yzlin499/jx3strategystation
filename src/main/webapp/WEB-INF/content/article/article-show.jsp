@@ -35,21 +35,13 @@
     <c:forEach begin="1" end="2">
         <div class="row rounded-border">
             <div class="col-md-2 user-info">
-                <img src="<c:url value="/static/img/test/testHead.jpg"/>" alt="tou"
+                <img src="<c:url value="${requestScope.article.user.portrait}"/>" alt="tou"
                      class="img-thumbnail img-responsive">
+                <div class="text-center">${requestScope.article.user.nickName}</div>
             </div>
             <div class="col-md-10 ck-content" style="padding: 35px">
                 <div class="row " style="margin-bottom: 20px;padding: 20px">
                     <div class="ck-content">${requestScope.article.content}</div>
-                </div>
-                <div class="row rounded-border">
-                    <div class="col-md-1" style="padding: 10px">
-                        <img src="<c:url value="/static/img/test/testHead.jpg"/>" alt="tou"
-                             class="img-circle comment-portrait">
-                    </div>
-                    <div class="col-md-11" style="margin-top:auto;margin-bottom: auto">
-                        <a class="h4" href="#">实例用户名</a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -62,10 +54,14 @@
         <div class="col-md-12 editor">
             <div id="content"></div>
         </div>
+        <div class="col-md-12" style="margin-top: 20px">
+            <button class="btn btn-success" onclick="commitComment(${requestScope.article.articleId})">提交</button>
+        </div>
     </div>
 </div>
 <script src="<c:url value="/static/js/ckeditor.js"/>"></script>
 <script src="<c:url value="/static/js/article/editor.js"/>"></script>
+<script src="<c:url value="/static/js/article/commit.js"/>"></script>
 <jsp:include page="../templates/footer.jsp"/>
 </body>
 </html>

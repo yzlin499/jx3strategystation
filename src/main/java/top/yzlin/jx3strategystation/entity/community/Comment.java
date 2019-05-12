@@ -10,25 +10,36 @@ import java.io.Serializable;
 @Entity
 @Table(name = "comment")
 public class Comment implements Serializable {
-    private int articleId;
+    private int commentId;
+    private BaseArticle article;
     private User user;
     private String content;
 
     @Id
-    @OrderColumn
-    @OneToOne(targetEntity = BaseArticle.class)
-    @Cascade(CascadeType.SAVE_UPDATE)
-    public int getArticleId() {
-        return articleId;
+    @GeneratedValue
+    public int getCommentId() {
+        return commentId;
     }
 
-    public void setArticleId(int articleId) {
-        this.articleId = articleId;
+    public void setCommentId(int commentId) {
+        this.commentId = commentId;
+    }
+
+
+    @OrderColumn
+    @OneToOne(targetEntity = BaseArticle.class)
+    @Cascade(CascadeType.MERGE)
+    public BaseArticle getArticle() {
+        return article;
+    }
+
+    public void setArticle(BaseArticle article) {
+        this.article = article;
     }
 
     @OrderColumn
     @OneToOne(targetEntity = User.class)
-    @Cascade(CascadeType.SAVE_UPDATE)
+    @Cascade(CascadeType.MERGE)
     public User getUser() {
         return user;
     }
@@ -48,7 +59,7 @@ public class Comment implements Serializable {
     @Override
     public String toString() {
         return "Comment{" +
-                "articleId=" + articleId +
+                "article=" + article +
                 ", user=" + user +
                 ", content='" + content + '\'' +
                 '}';

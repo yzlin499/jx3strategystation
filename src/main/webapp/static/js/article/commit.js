@@ -10,6 +10,16 @@ function commitTradingArticle() {
     });
 }
 
+function commitComment(articleId) {
+    $.post("/v1/api/commit/comment", {
+            'comment.article.articleId': articleId,
+            'comment.content': myEditor.getData()
+        }, function (data, status) {
+            window.location.reload();
+        }
+    );
+}
+
 function commit(url, param) {
     $.post(url, param, function (data, status) {
             $(location).attr('href', data.url);
