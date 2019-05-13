@@ -6,8 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import top.yzlin.jx3strategystation.entity.community.CommonArticle;
 import top.yzlin.jx3strategystation.service.ArticleService;
+import top.yzlin.jx3strategystation.service.CommentService;
+import top.yzlin.jx3strategystation.service.UserService;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:applicationConfig.xml"})
@@ -15,14 +16,28 @@ import top.yzlin.jx3strategystation.service.ArticleService;
 public class TestUnit {
 
     @Autowired
+    private CommentService commentService;
+
+    @Autowired
+    private UserService userService;
+
+    @Autowired
     private ArticleService articleService;
+
 
     @Test
     public void fileTest() {
-        CommonArticle article = new CommonArticle();
-        article.setTitle("title");
-        article.setImgPath("imgpath");
-        article.setContent("content");
-        articleService.saveArticleDAO(article);
+
+        System.out.println(commentService.findCommentByArticleId(16));
+//        Comment comment=new Comment();
+//        User user=new User();
+//        user.setUserId(1);
+//        BaseArticle yzlin = new BaseArticle();
+//        yzlin.setArticleId(16);
+//        comment.setArticle(yzlin);
+//        comment.setUser(user);
+//        comment.setContent("<p>a</p>");
+//        commentService.saveComment(comment);
+
     }
 }

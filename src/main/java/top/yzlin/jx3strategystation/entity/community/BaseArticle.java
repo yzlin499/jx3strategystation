@@ -16,6 +16,14 @@ public class BaseArticle {
     private Community community;
     private String content;
 
+    public BaseArticle() {
+
+    }
+
+    public BaseArticle(int articleId) {
+        this.articleId = articleId;
+    }
+
     @Id
     @GeneratedValue
     public int getArticleId() {
