@@ -69,7 +69,7 @@
 
     <package name="test" extends="default" namespace="/test">
         <action name="a">
-            <result>/WEB-INF/content/templates/select-item.jsp</result>
+            <result>/WEB-INF/content/gamedata/qixue.jsp</result>
         </action>
     </package>
 </struts>

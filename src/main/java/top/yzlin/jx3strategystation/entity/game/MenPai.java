@@ -1,11 +1,19 @@
 package top.yzlin.jx3strategystation.entity.game;
 
+import org.hibernate.annotations.Cascade;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "menPai")
 public class MenPai {
     private int menPaiId;
     private String name;
     private XinFa[] xinFas;
     private String describe;
 
+    @Id
+    @GeneratedValue
     public int getMenPaiId() {
         return menPaiId;
     }
@@ -22,6 +30,9 @@ public class MenPai {
         this.name = name;
     }
 
+    @OrderColumn
+    @OneToMany(targetEntity = XinFa.class)
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     public XinFa[] getXinFas() {
         return xinFas;
     }

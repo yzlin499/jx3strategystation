@@ -27,7 +27,7 @@ public class Comment implements Serializable {
 
 
     @OrderColumn
-    @OneToOne(targetEntity = BaseArticle.class)
+    @ManyToOne(targetEntity = BaseArticle.class)
     @Cascade(CascadeType.MERGE)
     public BaseArticle getArticle() {
         return article;
