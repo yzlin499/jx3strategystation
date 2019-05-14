@@ -1,0 +1,37 @@
+.modal {
+    margin-top: 5%;
+}
+
+.modal-header {
+    background: url("/static/img/user_img/u2.jpeg");
+    background-size: 600px 120px;
+}
+
+.modal-header p {
+    text-align: center;
+    font-family: 微软雅黑;
+    font-size: 30px;
+}
+
+.modal-body input {
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    width: 550px;
+    height: 50px;
+}
+
+.modal-footer button {
+    width: 80%;
+    height: 50px;
+    background-color: #66afe9;
+    font-family: "微软雅黑 Light";
+    font-size: 20px;
+    float: left;
+    margin-left: 10%;
+}
+
+.modal-footer a {
+    float: left;
+    margin-top: 32px;
+}
