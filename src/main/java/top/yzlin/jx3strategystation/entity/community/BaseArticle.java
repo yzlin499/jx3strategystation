@@ -16,6 +16,14 @@ public class BaseArticle {
     private Community community;
     private String content;
 
+    public BaseArticle() {
+
+    }
+
+    public BaseArticle(int articleId) {
+        this.articleId = articleId;
+    }
+
     @Id
     @GeneratedValue
     public int getArticleId() {
@@ -27,7 +35,7 @@ public class BaseArticle {
     }
 
     @OrderColumn
-    @OneToOne(targetEntity = User.class)
+    @ManyToOne(targetEntity = User.class)
     @Cascade(CascadeType.SAVE_UPDATE)
     public User getUser() {
         return user;

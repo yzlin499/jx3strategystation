@@ -35,9 +35,11 @@
         <label for="title" class="h3">标题</label>
         <input type="text" class="form-control input-lg" id="title" placeholder="你需要一个好标题">
     </div>
+
     <div class="form-group">
         <div id="content"></div>
     </div>
+
     <button onclick="commit()" class="btn btn-success">Submit</button>
 </div>
 

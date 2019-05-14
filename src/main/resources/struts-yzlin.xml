@@ -5,6 +5,7 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
+
     <package name="default" extends="struts-default" namespace="/">
         <default-action-ref name="index"/>
         <action name="index" class="top.yzlin.jx3strategystation.action.HomePage">
@@ -26,31 +27,49 @@
 
 
     <package name="article-show" extends="default" namespace="/" strict-method-invocation="false">
-        <action name="*/article/*" class="top.yzlin.jx3strategystation.action.ShowArticle">
+        <action name="*/article/*" class="top.yzlin.jx3strategystation.action.article.ShowArticle">
             <param name="userName">{1}</param>
             <param name="articleId">{2}</param>
             <result name="success">/WEB-INF/content/article/article-show.jsp</result>
+            <result name="error">/WEB-INF/content/error/404.jsp</result>
         </action>
     </package>
 
     <package name="articleApi" extends="api">
-
         <action name="newArticle" class="top.yzlin.jx3strategystation.action.HomePage">
             <result name="success">/WEB-INF/content/homepage/article.jsp</result>
         </action>
 
-        <action name="commitArticle" class="commitTradingArticleAction">
+    </package>
+
+    <package name="commitArticle" extends="api" namespace="/v1/api/commit">
+        <action name="tradingArticle" class="commitTradingArticleAction">
             <result type="json">
                 <param name="excludeProperties">article</param>
             </result>
         </action>
+        <action name="comment" class="commitCommentAction">
+            <result type="json">
+                <param name="excludeProperties">comment</param>
+            </result>
+        </action>
+    </package>
 
+    <package name="login" extends="api">
+        <action name="login" class="loginAction">
+            <result type="json">
+                <param name="excludeProperties">user</param>
+            </result>
+        </action>
+        <action name="logOut" class="loginAction" method="logOut">
+            <result type="json"/>
+        </action>
     </package>
 
 
     <package name="test" extends="default" namespace="/test">
         <action name="a">
-            <result>/WEB-INF/content/templates/select-item.jsp</result>
+            <result>/WEB-INF/content/gamedata/qixue.jsp</result>
         </action>
     </package>
 </struts>

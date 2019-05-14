@@ -38,6 +38,8 @@ public class DAOInvocationHandler implements InvocationHandler {
                     makeDelete((Delete) annotation, method);
                 } else if (method.getAnnotation(SaveOrUpdate.class) != null) {
                     makeSaveOrUpdate(method);
+                } else if (method.getAnnotation(GetById.class) != null) {
+                    makeGetById(method);
                 } else {
                     methodMap.put(method.getName(), p -> null);
                 }
@@ -47,6 +49,17 @@ public class DAOInvocationHandler implements InvocationHandler {
 
     private Session currentSession() {
         return sessionFactory.getCurrentSession();
+    }
+
+    private void makeGetById(Method method) {
+        Class<?> returnType = method.getReturnType();
+        methodMap.put(method.getName(), p -> {
+            if (p.length > 0 && p[0] instanceof Serializable) {
+                return currentSession().get(returnType, (Serializable) p[0]);
+            } else {
+                return null;
+            }
+        });
     }
 
     private void makeSaveOrUpdate(Method method) {

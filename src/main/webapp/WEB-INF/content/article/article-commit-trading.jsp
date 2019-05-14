@@ -86,7 +86,7 @@
     <div class="form-group">
         <div id="content"></div>
     </div>
-    <button onclick="commit()" class="btn btn-success">Submit</button>
+    <button onclick="commitTradingArticle()" class="btn btn-success">Submit</button>
 </div>
 
 <script src="<c:url value="/static/js/ckeditor.js"/>"></script>

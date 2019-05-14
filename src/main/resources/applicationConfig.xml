@@ -9,7 +9,9 @@
            http://www.springframework.org/schema/context
            http://www.springframework.org/schema/context/spring-context.xsd
            http://www.springframework.org/schema/util
-           http://www.springframework.org/schema/util/spring-util.xsd   http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+           http://www.springframework.org/schema/util/spring-util.xsd
+           http://www.springframework.org/schema/tx
+           http://www.springframework.org/schema/tx/spring-tx.xsd">
 
     <context:property-placeholder ignore-unresolvable="true" location="classpath*:*.properties"/>
 
@@ -30,6 +32,7 @@
     <util:list id="entityPackage">
         <value>top.yzlin.jx3strategystation.entity.user</value>
         <value>top.yzlin.jx3strategystation.entity.community</value>
+        <value>top.yzlin.jx3strategystation.entity.game</value>
     </util:list>
 
 </beans>

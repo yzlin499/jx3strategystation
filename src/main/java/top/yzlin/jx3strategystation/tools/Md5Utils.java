@@ -5,7 +5,7 @@ import java.security.MessageDigest;
 /**
  * Md5 工具
  */
-public class Md5Util {
+public class Md5Utils {
 
     private static MessageDigest md5 = null;
 
