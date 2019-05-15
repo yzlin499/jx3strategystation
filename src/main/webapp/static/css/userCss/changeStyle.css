@@ -1,17 +1,19 @@
 .modal {
-    margin-top: 5%;
+    margin-top: 10%;
+    width: auto;
 }
 
 .modal-content {
-    background: url("/static/img/user_img/u2.jpeg") no-repeat;
-    background-size: 102% 105%;
+    background: url("/static/img/user_img/u2.jpeg");
+    background-size: 100% 100%;
 }
 
 .modal-header p {
-    background-color: white;
+    letter-spacing: 5px;
     text-align: center;
+    background-color: white;
     font-family: 微软雅黑;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .modal-body {
@@ -23,24 +25,18 @@
 
 .modal-body input {
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 10%;
     margin-bottom: 15px;
-    width: 550px;
+    width: 80%;
     height: 50px;
 }
 
 .modal-footer button {
-    width: 80%;
+    width: 50%;
     height: 50px;
     background-color: #66afe9;
     font-family: "微软雅黑 Light";
-    font-size: 20px;
+    font-size: 25px;
     float: left;
-    margin-left: 10%;
-}
-
-.modal-footer a {
-    background-color: white;
-    float: left;
-    margin-top: 32px;
+    margin-left: 25%;
 }
