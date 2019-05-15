@@ -1,6 +1,8 @@
 package top.yzlin.jx3strategystation.entity.game;
 
+
 import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
 
 import javax.persistence.*;
 import java.util.Arrays;
@@ -17,7 +19,7 @@ public class QiXue {
 
     @OrderColumn
     @OneToMany(targetEntity = SkillType.class)
-    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @Cascade(CascadeType.MERGE)
     public SkillType[] getSkillTypes() {
         return skillTypes;
     }
@@ -58,7 +60,7 @@ public class QiXue {
 
     @OrderColumn
     @OneToOne(targetEntity = Skill.class)
-    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @Cascade(CascadeType.MERGE)
     public Skill getSkill() {
         return skill;
     }
