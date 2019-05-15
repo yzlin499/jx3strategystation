@@ -14,44 +14,41 @@
     <jsp:include page="../templates/bootstarp-lib.jsp"/>
 </head>
 <body>
-<div class="nav">
-    <p>剑网三攻略网欢迎你</p>
-    <ul>
-        <li><a href="">1234567</a></li>
-        <li><a href="">1234567</a></li>
-        <li><a href="">1234567</a></li>
-        <li><a href="">1234567</a></li>
-        <li><a href="">1234567</a></li>
-    </ul>
-</div>
 <div class="main">
+    <div class="nav">
+        <p>剑网三攻略网欢迎你</p>
+        <ul>
+            <li><a href="">休闲社区</a></li>
+            <li><a href="">交易社区</a></li>
+            <li><a href="">攻略社区</a></li>
+            <li><a href="">公告社区</a></li>
+            <li><a href="">资料站</a></li>
+            <li><a href="">首页</a></li>
+        </ul>
+    </div>
     <div class="header">
-        <h1>剑网三攻略网欢迎你</h1>
+        <h1>剑网三攻略注册</h1>
+        <p>祝你游戏开心</p>
     </div>
     <div class="centers">
         <form>
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                <input type="nickName" class="form-control" id="exampleInputEmail1" placeholder="网站呢称">
             </div>
             <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                <input type="uesrName" class="form-control" id="exampleInputPassword1" placeholder="用户名">
             </div>
             <div class="form-group">
-                <label for="exampleInputFile">File input</label>
-                <input type="file" id="exampleInputFile">
-                <p class="help-block">Example block-level help text here.</p>
+                <input type="password" class="form-control" id="exampleInputEmail12" placeholder="密码">
             </div>
-            <div class="checkbox">
-                <label>
-                    <input type="checkbox"> Check me out
-                </label>
+            <div class="form-group">
+                <button type="button" onclick="" class="btn btn-default">立即注册</button>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
         </form>
     </div>
-    <div class="footer">5</div>
+    <div class="bottom">
+        <jsp:include page="../templates/footer.jsp"/>
+    </div>
 </div>
 </body>
 </html>

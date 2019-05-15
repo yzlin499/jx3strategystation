@@ -35,14 +35,14 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
                            aria-expanded="false">
-                                ${sessionScope.user.userName}<span class="caret"></span>
+                                ${sessionScope.user.nickName}<span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a href="#">个人信息</a></li>
                             <li><a href="#">个人中心</a></li>
                             <li><a href="#">消息</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="#">修改密码</a></li>
+                            <li><a href="" data-toggle="modal" data-target="#myModal1">修改密码</a></li>
                             <li><a onclick="logOut()">退出登录</a></li>
                         </ul>
                     </li>

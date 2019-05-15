@@ -16,6 +16,9 @@
         <action name="personalHomepage">
             <result name="success">/WEB-INF/content/user/personalHomepage.jsp</result>
         </action>
+        <action name="changePasswords">
+            <result name="success">/WEB-INF/content/user/changePasswords.jsp</result>
+        </action>
     </package>
 
 </struts>

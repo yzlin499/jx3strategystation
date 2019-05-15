@@ -1,22 +1,20 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
-/*.side_left{
-    position: fixed;
-    height: 100%;
-    width: 200px;
-    float:left;
-    background-color: #1b6d85;
-
-}*/
 .nav {
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
     background-color: black;
 }
 
 .nav p {
-    margin-top: 10px;
+    font-size: large;
+    font-family: 华文新魏;
+    margin-top: 15px;
     margin-left: 300px;
     float: left;
     text-align: center;
@@ -24,17 +22,17 @@
 }
 
 .nav ul {
-    height: 50px;
-    width: 100%;
+    width: 1520px;
+    height: auto;
     padding: 0;
     list-style: none;
 }
 
 .nav li {
-    margin-top: 15px;
+    font-family: 华文宋体;
+    line-height: 50px;
     float: right;
     text-align: center;
-    margin-right: 30px;
 }
 
 .nav a {
@@ -46,7 +44,7 @@
 
 .nav ul li a:hover {
     display: block;
-    background-color: #8c8c8c;
+    background-color: #eeeeee;
 }
 
 .main {
@@ -57,30 +55,61 @@
 }
 
 .header {
-    border: 1px red solid;
-
-    height: 20%;
+    height: 120px;
     width: 100%;
     float: left;
 }
 
+.header h1 {
+    margin-top: 20px;
+    margin-left: 20%;
+    font-family: 华文行楷;
+    font-size: 60px;
+}
+
+.header p {
+    margin-left: 23%;
+    font-family: 华文行楷;
+    font-size: 30px;
+}
+
 .centers {
-    border: 1px red solid;
-    height: 60%;
+    height: 450px;
     width: 100%;
     float: left;
-
 }
 
 .centers form {
     margin-left: 400px;
-    margin-right: 400px;
-    margin-top: 10px;
+    margin-right: 450px;
 }
 
-.footer {
-    border: 1px red solid;
-    height: 15%;
+.bottom {
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    padding: 20px;
+    background-color: black;
+    height: 110px;
     width: 100%;
     float: left;
+    color: white;
+}
+
+.form-group input {
+    margin-left: 10px;
+    margin-top: 40px;
+    height: 55px;
+    width: 80%;
+}
+
+.form-group button {
+    color: white;
+    font-family: "微软雅黑 Light";
+    font-size: 25px;
+    margin-top: 10px;
+    height: 55px;
+    width: 60%;
+    margin-left: 10%;
+    background-color: dodgerblue;
 }
