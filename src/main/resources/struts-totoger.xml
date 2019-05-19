@@ -21,4 +21,17 @@
         </action>
     </package>
 
+    <package name="userapi" extends="api">
+        <action name="register" class="registerAction">
+            <result type="json">
+                <param name="excludeProperties">user</param>
+            </result>
+        </action>
+
+        <action name="updatePassword" class="updatePasswordAction">
+            <result type="json">
+                <!--                <param name="excludeProperties">oldPassword newPassword</param>-->
+            </result>
+        </action>
+    </package>
 </struts>

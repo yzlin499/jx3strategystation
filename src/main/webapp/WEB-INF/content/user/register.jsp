@@ -11,7 +11,7 @@
 <head>
     <title>用户注册</title>
     <link type="text/css" rel="stylesheet" href="<c:url value="/static/css/userCss/registerStyle.css"/>">
-    <jsp:include page="../templates/bootstarp-lib.jsp"/>
+    <jsp:include page="../templates/base-lib.jsp"/>
 </head>
 <body>
 <div class="main">
@@ -33,16 +33,16 @@
     <div class="centers">
         <form>
             <div class="form-group">
-                <input type="nickName" class="form-control" id="exampleInputEmail1" placeholder="网站呢称">
+                <input type="text" class="form-control" id="nickName" placeholder="网站呢称">
             </div>
             <div class="form-group">
-                <input type="uesrName" class="form-control" id="exampleInputPassword1" placeholder="用户名">
+                <input type="text" class="form-control" id="userName" placeholder="用户名">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="exampleInputEmail12" placeholder="密码">
+                <input type="password" class="form-control" id="password" placeholder="密码">
             </div>
             <div class="form-group">
-                <button type="button" onclick="" class="btn btn-default">立即注册</button>
+                <button type="button" onclick="register()" class="btn btn-default">立即注册</button>
             </div>
         </form>
     </div>
@@ -50,5 +50,21 @@
         <jsp:include page="../templates/footer.jsp"/>
     </div>
 </div>
+<script>
+    function register() {
+        $.post("/v1/api/register", {
+            "user.userName": $("#userName").val(),
+            "user.nickName": $("#nickName").val(),
+            "user.password": $("#password").val()
+        }, function (data, status) {
+            if (data.userId > 0) {
+                alert("success");
+            } else {
+                alert("false");
+            }
+        });
+    }
+
+</script>
 </body>
 </html>

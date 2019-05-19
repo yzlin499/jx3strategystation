@@ -1,3 +1,5 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -6,7 +8,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<link rel="stylesheet" href="/static/css/userCss/loginStyle.css">
+<link rel="stylesheet" href="<c:url value="/static/css/userCss/loginStyle.css"/>">
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -25,7 +27,7 @@
             <div class="modal-footer">
                 <button type="button" onclick="login()" class="btn btn-info">立即登录</button>
                 <br>
-                <a herf="register.jsp">账号注册</a>
+                <a href="/user/register">账号注册</a>
             </div>
         </div>
     </div>
