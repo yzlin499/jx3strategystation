@@ -27,12 +27,13 @@
         }
         .img{
             background-image: url('/static/img/community/1.jpg');
-          background-size: 100% 100%;
+            background-size: 100% 100%;
             background-repeat:no-repeat;
+            background-attachment:fixed;
         }
         .img1{
-            font-family: 华文楷体;
-            font-size: 45px;;
+            font-family:华文行楷;
+            font-size: 58px;;
             background-image: url('/static/img/community/1副本.png');
             width: 533px;
             height: 93px;
@@ -40,7 +41,7 @@
         }
         .img2 li{
             background-color: white;
-            filter: alpha(opacity=50);moz-opacity:0.5;opacity: 0.5);
+            filter: alpha(opacity=50);moz-opacity:0.5;opacity: 0.7;);
         }
     </style>
 </head>
@@ -108,7 +109,7 @@
                         <h3>新闻</h3>
                     </div>
                     <div class="panel-body">
-                        <ul class="list-group">
+                        <ul class="list-group img2">
                             <li class="list-group-item">实例2</li>
                             <li class="list-group-item">实例2</li>
                             <li class="list-group-item">实例2</li>
@@ -153,7 +154,7 @@
                     <h3>活动</h3>
                 </div>
                 <div class="panel-body">
-                    <ul class="list-group">
+                    <ul class="list-group img2">
                         <li class="list-group-item">实例3</li>
                         <li class="list-group-item">实例3</li>
                         <li class="list-group-item">实例3</li>
@@ -198,7 +199,7 @@
                     <h3>更新</h3>
                 </div>
                 <div class="panel-body">
-                    <ul class="list-group">
+                    <ul class="list-group img2">
                         <li class="list-group-item">实例4</li>
                         <li class="list-group-item">实例4</li>
                         <li class="list-group-item">实例4</li>
