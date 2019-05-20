@@ -8,6 +8,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <nav class="navbar navbar-default  navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -29,7 +30,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <c:if test="${sessionScope.user == null}">
                     <li><a href="" data-toggle="modal" data-target="#myModal">登录</a></li>
-                    <li><a href="#">注册</a></li>
+                    <li><a href="<c:url value="/user/register"/>">注册</a></li>
                 </c:if>
                 <c:if test="${sessionScope.user != null}">
                     <li class="dropdown">
@@ -62,6 +63,9 @@
 
 <c:if test="${sessionScope.user == null}">
     <jsp:include page="../user/login.jsp"/>
+</c:if>
+<c:if test="${sessionScope.user !=null}">
+    <jsp:include page="../user/changePasswords.jsp"/>
 </c:if>
 
 <c:if test="${sessionScope.user != null}">

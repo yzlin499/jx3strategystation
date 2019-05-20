@@ -6,16 +6,7 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<html>
-<head>
-    <title>Title</title>
-    <link rel="stylesheet" href="/static/css/userCss/changeStyle.css">
-    <jsp:include page="../templates/bootstarp-lib.jsp"/>
-</head>
-<body>
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal1">
-    Launch demo modal
-</button>
+<link rel="stylesheet" href="/static/css/userCss/changeStyle.css">
 <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -24,18 +15,23 @@
             </div>
             <div class="modal-body">
                 <div class="form-group">
-                    <input type="" class="form-control" id="uesrName" placeholder="原密码">
+                    <input type="password" class="form-control" id="oldPassword" placeholder="原密码">
                 </div>
                 <div class="form-group" style="margin-top:35px">
-                    <input type="" class="form-control" id="password" placeholder="新密码">
+                    <input type="password" class="form-control" id="newPassword" placeholder="新密码">
                 </div>
                 <div id="errerMsg" class="text-warning"></div>
             </div>
             <div class="modal-footer">
-                <button type="button" onclick="login()" class="btn btn-info">确认修改</button>
+                <button type="button" onclick="updatePassword()" class="btn btn-info">确认修改</button>
             </div>
         </div>
     </div>
 </div>
-</body>
-</html>
+<script>
+    function updatePassword() {
+        $.post("/v1/api/updatePassword", {
+            "oldPassword":
+        })
+    }
+</script>
