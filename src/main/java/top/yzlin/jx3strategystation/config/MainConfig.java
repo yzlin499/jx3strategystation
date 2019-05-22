@@ -62,9 +62,9 @@ public class MainConfig {
     }
 
     private SelectItem[] jsonToSelectItem(Resource jsonResource) throws IOException {
-        JSONObject json=JSON.parseObject(FileUtils.readFileToString(jsonResource.getFile(),"UTF-8"));
-        return json.keySet().stream().map(e->{
-            SelectItem selectItem =new SelectItem();
+        JSONObject json = JSON.parseObject(FileUtils.readFileToString(jsonResource.getFile(), "UTF-8"));
+        return json.keySet().stream().map(e -> {
+            SelectItem selectItem = new SelectItem();
             selectItem.setName(e);
             selectItem.setChildren(json.getJSONArray(e).stream().map(Object::toString).toArray(String[]::new));
             return selectItem;

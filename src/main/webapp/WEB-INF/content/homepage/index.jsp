@@ -36,7 +36,7 @@
                     </div>
                     <div class="panel-body text-center">
                         <a href="${i[3]}" class="glyphicon glyphicon-${i[2]} text-${i[0]}" style="font-size: 8em"
-                              aria-hidden="true"></a>
+                           aria-hidden="true"></a>
                     </div>
                 </div>
             </div>

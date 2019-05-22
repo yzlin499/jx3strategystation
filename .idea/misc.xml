@@ -9,6 +9,13 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1615852484">
+      <usages-collector id="statistics.spring.core.usages.trigger">
+        <counts>
+          <entry key="actions.SpringChangeActiveProfiles" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />
