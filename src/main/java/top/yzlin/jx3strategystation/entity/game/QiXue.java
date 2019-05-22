@@ -1,13 +1,25 @@
 package top.yzlin.jx3strategystation.entity.game;
 
+
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+
+import javax.persistence.*;
+import java.util.Arrays;
+
+@Entity
+@Table(name = "qiXue")
 public class QiXue {
-    public static final int PASSIVE=-1;
+    public static final Skill PASSIVE = null;
     private int qiXueId;
     private String name;
     private String describe;
     private SkillType[] skillTypes;
-    private int skillId=PASSIVE;
+    private Skill skill = PASSIVE;
 
+    @OrderColumn
+    @OneToMany(targetEntity = SkillType.class)
+    @Cascade(CascadeType.MERGE)
     public SkillType[] getSkillTypes() {
         return skillTypes;
     }
@@ -16,6 +28,8 @@ public class QiXue {
         this.skillTypes = skillTypes;
     }
 
+    @Id
+    @GeneratedValue
     public int getQiXueId() {
         return qiXueId;
     }
@@ -40,11 +54,29 @@ public class QiXue {
         this.describe = describe;
     }
 
-    public int getSkillId() {
-        return skillId;
+    public static Skill getPASSIVE() {
+        return PASSIVE;
     }
 
-    public void setSkillId(int skillId) {
-        this.skillId = skillId;
+    @OrderColumn
+    @OneToOne(targetEntity = Skill.class)
+    @Cascade(CascadeType.MERGE)
+    public Skill getSkill() {
+        return skill;
+    }
+
+    public void setSkill(Skill skill) {
+        this.skill = skill;
+    }
+
+    @Override
+    public String toString() {
+        return "QiXue{" +
+                "qiXueId=" + qiXueId +
+                ", name='" + name + '\'' +
+                ", describe='" + describe + '\'' +
+                ", skillTypes=" + Arrays.toString(skillTypes) +
+                ", skill=" + skill +
+                '}';
     }
 }

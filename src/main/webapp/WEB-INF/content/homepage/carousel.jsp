@@ -4,7 +4,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
 <% String carouselId= Objects.toString(request.getAttribute("carouselId"),"myCarousel");%>
-<div id="<%=carouselId%>" class="carousel slide" style="margin-top: 50px">
+<div id="<%=carouselId%>" class="carousel slide">
     <ol class="carousel-indicators">
         <c:forEach begin="0" end="${fn:length(requestScope.carouselList)-1}" var="i">
             <li data-target="#<%=carouselId%>" data-slide-to="${i}" class="${i==0? "active":""}"></li>

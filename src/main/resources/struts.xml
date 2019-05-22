@@ -10,14 +10,28 @@
     <constant name="struts.action.extension" value=","/>
     <constant name="struts.action.exclude" value=","/>
     <constant name="struts.configuration.xml.reload" value="true" />
-    <constant name="struts.custom.i18n.resources" value="commons,message" />
     <constant name="struts.enable.DynamicMethodInvocation" value="false" />
     <constant name="struts.action.excludePattern" value="/static/.*?"/>
+    <constant name="struts.enable.SlashesInActionNames" value="true"/>
 
-    <package name="default" extends="struts-default" namespace="/">
-        <default-action-ref name="index"/>
-        <action name="index">
-            <result name="success">/WEB-INF/content/index.jsp</result>
+    <package name="api" extends="json-default" namespace="/v1/api">
+        <action name="updateImg" class="top.yzlin.jx3strategystation.action.UpdateImg">
+            <interceptor-ref name="defaultStack">
+                <param name="fileUpload.maximumSize">5000000</param>
+                <param name="fileUpload.allowedTypes">image/gif,image/x-ms-bmp,image/png,image/jpeg</param>
+                <param name="fileUpload.allowedExtensions">.jpg,.jpeg,.gif,.png,.bmp</param>
+            </interceptor-ref>
+            <result name="success" type="json">
+                <param name="noCache">true</param>
+                <param name="excludeNullProperties">true</param>
+            </result>
         </action>
     </package>
+
+    <include file="struts-ay2008lnt.xml"/>
+    <include file="struts-kiukie.xml"/>
+    <include file="struts-rickieee.xml"/>
+    <include file="struts-totoger.xml"/>
+    <include file="struts-yzlin.xml"/>
+
 </struts>
