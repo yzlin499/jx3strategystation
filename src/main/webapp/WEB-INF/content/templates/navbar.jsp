@@ -19,12 +19,12 @@
 
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="#">首页</a></li>
+                <li><a href="/">首页</a></li>
                 <li><a href="#">资料站</a></li>
-                <li><a href="#">公告社区</a></li>
-                <li><a href="#">攻略社区</a></li>
-                <li><a href="#">交易社区</a></li>
-                <li><a href="#">休闲社区</a></li>
+                <li><a href="/community/notice">公告社区</a></li>
+                <li><a href="/community/strategy">攻略社区</a></li>
+                <li><a href="/community/transaction">交易社区</a></li>
+                <li><a href="/community/entertainment">休闲社区</a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">

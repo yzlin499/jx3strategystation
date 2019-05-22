@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>交易区</title>
+    <title>攻略区</title>
     <jsp:include page="../templates/base-lib.jsp"/>
     <jsp:include page="../templates/bootstarp-lib.jsp"/>
 </head>
