@@ -35,7 +35,7 @@ public class BaseArticle {
     }
 
     @OrderColumn
-    @OneToOne(targetEntity = User.class)
+    @ManyToOne(targetEntity = User.class)
     @Cascade(CascadeType.SAVE_UPDATE)
     public User getUser() {
         return user;

@@ -26,4 +26,9 @@ public class UserService {
     public int saveUser(User user) {
         return userDAO.saveUser(user);
     }
+
+    public void updatePassword(User user) {
+        userDAO.updatePassword(user);
+    }
+
 }

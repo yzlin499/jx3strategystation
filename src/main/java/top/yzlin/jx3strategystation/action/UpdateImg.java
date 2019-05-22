@@ -4,7 +4,7 @@ import com.opensymphony.xwork2.ActionSupport;
 import org.apache.commons.io.FileUtils;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.dispatcher.multipart.StrutsUploadedFile;
-import top.yzlin.jx3strategystation.tools.Md5Util;
+import top.yzlin.jx3strategystation.tools.Md5Utils;
 
 import java.io.File;
 import java.io.IOException;
@@ -47,7 +47,7 @@ public class UpdateImg extends ActionSupport {
             file.mkdirs();
         }
         uploadFileName = (System.currentTimeMillis() / 2000) +
-                Md5Util.getMd5(uploadFileName) +
+                Md5Utils.getMd5(uploadFileName) +
                 uploadFileName.substring(uploadFileName.lastIndexOf('.'));
         try {
             //保存文件

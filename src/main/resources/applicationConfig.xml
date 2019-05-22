@@ -32,6 +32,7 @@
     <util:list id="entityPackage">
         <value>top.yzlin.jx3strategystation.entity.user</value>
         <value>top.yzlin.jx3strategystation.entity.community</value>
+        <value>top.yzlin.jx3strategystation.entity.game</value>
     </util:list>
 
 </beans>

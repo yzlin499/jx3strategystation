@@ -1,5 +1,14 @@
 package top.yzlin.jx3strategystation.entity.game;
 
+
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.CascadeType;
+
+import javax.persistence.*;
+import java.util.Arrays;
+
+@Entity
+@Table(name = "qiXue")
 public class QiXue {
     public static final Skill PASSIVE = null;
     private int qiXueId;
@@ -8,6 +17,9 @@ public class QiXue {
     private SkillType[] skillTypes;
     private Skill skill = PASSIVE;
 
+    @OrderColumn
+    @OneToMany(targetEntity = SkillType.class)
+    @Cascade(CascadeType.MERGE)
     public SkillType[] getSkillTypes() {
         return skillTypes;
     }
@@ -16,6 +28,8 @@ public class QiXue {
         this.skillTypes = skillTypes;
     }
 
+    @Id
+    @GeneratedValue
     public int getQiXueId() {
         return qiXueId;
     }
@@ -44,11 +58,25 @@ public class QiXue {
         return PASSIVE;
     }
 
+    @OrderColumn
+    @OneToOne(targetEntity = Skill.class)
+    @Cascade(CascadeType.MERGE)
     public Skill getSkill() {
         return skill;
     }
 
     public void setSkill(Skill skill) {
         this.skill = skill;
+    }
+
+    @Override
+    public String toString() {
+        return "QiXue{" +
+                "qiXueId=" + qiXueId +
+                ", name='" + name + '\'' +
+                ", describe='" + describe + '\'' +
+                ", skillTypes=" + Arrays.toString(skillTypes) +
+                ", skill=" + skill +
+                '}';
     }
 }

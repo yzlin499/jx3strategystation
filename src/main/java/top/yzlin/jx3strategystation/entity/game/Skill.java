@@ -1,5 +1,11 @@
 package top.yzlin.jx3strategystation.entity.game;
 
+import org.hibernate.annotations.Cascade;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "skill")
 public class Skill {
     private int skillId;
     private String name;
@@ -16,10 +22,12 @@ public class Skill {
     /**消耗*/
     private int consumption;
     /**秘籍*/
-    private String[] secretBook;
+    private String secretBook;
     /**描述*/
     private String describe;
 
+    @Id
+    @GeneratedValue
     public int getSkillId() {
         return skillId;
     }
@@ -52,6 +60,9 @@ public class Skill {
         this.arm = arm;
     }
 
+    @OrderColumn
+    @OneToMany(targetEntity = SkillType.class)
+    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
     public SkillType[] getSkillTypes() {
         return skillTypes;
     }
@@ -84,11 +95,11 @@ public class Skill {
         this.consumption = consumption;
     }
 
-    public String[] getSecretBook() {
+    public String getSecretBook() {
         return secretBook;
     }
 
-    public void setSecretBook(String[] secretBook) {
+    public void setSecretBook(String secretBook) {
         this.secretBook = secretBook;
     }
 
