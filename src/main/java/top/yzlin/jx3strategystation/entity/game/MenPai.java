@@ -3,6 +3,7 @@ package top.yzlin.jx3strategystation.entity.game;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.Arrays;
 
 @Entity
 @Table(name = "menPai")
@@ -47,5 +48,15 @@ public class MenPai {
 
     public void setDescribe(String describe) {
         this.describe = describe;
+    }
+
+    @Override
+    public String toString() {
+        return "MenPai{" +
+                "menPaiId=" + menPaiId +
+                ", name='" + name + '\'' +
+                ", xinFas=" + Arrays.toString(xinFas) +
+                ", describe='" + describe + '\'' +
+                '}';
     }
 }
