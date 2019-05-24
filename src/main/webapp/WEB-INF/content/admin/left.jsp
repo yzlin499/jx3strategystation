@@ -1,35 +1,30 @@
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>页面导航</title>
-    <style type="text/css">
-        ul {
-            list-style-type: none;
-        }
-
-        li {
-            padding: 10px 20px;
-            width: 120px;
-        }
-
-        body {
-            background-color: dimgray;
-        }
-
-        a, a:hover {
-            color: #FFFFFF;
-            text-decoration: none;
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
-<h2>管理导航</h2>
-<ul>
-    <li><a href="资料修改.html" target="right">资料修改</a></li>
-    <li><a href="社区管理.html" target="right">社区管理</a></li>
-    <li><a href="审核记录.html" target="right">审核记录</a></li>
-</ul>
-</body>
-</html>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    <c:forEach items="${[
+            {
+                'title':'title1',
+                'list':['title1-list1','title1-list2']
+            },{
+                'title':'title2',
+                'list':['title2-list1','title2-list2','title2-list1','title2-list2','title2-list1','title2-list2']
+            }
+    ]}" var="i" varStatus="num">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse${num.index}">
+                            ${i.title}
+                    </a>
+                </h4>
+            </div>
+            <div id="collapse${num.index}" class="panel-collapse collapse">
+                <ul class="list-group">
+                    <c:forEach items="${i.list}" var="item">
+                        <li class="list-group-item">${item}</li>
+                    </c:forEach>
+                </ul>
+            </div>
+        </div>
+    </c:forEach>
+</div>

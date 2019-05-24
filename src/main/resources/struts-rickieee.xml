@@ -6,12 +6,12 @@
 
 <struts>
 
-    <package name="admin" extends="default">
+    <package name="admin" extends="struts-default" namespace="/">
         <action name="admin">
             <result>/WEB-INF/content/admin/jx3.jsp</result>
         </action>
-        <action name="left">
-            <result>/WEB-INF/content/admin/left.jsp</result>
+        <action name="test">
+            <result>/WEB-INF/content/admin/ticket-list.jsp</result>
         </action>
     </package>
 </struts>
