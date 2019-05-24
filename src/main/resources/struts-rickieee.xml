@@ -7,11 +7,16 @@
 <struts>
 
     <package name="admin" extends="struts-default" namespace="/">
-        <action name="admin">
+        <action name="admin" class="showReviewArticleAction">
             <result>/WEB-INF/content/admin/jx3.jsp</result>
         </action>
         <action name="test">
             <result>/WEB-INF/content/admin/ticket-list.jsp</result>
+        </action>
+    </package>
+    <package name="review-api" extends="api" namespace="/v1/api">
+        <action name="passArticle" class="passArticleAction">
+            <result type="json"/>
         </action>
     </package>
 </struts>

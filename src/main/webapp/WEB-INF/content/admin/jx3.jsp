@@ -13,7 +13,7 @@
         <jsp:include page="left.jsp"/>
     </div>
     <div class="col-md-9">
-        <jsp:include page="ticket-list.jsp"/>
+        <jsp:include page="ban-list.jsp"/>
     </div>
     <div class="">
 
