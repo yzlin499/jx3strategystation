@@ -84,6 +84,38 @@
                     "distance": 0,
                     "name": "任驰骋",
                     "storingForce": 1.5
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 454,
+                    "coolDownTime": 15,
+                    "distance": 4,
+                    "name": "破坚阵",
+                    "storingForce": 0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 654,
+                    "coolDownTime": 18,
+                    "distance": 25,
+                    "name": "突",
+                    "storingForce": 0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 1208,
+                    "coolDownTime": 20,
+                    "distance": 0,
+                    "name": "御",
+                    "storingForce": 0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 302,
+                    "coolDownTime": 25,
+                    "distance": 0,
+                    "name": "疾",
+                    "storingForce": 0
                 }
             ],
             "xinFaId": 0
