@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import top.yzlin.jx3strategystation.dao.ArticleDAO;
 import top.yzlin.jx3strategystation.dao.CommentDAO;
+import top.yzlin.jx3strategystation.dao.QiXueGroupDAO;
 import top.yzlin.jx3strategystation.dao.UserDAO;
 import top.yzlin.jx3strategystation.database.DAOInvocationHandler;
 
@@ -13,6 +14,11 @@ import java.lang.reflect.Proxy;
 
 @Configuration
 public class DAOConfig {
+
+    @Bean
+    public QiXueGroupDAO qiXueGroupDAO(@Autowired SessionFactory sessionFactory) {
+        return createDAO(QiXueGroupDAO.class, sessionFactory);
+    }
 
     @Bean
     public ArticleDAO articleDAO(@Autowired SessionFactory sessionFactory) {

@@ -12,6 +12,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.util.ResourceUtils;
+import top.yzlin.jx3strategystation.entity.game.MenPai;
 import top.yzlin.jx3strategystation.entity.game.QiXue;
 import top.yzlin.jx3strategystation.entity.game.QiXueGroup;
 import top.yzlin.jx3strategystation.entity.game.SkillType;
@@ -46,11 +47,11 @@ public class TestUnit {
     public void fileTest() throws IOException {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
-        String s = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/badaoqixue.json"), "utf-8");
-        List<QiXueGroup> qiXueGroups = JSON.parseArray(s).toJavaList(QiXueGroup.class);
-        qiXueGroups.forEach(session::save);
+        String s = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/霸刀门派.json"), "utf-8");
+        MenPai menPai = JSON.parseObject(s).toJavaObject(MenPai.class);
+        session.save(menPai);
         transaction.commit();
-
+        System.out.println(JSON.toJSONString(menPai));
 
 //        SkillType[] skillTypes = new SkillType[a.length];
 //        for (int i = 0; i < skillTypes.length; i++) {
@@ -77,7 +78,7 @@ public class TestUnit {
     private void setSkillTypeId(Session session) throws IOException {
         List<SkillType> skillTypeList = session.createQuery("from SkillType ", SkillType.class).list();
         Map<String, SkillType> collect = skillTypeList.stream().collect(Collectors.toMap(SkillType::getTitle, v -> v));
-        String s = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/badaoqixue.json"), "utf-8");
+        String s = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/霸刀奇穴.json"), "utf-8");
         List<QiXueGroup> qiXueGroups = JSON.parseArray(s).toJavaList(QiXueGroup.class);
         for (int i = 0; i < qiXueGroups.size(); i++) {
             QiXueGroup qiXueGroup = qiXueGroups.get(i);
