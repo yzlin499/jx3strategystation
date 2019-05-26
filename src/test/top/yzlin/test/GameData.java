@@ -6,9 +6,7 @@ import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.io.FileUtils;
 import org.junit.Test;
 import org.springframework.util.ResourceUtils;
-import top.yzlin.jx3strategystation.entity.game.QiXue;
-import top.yzlin.jx3strategystation.entity.game.QiXueGroup;
-import top.yzlin.jx3strategystation.entity.game.SkillType;
+import top.yzlin.jx3strategystation.entity.game.*;
 
 import java.io.IOException;
 import java.util.List;
@@ -38,8 +36,20 @@ public class GameData {
             }).toArray(QiXue[]::new));
         }
         System.out.println(JSON.toJSONString(qiXueGroups));
+    }
 
-
+    @Test
+    public void getSkillData() throws IOException {
+        String data = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/天策门派.json"), "utf-8");
+        JSONObject jsonObject = JSON.parseObject(data);
+        MenPai menPai = jsonObject.toJavaObject(MenPai.class);
+        for (XinFa xinFa : menPai.getXinFas()) {
+            for (Skill skill : xinFa.getSkills()) {
+                skill.setSkillTypes(new SkillType[0]);
+                skill.setDescribe(getDescribe(skill.getName()));
+            }
+        }
+        System.out.println(JSON.toJSONString(menPai));
     }
 
     public void qixueGetDescribe() {
@@ -62,20 +72,17 @@ public class GameData {
 
     @Test
     public void describeTest() {
-        System.out.println(getCoolDownTime(getTip("夕照雷峰")));
+        System.out.println();
     }
 
-    private String getTip(String name) {
-        JSONObject data = JSON.parseObject(Tools.sendGet("https://haiman.io/api/jx3/search-data/skill", "q=" + name + "&offset=0&limit=25"));
 
+    private String getDescribe(String name) {
+        JSONObject data = JSON.parseObject(Tools.sendGet("https://haiman.io/api/jx3/search-data/skill", "q=" + name + "&offset=0&limit=25"));
         JSONArray dataJSONArray = data.getJSONArray("data");
         if (dataJSONArray.size() <= 0) {
             return null;
         }
-        return dataJSONArray.getJSONObject(0).getString("szTip");
-    }
-
-    private String getDescribe(String tip) {
+        String tip = dataJSONArray.getJSONObject(0).getString("szTip");
         Matcher matcher = pattern.matcher(tip);
         StringBuilder sb = new StringBuilder();
         while (matcher.find()) {
@@ -84,22 +91,4 @@ public class GameData {
         return sb.deleteCharAt(sb.length() - 1).toString();
     }
 
-    private int getCoolDownTime(String tip) {
-        Matcher matcher = coolDownTimePattern.matcher(tip);
-        if (matcher.find()) {
-            String content = matcher.group("content");
-            if ("无调息时间".equals(content)) {
-                return 0;
-            } else {
-                content = content.replace("秒", "");
-                if (content.contains(".")) {
-                    return (int) Double.parseDouble(content);
-                } else {
-                    return Integer.parseInt(content);
-                }
-            }
-        } else {
-            return -1;
-        }
-    }
 }
