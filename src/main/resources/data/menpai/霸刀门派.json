@@ -1,735 +1,735 @@
 {
-    "describe": "寥落尘寰数十载，何曾开眼论豪英。刀光起处鲸吞海，誓将浮名敬死生。",
-    "menPaiId": 0,
-    "name": "霸刀",
-    "xinFas": [
+  "describe": "寥落尘寰数十载，何曾开眼论豪英。刀光起处鲸吞海，誓将浮名敬死生。",
+  "menPaiId": 0,
+  "name": "霸刀",
+  "xinFas": [
+    {
+      "describe": "秀明尘身体态具有极强的近战群体攻击能力，松烟竹雾体态可在有效保护自身的同时做出近战反击，雪絮金屏体态则可造成大量远程单体伤害。",
+      "name": "北傲决",
+      "qiXueGroups": [
         {
-            "describe": "秀明尘身体态具有极强的近战群体攻击能力，松烟竹雾体态可在有效保护自身的同时做出近战反击，雪絮金屏体态则可造成大量远程单体伤害。",
-            "name": "北傲决",
-            "qiXueGroups": [
+          "qiXueGroupId": 94,
+          "qiXueIndex": 0,
+          "qiXues": [
+            {
+              "describe": "“项王击鼎”伤害提高10%。",
+              "name": "龙息",
+              "qiXueId": 95,
+              "skillTypes": []
+            },
+            {
+              "describe": "“项王击鼎”会心几率提高10%，会心效果提高10%。",
+              "name": "虎踞",
+              "qiXueId": 96,
+              "skillTypes": []
+            },
+            {
+              "describe": "“龙骧虎步”使目标移动速度降低60%，持续10秒。",
+              "name": "伏尘",
+              "qiXueId": 97,
+              "skillTypes": [
                 {
-                    "qiXueGroupId": 94,
-                    "qiXueIndex": 0,
-                    "qiXues": [
-                        {
-                            "describe": "“项王击鼎”伤害提高10%。",
-                            "name": "龙息",
-                            "qiXueId": 95,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“项王击鼎”会心几率提高10%，会心效果提高10%。",
-                            "name": "虎踞",
-                            "qiXueId": 96,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“龙骧虎步”使目标移动速度降低60%，持续10秒。",
-                            "name": "伏尘",
-                            "qiXueId": 97,
-                            "skillTypes": [
-                                {
-                                    "title": "减速",
-                                    "typeId": 35
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "qiXueGroupId": 98,
-                    "qiXueIndex": 1,
-                    "qiXues": [
-                        {
-                            "describe": "“上将军印”每段伤害命中目标则使自身调息时间降低2秒。",
-                            "name": "归酣",
-                            "qiXueId": 99,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“项王击鼎”三段触发的持续范围伤害每跳伤害递增5%。",
-                            "name": "沧雪",
-                            "qiXueId": 100,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“龙骧虎步”会心几率提高10%，会心后各回复10点狂意、刀魂、气劲。",
-                            "name": "孤漠",
-                            "qiXueId": 101,
-                            "skillTypes": []
-                        }
-                    ]
-                },
-                {
-                    "qiXueGroupId": 102,
-                    "qiXueIndex": 2,
-                    "qiXues": [
-                        {
-                            "describe": "“刀啸风吟”会心几率提高10%，会心效果提高10%。",
-                            "name": "冥鼓",
-                            "qiXueId": 103,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“上将军印”伤害提高10%。",
-                            "name": "阳关",
-                            "qiXueId": 104,
-                            "skillTypes": []
-                        },
-                        {
-                            "name": "照野",
-                            "qiXueId": 105,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“西楚悲歌”不再生成刀气障碍，伤害范围扩大至12尺，范围内小队成员基础攻击力提高30%，持续12秒。",
-                            "name": "疏狂",
-                            "qiXueId": 106,
-                            "skillTypes": [
-                                {
-                                    "title": "爆发",
-                                    "typeId": 33
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "qiXueGroupId": 107,
-                    "qiXueIndex": 3,
-                    "qiXues": [
-                        {
-                            "describe": "“醉斩白蛇”运功期间每跳伤害递增15%。",
-                            "name": "化蛟",
-                            "qiXueId": 108,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“闹须弥”期间每次攻击都会对目标造成伤害。",
-                            "name": "霜天",
-                            "qiXueId": 109,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“割据秦宫”每段命中目标使“项王击鼎”三段触发的持续群体伤害持续时间增加1秒，最多增加3秒。",
-                            "name": "连兵",
-                            "qiXueId": 110,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“雷走风切”命中运功状态的目标会心几率提高20%且使目标无法运功时间延长2秒。",
-                            "name": "息声",
-                            "qiXueId": 111,
-                            "skillTypes": [
-                                {
-                                    "title": "沉默",
-                                    "typeId": 52
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "qiXueGroupId": 112,
-                    "qiXueIndex": 4,
-                    "qiXues": [
-                        {
-                            "describe": "“刀啸风吟”施展后使“醉斩白蛇”运功时间增加0.5秒，最多增加1.5秒。",
-                            "name": "含风",
-                            "qiXueId": 113,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“醉斩白蛇”每跳有15%几率使下一个“刀啸风吟”无需运功且附带击退效果，可叠加2层，持续10秒。",
-                            "name": "啸吒",
-                            "qiXueId": 114,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“破釜沉舟”获得一次透支次数，命中锁足、眩晕、倒地目标调息时间减半。",
-                            "name": "击瑕",
-                            "qiXueId": 115,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“碎江天”使目标受到的疗伤成效降低50%，持续12秒。",
-                            "name": "吞楚",
-                            "qiXueId": 116,
-                            "skillTypes": [
-                                {
-                                    "title": "减疗",
-                                    "typeId": 43
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "qiXueGroupId": 117,
-                    "qiXueIndex": 5,
-                    "qiXues": [
-                        {
-                            "describe": "“醉斩白蛇”每跳伤害会心使“刀啸风吟”伤害提高10%，可叠加3层，持续12秒。",
-                            "name": "砺锋",
-                            "qiXueId": 118,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“醉斩白蛇”命中目标并使目标无法施展轻功、移动速度降低20%，持续2秒。",
-                            "name": "行泽",
-                            "qiXueId": 119,
-                            "skillTypes": [
-                                {
-                                    "title": "封轻功",
-                                    "typeId": 45
-                                }
-                            ]
-                        },
-                        {
-                            "describe": "“项王击鼎”每段会心都使三段触发的持续群体伤害持续时间增加0.5秒，最多增加1.5秒。",
-                            "name": "逐鹿",
-                            "qiXueId": 120,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“碎江天”施展后强制目标攻击自身并使自身闪避几率提高100%，持续1秒。",
-                            "name": "流影",
-                            "qiXueId": 121,
-                            "skillTypes": [
-                                {
-                                    "title": "闪避",
-                                    "typeId": 32
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "qiXueGroupId": 122,
-                    "qiXueIndex": 6,
-                    "qiXues": [
-                        {
-                            "describe": "“醉斩白蛇”施展后立刻对目标造成伤害，但会触发6秒调息时间。",
-                            "name": "斩纷",
-                            "qiXueId": 123,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“卸元箭”调息时间降低3秒，神机值消耗降低5点。",
-                            "name": "百战",
-                            "qiXueId": 124,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“楚河汉界”刀气障碍存留时间增加2秒。",
-                            "name": "分疆",
-                            "qiXueId": 125,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“闹须弥”调息时间增加10秒，施展后触发二段效果，横握双刀抵住目标并将目标推出10尺。",
-                            "name": "还璧",
-                            "qiXueId": 126,
-                            "skillTypes": []
-                        }
-                    ]
-                },
-                {
-                    "qiXueGroupId": 127,
-                    "qiXueIndex": 7,
-                    "qiXues": [
-                        {
-                            "describe": "体质和力道提高10%。",
-                            "name": "星火",
-                            "qiXueId": 128,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“雪絮金屏”体态下攻击招式施展距离提高5尺，运功不会被打退。",
-                            "name": "腾雾",
-                            "qiXueId": 129,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“松烟竹雾”体态下移速效果额外增加10%，降低被命中几率效果额外增加5%。",
-                            "name": "雾晓",
-                            "qiXueId": 130,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“秀明尘身”体态下消耗透支次数施展技能积累的透支时间减半。",
-                            "name": "王印",
-                            "qiXueId": 131,
-                            "skillTypes": []
-                        }
-                    ]
-                },
-                {
-                    "qiXueGroupId": 132,
-                    "qiXueIndex": 8,
-                    "qiXues": [
-                        {
-                            "describe": "命中气血值低于40%的目标，自身会心几率提高10%，会心效果提高10%，持续6秒。",
-                            "name": "楚歌",
-                            "qiXueId": 133,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“临渊蹈河”劈出刀气会生成障碍效果。",
-                            "name": "辟海",
-                            "qiXueId": 134,
-                            "skillTypes": [
-                                {
-                                    "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[1].skillTypes[0]"
-                                }
-                            ]
-                        },
-                        {
-                            "describe": "“西楚悲歌”施展后解除自身受控状态并使范围内小队成员受到的伤害降低30%",
-                            "name": "易水",
-                            "qiXueId": 135,
-                            "skillTypes": [
-                                {
-                                    "title": "减伤",
-                                    "typeId": 31
-                                }
-                            ]
-                        },
-                        {
-                            "describe": "“散流霞”效果期间施展技能不会解除无法选中状态且持续时间增加2秒。",
-                            "name": "秋瑟",
-                            "qiXueId": 136,
-                            "skillTypes": []
-                        }
-                    ]
-                },
-                {
-                    "qiXueGroupId": 137,
-                    "qiXueIndex": 9,
-                    "qiXues": [
-                        {
-                            "describe": "“闹须弥”流血效果伤害提高30%且自身伤害招式命中目标后有30%的几率刷新流血效果持续时间。",
-                            "name": "绝期",
-                            "qiXueId": 138,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“割据秦宫”每段成功控制目标，使自身下一次技能伤害分别提高10%、20%、30%。",
-                            "name": "重激",
-                            "qiXueId": 139,
-                            "skillTypes": [
-                                {
-                                    "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[1].skillTypes[0]"
-                                }
-                            ]
-                        },
-                        {
-                            "describe": "“封渊震煞”施展后使下一个“刀啸风吟”无需吟唱且附带6尺击退效果，持续10秒。",
-                            "name": "曳鼎",
-                            "qiXueId": 140,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“散流霞”施展后立刻移除自身所有负面不利效果且效果期间每秒回复2%气血最大值。",
-                            "name": "空痕",
-                            "qiXueId": 141,
-                            "skillTypes": [
-                                {
-                                    "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[3].skillTypes[0]"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "qiXueGroupId": 142,
-                    "qiXueIndex": 10,
-                    "qiXues": [
-                        {
-                            "describe": "受到伤害导致自身气血值低于1%，则回复自身10%气血且当前体态下每点能量额外回复自身0.5%气血最大值，最多每3分钟触发一次。",
-                            "name": "冷川",
-                            "qiXueId": 143,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“雪絮金屏”体态下每次被技能攻击获得2点能量。",
-                            "name": "裁骨",
-                            "qiXueId": 144,
-                            "skillTypes": [
-                                {
-                                    "title": "眩晕",
-                                    "typeId": 38
-                                }
-                            ]
-                        },
-                        {
-                            "describe": "“松烟竹雾”体态下不再自动消耗能量，每秒回复2点能量，受到攻击4秒内不再触发能量回复效果。",
-                            "name": "重烟",
-                            "qiXueId": 145,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“松烟竹雾”体态下受到的锁足、定身、眩晕控制效果持续时间降低50%。",
-                            "name": "势孤",
-                            "qiXueId": 146,
-                            "skillTypes": []
-                        }
-                    ]
-                },
-                {
-                    "qiXueGroupId": 147,
-                    "qiXueIndex": 11,
-                    "qiXues": [
-                        {
-                            "describe": "“雪絮金屏”体态下施展伤害招式命中处于自身“坚壁清野”区域内的敌对目标，技能会心几率提高25%。",
-                            "name": "心镜",
-                            "qiXueId": 148,
-                            "skillTypes": []
-                        },
-                        {
-                            "describe": "“坚壁清野”附带4秒锁足效果且残留刀气区域持续伤害提高15%。",
-                            "name": "冻土",
-                            "qiXueId": 149,
-                            "skillTypes": [
-                                {
-                                    "title": "锁足",
-                                    "typeId": 36
-                                }
-                            ]
-                        },
-                        {
-                            "describe": "受到任何伤害导致自身气血低于50%，该次伤害降低25%。",
-                            "name": "寒衣",
-                            "qiXueId": 150,
-                            "skillTypes": [
-                                {
-                                    "$ref": "$.xinFas[0].qiXueGroups[8].qiXues[2].skillTypes[0]"
-                                }
-                            ]
-                        },
-                        {
-                            "describe": "金屏体态下方可施展，消耗5点气劲，解除自身受控状态并后翻8尺，在自身位置残留一道8尺刀气障碍，敌对玩家目标无法穿越，持续4秒，可透支施展两次。",
-                            "name": "封渊震煞",
-                            "qiXueId": 151,
-                            "skillTypes": [
-                                {
-                                    "title": "解控",
-                                    "typeId": 41
-                                }
-                            ]
-                        }
-                    ]
+                  "title": "减速",
+                  "typeId": 35
                 }
-            ],
-            "skills": [
+              ]
+            }
+          ]
+        },
+        {
+          "qiXueGroupId": 98,
+          "qiXueIndex": 1,
+          "qiXues": [
+            {
+              "describe": "“上将军印”每段伤害命中目标则使自身调息时间降低2秒。",
+              "name": "归酣",
+              "qiXueId": 99,
+              "skillTypes": []
+            },
+            {
+              "describe": "“项王击鼎”三段触发的持续范围伤害每跳伤害递增5%。",
+              "name": "沧雪",
+              "qiXueId": 100,
+              "skillTypes": []
+            },
+            {
+              "describe": "“龙骧虎步”会心几率提高10%，会心后各回复10点狂意、刀魂、气劲。",
+              "name": "孤漠",
+              "qiXueId": 101,
+              "skillTypes": []
+            }
+          ]
+        },
+        {
+          "qiXueGroupId": 102,
+          "qiXueIndex": 2,
+          "qiXues": [
+            {
+              "describe": "“刀啸风吟”会心几率提高10%，会心效果提高10%。",
+              "name": "冥鼓",
+              "qiXueId": 103,
+              "skillTypes": []
+            },
+            {
+              "describe": "“上将军印”伤害提高10%。",
+              "name": "阳关",
+              "qiXueId": 104,
+              "skillTypes": []
+            },
+            {
+              "name": "照野",
+              "qiXueId": 105,
+              "skillTypes": []
+            },
+            {
+              "describe": "“西楚悲歌”不再生成刀气障碍，伤害范围扩大至12尺，范围内小队成员基础攻击力提高30%，持续12秒。",
+              "name": "疏狂",
+              "qiXueId": 106,
+              "skillTypes": [
                 {
-                    "arm": "傲雪刀",
-                    "consumption": 0,
-                    "coolDownTime": 50,
-                    "describe": "对半径6尺范围内最多5名敌对目标造成100%武器伤害外加110-130点(+1226)外功伤害并形成刀气障碍，持续4秒，效果期间自身免疫控制且降低招式威胁值。",
-                    "distance": 8,
-                    "name": "西楚悲歌",
-                    "secretBook": "",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 5,
-                    "coolDownTime": 0,
-                    "describe": "尘身体态下方可施展，三段攻击，每段消耗5点狂意，对前方6尺范围内最多5个敌对目标造成100%武器伤害外加35-40点(+709)外功伤害，三段攻击后触发持续2秒群体伤害，每0.5秒对半径8尺范围内最多10个敌对目标造成100%武器伤害外加50-55点(+385)外功伤害。",
-                    "distance": 6,
-                    "name": "项王击鼎",
-                    "secretBook": "",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 10,
-                    "coolDownTime": 18,
-                    "describe": "消耗20000修为，运功结束后对周围敌人造成243000阳性内功伤害，但会使自身重伤。",
-                    "distance": 6,
-                    "name": "破釜沉舟",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 10,
-                    "coolDownTime": 18,
-                    "describe": "尘身体态下方可施展，消耗10点狂意，每0.5秒对前方随机方向10尺内最多5个敌对目标造成矩形范围攻击，造成100%武器伤害外加100-110点(+841)外功伤害。",
-                    "distance": 10,
-                    "name": "上将军印",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 10,
-                    "coolDownTime": 18,
-                    "describe": "尘身体态下方可施展，消耗10点狂意，可透支两次，每段触发不同效果；\n一段：对前方6尺范围内最多5个敌对目标造成100%武器伤害外加35-40点(+529)外功伤害并锁足3秒。\n二段：对前方6尺范围内最多5个敌对目标造成100%武器伤害外加35-40点(+553)外功伤害并眩晕3秒。\n三段：对前方6尺范围内最多5个敌对目标造成100%武器伤害外加35-40点(+565)外功伤害并击倒3秒。",
-                    "distance": 6,
-                    "name": "割据秦宫",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "锁足",
-                            "typeId": 36
-                        },
-                        {
-                            "title": "眩晕",
-                            "typeId": 38
-                        },
-                        {
-                            "title": "击倒",
-                            "typeId": 39
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 0,
-                    "coolDownTime": 3,
-                    "describe": "奋千钧之力，挥重刀巨刃。",
-                    "distance": 0,
-                    "name": "秀明尘身",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 0,
-                    "coolDownTime": 3,
-                    "describe": "开疆拓土，百战封爵。",
-                    "distance": 0,
-                    "name": "雪絮金屏",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 5,
-                    "coolDownTime": 0,
-                    "describe": "金屏体态下方可施展，消耗5点气劲，对目标最低造成100-105点(+757)外功伤害，对目标最高造成100-105点(+901)外功伤害，目标气血百分比越低，造成的伤害越高。",
-                    "distance": 20,
-                    "name": "刀啸风吟",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 1.5
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 10,
-                    "coolDownTime": 0,
-                    "describe": "金屏体态下方可施展，消耗10点气劲，每0.5秒对目标最低造成45-50点(+240)外功伤害，最高造成45-50点(+288)外功伤害，目标气血百分比越低，伤害越高，持续2秒。",
-                    "distance": 20,
-                    "name": "醉斩白蛇",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 10,
-                    "coolDownTime": 30,
-                    "describe": "金屏体态下方可施展，消耗10点气劲，在自身前方20尺劈出三道刀气，对触碰到的10个目标最低造成150-155点(+601)外功伤害，最高造成150-155点(+697)外功伤害，目标气血百分比越低，伤害越高，并残留10秒刀气区域，每秒造成55-60点(+385)外功伤害。",
-                    "distance": 20,
-                    "name": "坚壁清野",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 10,
-                    "coolDownTime": 35,
-                    "describe": "金屏体态下方可施展，消耗10点气劲，在自身前方生成一道20尺刀气阻碍，敌方玩家目标无法穿越，持续4秒。",
-                    "distance": 20,
-                    "name": "楚河汉界",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 0,
-                    "coolDownTime": 30,
-                    "describe": "解除自身受控效果，向前沿刀墙奔跑20尺，过程中免疫控制效果且使自身受到的伤害降低60%。",
-                    "distance": 0,
-                    "name": "临渊蹈河",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "免控",
-                            "typeId": 49
-                        },
-                        {
-                            "title": "解控",
-                            "typeId": 41
-                        },
-                        {
-                            "title": "减伤",
-                            "typeId": 31
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 0,
-                    "coolDownTime": 3,
-                    "describe": "万骑辟易，入无人之境。",
-                    "distance": 0,
-                    "name": "松烟竹雾",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 5,
-                    "coolDownTime": 10,
-                    "describe": "竹雾体态下方可施展，共六式，每次施展消耗5点刀魂，对目标最低造成60-70点(+937)外功伤害，最高造成60-70点(+1238)外功伤害。",
-                    "distance": 15,
-                    "name": "擒龙六斩",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "冲刺",
-                            "typeId": 29
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 0,
-                    "coolDownTime": 3,
-                    "describe": "消耗20点狂意值或刀魂值，对目标造成100%的武器伤害外加100-111点(+529)或100-111点(+529)外功伤害；若狂意值和刀魂值都满足20点，将触发双重伤害效果。",
-                    "distance": 8,
-                    "name": "碎江天",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "冲刺",
-                            "typeId": 29
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 10,
-                    "coolDownTime": 3,
-                    "describe": "竹雾体态下方可施展，消耗5点刀魂，用刀抵住目标向后冲刺10尺，并挥刀对目标造成30-35点(+601)外功伤害。",
-                    "distance": 15,
-                    "name": "闹须弥",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "冲刺",
-                            "typeId": 29
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "任意兵器",
-                    "consumption": 0,
-                    "coolDownTime": 40,
-                    "describe": "解除受控效果，向前翻越10尺，使自身3秒内无法被敌人选中且移动速度提高20%，主动施展技能将提前解除该效果，可透支施展两次。",
-                    "distance": 0,
-                    "name": "散流霞",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "解控",
-                            "typeId": 41
-                        },
-                        {
-                            "title": "位移",
-                            "typeId": 44
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "任意兵器",
-                    "consumption": 0,
-                    "coolDownTime": 16,
-                    "describe": "对目标造成35-40点(+300)外功伤害，命中运功的目标则打断其运功且2秒内无法运功。",
-                    "distance": 6,
-                    "name": "雷走风切",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "打断",
-                            "typeId": 30
-                        },
-                        {
-                            "title": "沉默",
-                            "typeId": 52
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "任意兵器",
-                    "consumption": 0,
-                    "coolDownTime": 0,
-                    "describe": "对目标造成35-40点(+517)外功伤害。",
-                    "distance": 6,
-                    "name": "龙骧虎步",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "任意兵器",
-                    "consumption": 0,
-                    "coolDownTime": 20,
-                    "describe": "对目标造成35-40点(+300)外功伤害并击倒2秒。",
-                    "distance": 6,
-                    "name": "踏宴扬旗",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "击倒",
-                            "typeId": 39
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 5,
-                    "coolDownTime": 40,
-                    "describe": "金屏体态下方可施展，消耗5点气劲，解除自身受控状态并后翻8尺，在自身位置残留一道8尺刀气障碍，敌对玩家目标无法穿越，持续4秒，可透支施展两次。",
-                    "distance": 0,
-                    "name": "封渊震煞",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "解控",
-                            "typeId": 41
-                        },
-                        {
-                            "title": "位移",
-                            "typeId": 44
-                        }
-                    ],
-                    "storingForce": 0.0
+                  "title": "爆发",
+                  "typeId": 33
                 }
-            ],
-            "xinFaId": 0
+              ]
+            }
+          ]
+        },
+        {
+          "qiXueGroupId": 107,
+          "qiXueIndex": 3,
+          "qiXues": [
+            {
+              "describe": "“醉斩白蛇”运功期间每跳伤害递增15%。",
+              "name": "化蛟",
+              "qiXueId": 108,
+              "skillTypes": []
+            },
+            {
+              "describe": "“闹须弥”期间每次攻击都会对目标造成伤害。",
+              "name": "霜天",
+              "qiXueId": 109,
+              "skillTypes": []
+            },
+            {
+              "describe": "“割据秦宫”每段命中目标使“项王击鼎”三段触发的持续群体伤害持续时间增加1秒，最多增加3秒。",
+              "name": "连兵",
+              "qiXueId": 110,
+              "skillTypes": []
+            },
+            {
+              "describe": "“雷走风切”命中运功状态的目标会心几率提高20%且使目标无法运功时间延长2秒。",
+              "name": "息声",
+              "qiXueId": 111,
+              "skillTypes": [
+                {
+                  "title": "沉默",
+                  "typeId": 52
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "qiXueGroupId": 112,
+          "qiXueIndex": 4,
+          "qiXues": [
+            {
+              "describe": "“刀啸风吟”施展后使“醉斩白蛇”运功时间增加0.5秒，最多增加1.5秒。",
+              "name": "含风",
+              "qiXueId": 113,
+              "skillTypes": []
+            },
+            {
+              "describe": "“醉斩白蛇”每跳有15%几率使下一个“刀啸风吟”无需运功且附带击退效果，可叠加2层，持续10秒。",
+              "name": "啸吒",
+              "qiXueId": 114,
+              "skillTypes": []
+            },
+            {
+              "describe": "“破釜沉舟”获得一次透支次数，命中锁足、眩晕、倒地目标调息时间减半。",
+              "name": "击瑕",
+              "qiXueId": 115,
+              "skillTypes": []
+            },
+            {
+              "describe": "“碎江天”使目标受到的疗伤成效降低50%，持续12秒。",
+              "name": "吞楚",
+              "qiXueId": 116,
+              "skillTypes": [
+                {
+                  "title": "减疗",
+                  "typeId": 43
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "qiXueGroupId": 117,
+          "qiXueIndex": 5,
+          "qiXues": [
+            {
+              "describe": "“醉斩白蛇”每跳伤害会心使“刀啸风吟”伤害提高10%，可叠加3层，持续12秒。",
+              "name": "砺锋",
+              "qiXueId": 118,
+              "skillTypes": []
+            },
+            {
+              "describe": "“醉斩白蛇”命中目标并使目标无法施展轻功、移动速度降低20%，持续2秒。",
+              "name": "行泽",
+              "qiXueId": 119,
+              "skillTypes": [
+                {
+                  "title": "封轻功",
+                  "typeId": 45
+                }
+              ]
+            },
+            {
+              "describe": "“项王击鼎”每段会心都使三段触发的持续群体伤害持续时间增加0.5秒，最多增加1.5秒。",
+              "name": "逐鹿",
+              "qiXueId": 120,
+              "skillTypes": []
+            },
+            {
+              "describe": "“碎江天”施展后强制目标攻击自身并使自身闪避几率提高100%，持续1秒。",
+              "name": "流影",
+              "qiXueId": 121,
+              "skillTypes": [
+                {
+                  "title": "闪避",
+                  "typeId": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "qiXueGroupId": 122,
+          "qiXueIndex": 6,
+          "qiXues": [
+            {
+              "describe": "“醉斩白蛇”施展后立刻对目标造成伤害，但会触发6秒调息时间。",
+              "name": "斩纷",
+              "qiXueId": 123,
+              "skillTypes": []
+            },
+            {
+              "describe": "“卸元箭”调息时间降低3秒，神机值消耗降低5点。",
+              "name": "百战",
+              "qiXueId": 124,
+              "skillTypes": []
+            },
+            {
+              "describe": "“楚河汉界”刀气障碍存留时间增加2秒。",
+              "name": "分疆",
+              "qiXueId": 125,
+              "skillTypes": []
+            },
+            {
+              "describe": "“闹须弥”调息时间增加10秒，施展后触发二段效果，横握双刀抵住目标并将目标推出10尺。",
+              "name": "还璧",
+              "qiXueId": 126,
+              "skillTypes": []
+            }
+          ]
+        },
+        {
+          "qiXueGroupId": 127,
+          "qiXueIndex": 7,
+          "qiXues": [
+            {
+              "describe": "体质和力道提高10%。",
+              "name": "星火",
+              "qiXueId": 128,
+              "skillTypes": []
+            },
+            {
+              "describe": "“雪絮金屏”体态下攻击招式施展距离提高5尺，运功不会被打退。",
+              "name": "腾雾",
+              "qiXueId": 129,
+              "skillTypes": []
+            },
+            {
+              "describe": "“松烟竹雾”体态下移速效果额外增加10%，降低被命中几率效果额外增加5%。",
+              "name": "雾晓",
+              "qiXueId": 130,
+              "skillTypes": []
+            },
+            {
+              "describe": "“秀明尘身”体态下消耗透支次数施展技能积累的透支时间减半。",
+              "name": "王印",
+              "qiXueId": 131,
+              "skillTypes": []
+            }
+          ]
+        },
+        {
+          "qiXueGroupId": 132,
+          "qiXueIndex": 8,
+          "qiXues": [
+            {
+              "describe": "命中气血值低于40%的目标，自身会心几率提高10%，会心效果提高10%，持续6秒。",
+              "name": "楚歌",
+              "qiXueId": 133,
+              "skillTypes": []
+            },
+            {
+              "describe": "“临渊蹈河”劈出刀气会生成障碍效果。",
+              "name": "辟海",
+              "qiXueId": 134,
+              "skillTypes": [
+                {
+                  "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[1].skillTypes[0]"
+                }
+              ]
+            },
+            {
+              "describe": "“西楚悲歌”施展后解除自身受控状态并使范围内小队成员受到的伤害降低30%",
+              "name": "易水",
+              "qiXueId": 135,
+              "skillTypes": [
+                {
+                  "title": "减伤",
+                  "typeId": 31
+                }
+              ]
+            },
+            {
+              "describe": "“散流霞”效果期间施展技能不会解除无法选中状态且持续时间增加2秒。",
+              "name": "秋瑟",
+              "qiXueId": 136,
+              "skillTypes": []
+            }
+          ]
+        },
+        {
+          "qiXueGroupId": 137,
+          "qiXueIndex": 9,
+          "qiXues": [
+            {
+              "describe": "“闹须弥”流血效果伤害提高30%且自身伤害招式命中目标后有30%的几率刷新流血效果持续时间。",
+              "name": "绝期",
+              "qiXueId": 138,
+              "skillTypes": []
+            },
+            {
+              "describe": "“割据秦宫”每段成功控制目标，使自身下一次技能伤害分别提高10%、20%、30%。",
+              "name": "重激",
+              "qiXueId": 139,
+              "skillTypes": [
+                {
+                  "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[1].skillTypes[0]"
+                }
+              ]
+            },
+            {
+              "describe": "“封渊震煞”施展后使下一个“刀啸风吟”无需吟唱且附带6尺击退效果，持续10秒。",
+              "name": "曳鼎",
+              "qiXueId": 140,
+              "skillTypes": []
+            },
+            {
+              "describe": "“散流霞”施展后立刻移除自身所有负面不利效果且效果期间每秒回复2%气血最大值。",
+              "name": "空痕",
+              "qiXueId": 141,
+              "skillTypes": [
+                {
+                  "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[3].skillTypes[0]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "qiXueGroupId": 142,
+          "qiXueIndex": 10,
+          "qiXues": [
+            {
+              "describe": "受到伤害导致自身气血值低于1%，则回复自身10%气血且当前体态下每点能量额外回复自身0.5%气血最大值，最多每3分钟触发一次。",
+              "name": "冷川",
+              "qiXueId": 143,
+              "skillTypes": []
+            },
+            {
+              "describe": "“雪絮金屏”体态下每次被技能攻击获得2点能量。",
+              "name": "裁骨",
+              "qiXueId": 144,
+              "skillTypes": [
+                {
+                  "title": "眩晕",
+                  "typeId": 38
+                }
+              ]
+            },
+            {
+              "describe": "“松烟竹雾”体态下不再自动消耗能量，每秒回复2点能量，受到攻击4秒内不再触发能量回复效果。",
+              "name": "重烟",
+              "qiXueId": 145,
+              "skillTypes": []
+            },
+            {
+              "describe": "“松烟竹雾”体态下受到的锁足、定身、眩晕控制效果持续时间降低50%。",
+              "name": "势孤",
+              "qiXueId": 146,
+              "skillTypes": []
+            }
+          ]
+        },
+        {
+          "qiXueGroupId": 147,
+          "qiXueIndex": 11,
+          "qiXues": [
+            {
+              "describe": "“雪絮金屏”体态下施展伤害招式命中处于自身“坚壁清野”区域内的敌对目标，技能会心几率提高25%。",
+              "name": "心镜",
+              "qiXueId": 148,
+              "skillTypes": []
+            },
+            {
+              "describe": "“坚壁清野”附带4秒锁足效果且残留刀气区域持续伤害提高15%。",
+              "name": "冻土",
+              "qiXueId": 149,
+              "skillTypes": [
+                {
+                  "title": "锁足",
+                  "typeId": 36
+                }
+              ]
+            },
+            {
+              "describe": "受到任何伤害导致自身气血低于50%，该次伤害降低25%。",
+              "name": "寒衣",
+              "qiXueId": 150,
+              "skillTypes": [
+                {
+                  "$ref": "$.xinFas[0].qiXueGroups[8].qiXues[2].skillTypes[0]"
+                }
+              ]
+            },
+            {
+              "describe": "金屏体态下方可施展，消耗5点气劲，解除自身受控状态并后翻8尺，在自身位置残留一道8尺刀气障碍，敌对玩家目标无法穿越，持续4秒，可透支施展两次。",
+              "name": "封渊震煞",
+              "qiXueId": 151,
+              "skillTypes": [
+                {
+                  "title": "解控",
+                  "typeId": 41
+                }
+              ]
+            }
+          ]
         }
-    ]
+      ],
+      "skills": [
+        {
+          "arm": "傲雪刀",
+          "consumption": 0,
+          "coolDownTime": 50,
+          "describe": "对半径6尺范围内最多5名敌对目标造成100%武器伤害外加110-130点(+1226)外功伤害并形成刀气障碍，持续4秒，效果期间自身免疫控制且降低招式威胁值。",
+          "distance": 8,
+          "name": "西楚悲歌",
+          "secretBook": "",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 5,
+          "coolDownTime": 0,
+          "describe": "尘身体态下方可施展，三段攻击，每段消耗5点狂意，对前方6尺范围内最多5个敌对目标造成100%武器伤害外加35-40点(+709)外功伤害，三段攻击后触发持续2秒群体伤害，每0.5秒对半径8尺范围内最多10个敌对目标造成100%武器伤害外加50-55点(+385)外功伤害。",
+          "distance": 6,
+          "name": "项王击鼎",
+          "secretBook": "",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 10,
+          "coolDownTime": 18,
+          "describe": "消耗20000修为，运功结束后对周围敌人造成243000阳性内功伤害，但会使自身重伤。",
+          "distance": 6,
+          "name": "破釜沉舟",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 10,
+          "coolDownTime": 18,
+          "describe": "尘身体态下方可施展，消耗10点狂意，每0.5秒对前方随机方向10尺内最多5个敌对目标造成矩形范围攻击，造成100%武器伤害外加100-110点(+841)外功伤害。",
+          "distance": 10,
+          "name": "上将军印",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 10,
+          "coolDownTime": 18,
+          "describe": "尘身体态下方可施展，消耗10点狂意，可透支两次，每段触发不同效果；\n一段：对前方6尺范围内最多5个敌对目标造成100%武器伤害外加35-40点(+529)外功伤害并锁足3秒。\n二段：对前方6尺范围内最多5个敌对目标造成100%武器伤害外加35-40点(+553)外功伤害并眩晕3秒。\n三段：对前方6尺范围内最多5个敌对目标造成100%武器伤害外加35-40点(+565)外功伤害并击倒3秒。",
+          "distance": 6,
+          "name": "割据秦宫",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "锁足",
+              "typeId": 36
+            },
+            {
+              "title": "眩晕",
+              "typeId": 38
+            },
+            {
+              "title": "击倒",
+              "typeId": 39
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 0,
+          "coolDownTime": 3,
+          "describe": "奋千钧之力，挥重刀巨刃。",
+          "distance": 0,
+          "name": "秀明尘身",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 0,
+          "coolDownTime": 3,
+          "describe": "开疆拓土，百战封爵。",
+          "distance": 0,
+          "name": "雪絮金屏",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 5,
+          "coolDownTime": 0,
+          "describe": "金屏体态下方可施展，消耗5点气劲，对目标最低造成100-105点(+757)外功伤害，对目标最高造成100-105点(+901)外功伤害，目标气血百分比越低，造成的伤害越高。",
+          "distance": 20,
+          "name": "刀啸风吟",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 1.5
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 10,
+          "coolDownTime": 0,
+          "describe": "金屏体态下方可施展，消耗10点气劲，每0.5秒对目标最低造成45-50点(+240)外功伤害，最高造成45-50点(+288)外功伤害，目标气血百分比越低，伤害越高，持续2秒。",
+          "distance": 20,
+          "name": "醉斩白蛇",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 10,
+          "coolDownTime": 30,
+          "describe": "金屏体态下方可施展，消耗10点气劲，在自身前方20尺劈出三道刀气，对触碰到的10个目标最低造成150-155点(+601)外功伤害，最高造成150-155点(+697)外功伤害，目标气血百分比越低，伤害越高，并残留10秒刀气区域，每秒造成55-60点(+385)外功伤害。",
+          "distance": 20,
+          "name": "坚壁清野",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 10,
+          "coolDownTime": 35,
+          "describe": "金屏体态下方可施展，消耗10点气劲，在自身前方生成一道20尺刀气阻碍，敌方玩家目标无法穿越，持续4秒。",
+          "distance": 20,
+          "name": "楚河汉界",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 0,
+          "coolDownTime": 30,
+          "describe": "解除自身受控效果，向前沿刀墙奔跑20尺，过程中免疫控制效果且使自身受到的伤害降低60%。",
+          "distance": 0,
+          "name": "临渊蹈河",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "免控",
+              "typeId": 49
+            },
+            {
+              "title": "解控",
+              "typeId": 41
+            },
+            {
+              "title": "减伤",
+              "typeId": 31
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 0,
+          "coolDownTime": 3,
+          "describe": "万骑辟易，入无人之境。",
+          "distance": 0,
+          "name": "松烟竹雾",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 5,
+          "coolDownTime": 10,
+          "describe": "竹雾体态下方可施展，共六式，每次施展消耗5点刀魂，对目标最低造成60-70点(+937)外功伤害，最高造成60-70点(+1238)外功伤害。",
+          "distance": 15,
+          "name": "擒龙六斩",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "冲刺",
+              "typeId": 29
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 0,
+          "coolDownTime": 3,
+          "describe": "消耗20点狂意值或刀魂值，对目标造成100%的武器伤害外加100-111点(+529)或100-111点(+529)外功伤害；若狂意值和刀魂值都满足20点，将触发双重伤害效果。",
+          "distance": 8,
+          "name": "碎江天",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "冲刺",
+              "typeId": 29
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 10,
+          "coolDownTime": 3,
+          "describe": "竹雾体态下方可施展，消耗5点刀魂，用刀抵住目标向后冲刺10尺，并挥刀对目标造成30-35点(+601)外功伤害。",
+          "distance": 15,
+          "name": "闹须弥",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "冲刺",
+              "typeId": 29
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "任意兵器",
+          "consumption": 0,
+          "coolDownTime": 40,
+          "describe": "解除受控效果，向前翻越10尺，使自身3秒内无法被敌人选中且移动速度提高20%，主动施展技能将提前解除该效果，可透支施展两次。",
+          "distance": 0,
+          "name": "散流霞",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "解控",
+              "typeId": 41
+            },
+            {
+              "title": "位移",
+              "typeId": 44
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "任意兵器",
+          "consumption": 0,
+          "coolDownTime": 16,
+          "describe": "对目标造成35-40点(+300)外功伤害，命中运功的目标则打断其运功且2秒内无法运功。",
+          "distance": 6,
+          "name": "雷走风切",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "打断",
+              "typeId": 30
+            },
+            {
+              "title": "沉默",
+              "typeId": 52
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "任意兵器",
+          "consumption": 0,
+          "coolDownTime": 0,
+          "describe": "对目标造成35-40点(+517)外功伤害。",
+          "distance": 6,
+          "name": "龙骧虎步",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "任意兵器",
+          "consumption": 0,
+          "coolDownTime": 20,
+          "describe": "对目标造成35-40点(+300)外功伤害并击倒2秒。",
+          "distance": 6,
+          "name": "踏宴扬旗",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "击倒",
+              "typeId": 39
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "傲雪刀",
+          "consumption": 5,
+          "coolDownTime": 40,
+          "describe": "金屏体态下方可施展，消耗5点气劲，解除自身受控状态并后翻8尺，在自身位置残留一道8尺刀气障碍，敌对玩家目标无法穿越，持续4秒，可透支施展两次。",
+          "distance": 0,
+          "name": "封渊震煞",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "解控",
+              "typeId": 41
+            },
+            {
+              "title": "位移",
+              "typeId": 44
+            }
+          ],
+          "storingForce": 0.0
+        }
+      ],
+      "xinFaId": 0
+    }
+  ]
 }

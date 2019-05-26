@@ -17,21 +17,19 @@ public class QiXue {
     private SkillType[] skillTypes;
     private Skill skill = PASSIVE;
 
-    @OrderColumn
-    @OneToMany(targetEntity = SkillType.class)
-    @Cascade(CascadeType.MERGE)
-    public SkillType[] getSkillTypes() {
-        return skillTypes;
+    public static Skill getPASSIVE() {
+        return PASSIVE;
     }
 
     public void setSkillTypes(SkillType[] skillTypes) {
         this.skillTypes = skillTypes;
     }
 
-    @Id
-    @GeneratedValue
-    public int getQiXueId() {
-        return qiXueId;
+    @OrderColumn
+    @OneToMany(targetEntity = SkillType.class)
+    @Cascade(CascadeType.MERGE)
+    public SkillType[] getSkillTypes() {
+        return skillTypes;
     }
 
     public void setQiXueId(int qiXueId) {
@@ -54,8 +52,10 @@ public class QiXue {
         this.describe = describe;
     }
 
-    public static Skill getPASSIVE() {
-        return PASSIVE;
+    @Id
+    @GeneratedValue
+    public int getQiXueId() {
+        return qiXueId;
     }
 
     @OrderColumn

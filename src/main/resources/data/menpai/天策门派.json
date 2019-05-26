@@ -1,153 +1,153 @@
 {
-    "describe": "长河落日东都城,铁马戍边将军坟。尽诸宵小天策义,长枪独守大唐魂。",
-    "menPaiId": 0,
-    "name": "天策",
-    "xinFas": [
+  "describe": "长河落日东都城,铁马戍边将军坟。尽诸宵小天策义,长枪独守大唐魂。",
+  "menPaiId": 0,
+  "name": "天策",
+  "xinFas": [
+    {
+      "describe": "外功近战，独有的马上战斗，攻防转换之余进退自如。",
+      "name": "傲血战意",
+      "qiXueGroups": [
+      ],
+      "skills": [
         {
-            "describe": "外功近战，独有的马上战斗，攻防转换之余进退自如。",
-            "name": "傲血战意",
-            "qiXueGroups": [
-            ],
-            "skills": [
-                {
-                    "arm": "长兵",
-                    "consumption": 554,
-                    "coolDownTime": 8,
-                    "describe": "",
-                    "distance": 4,
-                    "name": "龙吟",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 554,
-                    "coolDownTime": 2,
-                    "describe": "",
-                    "distance": 4,
-                    "name": "穿云",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 929,
-                    "coolDownTime": 0,
-                    "describe": "",
-                    "distance": 4,
-                    "name": "龙牙",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 956,
-                    "coolDownTime": 20,
-                    "describe": "",
-                    "distance": 4,
-                    "name": "沧月",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 265,
-                    "coolDownTime": 30,
-                    "distance": 25,
-                    "name": "乘龙箭",
-                    "storingForce": 0.5
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 1809,
-                    "coolDownTime": 1,
-                    "distance": 0,
-                    "name": "战八方",
-                    "storingForce": 0.5
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 554,
-                    "coolDownTime": 25,
-                    "distance": 25,
-                    "name": "断魂刺",
-                    "storingForce": 0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 39,
-                    "coolDownTime": 40,
-                    "distance": 0,
-                    "name": "任驰骋",
-                    "storingForce": 1.5
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 454,
-                    "coolDownTime": 15,
-                    "distance": 4,
-                    "name": "破坚阵",
-                    "storingForce": 0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 654,
-                    "coolDownTime": 18,
-                    "distance": 25,
-                    "name": "突",
-                    "storingForce": 0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 1208,
-                    "coolDownTime": 20,
-                    "distance": 0,
-                    "name": "御",
-                    "storingForce": 0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 302,
-                    "coolDownTime": 25,
-                    "distance": 0,
-                    "name": "疾",
-                    "storingForce": 0
-                }
-            ],
-            "xinFaId": 0
+          "arm": "长兵",
+          "consumption": 554,
+          "coolDownTime": 8,
+          "describe": "",
+          "distance": 4,
+          "name": "龙吟",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0
         },
         {
-            "describe": "外功近战，外功防御位列各大门派之首。",
-            "name": "铁牢律",
-            "qiXueGroups": [
-            ],
-            "skills": [
-                {
-                    "arm": "傲雪刀",
-                    "consumption": 5,
-                    "coolDownTime": 40,
-                    "describe": "金屏体态下方可施展，消耗5点气劲，解除自身受控状态并后翻8尺，在自身位置残留一道8尺刀气障碍，敌对玩家目标无法穿越，持续4秒，可透支施展两次。",
-                    "distance": 0,
-                    "name": "封渊震煞",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "解控",
-                            "typeId": 41
-                        },
-                        {
-                            "title": "位移",
-                            "typeId": 44
-                        }
-                    ],
-                    "storingForce": 0.0
-                }
-            ],
-            "xinFaId": 0
+          "arm": "长兵",
+          "consumption": 554,
+          "coolDownTime": 2,
+          "describe": "",
+          "distance": 4,
+          "name": "穿云",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 929,
+          "coolDownTime": 0,
+          "describe": "",
+          "distance": 4,
+          "name": "龙牙",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 956,
+          "coolDownTime": 20,
+          "describe": "",
+          "distance": 4,
+          "name": "沧月",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 265,
+          "coolDownTime": 30,
+          "distance": 25,
+          "name": "乘龙箭",
+          "storingForce": 0.5
+        },
+        {
+          "arm": "长兵",
+          "consumption": 1809,
+          "coolDownTime": 1,
+          "distance": 0,
+          "name": "战八方",
+          "storingForce": 0.5
+        },
+        {
+          "arm": "长兵",
+          "consumption": 554,
+          "coolDownTime": 25,
+          "distance": 25,
+          "name": "断魂刺",
+          "storingForce": 0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 39,
+          "coolDownTime": 40,
+          "distance": 0,
+          "name": "任驰骋",
+          "storingForce": 1.5
+        },
+        {
+          "arm": "长兵",
+          "consumption": 454,
+          "coolDownTime": 15,
+          "distance": 4,
+          "name": "破坚阵",
+          "storingForce": 0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 654,
+          "coolDownTime": 18,
+          "distance": 25,
+          "name": "突",
+          "storingForce": 0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 1208,
+          "coolDownTime": 20,
+          "distance": 0,
+          "name": "御",
+          "storingForce": 0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 302,
+          "coolDownTime": 25,
+          "distance": 0,
+          "name": "疾",
+          "storingForce": 0
         }
-    ]
+      ],
+      "xinFaId": 0
+    },
+    {
+      "describe": "外功近战，外功防御位列各大门派之首。",
+      "name": "铁牢律",
+      "qiXueGroups": [
+      ],
+      "skills": [
+        {
+          "arm": "傲雪刀",
+          "consumption": 5,
+          "coolDownTime": 40,
+          "describe": "金屏体态下方可施展，消耗5点气劲，解除自身受控状态并后翻8尺，在自身位置残留一道8尺刀气障碍，敌对玩家目标无法穿越，持续4秒，可透支施展两次。",
+          "distance": 0,
+          "name": "封渊震煞",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "解控",
+              "typeId": 41
+            },
+            {
+              "title": "位移",
+              "typeId": 44
+            }
+          ],
+          "storingForce": 0.0
+        }
+      ],
+      "xinFaId": 0
+    }
+  ]
 }
