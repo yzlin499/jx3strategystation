@@ -7,6 +7,5 @@ import java.net.URLConnection;
  */
 @FunctionalInterface
 public interface SetConnection {
-
     void setConnection(URLConnection conn);
 }

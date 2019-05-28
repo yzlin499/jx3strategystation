@@ -31,10 +31,7 @@
 <script>
     function updatePassword() {
         $.post("/v1/api/updatePassword", {
-            "oldPassword": $("#oldPassword").val(),
-            "newPassword": $("#newPassword").val()
-        }, function (data, status) {
-            window.location.reload();
-        });
+            "oldPassword":
+        })
     }
 </script>

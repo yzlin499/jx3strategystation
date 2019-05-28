@@ -13,7 +13,7 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <p><b>剑网三攻略网会员登录</b></p>
+                <p>剑网三攻略网会员登录</p>
             </div>
             <div class="modal-body">
                 <div class="form-group">

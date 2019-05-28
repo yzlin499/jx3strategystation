@@ -15,10 +15,10 @@
 </head>
 <body>
 <div class="main">
-    <div class="nav ">
+    <div class="nav">
         <p>剑网三攻略网欢迎你</p>
         <ul>
-            <li><a href=" ">休闲社区</a></li>
+            <li><a href="">休闲社区</a></li>
             <li><a href="">交易社区</a></li>
             <li><a href="">攻略社区</a></li>
             <li><a href="">公告社区</a></li>
@@ -47,16 +47,7 @@
         </form>
     </div>
     <div class="bottom">
-        <div class="container">
-            <div class="footer-navbar">
-                <a href="#">GitHub仓库</a>
-                <a href="#">关于我们</a>
-            </div>
-            <p class="footer-content">
-                CopyRight © 2019 jx3strategystation<br>
-                All rights reserved. jx3strategystation 版权所有
-            </p>
-        </div>
+        <jsp:include page="../templates/footer.jsp"/>
     </div>
 </div>
 <script>
