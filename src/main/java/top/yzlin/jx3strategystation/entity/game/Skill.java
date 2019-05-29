@@ -3,6 +3,7 @@ package top.yzlin.jx3strategystation.entity.game;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.Arrays;
 
 @Entity
 @Table(name = "skill")
@@ -62,7 +63,7 @@ public class Skill {
 
     @OrderColumn
     @OneToMany(targetEntity = SkillType.class)
-    @Cascade(org.hibernate.annotations.CascadeType.SAVE_UPDATE)
+    @Cascade(org.hibernate.annotations.CascadeType.MERGE)
     public SkillType[] getSkillTypes() {
         return skillTypes;
     }
@@ -109,5 +110,22 @@ public class Skill {
 
     public void setDescribe(String describe) {
         this.describe = describe;
+    }
+
+
+    @Override
+    public String toString() {
+        return "Skill{" +
+                "skillId=" + skillId +
+                ", name='" + name + '\'' +
+                ", distance=" + distance +
+                ", arm='" + arm + '\'' +
+                ", skillTypes=" + Arrays.toString(skillTypes) +
+                ", coolDownTime=" + coolDownTime +
+                ", storingForce=" + storingForce +
+                ", consumption=" + consumption +
+                ", secretBook='" + secretBook + '\'' +
+                ", describe='" + describe + '\'' +
+                '}';
     }
 }

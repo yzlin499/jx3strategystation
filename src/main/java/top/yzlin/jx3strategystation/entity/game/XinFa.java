@@ -3,6 +3,7 @@ package top.yzlin.jx3strategystation.entity.game;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
+import java.util.Arrays;
 
 @Entity
 @Table(name = "xinFa")
@@ -59,5 +60,16 @@ public class XinFa{
 
     public void setQiXueGroups(QiXueGroup[] qiXueGroups) {
         this.qiXueGroups = qiXueGroups;
+    }
+
+    @Override
+    public String toString() {
+        return "XinFa{" +
+                "xinFaId=" + xinFaId +
+                ", name='" + name + '\'' +
+                ", describe='" + describe + '\'' +
+                ", skills=" + Arrays.toString(skills) +
+                ", qiXueGroups=" + Arrays.toString(qiXueGroups) +
+                '}';
     }
 }

@@ -11,25 +11,32 @@
     <title>休闲区</title>
     <jsp:include page="../templates/base-lib.jsp"/>
     <style>
-        .bimg{
+        .bimg {
             background-image: url('/static/img/community/234.jpg');
             background-size: 100% 100%;
-            background-repeat:no-repeat;
-            background-attachment:fixed
+            background-repeat: no-repeat;
+            background-attachment: fixed
         }
-        .bg1{
+
+        .bg1 {
             background: black;
-            filter: alpha(opacity=50);moz-opacity:0.5;opacity: 0.7;);
+            filter: alpha(opacity=50);
+            moz-opacity: 0.5;
+            opacity: 0.7;
+        );
         }
-        .panel panel-primary p{
-             ; 
-            word-wrap:break-word; 
-            word-break:break-all;
+
+        .panel panel-primary p {;
+            word-wrap: break-word;
+            word-break: break-all;
             overflow: hidden;
-            text-overflow:ellipsis; 
-            white-space:nowrap;
+            text-overflow: ellipsis;
+            white-space: nowrap;
             background-color: white;
-            filter: alpha(opacity=50);moz-opacity:0.5;opacity: 0.7;);
+            filter: alpha(opacity=50);
+            moz-opacity: 0.5;
+            opacity: 0.7;
+        );
         }
     </style>
 </head>
@@ -44,19 +51,10 @@
     <div class="row">
         <div class="col-sm-3">
             <div class="panel panel-primary">
-                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%" >
+                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%">
                 <h3 class="panel-heading">标题</h3>
-                <p class="panel-body" style=" word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
-                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
-                </p>
-                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a> </p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-primary">
-                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%" >
-                <h3 class="panel-heading">标题</h3>
-                <p class="panel-body" style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                <p class="panel-body"
+                   style=" word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
                     引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
                 </p>
                 <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
@@ -64,9 +62,10 @@
         </div>
         <div class="col-sm-3">
             <div class="panel panel-primary">
-                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%" >
+                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%">
                 <h3 class="panel-heading">标题</h3>
-                <p class="panel-body" style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                <p class="panel-body"
+                   style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
                     引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
                 </p>
                 <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
@@ -74,9 +73,10 @@
         </div>
         <div class="col-sm-3">
             <div class="panel panel-primary">
-                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%" >
+                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%">
                 <h3 class="panel-heading">标题</h3>
-                <p class="panel-body" style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                <p class="panel-body"
+                   style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
                     引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
                 </p>
                 <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
@@ -84,19 +84,10 @@
         </div>
         <div class="col-sm-3">
             <div class="panel panel-primary">
-                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%" >
+                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%">
                 <h3 class="panel-heading">标题</h3>
-                <p class="panel-body" style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
-                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
-                </p>
-                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a> </p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-primary">
-                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%" >
-                <h3 class="panel-heading">标题</h3>
-                <p class="panel-body" style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                <p class="panel-body"
+                   style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
                     引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
                 </p>
                 <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
@@ -104,9 +95,10 @@
         </div>
         <div class="col-sm-3">
             <div class="panel panel-primary">
-                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%" >
+                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%">
                 <h3 class="panel-heading">标题</h3>
-                <p class="panel-body" style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                <p class="panel-body"
+                   style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
                     引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
                 </p>
                 <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
@@ -114,9 +106,10 @@
         </div>
         <div class="col-sm-3">
             <div class="panel panel-primary">
-                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%" >
+                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%">
                 <h3 class="panel-heading">标题</h3>
-                <p class="panel-body" style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                <p class="panel-body"
+                   style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
                     引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
                 </p>
                 <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
@@ -124,19 +117,10 @@
         </div>
         <div class="col-sm-3">
             <div class="panel panel-primary">
-                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%" >
+                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%">
                 <h3 class="panel-heading">标题</h3>
-                <p class="panel-body" style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
-                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
-                </p>
-                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a> </p>
-            </div>
-        </div>
-        <div class="col-sm-3">
-            <div class="panel panel-primary">
-                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%" >
-                <h3 class="panel-heading">标题</h3>
-                <p class="panel-body" style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                <p class="panel-body"
+                   style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
                     引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
                 </p>
                 <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
@@ -144,9 +128,10 @@
         </div>
         <div class="col-sm-3">
             <div class="panel panel-primary">
-                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%" >
+                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%">
                 <h3 class="panel-heading">标题</h3>
-                <p class="panel-body" style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                <p class="panel-body"
+                   style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
                     引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
                 </p>
                 <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
@@ -154,9 +139,43 @@
         </div>
         <div class="col-sm-3">
             <div class="panel panel-primary">
-                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%" >
+                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%">
                 <h3 class="panel-heading">标题</h3>
-                <p class="panel-body" style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                <p class="panel-body"
+                   style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%">
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body"
+                   style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\111.jpg" alt="..." style="width: 100%; height: 55%">
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body"
+                   style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
+                    引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
+                </p>
+                <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <div class="panel panel-primary">
+                <img src="\static\img\community\222.jpg" alt="..." style="width: 100%; height: 55%">
+                <h3 class="panel-heading">标题</h3>
+                <p class="panel-body"
+                   style="  word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
                     引入正文所有内容，反正就显示一点然后省略~~~~~~~~~
                 </p>
                 <p class="panel-footer"><a href="#" class="btn btn-primary" role="button">进入</a></p>

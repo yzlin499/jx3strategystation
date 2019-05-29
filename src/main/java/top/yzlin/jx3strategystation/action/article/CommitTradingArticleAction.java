@@ -22,7 +22,7 @@ public class CommitTradingArticleAction extends BaseCommitArticleAction<TradingA
     }
 
     public String getUrl() {
-        return "/" + ((User) session.get("user")).getUserId() + "/article/" + articleId;
+        return "/" + ((User) session.get("user")).getUserName() + "/article/" + articleId;
     }
 
     @Override
