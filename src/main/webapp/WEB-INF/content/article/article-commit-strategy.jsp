@@ -27,7 +27,7 @@
 
 <div class="container">
     <div class="page-header">
-        <h1>交易社区
+        <h1>攻略社区
             <small>最近要吃土</small>
         </h1>
     </div>
@@ -48,7 +48,7 @@
     <div class="form-group">
         <div id="content"></div>
     </div>
-    <button onclick="commit()" class="btn btn-success">Submit</button>
+    <button onclick="commitStrategyArticle()" class="btn btn-success">提交</button>
 </div>
 
 <script src="<c:url value="/static/js/ckeditor.js"/>"></script>

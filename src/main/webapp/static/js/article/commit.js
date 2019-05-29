@@ -10,6 +10,22 @@ function commitTradingArticle() {
     });
 }
 
+
+function commitStrategyArticle() {
+    commit("/v1/api/commit/tradingArticle", {
+        'article.title': $('#title').val(),
+        'article.content': myEditor.getData(),
+        'article.instance': $("#instance").val()
+    });
+}
+
+function commitCommonArticle() {
+    commit("/v1/api/commit/commonArticle", {
+        'article.title': $('#title').val(),
+        'article.content': myEditor.getData()
+    });
+}
+
 function commitComment(articleId) {
     $.post("/v1/api/commit/comment", {
             'comment.article.articleId': articleId,

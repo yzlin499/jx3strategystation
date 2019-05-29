@@ -48,6 +48,17 @@
                 <param name="excludeProperties">article</param>
             </result>
         </action>
+        <action name="strategyArticle" class="commitStrategyArticleAction">
+            <result type="json">
+                <param name="excludeProperties">article</param>
+            </result>
+        </action>
+        <action name="commonArticle" class="commitCommonArticleAction">
+            <result type="json">
+                <param name="excludeProperties">article</param>
+            </result>
+        </action>
+
         <action name="comment" class="commitCommentAction">
             <result type="json">
                 <param name="excludeProperties">comment</param>
