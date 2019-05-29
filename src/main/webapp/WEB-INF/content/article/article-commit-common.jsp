@@ -15,6 +15,7 @@
         .page-header {
             border-bottom: 1px solid #d7d7d7;
         }
+
         .ck-content {
             min-height: 700px;
             max-height: 700px;

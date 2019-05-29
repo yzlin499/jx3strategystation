@@ -24,10 +24,10 @@
 <div class="container" style="margin-top: 50px">
     <div class="row">
         <c:forEach items="${[
-            ['info','攻略区','king'],
-            ['warning','交易区','yen'],
-            ['danger','公告区','bullhorn'],
-            ['success','休闲区','leaf']
+            ['info','攻略区','king','/community/strategy'],
+            ['warning','交易区','yen','/community/transaction'],
+            ['danger','公告区','bullhorn','/community/notice'],
+            ['success','休闲区','leaf','/community/entertainment']
         ]}" var="i">
             <div class="col-xs-3">
                 <div class="panel panel-${i[0]}">
@@ -35,8 +35,8 @@
                         <h1 class="panel-title" style="font-size: 2em">${i[1]}</h1>
                     </div>
                     <div class="panel-body text-center">
-                        <span class="glyphicon glyphicon-${i[2]} text-${i[0]}" style="font-size: 8em"
-                              aria-hidden="true"></span>
+                        <a href="${i[3]}" class="glyphicon glyphicon-${i[2]} text-${i[0]}" style="font-size: 8em"
+                           aria-hidden="true"></a>
                     </div>
                 </div>
             </div>

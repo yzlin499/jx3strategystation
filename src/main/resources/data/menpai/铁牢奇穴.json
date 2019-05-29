@@ -1,0 +1,346 @@
+[
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 0,
+    "qiXues": [
+      {
+        "describe": "“穿云”伤害提高10%。",
+        "name": "封侯",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "内功防御等级提高3.3%，外功防御等级提高3.3%。",
+        "name": "勤王",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "对敌人造成20-25点(+75)外功伤害，并强迫其对你发起攻击。",
+        "name": "定军",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 1,
+    "qiXues": [
+      {
+        "describe": "“龙牙”命中目标后，使目标造成的伤害降低10%，持续6秒。",
+        "name": "龙痕",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "被伤害招式命中有70%几率使自身受到的伤害降低1%，可叠加5层，持续12秒。",
+        "name": "坚韧",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "对目标及目标周围8尺内最多10个敌对目标造成81-89点(+192)外功伤害，使目标移动速度降低65%，周围目标移动速度降低40%，持续12秒。",
+        "name": "穿",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 2,
+    "qiXues": [
+      {
+        "name": "骁勇",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "需要30%内力方可施展。终结技，消耗所有内力，使自身受到的伤害降低60%，持续6秒，并击飞自身半径6尺范围内最多5个目标，造成176-194点(+1442)外功伤害。施展过程中不受控制效果的影响。",
+        "name": "龙啸",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“御”能额外抵御1次伤害。被攻击失去“御”效果时，使自身气血最大值提高3%，持续10秒，每被攻击失去1层“御”，该效果的持续时间累加10秒，只能在战斗状态下维持。",
+        "name": "盘蛇",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "天策府秘传武技，在自己的外功伤害招式命中敌人后，有50%的几率使自身气血与内力在1秒后恢复5%(782点气血)(1153点内力)，持续20秒。",
+        "name": "徐如林",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 3,
+    "qiXues": [
+      {
+        "describe": "每点力道额外增加0.25点外功攻击。该效果为固定效果，不受其他效果影响。",
+        "name": "击水",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“定军”调息时间降低1秒，招式有效距离提高2尺，伤害提高50%。",
+        "name": "仗剑",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "基础气血和内力上限提高10%。",
+        "name": "望西京",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "对吟唱状态的目标造成70-75点(+673)外功伤害，并使其晕眩5秒。",
+        "name": "崩",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 4,
+    "qiXues": [
+      {
+        "describe": "“战八方”可以在马下施展，伤害提高10%。",
+        "name": "出云",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“破风”伤害提高15%，可使目标6尺范围内额外3个目标受到“破风”效果影响。",
+        "name": "劲风",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "招架等级提高5%，拆招值提高10%，成功招架后有15%几率重置“定军”调息时间。",
+        "name": "留侯",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "name": "千驰",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 5,
+    "qiXues": [
+      {
+        "describe": "“龙吟”附带额外威胁值。",
+        "name": "狮心",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "被会心攻击后使自身御劲率提高5%，持续6秒。",
+        "name": "旗渊",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“啸如虎”调息时间降低5秒，并使自身在“啸如虎”效果下被疗伤成效提高15%。",
+        "name": "将威",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "施展后使自身威胁值提高75%，团队成员获得无威胁气劲，持续15秒。",
+        "name": "掠如火",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 6,
+    "qiXues": [
+      {
+        "describe": "“灭”必定附带致残效果。",
+        "name": "战心",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "受到攻击后若气血值低于40%，则自身被疗伤成效提高20%，受到所有伤害降低20%，当气血值高于40%时该效果消失。",
+        "name": "踏北邙",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "被攻击有12%几率获得“坚韧”效果，每层使自身受到的伤害降低1%，持续12秒最多叠加5层，该效果一段时间内只能触发一次。",
+        "name": "金甲",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "施展“守如山”后，每3秒强制周围8尺内5个敌人攻击自身，作用3次。",
+        "name": "岳峙",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 7,
+    "qiXues": [
+      {
+        "name": "流电",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "施展“御”后每秒回复2%的气血与内力，持续5秒。",
+        "name": "守孤城",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "每点体质额外增加0.25点拆招值，0.01点外功防御等级。该效果为固定效果，不受其他效果影响。",
+        "name": "傲骨",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“灭”必定附带致残效果。",
+        "name": "战心",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 8,
+    "qiXues": [
+      {
+        "describe": "施展“疾”使冲刺路径上的目标眩晕1秒，并附加15%的额外威胁。",
+        "name": "日影",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“突”调息时间降低1.5秒，施展“突”将使自身外功基础攻击力提高15%，持续6秒。",
+        "name": "长征",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“战八方”附带额外威胁值。",
+        "name": "北伐",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "解除自身所有移动限制，冲刺到友方目标身边，为其承受3次伤害，并使自身外功基础攻击力提高50%(585点)，每承受一次伤害，调息时间降低5秒。",
+        "name": "渊",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 9,
+    "qiXues": [
+      {
+        "describe": "自身气血值低于50%，施展“灭”立刻回复自身5%气血值。",
+        "name": "反岳",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“撼如雷”调息时间提高到30秒，施展后强制半径10尺内最多5个目标攻击自身，持续3秒。",
+        "name": "烈雷",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“守如山”调息时间降低70秒，减伤效果变为45%。",
+        "name": "坚城",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "恢复自身气血最大值30%(4691点)，使自身基础气血最大值提高30%(3944点)，持续20秒。",
+        "name": "昂如岳",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 10,
+    "qiXues": [
+      {
+        "describe": "“御”持续时间结束后每层效果使自身回复5%气血最大值。",
+        "name": "戟胜",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“啸如虎”在自身气血值低于50%时便可施展，效果期间受到会心攻击持续时间增加1秒，最多作用5次。",
+        "name": "于役",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "受到伤害导致自身气血值低于35%，立刻重置“守如山”调息时间，该效果每3分钟最多出现一次。",
+        "name": "至武",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "name": "栽戎",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 11,
+    "qiXues": [
+      {
+        "describe": "“疾如风”效果期间，不再提高自身外功会心几率，而使自身受到技能伤害被会心几率降低20%。",
+        "name": "在握",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "自身气血值每降低10%，“守如山”减伤效果持续时间增加1秒。",
+        "name": "温邑",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“疾”命中目标附带2层致伤效果。",
+        "name": "戈矛",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "一鼓，团队成员内外功破防等级提高40%，持续30秒；二鼓，团队成员内外功破防等级提高20%，持续30秒；三鼓，团队成员受到的所有伤害提高10%，持续至战斗结束，该招式每场战斗只能施展一次。",
+        "name": "号令三军",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  }
+]
