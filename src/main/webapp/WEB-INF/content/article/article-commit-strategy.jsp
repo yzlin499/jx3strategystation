@@ -48,7 +48,12 @@
     <div class="form-group">
         <div id="content"></div>
     </div>
-    <button onclick="commitStrategyArticle()" class="btn btn-success">提交</button>
+    <c:if test="${sessionScope.user != null}">
+        <button class="btn btn-success" onclick="commitStrategyArticle()">提交</button>
+    </c:if>
+    <c:if test="${sessionScope.user == null}">
+        <button class="btn btn-danger" onclick="" disabled="disabled">登录后发帖哦！</button>
+    </c:if>
 </div>
 
 <script src="<c:url value="/static/js/ckeditor.js"/>"></script>

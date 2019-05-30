@@ -38,7 +38,7 @@
 <div class="container">
     <c:choose>
         <c:when test='<%=request.getAttribute("article") instanceof TradingArticle%>'>
-            TradingArticle
+            <jsp:include page="component-show-trading.jsp"/>
         </c:when>
         <c:when test='<%=request.getAttribute("article") instanceof StrategyArticle%>'>
             <jsp:include page="component-show-strategy.jsp"/>
@@ -81,7 +81,12 @@
             <div id="content"></div>
         </div>
         <div class="col-md-12" style="margin-top: 20px">
-            <button class="btn btn-success" onclick="commitComment(${requestScope.article.articleId})">提交</button>
+            <c:if test="${sessionScope.user != null}">
+                <button class="btn btn-success" onclick="commitComment(${requestScope.article.articleId})">提交</button>
+            </c:if>
+            <c:if test="${sessionScope.user == null}">
+                <button class="btn btn-danger" onclick="" disabled="disabled">登录后评论哦！</button>
+            </c:if>
         </div>
     </div>
 </div>
