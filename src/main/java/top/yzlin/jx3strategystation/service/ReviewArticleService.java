@@ -26,4 +26,12 @@ public class ReviewArticleService {
     public void deleteReviewArticleById(int id) {
         reviewArticleDAO.deleteReviewArticleById(id);
     }
+
+    public int saveReviewArticle(ReviewArticle reviewArticle) {
+        return reviewArticleDAO.saveReviewArticle(reviewArticle);
+    }
+
+    public boolean isBanned(int articleId) {
+        return reviewArticleDAO.isBanned(articleId);
+    }
 }

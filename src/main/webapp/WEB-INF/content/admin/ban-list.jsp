@@ -10,7 +10,12 @@
     </tr>
     <c:forEach var="reviewArticle" items="${requestScope.reviewArticleList}">
         <tr>
-            <td>${reviewArticle.article.title}</td>
+            <td>
+                <a href="/${reviewArticle.article.user.userName}/article/${reviewArticle.article.articleId}"
+                   target="view_window">
+                        ${reviewArticle.article.title}
+                </a>
+            </td>
             <td>${reviewArticle.article.user.nickName}</td>
             <td>
                 <button class="btn btn-success" onclick="pass(${reviewArticle.reviewId})">通过</button>

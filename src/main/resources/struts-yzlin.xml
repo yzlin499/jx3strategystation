@@ -43,16 +43,23 @@
     </package>
 
     <package name="commitArticle" extends="api" namespace="/v1/api/commit">
+
+        <action name="reviewArticle" class="commitBanAction">
+            <result type="json"/>
+        </action>
+
         <action name="tradingArticle" class="commitTradingArticleAction">
             <result type="json">
                 <param name="excludeProperties">article</param>
             </result>
         </action>
+
         <action name="strategyArticle" class="commitStrategyArticleAction">
             <result type="json">
                 <param name="excludeProperties">article</param>
             </result>
         </action>
+
         <action name="commonArticle" class="commitCommonArticleAction">
             <result type="json">
                 <param name="excludeProperties">article</param>
