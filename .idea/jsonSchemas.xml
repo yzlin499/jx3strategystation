@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="menpaischema">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="menpaischema" />
+              <option name="relativePathToSchema" value="src\main\resources\data\menpai\menpaischema.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="src/main/resources/data/menpai/纯阳门派.json" />
+                  </Item>
+                  <Item>
+                    <option name="path" value="src/main/resources/data/menpai/天策门派.json" />
+                  </Item>
+                  <Item>
+                    <option name="path" value="src/main/resources/data/menpai/霸刀门派.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>

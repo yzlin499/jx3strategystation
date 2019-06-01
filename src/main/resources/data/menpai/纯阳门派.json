@@ -1,0 +1,284 @@
+{
+    "describe": "昆仑玄境山外山，乾坤阴阳有洞天。只问真君何处有，不向江湖寻剑仙。",
+    "menPaiId": 0,
+    "name": "纯阳",
+    "xinFas": [
+        {
+            "describe": "远程内功，爆发力位居各大门派前列，尤为讲究战机把握和对敌距离。",
+            "name": "紫霞功",
+            "qiXueGroups": [],
+            "skills": [],
+            "xinFaId": 0
+        },
+        {
+            "describe": "外功近战，气场与剑术结合，强大的控制和爆发能力能够一直给与对手压迫。",
+            "name": "太虚剑意",
+            "qiXueGroups": [],
+            "skills": [
+                {
+                    "arm": "短兵",
+                    "consumption": 398,
+                    "coolDownTime": 10,
+                    "describe": "产生一个10尺的气场，范围内自身不受控制招式影响，可以被击退和被拉，敌方移动速度降低40%，持续24秒。",
+                    "distance": 20,
+                    "name": "生太极",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "减速"
+                        },
+                        {
+                            "title": "免控"
+                        }
+                    ],
+                    "storingForce": 1
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 796,
+                    "coolDownTime": 10,
+                    "describe": "产生一个10尺的气场，范围内敌方不能施展轻功，持续24秒。气场每8秒解除团队成员身上的阳性、阴性、混元性和毒性不利效果各一个以及敌人身上阳性、阴性、混元性和毒性有益气劲各一个。",
+                    "distance": 20,
+                    "name": "吞日月",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "封轻功"
+                        }
+                    ],
+                    "storingForce": 1
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 398,
+                    "coolDownTime": 10,
+                    "describe": "产生一个10尺的气场，范围内所有团队成员外功会心几率提高5%，外功会心效果提高10%，持续24秒。",
+                    "distance": 20,
+                    "name": "碎星辰",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "爆发"
+                        }
+                    ],
+                    "storingForce": 1
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 338,
+                    "coolDownTime": 120,
+                    "describe": "使纯阳诀下所有招式瞬发，不受无法施展内功招式效果的影响，并且自身受到的伤害降低60%，持续8秒，同时解除所有控制效果，并免受招式控制，可以被击退和被拉，持续4秒。",
+                    "distance": 0,
+                    "name": "转乾坤",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "解控"
+                        },
+                        {
+                            "title": "减伤"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 508,
+                    "coolDownTime": 30,
+                    "describe": "对20尺范围内带有“万剑归宗”或“吞日月”不利效果的单一目标使用，快速冲向目标并击晕目标3秒。",
+                    "distance": 20,
+                    "name": "剑冲阴阳",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "眩晕"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 962,
+                    "coolDownTime": 12,
+                    "describe": "对目标造成200%武器伤害及大量外功伤害，并蓄气1格。目标气血值越低，造成的伤害越高。最高造成690-760点(+3846)外功伤害，最低造成23-25点(+2284)外功伤害。",
+                    "distance": 12,
+                    "name": "八荒归元",
+                    "skillId": 0,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 338,
+                    "coolDownTime": 20,
+                    "describe": "使目标定身，最少半格气持续2秒，最多五格气持续6秒。",
+                    "distance": 8,
+                    "name": "大道无术",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "定身"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 677,
+                    "coolDownTime": 20,
+                    "describe": "引爆自身10尺范围内的气场，对气场周围5尺内最多5个目标造成26点(+192)外功伤害，若引爆友方的气场，则使敌人定身5秒。",
+                    "distance": 0,
+                    "name": "人剑合一",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "减疗"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 1045,
+                    "coolDownTime": 0,
+                    "describe": "需聚气，最少半格气对目标造成200%武器伤害附加0点(+577)外功伤害，最多五格气对目标造成200%武器伤害附加6点(+962)外功伤害。",
+                    "distance": 4,
+                    "name": "无我无剑",
+                    "skillId": 0,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 395,
+                    "coolDownTime": 2,
+                    "describe": "连续刺出迅猛的三剑，对目标造成100%的武器伤害外加4-5点(+397)外功伤害，并续气一格。",
+                    "distance": 4,
+                    "name": "三环套月",
+                    "skillId": 0,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 1640,
+                    "coolDownTime": 0,
+                    "describe": "对周围6尺内的最多6个目标均造成6点(+397)外功伤害，对定身锁足的目标造成额外伤害，并使这些目标同时获得“万剑归宗”不利效果，外功防御等级降低5%，持续30秒。每命中一个目标，续气半格。",
+                    "distance": 0,
+                    "name": "万剑归宗",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "减疗"
+                        },
+                        {
+                            "title": "打断"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 179,
+                    "coolDownTime": 100,
+                    "describe": "使自身外功和混元内功基础攻击力提高25%，会心几率提高25%，会心效果提高25%，但所有招式内力消耗提高20%(1点混元内功攻击)(293点外功攻击)，持续12秒。",
+                    "distance": 0,
+                    "name": "紫气东来",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "爆发"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 906,
+                    "coolDownTime": 60,
+                    "describe": "解除自身定身、锁足、点穴效果，使自身接下来的招式威胁值降低80%，持续15秒。",
+                    "distance": 0,
+                    "name": "凭虚御风",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "解控"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "任意兵器",
+                    "consumption": 225,
+                    "coolDownTime": 30,
+                    "describe": "当你处于战斗状态时，下一次跳跃能跳得更高，抗摔伤力提高，持续30秒；当处于非战斗状态时，可以连续跳跃，持续12秒。施展后，重置“蹑云逐月”的调息时间。",
+                    "distance": 0,
+                    "name": "梯云纵",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "位移"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 66,
+                    "coolDownTime": 30,
+                    "describe": "化解自身受到的伤害效果，持续10分钟；\n紫霞功心法下每点根骨可化解3(93)点；\n太虚剑意心法下每点身法可化解3(93)点；",
+                    "distance": 0,
+                    "name": "坐忘无我",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "减伤"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 398,
+                    "coolDownTime": 90,
+                    "describe": "产生一个10尺的气场，范围内所有团队成员施展招式的内力消耗降低20%，每10秒回复1%内力，敌方施展招式的内力消耗提高20%，持续24秒。",
+                    "distance": 20,
+                    "name": "化三清",
+                    "skillId": 0,
+                    "skillTypes": [],
+                    "storingForce": 1
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 395,
+                    "coolDownTime": 20,
+                    "describe": "使目标下马并且移动速度降低60%，持续5秒，续气一格。若你攻击的目标正在运功，对目标造成28-42点(+192)外功伤害，并令你额外续气两格并使该目标5秒内无法运功。",
+                    "distance": 20,
+                    "name": "剑飞惊天",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "打断"
+                        },
+                        {
+                            "title": "封内"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 395,
+                    "coolDownTime": 60,
+                    "describe": "吸收20尺范围内自身的气场，使其聚集形成10尺的“天道剑阵”，“天道剑阵”使该区域同时附带“生太极”“吞日月”“碎星辰”效果，剑阵内剑灵会持续对区域内敌人造成1233-1450点（+0.43*攻击力）外功伤害，若短时间内连续命中同一个目标，则降低为369-434点（+0.13*攻击力）外功伤害，剑灵每3秒会使范围内的敌人获得1层“叠刃”效果，“天道剑阵”初始持续12秒，每吸收一个气场额外增加4秒。",
+                    "distance": 20,
+                    "name": "行天道",
+                    "skillId": 0,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                }
+            ],
+            "xinFaId": 415
+        }
+    ]
+}

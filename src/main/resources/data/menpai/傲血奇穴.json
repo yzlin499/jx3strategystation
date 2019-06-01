@@ -1,343 +1,445 @@
 [
-  {
-    "qiXueGroupId": 0,
-    "qiXueIndex": 0,
-    "qiXues": [
-      {
-        "describe": "“穿云”伤害提高10%。",
-        "name": "封侯",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "name": "杨戈",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "name": "百折",
-        "qiXueId": 0,
-        "skillTypes": []
-      }
-    ]
-  },
-  {
-    "qiXueGroupId": 0,
-    "qiXueIndex": 1,
-    "qiXues": [
-      {
-        "describe": "“龙牙”会心几率提高2.5%，会心伤害提高5%，命中目标后可使自身获得“龙魂”气劲，外功基础攻击力提高4%，外功会心几率提高1%，持续20秒，最多叠加5层。同时“龙牙”会心后有25%几率重置“龙吟”的调息时间。",
-        "name": "神勇",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "威力来自于你手上的武器。",
-        "name": "大漠",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "对目标及目标周围8尺内最多10个敌对目标造成81-89点(+192)外功伤害，使目标移动速度降低65%，周围目标移动速度降低40%，持续12秒。",
-        "name": "穿",
-        "qiXueId": 0,
-        "skillTypes": []
-      }
-    ]
-  },
-  {
-    "qiXueGroupId": 0,
-    "qiXueIndex": 2,
-    "qiXues": [
-      {
-        "name": "骁勇",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "需要30%内力方可施展。终结技，消耗所有内力，使自身受到的伤害降低60%，持续6秒，并击飞自身半径6尺范围内最多5个目标，造成176-194点(+1442)外功伤害。施展过程中不受控制效果的影响。",
-        "name": "龙啸",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“御”能额外抵御1次伤害。被攻击失去“御”效果时，使自身气血最大值提高3%，持续10秒，每被攻击失去1层“御”，该效果的持续时间累加10秒，只能在战斗状态下维持。",
-        "name": "盘蛇",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "天策府秘传武技，在自己的外功伤害招式命中敌人后，有50%的几率使自身气血与内力在1秒后恢复5%(782点气血)(1153点内力)，持续20秒。",
-        "name": "徐如林",
-        "qiXueId": 0,
-        "skillTypes": []
-      }
-    ]
-  },
-  {
-    "qiXueGroupId": 0,
-    "qiXueIndex": 3,
-    "qiXues": [
-      {
-        "describe": "每点力道额外增加0.25点外功攻击。该效果为固定效果，不受其他效果影响。",
-        "name": "击水",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "施展“突”将解除自身锁足及减速状态。",
-        "name": "飞将",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "name": "流电",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "对吟唱状态的目标造成70-75点(+673)外功伤害，并使其晕眩5秒。",
-        "name": "崩",
-        "qiXueId": 0,
-        "skillTypes": []
-      }
-    ]
-  },
-  {
-    "qiXueGroupId": 0,
-    "qiXueIndex": 4,
-    "qiXues": [
-      {
-        "describe": "“战八方”可以在马下施展，伤害提高10%。",
-        "name": "出云",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“破风”伤害提高15%，可使目标6尺范围内额外3个目标受到“破风”效果影响。",
-        "name": "劲风",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "军中秘传马技，使你可在战斗中上马并解除自身锁足效果，成功上马后5秒内不受任何招式控制，并且不会被击下马，使自身获得5层驰骋效果，每层使自身外功基础攻击提高5%，受到技能攻击则消除一层。",
-        "name": "驰骋",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "name": "千驰",
-        "qiXueId": 0,
-        "skillTypes": []
-      }
-    ]
-  },
-  {
-    "qiXueGroupId": 0,
-    "qiXueIndex": 5,
-    "qiXues": [
-      {
-        "describe": "“灭”忽视目标25%外功防御等级，并对有“致残”效果的目标会心几率提高20%。“灭”有50%几率刷新“破风”效果。",
-        "name": "夜征",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "施展“龙吟”后，使自身下3次技能攻击伤害提高20%，持续8秒。",
-        "name": "风虎",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“啸如虎”调息时间降低5秒，并使自身在“啸如虎”效果下被疗伤成效提高15%。",
-        "name": "将威",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“灭”的释放距离提高到25尺，调息时间提高到20秒，施展后自身不受控制招式影响，持续5秒，若目标气血值低于40%，解除自身锁足减速不利效果，并冲向目标。",
-        "name": "青阳",
-        "qiXueId": 0,
-        "skillTypes": []
-      }
-    ]
-  },
-  {
-    "qiXueGroupId": 0,
-    "qiXueIndex": 6,
-    "qiXues": [
-      {
-        "describe": "“龙牙”施展后有25%几率刷新“龙吟”的调息时间。",
-        "name": "龙胆",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“灭”对于气血值低于40%的目标造成40%的额外伤害，施展灭6秒内获得一次额外施展的机会。",
-        "name": "破楼兰",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“疾如风”效果提高33%，调息时间降低10秒，成功施展后解除所有移动限制，并且不受招式控制，持续2秒",
-        "name": "白羽",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "对目标及其附近额外的3个目标造成200%武器伤害并附加203-224点(+3077)外功伤害，使目标受到的疗伤成效降低50%，持续10秒。",
-        "name": "霹雳",
-        "qiXueId": 0,
-        "skillTypes": []
-      }
-    ]
-  },
-  {
-    "qiXueGroupId": 0,
-    "qiXueIndex": 7,
-    "qiXues": [
-      {
-        "name": "关山月",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "施展“御”后每秒回复2%的气血与内力，持续5秒。",
-        "name": "守孤城",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“御奔突”调息时间降低60秒，成功施展后重置“游龙骑法”下其他招式的调息时间。",
-        "name": "飞遁",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“灭”必定附带致残效果。",
-        "name": "战心",
-        "qiXueId": 0,
-        "skillTypes": []
-      }
-    ]
-  },
-  {
-    "qiXueGroupId": 0,
-    "qiXueIndex": 8,
-    "qiXues": [
-      {
-        "describe": "“突”的调息时间增加25秒，施展后自身获得牧云效果，持续45秒，效果期间施展“龙牙”则叠加一层“牧云”效果，最多作用3次。",
-        "name": "牧云",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“突”调息时间降低1.5秒，施展“突”将使自身外功基础攻击力提高15%，持续6秒。",
-        "name": "长征",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "下马后若“任驰骋”还在调息中，则立即降低15秒调息时间，该效果每1分钟触发1次。",
-        "name": "雷行",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "解除自身所有移动限制，冲刺到友方目标身边，为其承受3次伤害，并使自身外功基础攻击力提高50%(585点)，每承受一次伤害，调息时间降低5秒。",
-        "name": "渊",
-        "qiXueId": 0,
-        "skillTypes": []
-      }
-    ]
-  },
-  {
-    "qiXueGroupId": 0,
-    "qiXueIndex": 9,
-    "qiXues": [
-      {
-        "describe": "“战八方”若只命中单一目标，伤害提高50%并附带一层“致伤”效果。",
-        "name": "泾威",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“撼如雷”效果提高25%",
-        "name": "激雷",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“守如山”调息时间降低70秒，减伤效果变为45%。",
-        "name": "坚城",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "name": "逐北",
-        "qiXueId": 0,
-        "skillTypes": []
-      }
-    ]
-  },
-  {
-    "qiXueGroupId": 0,
-    "qiXueIndex": 10,
-    "qiXues": [
-      {
-        "describe": "“战八方”调息时间增加6秒，命中目标附带一层“破血”效果：使目标每2秒受到一次外功伤害，持续16秒，可叠加3层。",
-        "name": "牙璋",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“啸如虎”在自身气血值低于50%时便可施展，效果期间受到会心攻击持续时间增加1秒，最多作用5次。",
-        "name": "于役",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“龙牙”命中有自身“流血”效果的目标额外造成10%伤害。",
-        "name": "龙血",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "“破坚阵”会使目标周围6尺范围内4个目标眩晕4秒，并使其伤害降低10%，持续8秒。",
-        "name": "薄伐",
-        "qiXueId": 0,
-        "skillTypes": []
-      }
-    ]
-  },
-  {
-    "qiXueGroupId": 0,
-    "qiXueIndex": 11,
-    "qiXues": [
-      {
-        "describe": "“龙牙”有30%几率不消耗致残效果。",
-        "name": "虎贲",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "自身气血值每降低10%，“守如山”减伤效果持续时间增加1秒。",
-        "name": "温邑",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "施展“突”将使自身外功基础攻击力提高15%，持续6秒。",
-        "name": "背水",
-        "qiXueId": 0,
-        "skillTypes": []
-      },
-      {
-        "describe": "纵马疾驰，控制目标并连续造成大量外功伤害效果并使目标无法施展轻功，骑马时方可施展此招式。",
-        "name": "破重围",
-        "qiXueId": 0,
-        "skillTypes": []
-      }
-    ]
-  }
+    {
+        "qiXueGroupId": 278,
+        "qiXueIndex": 0,
+        "qiXues": [
+            {
+                "describe": "“穿云”伤害提高10%。",
+                "name": "封侯",
+                "qiXueId": 279,
+                "skillTypes": []
+            },
+            {
+                "describe": "“穿云”的会心几率提高10%，会心效果提高10%。",
+                "name": "扬戈",
+                "qiXueId": 280,
+                "skillTypes": []
+            },
+            {
+                "describe": "“御”成功抵御一次伤害，自身将获得1点战意。",
+                "name": "百折",
+                "qiXueId": 281,
+                "skillTypes": []
+            }
+        ]
+    },
+    {
+        "qiXueGroupId": 282,
+        "qiXueIndex": 1,
+        "qiXues": [
+            {
+                "describe": "“龙牙”会心几率提高10%，会心效果提高10%。",
+                "name": "神勇",
+                "qiXueId": 283,
+                "skillTypes": []
+            },
+            {
+                "describe": "“穿云”有35%几率使自身额外获得1点战意。",
+                "name": "大漠",
+                "qiXueId": 284,
+                "skillTypes": []
+            },
+            {
+                "describe": "“龙吟”施展距离提高4尺，对目标周围8尺内最多5个目标造成外功伤害且移动速度降低60%，持续12秒。",
+                "name": "穿",
+                "qiXueId": 285,
+                "skillTypes": [
+                    {
+                        "title": "减速",
+                        "typeId": 35
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "qiXueGroupId": 286,
+        "qiXueIndex": 2,
+        "qiXues": [
+            {
+                "describe": "“流血”效果伤害提高10％。",
+                "name": "骁勇",
+                "qiXueId": 287,
+                "skillTypes": []
+            },
+            {
+                "describe": "“龙牙”命中目标后，对目标周围6尺的5个目标造成外功伤害。该伤害不受到“龙牙”秘籍的影响。",
+                "name": "龙啸",
+                "qiXueId": 288,
+                "skillTypes": []
+            },
+            {
+                "describe": "受到攻击失去1层御，受到伤害降低25%，持续6秒。",
+                "name": "盘蛇",
+                "qiXueId": 289,
+                "skillTypes": [
+                    {
+                        "title": "减伤",
+                        "typeId": 31
+                    }
+                ]
+            },
+            {
+                "describe": "施展“突”“断魂刺”之后，自身将获得“徐如林”效果，使自身外功伤害招式命中敌人后，有50%的几率使自身气血与内力在1秒后恢复5%，持续5秒。",
+                "name": "徐如林",
+                "qiXueId": 290,
+                "skillTypes": []
+            }
+        ]
+    },
+    {
+        "qiXueGroupId": 291,
+        "qiXueIndex": 3,
+        "qiXues": [
+            {
+                "describe": "“流血”效果可叠3层。",
+                "name": "击水",
+                "qiXueId": 292,
+                "skillTypes": []
+            },
+            {
+                "describe": "对击倒状态的目标伤害提高30%，且对“破重围”生效。",
+                "name": "飞将",
+                "qiXueId": 293,
+                "skillTypes": []
+            },
+            {
+                "describe": "“疾”可以在马上使用，并击倒冲刺路径上的5个目标，持续2秒。",
+                "name": "流电",
+                "qiXueId": 294,
+                "skillTypes": [
+                    {
+                        "title": "位移",
+                        "typeId": 44
+                    }
+                ]
+            },
+            {
+                "describe": "对吟唱状态的目标造成70-75点（+0.35*攻击力）外功伤害，并使其晕眩5秒。",
+                "name": "崩",
+                "qiXueId": 295,
+                "skillTypes": [
+                    {
+                        "title": "打断",
+                        "typeId": 30
+                    },
+                    {
+                        "title": "眩晕",
+                        "typeId": 38
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "qiXueGroupId": 296,
+        "qiXueIndex": 4,
+        "qiXues": [
+            {
+                "describe": "“战八方”可以在马下施展。",
+                "name": "出云",
+                "qiXueId": 297,
+                "skillTypes": []
+            },
+            {
+                "describe": "“穿云”“龙吟”命中具有自身“流血”效果的目标增加20%伤害。",
+                "name": "劲风",
+                "qiXueId": 298,
+                "skillTypes": []
+            },
+            {
+                "describe": "施展“任驰骋”获得的外功基础攻击力效果提高至30%。",
+                "name": "驰骋",
+                "qiXueId": 299,
+                "skillTypes": [
+                    {
+                        "title": "爆发",
+                        "typeId": 33
+                    }
+                ]
+            },
+            {
+                "describe": "“沧月”若在马上释放则每0.5秒造成一次击退效果，且对刀气障碍具有额外的伤害，持续3秒。释放期间具有“纵轻骑”效果。",
+                "name": "千驰",
+                "qiXueId": 300,
+                "skillTypes": []
+            }
+        ]
+    },
+    {
+        "qiXueGroupId": 301,
+        "qiXueIndex": 5,
+        "qiXues": [
+            {
+                "describe": "“灭”会心几率提高20%，会心效果提高10%，并不会对自身造成伤害。",
+                "name": "夜征",
+                "qiXueId": 302,
+                "skillTypes": []
+            },
+            {
+                "describe": "每点“战意”增加“穿云”，“龙吟”，“龙牙”，“灭”5%的伤害",
+                "name": "风虎",
+                "qiXueId": 303,
+                "skillTypes": []
+            },
+            {
+                "describe": "施展“啸如虎”立刻使周围6尺内5个目标眩晕4秒，“啸如虎”期间被疗伤成效额外提高20%。",
+                "name": "将威",
+                "qiXueId": 304,
+                "skillTypes": [
+                    {
+                        "$ref": "$[3].qiXues[3].skillTypes[1]"
+                    }
+                ]
+            },
+            {
+                "describe": "“灭”的释放距离提高到25尺，调息时间提高到25秒，施展后自身不受控制招式影响，持续5秒，若目标气血值低于40%，解除自身锁足减速不利效果，并冲向目标。",
+                "name": "青阳",
+                "qiXueId": 305,
+                "skillTypes": [
+                    {
+                        "title": "免控",
+                        "typeId": 49
+                    },
+                    {
+                        "title": "冲刺",
+                        "typeId": 29
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "qiXueGroupId": 306,
+        "qiXueIndex": 6,
+        "qiXues": [
+            {
+                "describe": "“龙牙”施展后有35%几率刷新“龙吟”的调息时间。",
+                "name": "龙胆",
+                "qiXueId": 307,
+                "skillTypes": []
+            },
+            {
+                "describe": "“灭”对于气血值低于40%的目标造成40%的额外伤害，施展灭6秒内获得一次额外施展的机会。",
+                "name": "破楼兰",
+                "qiXueId": 308,
+                "skillTypes": []
+            },
+            {
+                "describe": "施展“疾如风”后，不受控制招式影响的效果提高到6秒，并立刻获得5点“战意”。",
+                "name": "白羽",
+                "qiXueId": 309,
+                "skillTypes": [
+                    {
+                        "$ref": "$[5].qiXues[3].skillTypes[0]"
+                    },
+                    {
+                        "$ref": "$[4].qiXues[2].skillTypes[0]"
+                    }
+                ]
+            },
+            {
+                "describe": "对目标及其附近额外的3个目标造成200%武器伤害并附加203-224点(+1.4*攻击力)外功伤害，使目标受到的疗伤成效降低50%，持续10秒。",
+                "name": "霹雳",
+                "qiXueId": 310,
+                "skillTypes": [
+                    {
+                        "title": "减疗",
+                        "typeId": 43
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "qiXueGroupId": 311,
+        "qiXueIndex": 7,
+        "qiXues": [
+            {
+                "describe": "体质和力道提高10%。",
+                "name": "关山月",
+                "qiXueId": 312,
+                "skillTypes": []
+            },
+            {
+                "describe": "施展“御”后每秒回复2%的气血与内力，持续5秒。",
+                "name": "守孤城",
+                "qiXueId": 313,
+                "skillTypes": []
+            },
+            {
+                "describe": "“任驰骋”上马后移动速度提高50%，“纵轻骑”效果持续过程中将不受任何位移招式影响。并且立刻重置“断魂刺”“破坚阵”“沧月”调息时间。",
+                "name": "飞遁",
+                "qiXueId": 314,
+                "skillTypes": [
+                    {
+                        "title": "加速",
+                        "typeId": 46
+                    }
+                ]
+            },
+            {
+                "describe": "“灭”附带流血效果并使自身立刻获得3点战意。并进入“徐如林”状态，持续3秒。",
+                "name": "战心",
+                "qiXueId": 315,
+                "skillTypes": []
+            }
+        ]
+    },
+    {
+        "qiXueGroupId": 316,
+        "qiXueIndex": 8,
+        "qiXues": [
+            {
+                "describe": "“突”的调息时间增加25秒，施展后自身获得牧云效果，持续45秒，效果期间施展“龙牙”则叠加一层“牧云”效果，最多作用3次。“牧云”效果每层使得自身外功会心提高3％，外功会效提高5％，无视目标7％的外功防御。",
+                "name": "牧云",
+                "qiXueId": 317,
+                "skillTypes": [
+                    {
+                        "$ref": "$[4].qiXues[2].skillTypes[0]"
+                    }
+                ]
+            },
+            {
+                "describe": "“突”变为2层充能，充能时间为20秒。",
+                "name": "长征",
+                "qiXueId": 318,
+                "skillTypes": []
+            },
+            {
+                "describe": "“沧月”每击退1个目标，增加0.5秒“纵轻骑”效果时间，降低0.5秒“沧月”调息时间。",
+                "name": "雷行",
+                "qiXueId": 319,
+                "skillTypes": []
+            },
+            {
+                "describe": "解除自身所有移动限制，冲刺到友方目标身边，为其承受4次伤害，并使自身外功基础攻击力提高50%。",
+                "name": "渊",
+                "qiXueId": 320,
+                "skillTypes": [
+                    {
+                        "title": "解控",
+                        "typeId": 41
+                    },
+                    {
+                        "$ref": "$[5].qiXues[3].skillTypes[1]"
+                    },
+                    {
+                        "$ref": "$[4].qiXues[2].skillTypes[0]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "qiXueGroupId": 321,
+        "qiXueIndex": 9,
+        "qiXues": [
+            {
+                "describe": "“战八方”若只命中单一目标，伤害提高25%且自身获得1点战意。",
+                "name": "泾威",
+                "qiXueId": 322,
+                "skillTypes": []
+            },
+            {
+                "describe": "“撼如雷”的调息时间提高到30秒，施展后小队成员的外功破防值提高15%，外功基础攻击力提高15%，持续8秒。",
+                "name": "激雷",
+                "qiXueId": 323,
+                "skillTypes": [
+                    {
+                        "$ref": "$[4].qiXues[2].skillTypes[0]"
+                    }
+                ]
+            },
+            {
+                "describe": "守如山调息时间降低70秒，减伤效果变为50%，马上施展则额外增加5秒持续时间。",
+                "name": "坚城",
+                "qiXueId": 324,
+                "skillTypes": [
+                    {
+                        "$ref": "$[2].qiXues[2].skillTypes[0]"
+                    }
+                ]
+            },
+            {
+                "describe": "“任驰骋”招式无需运功，且“纵轻骑”效果持续时间提高1秒。",
+                "name": "逐北",
+                "qiXueId": 325,
+                "skillTypes": [
+                    {
+                        "$ref": "$[5].qiXues[3].skillTypes[0]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "qiXueGroupId": 326,
+        "qiXueIndex": 10,
+        "qiXues": [
+            {
+                "describe": "“战八方”调息时间增加6秒，命中目标附带“流血”效果。",
+                "name": "牙璋",
+                "qiXueId": 327,
+                "skillTypes": []
+            },
+            {
+                "describe": "“啸如虎”可在受控状态下施展，效果期间受到会心攻击恢复自身5%气血值，最多作用5次。",
+                "name": "于役",
+                "qiXueId": 328,
+                "skillTypes": []
+            },
+            {
+                "describe": "“龙牙”命中有自身“流血”效果的目标额外造成25%伤害。",
+                "name": "龙血",
+                "qiXueId": 329,
+                "skillTypes": []
+            },
+            {
+                "describe": "“破坚阵”可冲刺至15尺内目标身边对其释放，并将目标周围6尺范围4个目标击倒。",
+                "name": "薄伐",
+                "qiXueId": 330,
+                "skillTypes": [
+                    {
+                        "$ref": "$[5].qiXues[3].skillTypes[1]"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "qiXueGroupId": 331,
+        "qiXueIndex": 11,
+        "qiXues": [
+            {
+                "describe": "“龙牙”有30%几率不消耗战意效果。",
+                "name": "虎贲",
+                "qiXueId": 332,
+                "skillTypes": []
+            },
+            {
+                "describe": "自身气血值每降低10%，“守如山”减伤效果持续时间增加1秒。",
+                "name": "温邑",
+                "qiXueId": 333,
+                "skillTypes": []
+            },
+            {
+                "describe": "自身气血每降低20%，自身外功基础攻击力提高5%，“灭”伤害提高5%。",
+                "name": "背水",
+                "qiXueId": 334,
+                "skillTypes": []
+            },
+            {
+                "describe": "纵马疾驰，控制目标并连续造成大量外功伤害效果并使目标无法施展轻功，命中击倒中的目标伤害提高60%，骑马时方可施展此招式。",
+                "name": "破重围",
+                "qiXueId": 335,
+                "skillTypes": [
+                    {
+                        "title": "封轻功",
+                        "typeId": 45
+                    }
+                ]
+            }
+        ]
+    }
 ]
