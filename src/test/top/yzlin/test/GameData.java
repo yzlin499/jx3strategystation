@@ -23,8 +23,8 @@ public class GameData {
 
     @Test
     public void createSkill() {
-        String[] skills = {"生太极", "吞日月", "碎星辰", "转乾坤", "剑冲阴阳", "八荒归元", "大道无术", "人剑合一", "无我无剑",
-                "三环套月", "万剑归宗", "紫气东来", "凭虚御风", "梯云纵", "坐忘无我", "化三清", "剑飞惊天", "行天道"};
+        String[] skills = {"生太极", "破苍穹", "镇山河", "万世不竭", "九转归一", "五方行尽", "七星拱瑞", "三才化生", "六合独尊",
+                "太极无极", "两仪化形", "四象轮回", "紫气东来", "凭虚御风", "梯云纵", "坐忘无我", "化三清", "八卦洞玄", "剑出鸿蒙"};
         List<Skill> skillList = Arrays.stream(skills).map(s -> {
             Skill skill = new Skill();
             skill.setName(s);
@@ -72,9 +72,9 @@ public class GameData {
 
     @Test
     public void getQiXueData() throws IOException {
-        JSONObject netData = JSON.parseObject(Tools.sendGet("https://api.ipsfan.com/jx3qx/tc.json", ""));
+        JSONObject netData = JSON.parseObject(Tools.sendGet("https://api.ipsfan.com/jx3qx/cy.json", ""));
         Map<String, String> qiXueCollect = netData.getJSONArray("data")
-                .getJSONObject(1)
+                .getJSONObject(0)
                 .getJSONArray("kungfuLevel")
                 .toJavaList(JSONObject.class)
                 .stream()
@@ -84,7 +84,7 @@ public class GameData {
                     forceSkills.forEach(jo -> jo.put("name", jo.getString("skillName")));
                     return Stream.concat(kungfuSkills.stream(), forceSkills.stream());
                 }).collect(Collectors.toMap(k -> k.getString("name"), v -> v.getString("desc")));
-        String data = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/铁牢奇穴.json"), "utf-8");
+        String data = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/剑纯奇穴.json"), "utf-8");
         JSONArray objects = JSON.parseArray(data);
         List<QiXueGroup> qixues = objects.toJavaList(QiXueGroup.class);
         for (QiXueGroup qixue : qixues) {
@@ -114,8 +114,13 @@ public class GameData {
     }
 
     @Test
-    public void describeTest() {
-        System.out.println();
+    public void describeTest() throws IOException {
+        String data = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/纯阳门派.json"), "UTF-8");
+        MenPai menPai = JSON.parseObject(data).toJavaObject(MenPai.class);
+        System.out.println(menPai.getXinFas()[0].getSkills()[0]);
+        System.out.println(menPai.getXinFas()[1].getSkills()[0]);
+        System.out.println(menPai.getXinFas()[0].getSkills()[0] == menPai.getXinFas()[1].getSkills()[0]);
+
     }
 
 

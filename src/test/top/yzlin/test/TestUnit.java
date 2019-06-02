@@ -63,7 +63,7 @@ public class TestUnit {
         Transaction transaction = session.beginTransaction();
         List<SkillType> skillTypeList = session.createQuery("from SkillType ", SkillType.class).list();
         Map<String, SkillType> collect = skillTypeList.stream().collect(Collectors.toMap(SkillType::getTitle, v -> v));
-        String s = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/天策门派.json"), "utf-8");
+        String s = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/纯阳门派.json"), "utf-8");
         MenPai menPai = JSON.parseObject(s).toJavaObject(MenPai.class);
         for (XinFa xinFa : menPai.getXinFas()) {
             for (Skill skill : xinFa.getSkills()) {
@@ -131,7 +131,7 @@ public class TestUnit {
         Transaction transaction = session.beginTransaction();
         List<SkillType> skillTypeList = session.createQuery("from SkillType ", SkillType.class).list();
         Map<String, SkillType> collect = skillTypeList.stream().collect(Collectors.toMap(SkillType::getTitle, v -> v));
-        String s = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/铁牢奇穴.json"), "utf-8");
+        String s = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/气纯奇穴.json"), "utf-8");
         List<QiXueGroup> qiXueGroups = JSON.parseArray(s).toJavaList(QiXueGroup.class);
         for (QiXueGroup qiXueGroup : qiXueGroups) {
             for (QiXue qiXue : qiXueGroup.getQiXues()) {

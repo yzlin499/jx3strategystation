@@ -7,7 +7,303 @@
             "describe": "远程内功，爆发力位居各大门派前列，尤为讲究战机把握和对敌距离。",
             "name": "紫霞功",
             "qiXueGroups": [],
-            "skills": [],
+            "skills": [
+                {
+                    "arm": "短兵",
+                    "consumption": 398,
+                    "coolDownTime": 10,
+                    "describe": "产生一个10尺的气场，范围内自身不受控制招式影响，可以被击退和被拉，敌方移动速度降低40%，持续24秒。",
+                    "distance": 20,
+                    "name": "生太极",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "减速",
+                            "typeId": 35
+                        },
+                        {
+                            "title": "免控",
+                            "typeId": 49
+                        }
+                    ],
+                    "storingForce": 1.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 398,
+                    "coolDownTime": 10,
+                    "describe": "产生一个10尺的气场，范围内所有团队成员内功会心率提高5%，内功会心效果提高10%，持续24秒。",
+                    "distance": 20,
+                    "name": "破苍穹",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "爆发",
+                            "typeId": 33
+                        }
+                    ],
+                    "storingForce": 1.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 398,
+                    "coolDownTime": 240,
+                    "describe": "产生一个4尺的气场，范围内队友免疫任何伤害，解除自身所有的控制效果，并解除外功、阴性、混元性、阳性、毒性和点穴的不利效果，持续8秒。该招式的施放无视任何控制效果。",
+                    "distance": 20,
+                    "name": "镇山河",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "解控",
+                            "typeId": 41
+                        },
+                        {
+                            "title": "无敌",
+                            "typeId": 48
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 730,
+                    "coolDownTime": 15,
+                    "describe": "需要5格气时方可施展，对目标造成205-226点(+7)混元性内功伤害。",
+                    "distance": 0,
+                    "name": "万世不竭",
+                    "skillId": 0,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 604,
+                    "coolDownTime": 15,
+                    "describe": "对目标造成62点(+0)混元性内功伤害，将其击退12尺。",
+                    "distance": 8,
+                    "name": "九转归一",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "推",
+                            "typeId": 50
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 664,
+                    "coolDownTime": 15,
+                    "describe": "使自身会心效果提高20%，最少半格气对选择区域范围内的最多6个目标均造成2点(+0)混元性内功伤害，并使其锁足5秒，最多五格气均造成24点(+2)混元性内功伤害，并使其锁足9秒。目标在被锁足的后半段持续时间里若被伤害招式命中，则有50%几率解除其锁足效果。",
+                    "distance": 20,
+                    "name": "五方行尽",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "锁足",
+                            "typeId": 36
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 966,
+                    "coolDownTime": 0,
+                    "describe": "使目标定身，气血恢复速度提高，持续25秒。任何伤害都会使目标恢复正常状态，同一时间内只能使一个目标被定身，只能对人形目标施展。",
+                    "distance": 25,
+                    "name": "七星拱瑞",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "定身",
+                            "typeId": 37
+                        },
+                        {
+                            "title": "眩晕",
+                            "typeId": 38
+                        }
+                    ],
+                    "storingForce": 1.5
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 903,
+                    "coolDownTime": 20,
+                    "describe": "对自身周围8尺内的最多6个目标对目标造成8点(+0)混元性内功伤害，并锁足，持续9秒。目标在被锁足的后半段时间里若被伤害招式命中，则有50%几率解除其锁足效果。",
+                    "distance": 0,
+                    "name": "三才化生",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "锁足",
+                            "typeId": 36
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 2350,
+                    "coolDownTime": 0,
+                    "describe": "对选择的区域内最多6个目标造成15点(+0)混元性内功伤害，并使其移动速度降低40%，持续5秒。",
+                    "distance": 15,
+                    "name": "六合独尊",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "减速",
+                            "typeId": 35
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 879,
+                    "coolDownTime": 1,
+                    "describe": "对目标造成6-8点(+0)混元性内功伤害，并续气半格。",
+                    "distance": 20,
+                    "name": "太极无极",
+                    "skillId": 0,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 906,
+                    "coolDownTime": 0,
+                    "describe": "最少半格气对目标造成1点(+0)混元性内功伤害，最多五格气对目标造成30点(+1)混元性内功伤害。聚气越多招式效果越强。若招式会心，则续气一格。",
+                    "distance": 20,
+                    "name": "两仪化形",
+                    "skillId": 0,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 541,
+                    "coolDownTime": 0,
+                    "describe": "对目标造成29-34点(+1)混元性内功伤害，并使其移动速度降低40%，持续5秒，并续气一格。",
+                    "distance": 25,
+                    "name": "四象轮回",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "减速",
+                            "typeId": 35
+                        }
+                    ],
+                    "storingForce": 2.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 179,
+                    "coolDownTime": 100,
+                    "describe": "使自身外功和混元内功基础攻击力提高25%，会心几率提高25%，会心效果提高25%，但所有招式内力消耗提高20%(1点混元内功攻击)(293点外功攻击)，持续12秒。",
+                    "distance": 0,
+                    "name": "紫气东来",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "爆发",
+                            "typeId": 33
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 906,
+                    "coolDownTime": 60,
+                    "describe": "解除自身定身、锁足、点穴效果，使自身接下来的招式威胁值降低80%，持续15秒。",
+                    "distance": 0,
+                    "name": "凭虚御风",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "解控",
+                            "typeId": 41
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "任意兵器",
+                    "consumption": 225,
+                    "coolDownTime": 30,
+                    "describe": "当你处于战斗状态时，下一次跳跃能跳得更高，抗摔伤力提高，持续30秒；当处于非战斗状态时，可以连续跳跃，持续12秒。施展后，重置“蹑云逐月”的调息时间。",
+                    "distance": 0,
+                    "name": "梯云纵",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "位移",
+                            "typeId": 44
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 66,
+                    "coolDownTime": 30,
+                    "describe": "化解自身受到的伤害效果，持续10分钟；\n紫霞功心法下每点根骨可化解3(93)点；\n太虚剑意心法下每点身法可化解3(93)点；",
+                    "distance": 0,
+                    "name": "坐忘无我",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "减伤",
+                            "typeId": 31
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 398,
+                    "coolDownTime": 90,
+                    "describe": "产生一个10尺的气场，范围内所有团队成员施展招式的内力消耗降低20%，每10秒回复1%内力，敌方施展招式的内力消耗提高20%，持续24秒。",
+                    "distance": 20,
+                    "name": "化三清",
+                    "skillId": 0,
+                    "skillTypes": [],
+                    "storingForce": 1.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 481,
+                    "coolDownTime": 25,
+                    "describe": "最少半格气对目标造成3点(+0)混元性内功伤害，最多五格气对目标造成34点(+0)混元性内功伤害，并使目标不能施展内功招式，持续1秒-5秒。并且命中正在运功的目标能令目标在接下来的5秒内无法使用任何内功招式。",
+                    "distance": 20,
+                    "name": "八卦洞玄",
+                    "skillId": 0,
+                    "skillTypes": [
+                        {
+                            "title": "封内",
+                            "typeId": 47
+                        },
+                        {
+                            "title": "打断",
+                            "typeId": 30
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 906,
+                    "coolDownTime": 16,
+                    "describe": "3层充能，施展后获得“气剑”效果，使下五次单体伤害招式额外触发“剑出鸿蒙”伤害效果，对目标造成100-108点(+2)混元内功伤害。",
+                    "distance": 20,
+                    "name": "剑出鸿蒙",
+                    "skillId": 0,
+                    "skillTypes": [],
+                    "storingForce": 0.88
+                }
+            ],
             "xinFaId": 0
         },
         {
@@ -25,13 +321,15 @@
                     "skillId": 0,
                     "skillTypes": [
                         {
-                            "title": "减速"
+                            "title": "减速",
+                            "typeId": 35
                         },
                         {
-                            "title": "免控"
+                            "title": "免控",
+                            "typeId": 49
                         }
                     ],
-                    "storingForce": 1
+                    "storingForce": 1.0
                 },
                 {
                     "arm": "短兵",
@@ -43,10 +341,11 @@
                     "skillId": 0,
                     "skillTypes": [
                         {
-                            "title": "封轻功"
+                            "title": "封轻功",
+                            "typeId": 45
                         }
                     ],
-                    "storingForce": 1
+                    "storingForce": 1.0
                 },
                 {
                     "arm": "短兵",
@@ -58,10 +357,11 @@
                     "skillId": 0,
                     "skillTypes": [
                         {
-                            "title": "爆发"
+                            "title": "爆发",
+                            "typeId": 33
                         }
                     ],
-                    "storingForce": 1
+                    "storingForce": 1.0
                 },
                 {
                     "arm": "短兵",
@@ -73,10 +373,12 @@
                     "skillId": 0,
                     "skillTypes": [
                         {
-                            "title": "解控"
+                            "title": "解控",
+                            "typeId": 41
                         },
                         {
-                            "title": "减伤"
+                            "title": "减伤",
+                            "typeId": 31
                         }
                     ],
                     "storingForce": 0.0
@@ -91,7 +393,8 @@
                     "skillId": 0,
                     "skillTypes": [
                         {
-                            "title": "眩晕"
+                            "title": "眩晕",
+                            "typeId": 38
                         }
                     ],
                     "storingForce": 0.0
@@ -117,7 +420,8 @@
                     "skillId": 0,
                     "skillTypes": [
                         {
-                            "title": "定身"
+                            "title": "定身",
+                            "typeId": 37
                         }
                     ],
                     "storingForce": 0.0
@@ -132,7 +436,8 @@
                     "skillId": 0,
                     "skillTypes": [
                         {
-                            "title": "减疗"
+                            "title": "减疗",
+                            "typeId": 43
                         }
                     ],
                     "storingForce": 0.0
@@ -169,10 +474,12 @@
                     "skillId": 0,
                     "skillTypes": [
                         {
-                            "title": "减疗"
+                            "title": "减疗",
+                            "typeId": 43
                         },
                         {
-                            "title": "打断"
+                            "title": "打断",
+                            "typeId": 30
                         }
                     ],
                     "storingForce": 0.0
@@ -187,7 +494,8 @@
                     "skillId": 0,
                     "skillTypes": [
                         {
-                            "title": "爆发"
+                            "title": "爆发",
+                            "typeId": 33
                         }
                     ],
                     "storingForce": 0.0
@@ -202,7 +510,8 @@
                     "skillId": 0,
                     "skillTypes": [
                         {
-                            "title": "解控"
+                            "title": "解控",
+                            "typeId": 41
                         }
                     ],
                     "storingForce": 0.0
@@ -217,7 +526,8 @@
                     "skillId": 0,
                     "skillTypes": [
                         {
-                            "title": "位移"
+                            "title": "位移",
+                            "typeId": 44
                         }
                     ],
                     "storingForce": 0.0
@@ -232,7 +542,8 @@
                     "skillId": 0,
                     "skillTypes": [
                         {
-                            "title": "减伤"
+                            "title": "减伤",
+                            "typeId": 31
                         }
                     ],
                     "storingForce": 0.0
@@ -246,7 +557,7 @@
                     "name": "化三清",
                     "skillId": 0,
                     "skillTypes": [],
-                    "storingForce": 1
+                    "storingForce": 1.0
                 },
                 {
                     "arm": "短兵",
@@ -258,10 +569,12 @@
                     "skillId": 0,
                     "skillTypes": [
                         {
-                            "title": "打断"
+                            "title": "打断",
+                            "typeId": 30
                         },
                         {
-                            "title": "封内"
+                            "title": "沉默",
+                            "typeId": 52
                         }
                     ],
                     "storingForce": 0.0

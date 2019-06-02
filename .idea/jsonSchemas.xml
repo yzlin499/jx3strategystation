@@ -7,17 +7,35 @@
           <value>
             <SchemaInfo>
               <option name="name" value="menpaischema" />
-              <option name="relativePathToSchema" value="src\main\resources\data\menpai\menpaischema.json" />
+              <option name="relativePathToSchema" value="src\main\resources\data\menpai\menpai-schema.json" />
               <option name="patterns">
                 <list>
-                  <Item>
-                    <option name="path" value="src/main/resources/data/menpai/纯阳门派.json" />
-                  </Item>
                   <Item>
                     <option name="path" value="src/main/resources/data/menpai/天策门派.json" />
                   </Item>
                   <Item>
+                    <option name="path" value="src/main/resources/data/menpai/纯阳门派.json" />
+                  </Item>
+                  <Item>
                     <option name="path" value="src/main/resources/data/menpai/霸刀门派.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+        <entry key="qixue-schema">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="qixue-schema" />
+              <option name="relativePathToSchema" value="src\main\resources\data\menpai\qixue-schema.json" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="src/main/resources/data/menpai/气纯奇穴.json" />
+                  </Item>
+                  <Item>
+                    <option name="path" value="src/main/resources/data/menpai/剑纯奇穴.json" />
                   </Item>
                 </list>
               </option>
