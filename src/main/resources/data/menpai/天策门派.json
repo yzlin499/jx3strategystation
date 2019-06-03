@@ -1,153 +1,1391 @@
 {
-  "describe": "长河落日东都城,铁马戍边将军坟。尽诸宵小天策义,长枪独守大唐魂。",
-  "menPaiId": 0,
-  "name": "天策",
-  "xinFas": [
-    {
-      "describe": "外功近战，独有的马上战斗，攻防转换之余进退自如。",
-      "name": "傲血战意",
-      "qiXueGroups": [
-      ],
-      "skills": [
+    "describe": "长河落日东都城,铁马戍边将军坟。尽诸宵小天策义,长枪独守大唐魂。",
+    "menPaiId": 394,
+    "name": "天策",
+    "xinFas": [
         {
-          "arm": "长兵",
-          "consumption": 554,
-          "coolDownTime": 8,
-          "describe": "",
-          "distance": 4,
-          "name": "龙吟",
-          "skillId": 0,
-          "skillTypes": [],
-          "storingForce": 0
+            "describe": "外功近战，独有的马上战斗，攻防转换之余进退自如。",
+            "name": "傲血战意",
+            "qiXueGroups": [
+                {
+                    "qiXueGroupId": 278,
+                    "qiXueIndex": 0,
+                    "qiXues": [
+                        {
+                            "describe": "“穿云”伤害提高10%。",
+                            "name": "封侯",
+                            "qiXueId": 279,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“穿云”的会心几率提高10%，会心效果提高10%。",
+                            "name": "扬戈",
+                            "qiXueId": 280,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“御”成功抵御一次伤害，自身将获得1点战意。",
+                            "name": "百折",
+                            "qiXueId": 281,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 282,
+                    "qiXueIndex": 1,
+                    "qiXues": [
+                        {
+                            "describe": "“龙牙”会心几率提高10%，会心效果提高10%。",
+                            "name": "神勇",
+                            "qiXueId": 283,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“穿云”有35%几率使自身额外获得1点战意。",
+                            "name": "大漠",
+                            "qiXueId": 284,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“龙吟”施展距离提高4尺，对目标周围8尺内最多5个目标造成外功伤害且移动速度降低60%，持续12秒。",
+                            "name": "穿",
+                            "qiXueId": 285,
+                            "skillTypes": [
+                                {
+                                    "title": "减速",
+                                    "typeId": 35
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 286,
+                    "qiXueIndex": 2,
+                    "qiXues": [
+                        {
+                            "describe": "“流血”效果伤害提高10％。",
+                            "name": "骁勇",
+                            "qiXueId": 287,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“龙牙”命中目标后，对目标周围6尺的5个目标造成外功伤害。该伤害不受到“龙牙”秘籍的影响。",
+                            "name": "龙啸",
+                            "qiXueId": 288,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "受到攻击失去1层御，受到伤害降低25%，持续6秒。",
+                            "name": "盘蛇",
+                            "qiXueId": 289,
+                            "skillTypes": [
+                                {
+                                    "title": "减伤",
+                                    "typeId": 31
+                                }
+                            ]
+                        },
+                        {
+                            "describe": "施展“突”“断魂刺”之后，自身将获得“徐如林”效果，使自身外功伤害招式命中敌人后，有50%的几率使自身气血与内力在1秒后恢复5%，持续5秒。",
+                            "name": "徐如林",
+                            "qiXueId": 290,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 291,
+                    "qiXueIndex": 3,
+                    "qiXues": [
+                        {
+                            "describe": "“流血”效果可叠3层。",
+                            "name": "击水",
+                            "qiXueId": 292,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "对击倒状态的目标伤害提高30%，且对“破重围”生效。",
+                            "name": "飞将",
+                            "qiXueId": 293,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“疾”可以在马上使用，并击倒冲刺路径上的5个目标，持续2秒。",
+                            "name": "流电",
+                            "qiXueId": 294,
+                            "skillTypes": [
+                                {
+                                    "title": "位移",
+                                    "typeId": 44
+                                }
+                            ]
+                        },
+                        {
+                            "describe": "对吟唱状态的目标造成70-75点（+0.35*攻击力）外功伤害，并使其晕眩5秒。",
+                            "name": "崩",
+                            "qiXueId": 295,
+                            "skillTypes": [
+                                {
+                                    "title": "打断",
+                                    "typeId": 30
+                                },
+                                {
+                                    "title": "眩晕",
+                                    "typeId": 38
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 296,
+                    "qiXueIndex": 4,
+                    "qiXues": [
+                        {
+                            "describe": "“战八方”可以在马下施展。",
+                            "name": "出云",
+                            "qiXueId": 297,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“穿云”“龙吟”命中具有自身“流血”效果的目标增加20%伤害。",
+                            "name": "劲风",
+                            "qiXueId": 298,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "施展“任驰骋”获得的外功基础攻击力效果提高至30%。",
+                            "name": "驰骋",
+                            "qiXueId": 299,
+                            "skillTypes": [
+                                {
+                                    "title": "爆发",
+                                    "typeId": 33
+                                }
+                            ]
+                        },
+                        {
+                            "describe": "“沧月”若在马上释放则每0.5秒造成一次击退效果，且对刀气障碍具有额外的伤害，持续3秒。释放期间具有“纵轻骑”效果。",
+                            "name": "千驰",
+                            "qiXueId": 300,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 301,
+                    "qiXueIndex": 5,
+                    "qiXues": [
+                        {
+                            "describe": "“灭”会心几率提高20%，会心效果提高10%，并不会对自身造成伤害。",
+                            "name": "夜征",
+                            "qiXueId": 302,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "每点“战意”增加“穿云”，“龙吟”，“龙牙”，“灭”5%的伤害",
+                            "name": "风虎",
+                            "qiXueId": 303,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "施展“啸如虎”立刻使周围6尺内5个目标眩晕4秒，“啸如虎”期间被疗伤成效额外提高20%。",
+                            "name": "将威",
+                            "qiXueId": 304,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“灭”的释放距离提高到25尺，调息时间提高到25秒，施展后自身不受控制招式影响，持续5秒，若目标气血值低于40%，解除自身锁足减速不利效果，并冲向目标。",
+                            "name": "青阳",
+                            "qiXueId": 305,
+                            "skillTypes": [
+                                {
+                                    "title": "免控",
+                                    "typeId": 49
+                                },
+                                {
+                                    "title": "冲刺",
+                                    "typeId": 29
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 306,
+                    "qiXueIndex": 6,
+                    "qiXues": [
+                        {
+                            "describe": "“龙牙”施展后有35%几率刷新“龙吟”的调息时间。",
+                            "name": "龙胆",
+                            "qiXueId": 307,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“灭”对于气血值低于40%的目标造成40%的额外伤害，施展灭6秒内获得一次额外施展的机会。",
+                            "name": "破楼兰",
+                            "qiXueId": 308,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "施展“疾如风”后，不受控制招式影响的效果提高到6秒，并立刻获得5点“战意”。",
+                            "name": "白羽",
+                            "qiXueId": 309,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "对目标及其附近额外的3个目标造成200%武器伤害并附加203-224点(+1.4*攻击力)外功伤害，使目标受到的疗伤成效降低50%，持续10秒。",
+                            "name": "霹雳",
+                            "qiXueId": 310,
+                            "skillTypes": [
+                                {
+                                    "title": "减疗",
+                                    "typeId": 43
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 311,
+                    "qiXueIndex": 7,
+                    "qiXues": [
+                        {
+                            "describe": "体质和力道提高10%。",
+                            "name": "关山月",
+                            "qiXueId": 312,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "施展“御”后每秒回复2%的气血与内力，持续5秒。",
+                            "name": "守孤城",
+                            "qiXueId": 313,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“任驰骋”上马后移动速度提高50%，“纵轻骑”效果持续过程中将不受任何位移招式影响。并且立刻重置“断魂刺”“破坚阵”“沧月”调息时间。",
+                            "name": "飞遁",
+                            "qiXueId": 314,
+                            "skillTypes": [
+                                {
+                                    "title": "加速",
+                                    "typeId": 46
+                                }
+                            ]
+                        },
+                        {
+                            "describe": "“灭”附带流血效果并使自身立刻获得3点战意。并进入“徐如林”状态，持续3秒。",
+                            "name": "战心",
+                            "qiXueId": 315,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 316,
+                    "qiXueIndex": 8,
+                    "qiXues": [
+                        {
+                            "describe": "“突”的调息时间增加25秒，施展后自身获得牧云效果，持续45秒，效果期间施展“龙牙”则叠加一层“牧云”效果，最多作用3次。“牧云”效果每层使得自身外功会心提高3％，外功会效提高5％，无视目标7％的外功防御。",
+                            "name": "牧云",
+                            "qiXueId": 317,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“突”变为2层充能，充能时间为20秒。",
+                            "name": "长征",
+                            "qiXueId": 318,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“沧月”每击退1个目标，增加0.5秒“纵轻骑”效果时间，降低0.5秒“沧月”调息时间。",
+                            "name": "雷行",
+                            "qiXueId": 319,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "解除自身所有移动限制，冲刺到友方目标身边，为其承受4次伤害，并使自身外功基础攻击力提高50%。",
+                            "name": "渊",
+                            "qiXueId": 320,
+                            "skillTypes": [
+                                {
+                                    "title": "解控",
+                                    "typeId": 41
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 321,
+                    "qiXueIndex": 9,
+                    "qiXues": [
+                        {
+                            "describe": "“战八方”若只命中单一目标，伤害提高25%且自身获得1点战意。",
+                            "name": "泾威",
+                            "qiXueId": 322,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“撼如雷”的调息时间提高到30秒，施展后小队成员的外功破防值提高15%，外功基础攻击力提高15%，持续8秒。",
+                            "name": "激雷",
+                            "qiXueId": 323,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "守如山调息时间降低70秒，减伤效果变为50%，马上施展则额外增加5秒持续时间。",
+                            "name": "坚城",
+                            "qiXueId": 324,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“任驰骋”招式无需运功，且“纵轻骑”效果持续时间提高1秒。",
+                            "name": "逐北",
+                            "qiXueId": 325,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 326,
+                    "qiXueIndex": 10,
+                    "qiXues": [
+                        {
+                            "describe": "“战八方”调息时间增加6秒，命中目标附带“流血”效果。",
+                            "name": "牙璋",
+                            "qiXueId": 327,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“啸如虎”可在受控状态下施展，效果期间受到会心攻击恢复自身5%气血值，最多作用5次。",
+                            "name": "于役",
+                            "qiXueId": 328,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“龙牙”命中有自身“流血”效果的目标额外造成25%伤害。",
+                            "name": "龙血",
+                            "qiXueId": 329,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“破坚阵”可冲刺至15尺内目标身边对其释放，并将目标周围6尺范围4个目标击倒。",
+                            "name": "薄伐",
+                            "qiXueId": 330,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 331,
+                    "qiXueIndex": 11,
+                    "qiXues": [
+                        {
+                            "describe": "“龙牙”有30%几率不消耗战意效果。",
+                            "name": "虎贲",
+                            "qiXueId": 332,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "自身气血值每降低10%，“守如山”减伤效果持续时间增加1秒。",
+                            "name": "温邑",
+                            "qiXueId": 333,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "自身气血每降低20%，自身外功基础攻击力提高5%，“灭”伤害提高5%。",
+                            "name": "背水",
+                            "qiXueId": 334,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "纵马疾驰，控制目标并连续造成大量外功伤害效果并使目标无法施展轻功，命中击倒中的目标伤害提高60%，骑马时方可施展此招式。",
+                            "name": "破重围",
+                            "qiXueId": 335,
+                            "skillTypes": [
+                                {
+                                    "title": "封轻功",
+                                    "typeId": 45
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "skills": [
+                {
+                    "arm": "长兵",
+                    "consumption": 554,
+                    "coolDownTime": 8,
+                    "describe": "对目标造成100%的武器伤害外加39-44(+1034)点外功伤害。",
+                    "distance": 4,
+                    "name": "龙吟",
+                    "skillId": 396,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 554,
+                    "coolDownTime": 2,
+                    "describe": "对目标造成100%的武器伤害外加35-40点(+625)外功伤害，并对其造成致伤效果。",
+                    "distance": 4,
+                    "name": "穿云",
+                    "skillId": 397,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 929,
+                    "coolDownTime": 0,
+                    "describe": "对目标造成100%的武器伤害外加70-75(+1647)点外功伤害。当目标致残时方可施展该招式。",
+                    "distance": 4,
+                    "name": "龙牙",
+                    "skillId": 398,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 956,
+                    "coolDownTime": 20,
+                    "describe": "击倒当前目标，并击退其周围6尺内最多5个其他的敌对目标，造成20-25点(+192)外功伤害。成功击倒当前目标后，使目标附带“致残”不利效果。",
+                    "distance": 4,
+                    "name": "沧月",
+                    "skillId": 399,
+                    "skillTypes": [
+                        {
+                            "title": "击倒",
+                            "typeId": 39
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 265,
+                    "coolDownTime": 30,
+                    "describe": "运功0.5秒，对目标造成218-241点(+1923)外功伤害，并使其外功防御等级降低10%，持续6秒。对有致残效果的目标造成50%的额外伤害。可打断目标运功，马上方可施展。",
+                    "distance": 25,
+                    "name": "乘龙箭",
+                    "skillId": 400,
+                    "skillTypes": [],
+                    "storingForce": 0.5
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 1809,
+                    "coolDownTime": 1,
+                    "describe": "每0.5秒对自身周围6尺内最多5个目标均造成100%的武器伤害外加33-36点(+228)外功伤害，持续3秒。骑马时方可施展此招式。",
+                    "distance": 6,
+                    "name": "战八方",
+                    "skillId": 401,
+                    "skillTypes": [],
+                    "storingForce": 0.5
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 554,
+                    "coolDownTime": 25,
+                    "describe": "策马猛冲目标，造成100%的武器伤害外加26-29点(+385)外功伤害，将其击晕2秒并造成致残效果。骑马时方可施展此招式。",
+                    "distance": 25,
+                    "name": "断魂刺",
+                    "skillId": 402,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[3].skillTypes[1]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[3].qiXues[3].skillTypes[1]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 39,
+                    "coolDownTime": 40,
+                    "describe": "军中秘传马技，使你可在战斗中上马并解除自身锁足效果，成功上马后5秒内不受任何招式控制，并且不会被击下马，使自身获得5层驰骋效果，每层使自身外功基础攻击提高5%，受到技能攻击则消除一层。",
+                    "distance": 0,
+                    "name": "任驰骋",
+                    "skillId": 403,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[4].qiXues[2].skillTypes[0]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[8].qiXues[3].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 1.5
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 454,
+                    "coolDownTime": 15,
+                    "describe": "骑马时方可施展，若目标带有致残效果或者正在运功，则击倒目标。",
+                    "distance": 4,
+                    "name": "破坚阵",
+                    "skillId": 404,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].skills[3].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 654,
+                    "coolDownTime": 18,
+                    "describe": "快速冲向目标，对目标造成17-20点(+385)外功伤害，并将其击倒。",
+                    "distance": 25,
+                    "name": "突",
+                    "skillId": 405,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[3].skillTypes[1]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].skills[3].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 1208,
+                    "coolDownTime": 20,
+                    "describe": "立刻重置游龙骑法下其余技能调息时间，并使骑乘速度提高30%，持续12秒。骑马时方可施展此招式。",
+                    "distance": 0,
+                    "name": "御",
+                    "skillId": 406,
+                    "skillTypes": [
+                        {
+                            "title": "无敌",
+                            "typeId": 48
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "任意兵器",
+                    "consumption": 302,
+                    "coolDownTime": 25,
+                    "describe": "解除所有控制效果，并不受控制效果的影响，持续3秒。同时使自身外功基础攻击力提高10%，外功会心几率提高20%，持续10秒。",
+                    "distance": 0,
+                    "name": "疾",
+                    "skillId": 407,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[3].qiXues[2].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 1992,
+                    "coolDownTime": 0,
+                    "describe": "使周围队友外功基础攻击力提高1%，气血最大值提高1%，持续30分钟。",
+                    "distance": 20,
+                    "name": "撼如雷",
+                    "skillId": 408,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[4].qiXues[2].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 202,
+                    "coolDownTime": 300,
+                    "describe": "使自身受到的伤害降低80%，持续8秒。",
+                    "distance": 0,
+                    "name": "守如山",
+                    "skillId": 409,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[2].qiXues[2].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 351,
+                    "coolDownTime": 90,
+                    "describe": "解除所有控制效果，并不受控制效果的影响，持续3秒。同时使自身外功基础攻击力提高10%，外功会心几率提高20%，持续10秒。",
+                    "distance": 0,
+                    "name": "疾如风",
+                    "skillId": 410,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[8].qiXues[3].skillTypes[0]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[4].qiXues[2].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 454,
+                    "coolDownTime": 15,
+                    "describe": "对吟唱状态的目标造成70-75点(+673)外功伤害，并使其晕眩5秒。",
+                    "distance": 4,
+                    "name": "崩",
+                    "skillId": 411,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[3].qiXues[3].skillTypes[0]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[3].qiXues[3].skillTypes[1]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 1460,
+                    "coolDownTime": 20,
+                    "describe": "对目标及其附近额外的3个目标造成200%武器伤害并附加203-224点(+3077)外功伤害，使目标受到的疗伤成效降低50%，持续10秒。",
+                    "distance": 4,
+                    "name": "霹雳",
+                    "skillId": 412,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[6].qiXues[3].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 501,
+                    "coolDownTime": 30,
+                    "describe": "解除自身所有移动限制，冲刺到友方目标身边，为其承受3次伤害，并使自身外功基础攻击力提高50%(585点)，每承受一次伤害，调息时间降低5秒。",
+                    "distance": 20,
+                    "name": "渊",
+                    "skillId": 413,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[8].qiXues[3].skillTypes[0]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[3].skillTypes[1]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 1809,
+                    "coolDownTime": 40,
+                    "describe": "纵马疾驰，控制目标并连续造成大量外功伤害效果并使目标无法施展轻功，骑马时方可施展此招式。",
+                    "distance": 0,
+                    "name": "破重围",
+                    "skillId": 414,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[11].qiXues[3].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                }
+            ],
+            "xinFaId": 395
         },
         {
-          "arm": "长兵",
-          "consumption": 554,
-          "coolDownTime": 2,
-          "describe": "",
-          "distance": 4,
-          "name": "穿云",
-          "skillId": 0,
-          "skillTypes": [],
-          "storingForce": 0
-        },
-        {
-          "arm": "长兵",
-          "consumption": 929,
-          "coolDownTime": 0,
-          "describe": "",
-          "distance": 4,
-          "name": "龙牙",
-          "skillId": 0,
-          "skillTypes": [],
-          "storingForce": 0
-        },
-        {
-          "arm": "长兵",
-          "consumption": 956,
-          "coolDownTime": 20,
-          "describe": "",
-          "distance": 4,
-          "name": "沧月",
-          "skillId": 0,
-          "skillTypes": [],
-          "storingForce": 0
-        },
-        {
-          "arm": "长兵",
-          "consumption": 265,
-          "coolDownTime": 30,
-          "distance": 25,
-          "name": "乘龙箭",
-          "storingForce": 0.5
-        },
-        {
-          "arm": "长兵",
-          "consumption": 1809,
-          "coolDownTime": 1,
-          "distance": 0,
-          "name": "战八方",
-          "storingForce": 0.5
-        },
-        {
-          "arm": "长兵",
-          "consumption": 554,
-          "coolDownTime": 25,
-          "distance": 25,
-          "name": "断魂刺",
-          "storingForce": 0
-        },
-        {
-          "arm": "长兵",
-          "consumption": 39,
-          "coolDownTime": 40,
-          "distance": 0,
-          "name": "任驰骋",
-          "storingForce": 1.5
-        },
-        {
-          "arm": "长兵",
-          "consumption": 454,
-          "coolDownTime": 15,
-          "distance": 4,
-          "name": "破坚阵",
-          "storingForce": 0
-        },
-        {
-          "arm": "长兵",
-          "consumption": 654,
-          "coolDownTime": 18,
-          "distance": 25,
-          "name": "突",
-          "storingForce": 0
-        },
-        {
-          "arm": "长兵",
-          "consumption": 1208,
-          "coolDownTime": 20,
-          "distance": 0,
-          "name": "御",
-          "storingForce": 0
-        },
-        {
-          "arm": "长兵",
-          "consumption": 302,
-          "coolDownTime": 25,
-          "distance": 0,
-          "name": "疾",
-          "storingForce": 0
+            "describe": "外功近战，外功防御位列各大门派之首。",
+            "name": "铁牢律",
+            "qiXueGroups": [
+                {
+                    "qiXueGroupId": 336,
+                    "qiXueIndex": 0,
+                    "qiXues": [
+                        {
+                            "describe": "“穿云”威胁值提高20%。",
+                            "name": "封侯",
+                            "qiXueId": 337,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "外功防御和内功防御等级提高20%。",
+                            "name": "勤王",
+                            "qiXueId": 338,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "对敌人造成22-25外功伤害，并强迫其对你发起攻击。",
+                            "name": "定军",
+                            "qiXueId": 339,
+                            "skillTypes": [
+                                {
+                                    "title": "嘲讽",
+                                    "typeId": 42
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 340,
+                    "qiXueIndex": 1,
+                    "qiXues": [
+                        {
+                            "describe": "“龙牙”命中目标后，使目标造成的伤害降低10%，持续6秒。",
+                            "name": "龙痕",
+                            "qiXueId": 341,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "被伤害招式命中使自身受到的伤害降低1%，可叠加5层，持续12秒。",
+                            "name": "坚韧",
+                            "qiXueId": 342,
+                            "skillTypes": [
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[2].qiXues[2].skillTypes[0]"
+                                }
+                            ]
+                        },
+                        {
+                            "describe": "“龙吟”施展距离提高4尺，对目标周围8尺内最多5个目标造成外功伤害且移动速度降低60%，持续12秒。",
+                            "name": "穿",
+                            "qiXueId": 343,
+                            "skillTypes": [
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[1].qiXues[2].skillTypes[0]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 344,
+                    "qiXueIndex": 2,
+                    "qiXues": [
+                        {
+                            "describe": "“流血”效果伤害提高10％。",
+                            "name": "骁勇",
+                            "qiXueId": 345,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“龙牙”命中目标后，对目标周围6尺的5个目标造成外功伤害。该伤害不受到“龙牙”秘籍的影响。",
+                            "name": "龙啸",
+                            "qiXueId": 346,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "受到攻击失去1层御，受到伤害降低20%，持续6秒。",
+                            "name": "盘蛇",
+                            "qiXueId": 347,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "施展“突”“断魂刺”之后，自身将获得“徐如林”效果，使自身外功伤害招式命中敌人后，有50%的几率使自身气血与内力在1秒后恢复5%，持续5秒。",
+                            "name": "徐如林",
+                            "qiXueId": 348,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 349,
+                    "qiXueIndex": 3,
+                    "qiXues": [
+                        {
+                            "describe": "“流血”效果可叠3层。",
+                            "name": "击水",
+                            "qiXueId": 350,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“灭”不再对自身造成伤害，并回复自身10%气血值。",
+                            "name": "仗剑",
+                            "qiXueId": 351,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "基础气血和内力上限提高10%。",
+                            "name": "望西京",
+                            "qiXueId": 352,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "对吟唱状态的目标造成70-75点（+0.35*攻击力）外功伤害，并使其晕眩5秒。",
+                            "name": "崩",
+                            "qiXueId": 353,
+                            "skillTypes": [
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[3].qiXues[3].skillTypes[0]"
+                                },
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[3].qiXues[3].skillTypes[1]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 354,
+                    "qiXueIndex": 4,
+                    "qiXues": [
+                        {
+                            "describe": "“战八方”可以在马下施展。",
+                            "name": "出云",
+                            "qiXueId": 355,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“龙吟”附带“破甲”效果提高100%",
+                            "name": "劲风",
+                            "qiXueId": 356,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“龙吟”威胁值提高10%，调息时间降低1秒。",
+                            "name": "留侯",
+                            "qiXueId": 357,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“沧月”若在马上释放则每0.5秒造成一次击退效果，且对刀气障碍具有额外的伤害，持续3秒。释放期间具有“纵轻骑”效果。",
+                            "name": "千驰",
+                            "qiXueId": 358,
+                            "skillTypes": [
+                                {
+                                    "title": "推",
+                                    "typeId": 50
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 359,
+                    "qiXueIndex": 5,
+                    "qiXues": [
+                        {
+                            "describe": "施展“沧月”将消耗自身战意，每消耗一点战意降低自身“疾”2秒调息时间。",
+                            "name": "狮心",
+                            "qiXueId": 360,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "被会心攻击后使自身御劲率提高8%，持续8秒。",
+                            "name": "旗渊",
+                            "qiXueId": 361,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "施展“啸如虎”立刻使周围6尺内5个目标眩晕3秒，“啸如虎”期间被疗伤成效额外提高20%。",
+                            "name": "将威",
+                            "qiXueId": 362,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "施展“疾如风”后自身威胁值提高75%，团队成员获得无威胁气劲，持续8秒。",
+                            "name": "掠如火",
+                            "qiXueId": 363,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 364,
+                    "qiXueIndex": 6,
+                    "qiXues": [
+                        {
+                            "describe": "“灭”附带流血效果并使自身立刻获得3点战意。并进入“徐如林”状态，持续3秒。",
+                            "name": "战心",
+                            "qiXueId": 365,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "受到攻击后若气血值低于40%，则自身被疗伤成效提高20%，受到所有伤害降低20%，当气血值高于40%时该效果消失。",
+                            "name": "踏北邙",
+                            "qiXueId": 366,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "施展“突”后，自身受到的伤害降低30%，持续8秒。",
+                            "name": "金甲",
+                            "qiXueId": 367,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "施展“守如山”后，每3秒强制周围8尺内5个敌人攻击自身，作用3次。",
+                            "name": "岳峙",
+                            "qiXueId": 368,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 369,
+                    "qiXueIndex": 7,
+                    "qiXues": [
+                        {
+                            "describe": "“疾”可以在马上使用，并击倒冲刺路径上的5个目标，持续2秒。",
+                            "name": "流电",
+                            "qiXueId": 370,
+                            "skillTypes": [
+                                {
+                                    "$ref": "$.xinFas[0].skills[3].skillTypes[0]"
+                                }
+                            ]
+                        },
+                        {
+                            "describe": "施展“御”后每秒回复2%的气血与内力，持续5秒。",
+                            "name": "守孤城",
+                            "qiXueId": 371,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "施展“突”冲刺到目标身旁时，强迫周围6尺范围的5个敌对目标攻击自身。",
+                            "name": "傲骨",
+                            "qiXueId": 372,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“灭”附带流血效果并使自身立刻获得3点战意。并进入“徐如林”状态，持续3秒。",
+                            "name": "战心",
+                            "qiXueId": 373,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 374,
+                    "qiXueIndex": 8,
+                    "qiXues": [
+                        {
+                            "describe": "“疾”命中目标降低自身“沧月”5秒调息时间。",
+                            "name": "日影",
+                            "qiXueId": 375,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“突”变为2层充能，充能时间为20秒。",
+                            "name": "长征",
+                            "qiXueId": 376,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“战八方”附带额外威胁值。",
+                            "name": "北伐",
+                            "qiXueId": 377,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "解除自身所有移动限制，冲刺到友方目标身边，为其承受4次伤害，并使自身外功基础攻击力提高50%。",
+                            "name": "渊",
+                            "qiXueId": 378,
+                            "skillTypes": [
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[3].skillTypes[1]"
+                                },
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[8].qiXues[3].skillTypes[0]"
+                                },
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[4].qiXues[2].skillTypes[0]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 379,
+                    "qiXueIndex": 9,
+                    "qiXues": [
+                        {
+                            "describe": "自身气血值低于50%，施展“灭”立刻回复自身10%气血值。",
+                            "name": "反岳",
+                            "qiXueId": 380,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“撼如雷”调息时间提高到30秒，施展后强制半径10尺内最多5个目标攻击自身，持续3秒。",
+                            "name": "烈雷",
+                            "qiXueId": 381,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "守如山调息时间降低70秒，减伤效果变为50%，马上施展则额外增加5秒持续时间。",
+                            "name": "坚城",
+                            "qiXueId": 382,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "施展“御”恢复自身气血最大值5%并使自身气血最大值提高15%，持续10秒。",
+                            "name": "昂如岳",
+                            "qiXueId": 383,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 384,
+                    "qiXueIndex": 10,
+                    "qiXues": [
+                        {
+                            "describe": "“御”持续时间结束后每层效果使自身回复5%气血最大值。",
+                            "name": "戟胜",
+                            "qiXueId": 385,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“啸如虎”可在受控状态下施展，效果期间受到会心攻击恢复自身5%气血值，最多作用5次。",
+                            "name": "于役",
+                            "qiXueId": 386,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "受到伤害导致自身气血值低于35%，立刻重置“守如山”调息时间，该效果每3分钟最多出现一次。",
+                            "name": "至武",
+                            "qiXueId": 387,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“御”每成功抵御一次伤害，调息时间降低2秒。",
+                            "name": "载戎",
+                            "qiXueId": 388,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 389,
+                    "qiXueIndex": 11,
+                    "qiXues": [
+                        {
+                            "describe": "“疾如风”效果期间，不再提高自身外功会心几率，而使自身受到技能伤害被会心几率降低20%。",
+                            "name": "在握",
+                            "qiXueId": 390,
+                            "skillTypes": [
+                                {
+                                    "title": "闪避",
+                                    "typeId": 32
+                                }
+                            ]
+                        },
+                        {
+                            "describe": "自身气血值每降低10%，“守如山”减伤效果持续时间增加1秒。",
+                            "name": "温邑",
+                            "qiXueId": 391,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“疾”每命中一个目标使自身获得2点战意。",
+                            "name": "戈矛",
+                            "qiXueId": 392,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "一鼓，团队成员内外功基础攻击提高40%，持续30秒；二鼓，团队成员内外功基础攻击提高20%，持续30秒；三鼓，团队成员受到的所有伤害提高10%，持续至战斗结束，该招式每场战斗只能施展一次。",
+                            "name": "号令三军",
+                            "qiXueId": 393,
+                            "skillTypes": []
+                        }
+                    ]
+                }
+            ],
+            "skills": [
+                {
+                    "arm": "长兵",
+                    "consumption": 554,
+                    "coolDownTime": 8,
+                    "describe": "对目标造成100%的武器伤害外加39-44(+1034)点外功伤害。",
+                    "distance": 4,
+                    "name": "龙吟",
+                    "skillId": 416,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 554,
+                    "coolDownTime": 2,
+                    "describe": "对目标造成100%的武器伤害外加35-40点(+625)外功伤害，并对其造成致伤效果。",
+                    "distance": 4,
+                    "name": "穿云",
+                    "skillId": 417,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 929,
+                    "coolDownTime": 0,
+                    "describe": "对目标造成100%的武器伤害外加70-75(+1647)点外功伤害。当目标致残时方可施展该招式。",
+                    "distance": 4,
+                    "name": "龙牙",
+                    "skillId": 418,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 956,
+                    "coolDownTime": 20,
+                    "describe": "击倒当前目标，并击退其周围6尺内最多5个其他的敌对目标，造成20-25点(+192)外功伤害。成功击倒当前目标后，使目标附带“致残”不利效果。",
+                    "distance": 4,
+                    "name": "沧月",
+                    "skillId": 419,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].skills[3].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 265,
+                    "coolDownTime": 30,
+                    "describe": "运功0.5秒，对目标造成218-241点(+1923)外功伤害，并使其外功防御等级降低10%，持续6秒。对有致残效果的目标造成50%的额外伤害。可打断目标运功，马上方可施展。",
+                    "distance": 25,
+                    "name": "乘龙箭",
+                    "skillId": 420,
+                    "skillTypes": [],
+                    "storingForce": 0.5
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 1809,
+                    "coolDownTime": 1,
+                    "describe": "每0.5秒对自身周围6尺内最多5个目标均造成100%的武器伤害外加33-36点(+228)外功伤害，持续3秒。骑马时方可施展此招式。",
+                    "distance": 6,
+                    "name": "战八方",
+                    "skillId": 421,
+                    "skillTypes": [],
+                    "storingForce": 0.5
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 554,
+                    "coolDownTime": 25,
+                    "describe": "策马猛冲目标，造成100%的武器伤害外加26-29点(+385)外功伤害，将其击晕2秒并造成致残效果。骑马时方可施展此招式。",
+                    "distance": 25,
+                    "name": "断魂刺",
+                    "skillId": 422,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[3].skillTypes[1]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[3].qiXues[3].skillTypes[1]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 39,
+                    "coolDownTime": 40,
+                    "describe": "军中秘传马技，使你可在战斗中上马并解除自身锁足效果，成功上马后5秒内不受任何招式控制，并且不会被击下马，使自身获得5层驰骋效果，每层使自身外功基础攻击提高5%，受到技能攻击则消除一层。",
+                    "distance": 0,
+                    "name": "任驰骋",
+                    "skillId": 423,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[4].qiXues[2].skillTypes[0]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[8].qiXues[3].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 1.5
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 454,
+                    "coolDownTime": 15,
+                    "describe": "骑马时方可施展，若目标带有致残效果或者正在运功，则击倒目标。",
+                    "distance": 4,
+                    "name": "破坚阵",
+                    "skillId": 424,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].skills[3].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 654,
+                    "coolDownTime": 18,
+                    "describe": "快速冲向目标，对目标造成17-20点(+385)外功伤害，并将其击倒。",
+                    "distance": 25,
+                    "name": "突",
+                    "skillId": 425,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[3].skillTypes[1]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].skills[3].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 1208,
+                    "coolDownTime": 20,
+                    "describe": "立刻重置游龙骑法下其余技能调息时间，并使骑乘速度提高30%，持续12秒。骑马时方可施展此招式。",
+                    "distance": 0,
+                    "name": "御",
+                    "skillId": 426,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].skills[10].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "任意兵器",
+                    "consumption": 302,
+                    "coolDownTime": 25,
+                    "describe": "解除所有控制效果，并不受控制效果的影响，持续3秒。同时使自身外功基础攻击力提高10%，外功会心几率提高20%，持续10秒。",
+                    "distance": 0,
+                    "name": "疾",
+                    "skillId": 427,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[3].qiXues[2].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 1992,
+                    "coolDownTime": 0,
+                    "describe": "使周围队友外功基础攻击力提高1%，气血最大值提高1%，持续30分钟。",
+                    "distance": 20,
+                    "name": "撼如雷",
+                    "skillId": 428,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[4].qiXues[2].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 202,
+                    "coolDownTime": 300,
+                    "describe": "使自身受到的伤害降低80%，持续8秒。",
+                    "distance": 0,
+                    "name": "守如山",
+                    "skillId": 429,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[2].qiXues[2].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 351,
+                    "coolDownTime": 90,
+                    "describe": "解除所有控制效果，并不受控制效果的影响，持续3秒。同时使自身外功基础攻击力提高10%，外功会心几率提高20%，持续10秒。",
+                    "distance": 0,
+                    "name": "疾如风",
+                    "skillId": 430,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[8].qiXues[3].skillTypes[0]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[4].qiXues[2].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 554,
+                    "coolDownTime": 8,
+                    "describe": "对敌人造成20-25点(+75)外功伤害，并强迫其对你发起攻击。",
+                    "distance": 4,
+                    "name": "定军",
+                    "skillId": 431,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[1].qiXueGroups[0].qiXues[2].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 454,
+                    "coolDownTime": 15,
+                    "describe": "对吟唱状态的目标造成70-75点(+673)外功伤害，并使其晕眩5秒。",
+                    "distance": 4,
+                    "name": "崩",
+                    "skillId": 432,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[3].qiXues[3].skillTypes[0]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[3].qiXues[3].skillTypes[1]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 501,
+                    "coolDownTime": 30,
+                    "describe": "解除自身所有移动限制，冲刺到友方目标身边，为其承受3次伤害，并使自身外功基础攻击力提高50%(585点)，每承受一次伤害，调息时间降低5秒。",
+                    "distance": 20,
+                    "name": "渊",
+                    "skillId": 433,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[8].qiXues[3].skillTypes[0]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[3].skillTypes[1]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "长兵",
+                    "consumption": 1809,
+                    "coolDownTime": 180,
+                    "describe": "一鼓，团队成员内外功破防等级提高40%，持续30秒；二鼓，团队成员内外功破防等级提高20%，持续30秒；三鼓，团队成员受到的所有伤害提高10%，持续至战斗结束，该招式每场战斗只能施展一次。",
+                    "distance": 20,
+                    "name": "号令三军",
+                    "skillId": 434,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[4].qiXues[2].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 3.0
+                }
+            ],
+            "xinFaId": 415
         }
-      ],
-      "xinFaId": 0
-    },
-    {
-      "describe": "外功近战，外功防御位列各大门派之首。",
-      "name": "铁牢律",
-      "qiXueGroups": [
-      ],
-      "skills": [
-        {
-          "arm": "傲雪刀",
-          "consumption": 5,
-          "coolDownTime": 40,
-          "describe": "金屏体态下方可施展，消耗5点气劲，解除自身受控状态并后翻8尺，在自身位置残留一道8尺刀气障碍，敌对玩家目标无法穿越，持续4秒，可透支施展两次。",
-          "distance": 0,
-          "name": "封渊震煞",
-          "skillId": 0,
-          "skillTypes": [
-            {
-              "title": "解控",
-              "typeId": 41
-            },
-            {
-              "title": "位移",
-              "typeId": 44
-            }
-          ],
-          "storingForce": 0.0
-        }
-      ],
-      "xinFaId": 0
-    }
-  ]
+    ]
 }

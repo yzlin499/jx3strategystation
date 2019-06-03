@@ -6,19 +6,35 @@ import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.io.FileUtils;
 import org.junit.Test;
 import org.springframework.util.ResourceUtils;
-import top.yzlin.jx3strategystation.entity.game.QiXue;
-import top.yzlin.jx3strategystation.entity.game.QiXueGroup;
-import top.yzlin.jx3strategystation.entity.game.SkillType;
+import top.yzlin.jx3strategystation.entity.game.*;
 
 import java.io.IOException;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class GameData {
     private Pattern pattern = Pattern.compile("class=\"font-100\">(?<content>.*?)</span>");
     private Pattern coolDownTimePattern = Pattern.compile("class=\"font-165\">(?<content>.*?)</span>");
+
+    @Test
+    public void createSkill() {
+        String[] skills = {"生太极", "破苍穹", "镇山河", "万世不竭", "九转归一", "五方行尽", "七星拱瑞", "三才化生", "六合独尊",
+                "太极无极", "两仪化形", "四象轮回", "紫气东来", "凭虚御风", "梯云纵", "坐忘无我", "化三清", "八卦洞玄", "剑出鸿蒙"};
+        List<Skill> skillList = Arrays.stream(skills).map(s -> {
+            Skill skill = new Skill();
+            skill.setName(s);
+            skill.setArm("短兵");
+            skill.setSkillTypes(new SkillType[0]);
+            skill.setDescribe(getDescribe(s));
+            return skill;
+        }).collect(Collectors.toList());
+        System.out.println(JSON.toJSONString(skillList));
+    }
 
     @Test
     public void getData() throws IOException {
@@ -38,8 +54,45 @@ public class GameData {
             }).toArray(QiXue[]::new));
         }
         System.out.println(JSON.toJSONString(qiXueGroups));
+    }
 
+    @Test
+    public void getSkillData() throws IOException {
+        String data = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/天策门派.json"), "utf-8");
+        JSONObject jsonObject = JSON.parseObject(data);
+        MenPai menPai = jsonObject.toJavaObject(MenPai.class);
+        for (XinFa xinFa : menPai.getXinFas()) {
+            for (Skill skill : xinFa.getSkills()) {
+                skill.setSkillTypes(new SkillType[0]);
+                skill.setDescribe(getDescribe(skill.getName()));
+            }
+        }
+        System.out.println(JSON.toJSONString(menPai));
+    }
 
+    @Test
+    public void getQiXueData() throws IOException {
+        JSONObject netData = JSON.parseObject(Tools.sendGet("https://api.ipsfan.com/jx3qx/cy.json", ""));
+        Map<String, String> qiXueCollect = netData.getJSONArray("data")
+                .getJSONObject(0)
+                .getJSONArray("kungfuLevel")
+                .toJavaList(JSONObject.class)
+                .stream()
+                .flatMap(ja -> {
+                    List<JSONObject> kungfuSkills = ja.getJSONArray("kungfuSkills").toJavaList(JSONObject.class);
+                    List<JSONObject> forceSkills = ja.getJSONArray("forceSkills").toJavaList(JSONObject.class);
+                    forceSkills.forEach(jo -> jo.put("name", jo.getString("skillName")));
+                    return Stream.concat(kungfuSkills.stream(), forceSkills.stream());
+                }).collect(Collectors.toMap(k -> k.getString("name"), v -> v.getString("desc")));
+        String data = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/剑纯奇穴.json"), "utf-8");
+        JSONArray objects = JSON.parseArray(data);
+        List<QiXueGroup> qixues = objects.toJavaList(QiXueGroup.class);
+        for (QiXueGroup qixue : qixues) {
+            for (QiXue qiXue : qixue.getQiXues()) {
+                qiXue.setDescribe(qiXueCollect.get(qiXue.getName()));
+            }
+        }
+        System.out.println(JSON.toJSONString(qixues));
     }
 
     public void qixueGetDescribe() {
@@ -61,21 +114,23 @@ public class GameData {
     }
 
     @Test
-    public void describeTest() {
-        System.out.println(getCoolDownTime(getTip("夕照雷峰")));
+    public void describeTest() throws IOException {
+        String data = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/纯阳门派.json"), "UTF-8");
+        MenPai menPai = JSON.parseObject(data).toJavaObject(MenPai.class);
+        System.out.println(menPai.getXinFas()[0].getSkills()[0]);
+        System.out.println(menPai.getXinFas()[1].getSkills()[0]);
+        System.out.println(menPai.getXinFas()[0].getSkills()[0] == menPai.getXinFas()[1].getSkills()[0]);
+
     }
 
-    private String getTip(String name) {
-        JSONObject data = JSON.parseObject(Tools.sendGet("https://haiman.io/api/jx3/search-data/skill", "q=" + name + "&offset=0&limit=25"));
 
+    private String getDescribe(String name) {
+        JSONObject data = JSON.parseObject(Tools.sendGet("https://haiman.io/api/jx3/search-data/skill", "q=" + name + "&offset=0&limit=25"));
         JSONArray dataJSONArray = data.getJSONArray("data");
         if (dataJSONArray.size() <= 0) {
             return null;
         }
-        return dataJSONArray.getJSONObject(0).getString("szTip");
-    }
-
-    private String getDescribe(String tip) {
+        String tip = dataJSONArray.getJSONObject(0).getString("szTip");
         Matcher matcher = pattern.matcher(tip);
         StringBuilder sb = new StringBuilder();
         while (matcher.find()) {
@@ -84,22 +139,4 @@ public class GameData {
         return sb.deleteCharAt(sb.length() - 1).toString();
     }
 
-    private int getCoolDownTime(String tip) {
-        Matcher matcher = coolDownTimePattern.matcher(tip);
-        if (matcher.find()) {
-            String content = matcher.group("content");
-            if ("无调息时间".equals(content)) {
-                return 0;
-            } else {
-                content = content.replace("秒", "");
-                if (content.contains(".")) {
-                    return (int) Double.parseDouble(content);
-                } else {
-                    return Integer.parseInt(content);
-                }
-            }
-        } else {
-            return -1;
-        }
-    }
 }
