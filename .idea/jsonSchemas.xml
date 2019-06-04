@@ -19,6 +19,9 @@
                   <Item>
                     <option name="path" value="src/main/resources/data/menpai/霸刀门派.json" />
                   </Item>
+                  <Item>
+                    <option name="path" value="src/main/resources/data/menpai/藏剑门派.json" />
+                  </Item>
                 </list>
               </option>
             </SchemaInfo>
@@ -36,6 +39,9 @@
                   </Item>
                   <Item>
                     <option name="path" value="src/main/resources/data/menpai/剑纯奇穴.json" />
+                  </Item>
+                  <Item>
+                    <option name="path" value="src/main/resources/data/menpai/藏剑奇穴.json" />
                   </Item>
                 </list>
               </option>

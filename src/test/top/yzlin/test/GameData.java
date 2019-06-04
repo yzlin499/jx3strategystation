@@ -20,11 +20,12 @@ import java.util.stream.Stream;
 public class GameData {
     private Pattern pattern = Pattern.compile("class=\"font-100\">(?<content>.*?)</span>");
     private Pattern coolDownTimePattern = Pattern.compile("class=\"font-165\">(?<content>.*?)</span>");
+    private int count = 0;
 
     @Test
     public void createSkill() {
-        String[] skills = {"生太极", "破苍穹", "镇山河", "万世不竭", "九转归一", "五方行尽", "七星拱瑞", "三才化生", "六合独尊",
-                "太极无极", "两仪化形", "四象轮回", "紫气东来", "凭虚御风", "梯云纵", "坐忘无我", "化三清", "八卦洞玄", "剑出鸿蒙"};
+        String[] skills = {"莺鸣柳", "云溪松", "泉凝月", "醉月", "啸日", "听雷", "梦泉虎跑", "玉泉鱼跃", "黄龙吐翠", "平湖断月", "玉虹贯日",
+                "九溪弥烟", "风来吴山", "峰插云景", "鹤归孤山", "云飞玉皇", "夕照雷峰", "风吹荷", "惊涛", "霞流宝石", "探梅", "松舍问霞"};
         List<Skill> skillList = Arrays.stream(skills).map(s -> {
             Skill skill = new Skill();
             skill.setName(s);
@@ -72,7 +73,7 @@ public class GameData {
 
     @Test
     public void getQiXueData() throws IOException {
-        JSONObject netData = JSON.parseObject(Tools.sendGet("https://api.ipsfan.com/jx3qx/cy.json", ""));
+        JSONObject netData = JSON.parseObject(Tools.sendGet("https://api.ipsfan.com/jx3qx/cj.json", ""));
         Map<String, String> qiXueCollect = netData.getJSONArray("data")
                 .getJSONObject(0)
                 .getJSONArray("kungfuLevel")
@@ -84,15 +85,20 @@ public class GameData {
                     forceSkills.forEach(jo -> jo.put("name", jo.getString("skillName")));
                     return Stream.concat(kungfuSkills.stream(), forceSkills.stream());
                 }).collect(Collectors.toMap(k -> k.getString("name"), v -> v.getString("desc")));
-        String data = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/剑纯奇穴.json"), "utf-8");
-        JSONArray objects = JSON.parseArray(data);
-        List<QiXueGroup> qixues = objects.toJavaList(QiXueGroup.class);
-        for (QiXueGroup qixue : qixues) {
-            for (QiXue qiXue : qixue.getQiXues()) {
-                qiXue.setDescribe(qiXueCollect.get(qiXue.getName()));
-            }
-        }
-        System.out.println(JSON.toJSONString(qixues));
+        String data = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/藏剑奇穴.json"), "utf-8");
+        QiXueGroup[] qiXueGroups = JSON.parseArray(data).toJavaList(String[].class).stream().map(i -> {
+            QiXueGroup qiXueGroup = new QiXueGroup();
+            qiXueGroup.setQiXueIndex(count++);
+            qiXueGroup.setQiXues(Arrays.stream(i).map(j -> {
+                QiXue qiXue = new QiXue();
+                qiXue.setName(j);
+                qiXue.setDescribe(qiXueCollect.get(j));
+                qiXue.setSkillTypes(new SkillType[0]);
+                return qiXue;
+            }).toArray(QiXue[]::new));
+            return qiXueGroup;
+        }).toArray(QiXueGroup[]::new);
+        System.out.println(JSON.toJSONString(qiXueGroups));
     }
 
     public void qixueGetDescribe() {
