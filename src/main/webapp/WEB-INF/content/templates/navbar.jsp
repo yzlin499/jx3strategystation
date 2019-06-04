@@ -16,21 +16,20 @@
                 <img alt="JX3SS" src="${pageContext.request.contextPath}/static/img/logo_100x100.png">
             </a>
         </div>
-
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li><a href="/">首页</a></li>
+                <li><s:a action="index" namespace="/">首页</s:a></li>
                 <li><a href="#">资料站</a></li>
-                <li><a href="/community/notice">公告社区</a></li>
-                <li><a href="/community/strategy">攻略社区</a></li>
-                <li><a href="/community/transaction">交易社区</a></li>
-                <li><a href="/community/entertainment">休闲社区</a></li>
+                <li><s:a action="notice" namespace="/community">公告社区</s:a></li>
+                <li><s:a action="strategy" namespace="/community">攻略社区</s:a></li>
+                <li><s:a action="transaction" namespace="/community">交易社区</s:a></li>
+                <li><s:a action="entertainment" namespace="/community">休闲社区</s:a></li>
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
                 <c:if test="${sessionScope.user == null}">
                     <li><a href="" data-toggle="modal" data-target="#myModal">登录</a></li>
-                    <li><a href="<c:url value="/user/register"/>">注册</a></li>
+                    <li><s:a action="register" namespace="/user">注册</s:a></li>
                 </c:if>
                 <c:if test="${sessionScope.user != null}">
                     <li class="dropdown">
