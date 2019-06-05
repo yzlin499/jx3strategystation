@@ -1,9 +1,12 @@
 package top.yzlin.jx3strategystation.dao;
 
+import top.yzlin.jx3strategystation.database.OperateQuery;
 import top.yzlin.jx3strategystation.database.annotation.QueryParam;
 import top.yzlin.jx3strategystation.database.annotation.Save;
 import top.yzlin.jx3strategystation.database.annotation.Select;
 import top.yzlin.jx3strategystation.entity.community.BaseArticle;
+
+import java.util.List;
 
 public interface ArticleDAO {
 
@@ -16,4 +19,12 @@ public interface ArticleDAO {
 
     @Select("from BaseArticle where articleId=:articleId")
     BaseArticle findArticleById(@QueryParam("articleId") int id);
+
+    default List<BaseArticle> findArticle(int page) {
+        return findArticle(q -> q.setFirstResult((page < 0 ? 0 : page) * 15).setMaxResults(15));
+    }
+
+    @Select("from BaseArticle")
+    List<BaseArticle> findArticle(OperateQuery operateQuery);
+
 }

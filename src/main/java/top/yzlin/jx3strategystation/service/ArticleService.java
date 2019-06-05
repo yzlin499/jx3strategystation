@@ -3,7 +3,10 @@ package top.yzlin.jx3strategystation.service;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import top.yzlin.jx3strategystation.dao.ArticleDAO;
+import top.yzlin.jx3strategystation.database.OperateQuery;
 import top.yzlin.jx3strategystation.entity.community.BaseArticle;
+
+import java.util.List;
 
 
 @Service
@@ -27,5 +30,11 @@ public class ArticleService {
         return articleDAO.findArticleById(id);
     }
 
+    public List<BaseArticle> findArticle(int page) {
+        return articleDAO.findArticle(page);
+    }
 
+    public List<BaseArticle> findArticle(OperateQuery operateQuery) {
+        return articleDAO.findArticle(operateQuery);
+    }
 }
