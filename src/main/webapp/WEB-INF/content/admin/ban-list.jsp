@@ -27,7 +27,6 @@
     </c:forEach>
 </table>
 
-
 <script>
     function pass(reviewId) {
         $.post("/v1/api/passArticle",
