@@ -3,11 +3,11 @@
 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
     <c:forEach items="${[
             {
-                'title':'title1',
-                'list':['title1-list1','title1-list2']
+                'title':'社区管理',
+                'list':['帖子审核']
             },{
-                'title':'title2',
-                'list':['title2-list1','title2-list2','title2-list1','title2-list2','title2-list1','title2-list2']
+                'title':'审核记录',
+                'list':['审核通过','黑名单']
             }
     ]}" var="i" varStatus="num">
         <div class="panel panel-default">
