@@ -1,0 +1,794 @@
+{
+    "describe": "秀水灵山隐剑踪，不闻江湖铸青锋。逍遥此身君子意，一壶温酒向长空。",
+    "menPaiId": 649,
+    "name": "藏剑",
+    "xinFas": [
+        {
+            "describe": "外功近战，能灵活切换双武器应对各种复杂环境。",
+            "name": "问水决·山居剑意",
+            "qiXueGroups": [
+                {
+                    "qiXueGroupId": 591,
+                    "qiXueIndex": 0,
+                    "qiXues": [
+                        {
+                            "describe": "“夕照雷峰”伤害提高10%。",
+                            "name": "烧石",
+                            "qiXueId": 592,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“夕照雷峰”会心提高10%，会心效果提高10%。",
+                            "name": "淘尽",
+                            "qiXueId": 593,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "强制目标攻击自身并使自身闪避几率提高60%，持续3秒。",
+                            "name": "风吹荷",
+                            "qiXueId": 594,
+                            "skill": {
+                                "arm": "重兵类",
+                                "consumption": 0,
+                                "coolDownTime": 25,
+                                "describe": "强制目标攻击自身并使自身闪避几率提高60%，持续3秒。",
+                                "distance": 6,
+                                "name": "风吹荷",
+                                "skillId": 668,
+                                "skillTypes": [
+                                    {
+                                        "title": "闪避",
+                                        "typeId": 32
+                                    },
+                                    {
+                                        "title": "嘲讽",
+                                        "typeId": 42
+                                    }
+                                ],
+                                "storingForce": 0.0
+                            },
+                            "skillTypes": [
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[0].qiXues[2].skill.skillTypes[1]"
+                                },
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[0].qiXues[2].skill.skillTypes[0]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 595,
+                    "qiXueIndex": 1,
+                    "qiXues": [
+                        {
+                            "describe": "“云飞玉皇”的伤害提高10%。",
+                            "name": "绝顶",
+                            "qiXueId": 596,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“云飞玉皇”的会心几率提高10%，会心效果提高10%。",
+                            "name": "清风",
+                            "qiXueId": 597,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“鹤归孤山”不再具备位移效果，眩晕目标时间提高2秒，伤害提高30%。",
+                            "name": "云台",
+                            "qiXueId": 598,
+                            "skillTypes": [
+                                {
+                                    "title": "眩晕",
+                                    "typeId": 38
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 599,
+                    "qiXueIndex": 2,
+                    "qiXues": [
+                        {
+                            "describe": "“夕照雷峰”会心后使自身下一个“云飞玉皇”无需运功且消耗降低10点。",
+                            "name": "夜雨",
+                            "qiXueId": 600,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“夕照雷锋”可对目标半径8尺内额外4个目标造成伤害。",
+                            "name": "遥看",
+                            "qiXueId": 601,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“听雷”会心几率提高10%，会心效果提高10%。",
+                            "name": "龙池",
+                            "qiXueId": 602,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "消耗10点剑气，对目标造成外功伤害，使目标移动速度降低50%，持续12秒。“山居剑意”下施展使目标定身3秒。",
+                            "name": "惊涛",
+                            "qiXueId": 603,
+                            "skill": {
+                                "arm": "重兵类",
+                                "consumption": 10,
+                                "coolDownTime": 12,
+                                "describe": "消耗10点剑气，使目标移动速度降低50%，持续12秒。“山居剑意”下施展使目标定身3秒。",
+                                "distance": 8,
+                                "name": "惊涛",
+                                "skillId": 669,
+                                "skillTypes": [
+                                    {
+                                        "title": "减速",
+                                        "typeId": 35
+                                    },
+                                    {
+                                        "title": "定身",
+                                        "typeId": 37
+                                    }
+                                ],
+                                "storingForce": 0.0
+                            },
+                            "skillTypes": [
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[2].qiXues[3].skill.skillTypes[1]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 604,
+                    "qiXueIndex": 3,
+                    "qiXues": [
+                        {
+                            "describe": "“九溪弥烟”调息时间增加至6秒，施展九溪弥烟后，会在原地产生4尺“剑泽”效果，“剑泽”内敌对目标移动速度降低80%，持续过程中每3秒对范围内的5个目标造成一次伤害，持续18秒。",
+                            "name": "景行",
+                            "qiXueId": 605,
+                            "skillTypes": [
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[2].qiXues[3].skill.skillTypes[0]"
+                                }
+                            ]
+                        },
+                        {
+                            "describe": "“山居剑意”下“听雷”会心获得5点剑气。",
+                            "name": "日出",
+                            "qiXueId": 606,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“风来吴山”招式范围提高4尺，站立状态下伤害提高30%。",
+                            "name": "夜风",
+                            "qiXueId": 607,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "施展“平湖断月”命中运功中的目标使其眩晕3秒，减少“平湖断月”3秒调息时间并额外回复自身20点剑气。",
+                            "name": "摘星",
+                            "qiXueId": 608,
+                            "skillTypes": [
+                                {
+                                    "title": "打断",
+                                    "typeId": 30
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 609,
+                    "qiXueIndex": 4,
+                    "qiXues": [
+                        {
+                            "describe": "“山居剑意”下施展“听雷”命中目标后使自身下一次外功招式会心几率及招式伤害提高15%。",
+                            "name": "映波锁澜",
+                            "qiXueId": 610,
+                            "skillTypes": [
+                                {
+                                    "title": "爆发",
+                                    "typeId": 33
+                                }
+                            ]
+                        },
+                        {
+                            "describe": "“泉凝月”期间成功闪避后使下一次“夕照雷峰”无需运功，持续5秒。",
+                            "name": "冰天",
+                            "qiXueId": 611,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“泉凝月”每点身法化解的伤害提高5点。",
+                            "name": "气爽",
+                            "qiXueId": 612,
+                            "skillTypes": [
+                                {
+                                    "title": "减伤",
+                                    "typeId": 31
+                                }
+                            ]
+                        },
+                        {
+                            "describe": "剑气低于50点施展“云飞玉皇”，招式伤害提高25%。",
+                            "name": "造化",
+                            "qiXueId": 613,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 614,
+                    "qiXueIndex": 5,
+                    "qiXues": [
+                        {
+                            "describe": "“山居剑意”下每点剑气有0.5%几率使“听雷”额外触发一次伤害。",
+                            "name": "雷音",
+                            "qiXueId": 615,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“玉泉鱼跃”锁足时间提高2秒，每次额外回复10点剑气。",
+                            "name": "峰聚",
+                            "qiXueId": 616,
+                            "skillTypes": [
+                                {
+                                    "title": "锁足",
+                                    "typeId": 36
+                                }
+                            ]
+                        },
+                        {
+                            "describe": "“梦泉虎跑”不再附带减伤效果，每命中一次目标则降低“泉凝月”1秒调息，“山居剑意”下所有招式伤害提高20%。",
+                            "name": "怜光",
+                            "qiXueId": 617,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“梦泉虎跑”期间减伤效果提高35%。",
+                            "name": "云体",
+                            "qiXueId": 618,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 619,
+                    "qiXueIndex": 6,
+                    "qiXues": [
+                        {
+                            "describe": "“风来吴山”调息时间降低30秒，施展期间，无需自身旋转，而是使剑芒在自身当前位置维持，并可以通过“峰插云景”将其击退。",
+                            "name": "层云",
+                            "qiXueId": 620,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“夕照雷锋”会心则使自身无视目标50%外功防御等级，持续5秒。",
+                            "name": "雾锁",
+                            "qiXueId": 621,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“夕照雷峰”会心后回复10点剑气。",
+                            "name": "山色",
+                            "qiXueId": 622,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“问水诀”下施展“啸日”，自身每秒回复1%气血最大值，持续10秒。",
+                            "name": "凭风",
+                            "qiXueId": 623,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 624,
+                    "qiXueIndex": 7,
+                    "qiXues": [
+                        {
+                            "describe": "“风来吴山”剑气消耗提高到80点，“风来吴山”结束时，会形成6尺风场，风场会将周围5个玩家吹起并漂浮在空中，漂浮中的玩家不会受到任何招式影响，风场持续5秒。",
+                            "name": "长致",
+                            "qiXueId": 625,
+                            "skillTypes": [
+                                {
+                                    "title": "无敌",
+                                    "typeId": 48
+                                }
+                            ]
+                        },
+                        {
+                            "describe": "施展“啸日”后，使自身周围20尺内的小队成员体会剑中之境，外功命中几率提高3%，外功破防提高10%，持续1分钟。",
+                            "name": "梅隐香",
+                            "qiXueId": 626,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“峰插云景”施展距离提高2尺，不再消耗剑气，成功命中目标则立刻重置“云飞玉皇”调息时间。",
+                            "name": "斩岳",
+                            "qiXueId": 627,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“夕照雷锋”“云飞玉皇”招式会心后触发“断潮”效果的几率提升为100%",
+                            "name": "厌高",
+                            "qiXueId": 628,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 629,
+                    "qiXueIndex": 8,
+                    "qiXues": [
+                        {
+                            "describe": "“泉凝月”期间，自身受到的伤害降低15%。",
+                            "name": "叠泉",
+                            "qiXueId": 630,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“风来吴山”每命中一个目标减少5秒调息时间并回复自身3%气血最大值，该效果最多作用10次。",
+                            "name": "山重水复",
+                            "qiXueId": 631,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“问水诀”下施展“听雷”后获得1层“声趣”效果，每层效果使下一次“夕照雷峰”会心提高15％且不需要运功，最多叠加3层，持续12秒。",
+                            "name": "踏雪寻梅",
+                            "qiXueId": 632,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "立即对周围6尺内的最多10个目标均造成53-58点（+0.4*攻击力）外功伤害并清除其阳性、混元性、阴性、毒性气劲各一个，附加额外100%武器伤害，并使其4秒内无法使用武器。命中“浮空状态”的目标会使其直接解除浮空状态。",
+                            "name": "霞流宝石",
+                            "qiXueId": 633,
+                            "skill": {
+                                "arm": "重兵类",
+                                "consumption": 0,
+                                "coolDownTime": 50,
+                                "describe": "立即对周围6尺内的最多10个目标均造成53-58点(+962)外功伤害，附加额外100%武器伤害，并清除周围6尺内目标阳性、混元性、阴性、毒性气劲各二个。",
+                                "distance": 0,
+                                "name": "霞流宝石",
+                                "skillId": 670,
+                                "skillTypes": [
+                                    {
+                                        "title": "缴械",
+                                        "typeId": 40
+                                    }
+                                ],
+                                "storingForce": 0.0
+                            },
+                            "skillTypes": [
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[8].qiXues[3].skill.skillTypes[0]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 634,
+                    "qiXueIndex": 9,
+                    "qiXues": [
+                        {
+                            "describe": "“风来吴山”不再消耗剑气，每命中一个目标回复5点剑气并使目标移动速度降低30%，持续5秒。",
+                            "name": "碧归",
+                            "qiXueId": 635,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“莺鸣柳”持续期间额外提高自身15%基础外功攻击。",
+                            "name": "残雪",
+                            "qiXueId": 636,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "受到攻击导致自身气血值低于1%，立刻回复20%气血，并消耗自身所有剑气，每点剑气回复自身0.2%气血最大值，该效果最多150秒触发一次。",
+                            "name": "片玉",
+                            "qiXueId": 637,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“玉泉鱼跃”每成功锁足一个目标，“玉泉鱼跃”调息时间降低2秒。",
+                            "name": "君子",
+                            "qiXueId": 638,
+                            "skillTypes": []
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 639,
+                    "qiXueIndex": 10,
+                    "qiXues": [
+                        {
+                            "describe": "“问水诀”下施展“啸日”使自身加速率提高5%，持续10秒，且任何外功招式会心都会使该效果持续时间延长5秒，该效果仅在“山居剑意”下维持。",
+                            "name": "如风",
+                            "qiXueId": 640,
+                            "skillTypes": [
+                                {
+                                    "title": "加速",
+                                    "typeId": 46
+                                }
+                            ]
+                        },
+                        {
+                            "describe": "“风来吴山”连续命中目标5次后则会将目标武器卷飞，使目标无法使用武器，持续2秒。",
+                            "name": "浮云",
+                            "qiXueId": 641,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“醉月”调息时间降低3秒，“山居剑意”下施展“醉月”，眩晕效果持续时间增加1秒。",
+                            "name": "月倚",
+                            "qiXueId": 642,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "若目标为队友，解除其受到的控制效果并使其3秒内免疫控制效果，使目标威胁值提高40%，自身威胁值降低40%，同时目标和自身移动速度提高20%，持续10秒，若目标为敌人，则对目标的目标施展。",
+                            "name": "探梅",
+                            "qiXueId": 643,
+                            "skill": {
+                                "arm": "重兵类",
+                                "consumption": 0,
+                                "coolDownTime": 20,
+                                "describe": "若目标为队友，解除其受到的控制效果并使其3秒内免疫控制效果，使目标威胁值提高40%，自身威胁值降低40%，同时目标和自身移动速度提高20%，持续10秒，若目标为敌人，则对目标的目标施展。",
+                                "distance": 15,
+                                "name": "探梅",
+                                "skillId": 671,
+                                "skillTypes": [
+                                    {
+                                        "title": "解控",
+                                        "typeId": 41
+                                    },
+                                    {
+                                        "title": "冲刺",
+                                        "typeId": 29
+                                    }
+                                ],
+                                "storingForce": 0.0
+                            },
+                            "skillTypes": [
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[10].qiXues[3].skill.skillTypes[0]"
+                                },
+                                {
+                                    "$ref": "$.xinFas[0].qiXueGroups[10].qiXues[3].skill.skillTypes[1]"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "qiXueGroupId": 644,
+                    "qiXueIndex": 11,
+                    "qiXues": [
+                        {
+                            "describe": "“云栖松”效果期间，每次成功闪避，回复自身4%气血和5%剑气，最多作用7次。",
+                            "name": "乘云",
+                            "qiXueId": 645,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“风来吴山”会心几率提高10%，会心效果提高10%。",
+                            "name": "孤鸾",
+                            "qiXueId": 646,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "“泉凝月”每提前1秒消失，技能调息时间降低0.5秒。",
+                            "name": "辟寒",
+                            "qiXueId": 647,
+                            "skillTypes": []
+                        },
+                        {
+                            "describe": "重击20尺内的敌对目标，对其造成200%武器伤害外加240-255点（+3.37*攻击力）外功伤害，若目标距离自身8尺外则附带冲刺效果，命中高度高于8尺的目标时，造成伤害提高20%并将其直接击落。",
+                            "name": "松舍问霞",
+                            "qiXueId": 648,
+                            "skill": {
+                                "arm": "重兵类",
+                                "consumption": 0,
+                                "coolDownTime": 15,
+                                "describe": "重击20尺内的敌对目标，对其造成200%武器伤害外加240-255点（+3.37*攻击力）外功伤害，若目标距离自身8尺外则附带冲刺效果，命中高度高于8尺的目标时，造成伤害提高20%并将其直接击落。",
+                                "distance": 20,
+                                "name": "松舍问霞",
+                                "skillId": 672,
+                                "skillTypes": [
+                                    {
+                                        "$ref": "$.xinFas[0].qiXueGroups[10].qiXues[3].skill.skillTypes[1]"
+                                    }
+                                ],
+                                "storingForce": 0.0
+                            },
+                            "skillTypes": []
+                        }
+                    ]
+                }
+            ],
+            "skills": [
+                {
+                    "arm": "短兵与重兵类",
+                    "consumption": 0,
+                    "coolDownTime": 120,
+                    "describe": "与手中之剑产生共鸣，回复全部剑气，使你剑气最大值提高100点，外功会心几率提高20%，持续20秒。",
+                    "distance": 0,
+                    "name": "莺鸣柳",
+                    "skillId": 651,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[4].qiXues[0].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵与重兵类",
+                    "consumption": 0,
+                    "coolDownTime": 70,
+                    "describe": "藏剑山庄独门身法，使自身闪躲几率提高50%，持续20秒。",
+                    "distance": 0,
+                    "name": "云栖松",
+                    "skillId": 652,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[0].qiXues[2].skill.skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵与重兵类",
+                    "consumption": 0,
+                    "coolDownTime": 40,
+                    "describe": "化解自身受到的伤害，每点身法化解2(62)点，持续30秒。",
+                    "distance": 0,
+                    "name": "泉凝月",
+                    "skillId": 653,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[4].qiXues[2].skillTypes[0]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[0].qiXues[2].skill.skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵与重兵类",
+                    "consumption": 10,
+                    "coolDownTime": 15,
+                    "describe": "消耗10点剑气，猛击目标头颅，使其眩晕4秒。",
+                    "distance": 8,
+                    "name": "醉月",
+                    "skillId": 654,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[1].qiXues[2].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵与重兵类",
+                    "consumption": 0,
+                    "coolDownTime": 12,
+                    "describe": "快速切换藏剑内功心法，并装备相应武器。当切换成“山居剑意”时，解除所有控制，并获得“啸日”气劲，不受招式控制，持续12秒，该气劲只可在“山居剑意”心法下维持。",
+                    "distance": 0,
+                    "name": "啸日",
+                    "skillId": 655,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[10].qiXues[3].skill.skillTypes[0]"
+                        },
+                        {
+                            "title": "免控",
+                            "typeId": 49
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵与重兵类",
+                    "consumption": 0,
+                    "coolDownTime": 1,
+                    "describe": "对目标造成47-48点(+397)外功伤害，附加额外的100%武器伤害。问水诀内功下获得20点剑气。",
+                    "distance": 4,
+                    "name": "听雷",
+                    "skillId": 656,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "任意兵器",
+                    "consumption": 0,
+                    "coolDownTime": 24,
+                    "describe": "施展藏剑秘传剑技，在15尺范围内的随机目标之间快速移动并发动连续的猛烈攻击。若目标带有“梅隐香”效果，则将锁定其为攻击目标。每次攻击命中敌人会造成24-27点(+325)外功伤害，并使你获得5点剑气。在施展此招式期间你不受任何控制效果影响，受到伤害降低35%。",
+                    "distance": 15,
+                    "name": "梦泉虎跑",
+                    "skillId": 657,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[10].qiXues[3].skill.skillTypes[1]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 0,
+                    "coolDownTime": 30,
+                    "describe": "门派轻功，连续前冲三次，每次获得5点剑气，并使冲刺路径上的敌对目标锁足4秒。冲刺期间你不受任何移动控制效果影响。",
+                    "distance": 0,
+                    "name": "玉泉鱼跃",
+                    "skillId": 658,
+                    "skillTypes": [
+                        {
+                            "title": "位移",
+                            "typeId": 44
+                        },
+                        {
+                            "$ref": "$.xinFas[0].skills[4].skillTypes[1]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[1].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 0,
+                    "coolDownTime": 8,
+                    "describe": "穿透目标，对其造成16-17点(+385)外功伤害，附加额外100%武器伤害，并使你获得20点剑气。该招式不能面对目标背后施展，造成的伤害受额外的外功攻击加成。",
+                    "distance": 6,
+                    "name": "黄龙吐翠",
+                    "skillId": 659,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[10].qiXues[3].skill.skillTypes[1]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 0,
+                    "coolDownTime": 8,
+                    "describe": "向前冲刺，穿透当前目标，造成31-32点(+397)外功伤害，附加额外100%武器伤害，并获得15点剑气。该招式受额外的外功攻击加成。",
+                    "distance": 8,
+                    "name": "平湖断月",
+                    "skillId": 660,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[10].qiXues[3].skill.skillTypes[1]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[5].qiXues[1].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 0,
+                    "coolDownTime": 15,
+                    "describe": "向敌人发起冲锋，并获得20点剑气，若目标正在运功，则打断。",
+                    "distance": 24,
+                    "name": "玉虹贯日",
+                    "skillId": 661,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[10].qiXues[3].skill.skillTypes[1]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[3].qiXues[3].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "短兵",
+                    "consumption": 0,
+                    "coolDownTime": 0,
+                    "describe": "旋风般的轻剑攻击，对周围6尺内的最多10个目标造成22-28点(+204)外功伤害，每命中一个目标可使你获得5点剑气。",
+                    "distance": 0,
+                    "name": "九溪弥烟",
+                    "skillId": 662,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "重兵类",
+                    "consumption": 50,
+                    "coolDownTime": 120,
+                    "describe": "消耗50点剑气，发动旋风般的重剑攻击，5秒内对周围6尺内的最多10个目标造成54-55点(+1346)外功伤害附加100%武器伤害。在此过程中你无法跳跃，不受控制招式影响。",
+                    "distance": 0,
+                    "name": "风来吴山",
+                    "skillId": 663,
+                    "skillTypes": [],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "重兵类",
+                    "consumption": 10,
+                    "coolDownTime": 15,
+                    "describe": "消耗10点剑气，以重剑剑身猛击目标，将其击退15尺，目标无法使用轻功，持续2秒。",
+                    "distance": 0,
+                    "name": "峰插云景",
+                    "skillId": 664,
+                    "skillTypes": [
+                        {
+                            "title": "封轻功",
+                            "typeId": 45
+                        },
+                        {
+                            "title": "推",
+                            "typeId": 50
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "重兵类",
+                    "consumption": 20,
+                    "coolDownTime": 20,
+                    "describe": "消耗20点剑气，跳跃至正前方15尺处并以重剑猛击地面，对半径6尺范围内的最多10个目标造成100-104点(+673)外功伤害并使其晕眩，对周围4尺内的目标造成额外的200%武器伤害。该招式受额外的外功攻击加成。",
+                    "distance": 0,
+                    "name": "鹤归孤山",
+                    "skillId": 665,
+                    "skillTypes": [
+                        {
+                            "$ref": "$.xinFas[0].skills[7].skillTypes[0]"
+                        },
+                        {
+                            "$ref": "$.xinFas[0].qiXueGroups[1].qiXues[2].skillTypes[0]"
+                        }
+                    ],
+                    "storingForce": 0.0
+                },
+                {
+                    "arm": "重兵类",
+                    "consumption": 20,
+                    "coolDownTime": 4,
+                    "describe": "消耗20点剑气，对半径8尺范围内的单体目标造成125-129点(+1707)外功伤害，附加200%武器伤害，对半径4尺范围内的单体目标附加额外的200%武器伤害。",
+                    "distance": 8,
+                    "name": "云飞玉皇",
+                    "skillId": 666,
+                    "skillTypes": [],
+                    "storingForce": 2.0
+                },
+                {
+                    "arm": "重兵类",
+                    "consumption": 15,
+                    "coolDownTime": 0,
+                    "describe": "消耗20点剑气，以重剑猛击目标，对其造成63-64点(+1394)外功伤害，附加额外200%武器伤害。",
+                    "distance": 8,
+                    "name": "夕照雷峰",
+                    "skillId": 667,
+                    "skillTypes": [],
+                    "storingForce": 1.5
+                },
+                {
+                    "$ref": "$.xinFas[0].qiXueGroups[0].qiXues[2].skill"
+                },
+                {
+                    "$ref": "$.xinFas[0].qiXueGroups[2].qiXues[3].skill"
+                },
+                {
+                    "$ref": "$.xinFas[0].qiXueGroups[8].qiXues[3].skill"
+                },
+                {
+                    "$ref": "$.xinFas[0].qiXueGroups[10].qiXues[3].skill"
+                },
+                {
+                    "$ref": "$.xinFas[0].qiXueGroups[11].qiXues[3].skill"
+                }
+            ],
+            "xinFaId": 650
+        }
+    ]
+}

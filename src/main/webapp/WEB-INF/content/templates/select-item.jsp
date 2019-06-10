@@ -18,7 +18,7 @@
 <c:forEach items="<%=selectItems%>" var="i">
     <optgroup label="${i.name}">
         <c:forEach items="${i.children}" var="s">
-            <option value="${s}">${s}</option>
+            <option value="${i.name+='-'+=s}">${s}</option>
         </c:forEach>
     </optgroup>
 </c:forEach>

@@ -1,34 +1,28 @@
 package top.yzlin.jx3strategystation.action;
 
 import com.opensymphony.xwork2.ActionSupport;
+import org.springframework.stereotype.Component;
 import top.yzlin.jx3strategystation.entity.community.BaseArticle;
 import top.yzlin.jx3strategystation.entity.templates.CarouselItem;
+import top.yzlin.jx3strategystation.service.ArticleService;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Random;
 
-
-public class HomePage extends ActionSupport {
-
+@Component
+public class HomePageAction extends ActionSupport {
+    private final ArticleService articleService;
     private List<CarouselItem> carouselList;
-    private List<BaseArticle> articleList;
-    private Random random = new Random();
+    private int page = 0;
+
+    public HomePageAction(ArticleService articleService) {
+        this.articleService = articleService;
+    }
 
     public List<BaseArticle> getArticleList() {
-        articleList = new ArrayList<>();
-        BaseArticle baseArticles;
-        for (int i = 0; i < 4; i++) {
-            baseArticles = new BaseArticle();
-            baseArticles.setImgPath("/static/img/carousel/" + (i + 1) + ".png");
-            baseArticles.setTitle("实例" + random.nextInt(1000));
-            articleList.add(baseArticles);
-        }
-        baseArticles = new BaseArticle();
-        baseArticles.setTitle("实例" + random.nextInt(1000));
-        articleList.add(baseArticles);
-        return articleList;
+        List<BaseArticle> article = articleService.findArticle(page);
+        page = 0;
+        return article;
     }
 
     public List<CarouselItem> getCarouselList() {
@@ -43,6 +37,10 @@ public class HomePage extends ActionSupport {
             carouselList = Arrays.asList(carouselItems);
         }
         return carouselList;
+    }
+
+    public void setPage(int page) {
+        this.page = page;
     }
 
     @Override

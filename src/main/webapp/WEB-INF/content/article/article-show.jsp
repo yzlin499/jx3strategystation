@@ -1,3 +1,5 @@
+<%@ page import="top.yzlin.jx3strategystation.entity.community.StrategyArticle" %>
+<%@ page import="top.yzlin.jx3strategystation.entity.community.TradingArticle" %>
 <%--
   Created by IntelliJ IDEA.
   User: yzlin
@@ -19,8 +21,10 @@
     <div class="page-header">
         <h1>${requestScope.article.title}</h1>
     </div>
+    <!-- 拿云大人，他就是奸细 -->
+    <a class="btn btn-default" onclick="whistleblowers(${requestScope.article.articleId})" title="拿云大人，他就是奸细">举报</a>
     <nav aria-label="Page navigation" class="navbar-right">
-        <ul class="pagination">
+        <ul class="pagination" style="margin-top:0">
             <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
@@ -30,6 +34,16 @@
             <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
         </ul>
     </nav>
+</div>
+<div class="container">
+    <c:choose>
+        <c:when test='<%=request.getAttribute("article") instanceof TradingArticle%>'>
+            <jsp:include page="component-show-trading.jsp"/>
+        </c:when>
+        <c:when test='<%=request.getAttribute("article") instanceof StrategyArticle%>'>
+            <jsp:include page="component-show-strategy.jsp"/>
+        </c:when>
+    </c:choose>
 </div>
 <div class="container">
     <div class="row rounded-border">
@@ -44,7 +58,6 @@
             </div>
         </div>
     </div>
-
     <c:forEach items="${requestScope.commentList}" var="comment">
         <div class="row rounded-border">
             <div class="col-md-2 user-info">
@@ -68,7 +81,12 @@
             <div id="content"></div>
         </div>
         <div class="col-md-12" style="margin-top: 20px">
-            <button class="btn btn-success" onclick="commitComment(${requestScope.article.articleId})">提交</button>
+            <c:if test="${sessionScope.user != null}">
+                <button class="btn btn-success" onclick="commitComment(${requestScope.article.articleId})">提交</button>
+            </c:if>
+            <c:if test="${sessionScope.user == null}">
+                <button class="btn btn-danger" onclick="" disabled="disabled">登录后评论哦！</button>
+            </c:if>
         </div>
     </div>
 </div>
