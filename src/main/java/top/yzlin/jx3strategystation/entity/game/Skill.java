@@ -26,6 +26,7 @@ public class Skill {
     private String secretBook;
     /**描述*/
     private String describe;
+    private String imgBase64;
 
     @Id
     @GeneratedValue
@@ -112,6 +113,13 @@ public class Skill {
         this.describe = describe;
     }
 
+    public String getImgBase64() {
+        return imgBase64;
+    }
+
+    public void setImgBase64(String imgBase64) {
+        this.imgBase64 = imgBase64;
+    }
 
     @Override
     public String toString() {
@@ -126,6 +134,7 @@ public class Skill {
                 ", consumption=" + consumption +
                 ", secretBook='" + secretBook + '\'' +
                 ", describe='" + describe + '\'' +
+                ", imgBase64='" + imgBase64 + '\'' +
                 '}';
     }
 }

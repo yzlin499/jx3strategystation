@@ -4,11 +4,13 @@ import com.opensymphony.xwork2.ActionSupport;
 import org.apache.commons.io.FileUtils;
 import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.dispatcher.multipart.StrutsUploadedFile;
+import org.springframework.stereotype.Component;
 import top.yzlin.jx3strategystation.tools.Md5Utils;
 
 import java.io.File;
 import java.io.IOException;
 
+@Component
 public class UpdateImg extends ActionSupport {
     private int uploaded;
     private String url;

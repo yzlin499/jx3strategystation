@@ -1,6 +1,7 @@
 package top.yzlin.test;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.io.FileUtils;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -13,6 +14,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.util.ResourceUtils;
+import top.yzlin.img.ImgTest;
 import top.yzlin.jx3strategystation.entity.game.*;
 import top.yzlin.jx3strategystation.service.ArticleService;
 import top.yzlin.jx3strategystation.service.CommentService;
@@ -22,6 +24,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:applicationConfig.xml"})
@@ -145,6 +148,54 @@ public class TestUnit {
             }
         }
         System.out.println(JSON.toJSONString(qiXueGroups));
+        transaction.commit();
+    }
+
+
+    @Test
+    public void setQiXueImg() {
+        //第一个检查点
+        JSONObject netData = JSON.parseObject(Tools.sendGet("https://api.ipsfan.com/jx3qx/cj.json", ""));
+        Map<String, String> qiXueCollect = netData.getJSONArray("data")
+                //第二个检查点
+                .getJSONObject(0)
+                .getJSONArray("kungfuLevel")
+                .toJavaList(JSONObject.class)
+                .stream()
+                .flatMap(ja -> {
+                    List<JSONObject> kungfuSkills = ja.getJSONArray("kungfuSkills").toJavaList(JSONObject.class);
+                    List<JSONObject> forceSkills = ja.getJSONArray("forceSkills").toJavaList(JSONObject.class);
+                    forceSkills.forEach(jo -> jo.put("name", jo.getString("skillName")));
+                    return Stream.concat(kungfuSkills.stream(), forceSkills.stream());
+                }).collect(Collectors.toMap(k -> k.getString("name"), v -> v.getJSONObject("icon").getString("FileName")));
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        //第三个检查点
+        for (QiXueGroup qiXueGroup : session.get(XinFa.class, 650).getQiXueGroups()) {
+            for (QiXue qiXue : qiXueGroup.getQiXues()) {
+                String imgUrl = qiXueCollect.get(qiXue.getName());
+                if (imgUrl != null) {
+                    qiXue.setImgBase64(ImgTest.downloadImg(imgUrl));
+                }
+            }
+        }
+        transaction.commit();
+    }
+
+    @Test
+    public void setSkillImg() throws IOException {
+        //第一个检查点
+        String s = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/霸刀技能图片.json"), "utf-8");
+        JSONObject jo = JSON.parseObject(s);
+        Session session = sessionFactory.openSession();
+        Transaction transaction = session.beginTransaction();
+        //第二个检查点
+        for (Skill skill : session.get(XinFa.class, 172).getSkills()) {
+            String imgUrl = jo.getString(skill.getName());
+            if (imgUrl != null) {
+                skill.setImgBase64(ImgTest.downloadImg(imgUrl));
+            }
+        }
         transaction.commit();
     }
 }

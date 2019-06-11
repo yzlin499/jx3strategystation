@@ -14,6 +14,7 @@ public class QiXue {
     private int qiXueId;
     private String name;
     private String describe;
+    private String imgBase64;
     private SkillType[] skillTypes;
     private Skill skill = PASSIVE;
 
@@ -69,12 +70,21 @@ public class QiXue {
         this.skill = skill;
     }
 
+    public String getImgBase64() {
+        return imgBase64;
+    }
+
+    public void setImgBase64(String imgBase64) {
+        this.imgBase64 = imgBase64;
+    }
+
     @Override
     public String toString() {
         return "QiXue{" +
                 "qiXueId=" + qiXueId +
                 ", name='" + name + '\'' +
                 ", describe='" + describe + '\'' +
+                ", imgBase64='" + imgBase64 + '\'' +
                 ", skillTypes=" + Arrays.toString(skillTypes) +
                 ", skill=" + skill +
                 '}';
