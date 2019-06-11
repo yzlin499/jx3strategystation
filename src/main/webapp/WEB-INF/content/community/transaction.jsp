@@ -71,7 +71,6 @@
         </div>
     </div>
 </div>
-
 <main class="main" role="main">
     <div class="container">
         <div class="row" id="post-list" style="background:white">
@@ -395,7 +394,6 @@
                             </div>
                         </a>
                     </div>
-
                 </article>
             </div>
             <div class="col-xs-12 col-sm-6">

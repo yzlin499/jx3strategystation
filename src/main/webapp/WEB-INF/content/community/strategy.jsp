@@ -44,10 +44,18 @@
             <li class="list-group-item db1">
                 实例1
             </li>
-            <li class="list-group-item db1">实例1</li>
-            <li class="list-group-item db1">实例1</li>
-            <li class="list-group-item db1">实例1</li>
-            <li class="list-group-item db1">实例1</li>
+            <li class="list-group-item db1">
+                实例1
+            </li>
+            <li class="list-group-item db1">
+                实例1
+            </li>
+            <li class="list-group-item db1">
+                实例1
+            </li>
+            <li class="list-group-item db1">
+                实例1
+            </li>
         </ul>
         <div align="center">
             <nav aria-label="Page navigation">
