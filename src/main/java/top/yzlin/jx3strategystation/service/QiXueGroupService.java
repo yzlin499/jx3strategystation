@@ -3,7 +3,9 @@ package top.yzlin.jx3strategystation.service;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import top.yzlin.jx3strategystation.dao.QiXueGroupDAO;
+import top.yzlin.jx3strategystation.entity.game.MenPai;
 import top.yzlin.jx3strategystation.entity.game.QiXueGroup;
+import top.yzlin.jx3strategystation.entity.game.XinFa;
 
 import java.util.List;
 
@@ -16,7 +18,15 @@ public class QiXueGroupService {
         this.qiXueGroupDAO = qiXueGroupDAO;
     }
 
-    public List<QiXueGroup> findQiXueGroup() {
-        return qiXueGroupDAO.findQiXueGroup();
+    public MenPai findMenPaiByName(String name) {
+        return qiXueGroupDAO.findMenPaiByName(name);
+    }
+
+    public XinFa findXinFaByName(String name) {
+        return qiXueGroupDAO.findXinFaByName(name);
+    }
+
+    public List<QiXueGroup> findQiXueGroupByXinFaName(String xinFaName) {
+        return qiXueGroupDAO.findQiXueGroupByXinFaName(xinFaName);
     }
 }

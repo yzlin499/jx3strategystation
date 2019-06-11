@@ -9,15 +9,19 @@ import java.util.List;
 
 @Component
 public class QiXueGroupAction extends ActionSupport {
-
     private final QiXueGroupService qiXueGroupService;
+    private String xinFaName;
 
     public QiXueGroupAction(QiXueGroupService qiXueGroupService) {
         this.qiXueGroupService = qiXueGroupService;
     }
 
+    public void setXinFaName(String xinFaName) {
+        this.xinFaName = xinFaName;
+    }
+
     public List<QiXueGroup> getQiXueGroupList() {
-        return qiXueGroupService.findQiXueGroup();
+        return qiXueGroupService.findQiXueGroupByXinFaName(xinFaName);
     }
 
     @Override
