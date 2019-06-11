@@ -7,10 +7,11 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
-<div class="footer">
+
+<div class="footer ${param['footerMarginTop']==null?'footer-margin-top':''}">
     <div class="container">
         <div class="footer-navbar">
-            <a href="#">GitHub仓库</a>
+            <a href="https://github.com/yzlin499/jx3strategystation">GitHub仓库</a>
             <a href="#">关于我们</a>
         </div>
         <p class="footer-content">

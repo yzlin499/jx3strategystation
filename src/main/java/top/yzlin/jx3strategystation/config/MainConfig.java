@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.apache.commons.io.FileUtils;
+import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -18,6 +19,7 @@ import top.yzlin.jx3strategystation.tools.CmdUtils;
 
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
+import java.io.File;
 import java.io.IOException;
 
 @Configuration
@@ -28,6 +30,20 @@ public class MainConfig {
     @Autowired
     public void setEnvironment(Environment environment) {
         this.environment = environment;
+    }
+
+    @Bean
+    @Profile("dev")
+    public File imgPath() throws IOException {
+        String imgPath = environment.getProperty(CmdUtils.getGitUserName() + ".imgPath");
+        if (imgPath == null) {
+            imgPath = ServletActionContext.getServletContext().getRealPath("/upload/image");
+        }
+        File file = ResourceUtils.getFile(imgPath);
+        if (!file.exists()) {
+            file.mkdirs();
+        }
+        return file;
     }
 
     @Bean
