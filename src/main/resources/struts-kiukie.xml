@@ -9,13 +9,13 @@
         <action name="notice">
             <result>/WEB-INF/content/community/notice.jsp</result>
         </action>
-        <action name="strategy">
+        <action name="strategy" class="showStrategyAction">
             <result>/WEB-INF/content/community/strategy.jsp</result>
         </action>
         <action name="entertainment">
             <result>/WEB-INF/content/community/entertainment.jsp</result>
         </action>
-        <action name="transaction">
+        <action name="transaction" class="showTradingAction">
             <result>/WEB-INF/content/community/transaction.jsp</result>
         </action>
 

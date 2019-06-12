@@ -19,7 +19,7 @@
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><s:a action="index" namespace="/">首页</s:a></li>
-                <li><a href="#">资料站</a></li>
+                <li><s:a action="skill" namespace="/gamedata">资料站</s:a></li>
                 <li><s:a action="notice" namespace="/community">公告社区</s:a></li>
                 <li><s:a action="strategy" namespace="/community">攻略社区</s:a></li>
                 <li><s:a action="transaction" namespace="/community">交易社区</s:a></li>
