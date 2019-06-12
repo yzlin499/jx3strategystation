@@ -63,7 +63,7 @@
 
 <div class="carousel-inner" role="listbox">
     <div class="item active">
-        <img src="/static/img/community/timg2.jpg" class="header1">
+        <img src="/static/img/community/timg1.jpg" class="header1">
         <div class="carousel-caption"  >
             <h1 >
                 <a style="text-shadow: black 1.5px 1.5px 1.5px; color: white; font-size: 70px;">剑网三交易市场</a>
@@ -71,6 +71,7 @@
         </div>
     </div>
 </div>
+<br>
 <main class="main" role="main">
     <div class="container">
         <div class="row" id="post-list" style="background:white">
