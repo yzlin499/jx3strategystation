@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -16,13 +17,16 @@
             padding-left: 10px;
             height: 100%;
         }
+
         .db1{
             height: 9.5%;
         }
+
         .db1:hover{
             background-color: lightgray;
             color: black;
         }
+
         .linkl{
             font-size: 35px;
             text-align: center;
@@ -30,6 +34,7 @@
             width: 100%;
             color: white;
         }
+
         .linkl:hover{
             background-color: white;
             color: #46b8da;
@@ -51,11 +56,11 @@
             </div>
 
             <hr>
-            <div  align="center">
+            <div align="center">
                 <a class="linkl" href="http://jx3.xoyo.com">官网首页</a>
             </div>
             <hr>
-            <div  align="center">
+            <div align="center">
                 <a class="linkl" href="http://jx3.xoyo.com/gl/">更多攻略</a>
             </div>
             <hr>
@@ -64,112 +69,25 @@
         <div class="col-sm-10" style="height: 100%; background-color: #edefea">
             <img src="/static/img/community/glz.png">
             <ul class="list-group">
-                <li class="list-group-item db1">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <p style="font-size: 20px">攻略名称</p>
+                <c:forEach items="${requestScope.strategyList}" var="article">
+                    <li class="list-group-item db1">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <p href="${'/'+=article.user.userName+='/article/'+=article.articleId}"
+                                   style="font-size: 20px">${article.title}</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="" style="text-align: right">${article.user.nickName}</a>
+                            </div>
+                            <div class="col-sm-12">
+                                    ${article.instance}
+                            </div>
                         </div>
-                        <div class="col-sm-3">
-                            <a href="" style="text-align: right">用户名</a>
-                        </div>
-                        <div class="col-sm-12">
-                            攻略简介
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item db1">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <p style="font-size: 20px">攻略名称</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="" style="text-align: right">用户名</a>
-                        </div>
-                        <div class="col-sm-12">
-                            攻略简介
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item db1">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <p style="font-size: 20px">攻略名称</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="" style="text-align: right">用户名</a>
-                        </div>
-                        <div class="col-sm-12">
-                            攻略简介
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item db1">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <p style="font-size: 20px">攻略名称</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="" style="text-align: right">用户名</a>
-                        </div>
-                        <div class="col-sm-12">
-                            攻略简介
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item db1">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <p style="font-size: 20px">攻略名称</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="" style="text-align: right">用户名</a>
-                        </div>
-                        <div class="col-sm-12">
-                            攻略简介
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item db1">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <p style="font-size: 20px">攻略名称</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="" style="text-align: right">用户名</a>
-                        </div>
-                        <div class="col-sm-12">
-                            攻略简介
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item db1">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <p style="font-size: 20px">攻略名称</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="" style="text-align: right">用户名</a>
-                        </div>
-                        <div class="col-sm-12">
-                            攻略简介
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item db1">
-                    <div class="row">
-                        <div class="col-sm-9">
-                            <p style="font-size: 20px">攻略名称</p>
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="" style="text-align: right">用户名</a>
-                        </div>
-                        <div class="col-sm-12">
-                            攻略简介
-                        </div>
-                    </div>
-                </li>
+                    </li>
+                </c:forEach>
+
             </ul>
-            <div align="center">
+            <div align="center" style="padding-top: 440px">
                 <nav aria-label="Page navigation">
                     <ul class="pagination">
                         <li>
@@ -195,8 +113,8 @@
 </div>
 
 <jsp:include page="../templates/footer.jsp">
-        <jsp:param name="footerMarginTop" value="''"/>
-    </jsp:include>
+    <jsp:param name="footerMarginTop" value="''"/>
+</jsp:include>
 
 
 </body>

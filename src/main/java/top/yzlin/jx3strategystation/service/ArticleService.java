@@ -5,9 +5,10 @@ import org.springframework.transaction.annotation.Transactional;
 import top.yzlin.jx3strategystation.dao.ArticleDAO;
 import top.yzlin.jx3strategystation.database.OperateQuery;
 import top.yzlin.jx3strategystation.entity.community.BaseArticle;
+import top.yzlin.jx3strategystation.entity.community.StrategyArticle;
+import top.yzlin.jx3strategystation.entity.community.TradingArticle;
 
 import java.util.List;
-
 
 @Service
 @Transactional(rollbackFor = Exception.class)
@@ -36,5 +37,13 @@ public class ArticleService {
 
     public List<BaseArticle> findArticle(OperateQuery operateQuery) {
         return articleDAO.findArticle(operateQuery);
+    }
+
+    public List<StrategyArticle> findStrategyArticle() {
+        return articleDAO.findStrategyArticle();
+    }
+
+    public List<TradingArticle> findTradingArticle() {
+        return articleDAO.findTradingArticle();
     }
 }
