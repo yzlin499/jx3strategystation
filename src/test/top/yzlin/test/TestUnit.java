@@ -185,12 +185,12 @@ public class TestUnit {
     @Test
     public void setSkillImg() throws IOException {
         //第一个检查点
-        String s = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/霸刀技能图片.json"), "utf-8");
+        String s = FileUtils.readFileToString(ResourceUtils.getFile("classpath:data/menpai/剑纯技能图片.json"), "utf-8");
         JSONObject jo = JSON.parseObject(s);
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         //第二个检查点
-        for (Skill skill : session.get(XinFa.class, 172).getSkills()) {
+        for (Skill skill : session.get(XinFa.class, 572).getSkills()) {
             String imgUrl = jo.getString(skill.getName());
             if (imgUrl != null) {
                 skill.setImgBase64(ImgTest.downloadImg(imgUrl));

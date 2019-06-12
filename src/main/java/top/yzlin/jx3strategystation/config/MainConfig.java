@@ -4,7 +4,6 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.apache.commons.io.FileUtils;
-import org.apache.struts2.ServletActionContext;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -19,7 +18,6 @@ import top.yzlin.jx3strategystation.tools.CmdUtils;
 
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
-import java.io.File;
 import java.io.IOException;
 
 @Configuration

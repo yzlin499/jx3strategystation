@@ -26,7 +26,7 @@ public class NewTest {
     @Test
     public void test() {
         Session session = sessionFactory.openSession();
-        XinFa xinFa = session.get(XinFa.class, 172);
+        XinFa xinFa = session.get(XinFa.class, 395);
         JSONObject jo = new JSONObject();
         for (Skill skill : xinFa.getSkills()) {
             jo.put(skill.getName(), "");

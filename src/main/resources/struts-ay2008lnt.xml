@@ -12,5 +12,6 @@
         <action name="qixue" class="qiXueGroupAction">
             <result>/WEB-INF/content/gamedata/GongLveQiXue.jsp</result>
         </action>
+
     </package>
 </struts>
