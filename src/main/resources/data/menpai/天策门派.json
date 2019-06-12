@@ -1,585 +1,585 @@
 {
-    "describe": "长河落日东都城,铁马戍边将军坟。尽诸宵小天策义,长枪独守大唐魂。",
-    "menPaiId": 0,
-    "name": "天策",
-    "xinFas": [
+  "describe": "长河落日东都城,铁马戍边将军坟。尽诸宵小天策义,长枪独守大唐魂。",
+  "menPaiId": 0,
+  "name": "天策",
+  "xinFas": [
+    {
+      "describe": "外功近战，独有的马上战斗，攻防转换之余进退自如。",
+      "name": "傲血战意",
+      "qiXueGroups": [],
+      "skills": [
         {
-            "describe": "外功近战，独有的马上战斗，攻防转换之余进退自如。",
-            "name": "傲血战意",
-            "qiXueGroups": [],
-            "skills": [
-                {
-                    "arm": "长兵",
-                    "consumption": 554,
-                    "coolDownTime": 8,
-                    "describe": "对目标造成100%的武器伤害外加39-44(+1034)点外功伤害。",
-                    "distance": 4,
-                    "name": "龙吟",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 554,
-                    "coolDownTime": 2,
-                    "describe": "对目标造成100%的武器伤害外加35-40点(+625)外功伤害，并对其造成致伤效果。",
-                    "distance": 4,
-                    "name": "穿云",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 929,
-                    "coolDownTime": 0,
-                    "describe": "对目标造成100%的武器伤害外加70-75(+1647)点外功伤害。当目标致残时方可施展该招式。",
-                    "distance": 4,
-                    "name": "龙牙",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 956,
-                    "coolDownTime": 20,
-                    "describe": "击倒当前目标，并击退其周围6尺内最多5个其他的敌对目标，造成20-25点(+192)外功伤害。成功击倒当前目标后，使目标附带“致残”不利效果。",
-                    "distance": 4,
-                    "name": "沧月",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "击倒"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 265,
-                    "coolDownTime": 30,
-                    "describe": "运功0.5秒，对目标造成218-241点(+1923)外功伤害，并使其外功防御等级降低10%，持续6秒。对有致残效果的目标造成50%的额外伤害。可打断目标运功，马上方可施展。",
-                    "distance": 25,
-                    "name": "乘龙箭",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.5
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 1809,
-                    "coolDownTime": 1,
-                    "describe": "每0.5秒对自身周围6尺内最多5个目标均造成100%的武器伤害外加33-36点(+228)外功伤害，持续3秒。骑马时方可施展此招式。",
-                    "distance": 6,
-                    "name": "战八方",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.5
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 554,
-                    "coolDownTime": 25,
-                    "describe": "策马猛冲目标，造成100%的武器伤害外加26-29点(+385)外功伤害，将其击晕2秒并造成致残效果。骑马时方可施展此招式。",
-                    "distance": 25,
-                    "name": "断魂刺",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "冲刺"
-                        },
-                        {
-                            "title": "眩晕"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 39,
-                    "coolDownTime": 40,
-                    "describe": "军中秘传马技，使你可在战斗中上马并解除自身锁足效果，成功上马后5秒内不受任何招式控制，并且不会被击下马，使自身获得5层驰骋效果，每层使自身外功基础攻击提高5%，受到技能攻击则消除一层。",
-                    "distance": 0,
-                    "name": "任驰骋",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "爆发"
-                        },
-                        {
-                            "title": "解控"
-                        }
-                    ],
-                    "storingForce": 1.5
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 454,
-                    "coolDownTime": 15,
-                    "describe": "骑马时方可施展，若目标带有致残效果或者正在运功，则击倒目标。",
-                    "distance": 4,
-                    "name": "破坚阵",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "击倒"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 654,
-                    "coolDownTime": 18,
-                    "describe": "快速冲向目标，对目标造成17-20点(+385)外功伤害，并将其击倒。",
-                    "distance": 25,
-                    "name": "突",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "冲刺"
-                        },
-                        {
-                            "title": "击倒"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 1208,
-                    "coolDownTime": 20,
-                    "describe": "立刻重置游龙骑法下其余技能调息时间，并使骑乘速度提高30%，持续12秒。骑马时方可施展此招式。",
-                    "distance": 0,
-                    "name": "御",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "渊"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "任意兵器",
-                    "consumption": 302,
-                    "coolDownTime": 25,
-                    "describe": "解除所有控制效果，并不受控制效果的影响，持续3秒。同时使自身外功基础攻击力提高10%，外功会心几率提高20%，持续10秒。",
-                    "distance": 0,
-                    "name": "疾",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "突进"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 1992,
-                    "coolDownTime": 0,
-                    "describe": "使周围队友外功基础攻击力提高1%，气血最大值提高1%，持续30分钟。",
-                    "distance": 20,
-                    "name": "撼如雷",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "爆发"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 202,
-                    "coolDownTime": 300,
-                    "describe": "使自身受到的伤害降低80%，持续8秒。",
-                    "distance": 0,
-                    "name": "守如山",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "减伤"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 351,
-                    "coolDownTime": 90,
-                    "describe": "解除所有控制效果，并不受控制效果的影响，持续3秒。同时使自身外功基础攻击力提高10%，外功会心几率提高20%，持续10秒。",
-                    "distance": 0,
-                    "name": "疾如风",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "解控"
-                        },
-                        {
-                            "title": "爆发"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 454,
-                    "coolDownTime": 15,
-                    "describe": "对吟唱状态的目标造成70-75点(+673)外功伤害，并使其晕眩5秒。",
-                    "distance": 4,
-                    "name": "崩",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "打断"
-                        },
-                        {
-                            "title": "眩晕"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 1460,
-                    "coolDownTime": 20,
-                    "describe": "对目标及其附近额外的3个目标造成200%武器伤害并附加203-224点(+3077)外功伤害，使目标受到的疗伤成效降低50%，持续10秒。",
-                    "distance": 4,
-                    "name": "霹雳",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "减疗"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 501,
-                    "coolDownTime": 30,
-                    "describe": "解除自身所有移动限制，冲刺到友方目标身边，为其承受3次伤害，并使自身外功基础攻击力提高50%(585点)，每承受一次伤害，调息时间降低5秒。",
-                    "distance": 20,
-                    "name": "渊",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "解控"
-                        },
-                        {
-                            "title": "冲刺"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 1809,
-                    "coolDownTime": 40,
-                    "describe": "纵马疾驰，控制目标并连续造成大量外功伤害效果并使目标无法施展轻功，骑马时方可施展此招式。",
-                    "distance": 0,
-                    "name": "破重围",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                }
-            ],
-            "xinFaId": 0
+          "arm": "长兵",
+          "consumption": 554,
+          "coolDownTime": 8,
+          "describe": "对目标造成100%的武器伤害外加39-44(+1034)点外功伤害。",
+          "distance": 4,
+          "name": "龙吟",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
         },
         {
-            "describe": "外功近战，外功防御位列各大门派之首。",
-            "name": "铁牢律",
-            "qiXueGroups": [],
-            "skills": [
-                {
-                    "arm": "长兵",
-                    "consumption": 554,
-                    "coolDownTime": 8,
-                    "describe": "对目标造成100%的武器伤害外加39-44(+1034)点外功伤害。",
-                    "distance": 4,
-                    "name": "龙吟",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 554,
-                    "coolDownTime": 2,
-                    "describe": "对目标造成100%的武器伤害外加35-40点(+625)外功伤害，并对其造成致伤效果。",
-                    "distance": 4,
-                    "name": "穿云",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 929,
-                    "coolDownTime": 0,
-                    "describe": "对目标造成100%的武器伤害外加70-75(+1647)点外功伤害。当目标致残时方可施展该招式。",
-                    "distance": 4,
-                    "name": "龙牙",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 956,
-                    "coolDownTime": 20,
-                    "describe": "击倒当前目标，并击退其周围6尺内最多5个其他的敌对目标，造成20-25点(+192)外功伤害。成功击倒当前目标后，使目标附带“致残”不利效果。",
-                    "distance": 4,
-                    "name": "沧月",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "击倒"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 265,
-                    "coolDownTime": 30,
-                    "describe": "运功0.5秒，对目标造成218-241点(+1923)外功伤害，并使其外功防御等级降低10%，持续6秒。对有致残效果的目标造成50%的额外伤害。可打断目标运功，马上方可施展。",
-                    "distance": 25,
-                    "name": "乘龙箭",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.5
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 1809,
-                    "coolDownTime": 1,
-                    "describe": "每0.5秒对自身周围6尺内最多5个目标均造成100%的武器伤害外加33-36点(+228)外功伤害，持续3秒。骑马时方可施展此招式。",
-                    "distance": 6,
-                    "name": "战八方",
-                    "skillId": 0,
-                    "skillTypes": [],
-                    "storingForce": 0.5
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 554,
-                    "coolDownTime": 25,
-                    "describe": "策马猛冲目标，造成100%的武器伤害外加26-29点(+385)外功伤害，将其击晕2秒并造成致残效果。骑马时方可施展此招式。",
-                    "distance": 25,
-                    "name": "断魂刺",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "冲刺"
-                        },
-                        {
-                            "title": "眩晕"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 39,
-                    "coolDownTime": 40,
-                    "describe": "军中秘传马技，使你可在战斗中上马并解除自身锁足效果，成功上马后5秒内不受任何招式控制，并且不会被击下马，使自身获得5层驰骋效果，每层使自身外功基础攻击提高5%，受到技能攻击则消除一层。",
-                    "distance": 0,
-                    "name": "任驰骋",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "爆发"
-                        },
-                        {
-                            "title": "解控"
-                        }
-                    ],
-                    "storingForce": 1.5
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 454,
-                    "coolDownTime": 15,
-                    "describe": "骑马时方可施展，若目标带有致残效果或者正在运功，则击倒目标。",
-                    "distance": 4,
-                    "name": "破坚阵",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "击倒"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 654,
-                    "coolDownTime": 18,
-                    "describe": "快速冲向目标，对目标造成17-20点(+385)外功伤害，并将其击倒。",
-                    "distance": 25,
-                    "name": "突",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "冲刺"
-                        },
-                        {
-                            "title": "击倒"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 1208,
-                    "coolDownTime": 20,
-                    "describe": "立刻重置游龙骑法下其余技能调息时间，并使骑乘速度提高30%，持续12秒。骑马时方可施展此招式。",
-                    "distance": 0,
-                    "name": "御",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "渊"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "任意兵器",
-                    "consumption": 302,
-                    "coolDownTime": 25,
-                    "describe": "解除所有控制效果，并不受控制效果的影响，持续3秒。同时使自身外功基础攻击力提高10%，外功会心几率提高20%，持续10秒。",
-                    "distance": 0,
-                    "name": "疾",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "突进"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 1992,
-                    "coolDownTime": 0,
-                    "describe": "使周围队友外功基础攻击力提高1%，气血最大值提高1%，持续30分钟。",
-                    "distance": 20,
-                    "name": "撼如雷",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "爆发"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 202,
-                    "coolDownTime": 300,
-                    "describe": "使自身受到的伤害降低80%，持续8秒。",
-                    "distance": 0,
-                    "name": "守如山",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "减伤"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 351,
-                    "coolDownTime": 90,
-                    "describe": "解除所有控制效果，并不受控制效果的影响，持续3秒。同时使自身外功基础攻击力提高10%，外功会心几率提高20%，持续10秒。",
-                    "distance": 0,
-                    "name": "疾如风",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "解控"
-                        },
-                        {
-                            "title": "爆发"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 554,
-                    "coolDownTime": 8,
-                    "describe": "对敌人造成20-25点(+75)外功伤害，并强迫其对你发起攻击。",
-                    "distance": 4,
-                    "name": "定军",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "嘲讽"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 454,
-                    "coolDownTime": 15,
-                    "describe": "对吟唱状态的目标造成70-75点(+673)外功伤害，并使其晕眩5秒。",
-                    "distance": 4,
-                    "name": "崩",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "打断"
-                        },
-                        {
-                            "title": "眩晕"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 501,
-                    "coolDownTime": 30,
-                    "describe": "解除自身所有移动限制，冲刺到友方目标身边，为其承受3次伤害，并使自身外功基础攻击力提高50%(585点)，每承受一次伤害，调息时间降低5秒。",
-                    "distance": 20,
-                    "name": "渊",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "解控"
-                        },
-                        {
-                            "title": "冲刺"
-                        }
-                    ],
-                    "storingForce": 0.0
-                },
-                {
-                    "arm": "长兵",
-                    "consumption": 1809,
-                    "coolDownTime": 180,
-                    "describe": "一鼓，团队成员内外功破防等级提高40%，持续30秒；二鼓，团队成员内外功破防等级提高20%，持续30秒；三鼓，团队成员受到的所有伤害提高10%，持续至战斗结束，该招式每场战斗只能施展一次。",
-                    "distance": 20,
-                    "name": "号令三军",
-                    "skillId": 0,
-                    "skillTypes": [
-                        {
-                            "title": "爆发"
-                        }
-                    ],
-                    "storingForce": 3.0
-                }
-            ],
-            "xinFaId": 0
+          "arm": "长兵",
+          "consumption": 554,
+          "coolDownTime": 2,
+          "describe": "对目标造成100%的武器伤害外加35-40点(+625)外功伤害，并对其造成致伤效果。",
+          "distance": 4,
+          "name": "穿云",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 929,
+          "coolDownTime": 0,
+          "describe": "对目标造成100%的武器伤害外加70-75(+1647)点外功伤害。当目标致残时方可施展该招式。",
+          "distance": 4,
+          "name": "龙牙",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 956,
+          "coolDownTime": 20,
+          "describe": "击倒当前目标，并击退其周围6尺内最多5个其他的敌对目标，造成20-25点(+192)外功伤害。成功击倒当前目标后，使目标附带“致残”不利效果。",
+          "distance": 4,
+          "name": "沧月",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "击倒"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 265,
+          "coolDownTime": 30,
+          "describe": "运功0.5秒，对目标造成218-241点(+1923)外功伤害，并使其外功防御等级降低10%，持续6秒。对有致残效果的目标造成50%的额外伤害。可打断目标运功，马上方可施展。",
+          "distance": 25,
+          "name": "乘龙箭",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.5
+        },
+        {
+          "arm": "长兵",
+          "consumption": 1809,
+          "coolDownTime": 1,
+          "describe": "每0.5秒对自身周围6尺内最多5个目标均造成100%的武器伤害外加33-36点(+228)外功伤害，持续3秒。骑马时方可施展此招式。",
+          "distance": 6,
+          "name": "战八方",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.5
+        },
+        {
+          "arm": "长兵",
+          "consumption": 554,
+          "coolDownTime": 25,
+          "describe": "策马猛冲目标，造成100%的武器伤害外加26-29点(+385)外功伤害，将其击晕2秒并造成致残效果。骑马时方可施展此招式。",
+          "distance": 25,
+          "name": "断魂刺",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "冲刺"
+            },
+            {
+              "title": "眩晕"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 39,
+          "coolDownTime": 40,
+          "describe": "军中秘传马技，使你可在战斗中上马并解除自身锁足效果，成功上马后5秒内不受任何招式控制，并且不会被击下马，使自身获得5层驰骋效果，每层使自身外功基础攻击提高5%，受到技能攻击则消除一层。",
+          "distance": 0,
+          "name": "任驰骋",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "爆发"
+            },
+            {
+              "title": "解控"
+            }
+          ],
+          "storingForce": 1.5
+        },
+        {
+          "arm": "长兵",
+          "consumption": 454,
+          "coolDownTime": 15,
+          "describe": "骑马时方可施展，若目标带有致残效果或者正在运功，则击倒目标。",
+          "distance": 4,
+          "name": "破坚阵",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "击倒"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 654,
+          "coolDownTime": 18,
+          "describe": "快速冲向目标，对目标造成17-20点(+385)外功伤害，并将其击倒。",
+          "distance": 25,
+          "name": "突",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "冲刺"
+            },
+            {
+              "title": "击倒"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 1208,
+          "coolDownTime": 20,
+          "describe": "立刻重置游龙骑法下其余技能调息时间，并使骑乘速度提高30%，持续12秒。骑马时方可施展此招式。",
+          "distance": 0,
+          "name": "御",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "渊"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "任意兵器",
+          "consumption": 302,
+          "coolDownTime": 25,
+          "describe": "解除所有控制效果，并不受控制效果的影响，持续3秒。同时使自身外功基础攻击力提高10%，外功会心几率提高20%，持续10秒。",
+          "distance": 0,
+          "name": "疾",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "突进"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 1992,
+          "coolDownTime": 0,
+          "describe": "使周围队友外功基础攻击力提高1%，气血最大值提高1%，持续30分钟。",
+          "distance": 20,
+          "name": "撼如雷",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "爆发"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 202,
+          "coolDownTime": 300,
+          "describe": "使自身受到的伤害降低80%，持续8秒。",
+          "distance": 0,
+          "name": "守如山",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "减伤"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 351,
+          "coolDownTime": 90,
+          "describe": "解除所有控制效果，并不受控制效果的影响，持续3秒。同时使自身外功基础攻击力提高10%，外功会心几率提高20%，持续10秒。",
+          "distance": 0,
+          "name": "疾如风",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "解控"
+            },
+            {
+              "title": "爆发"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 454,
+          "coolDownTime": 15,
+          "describe": "对吟唱状态的目标造成70-75点(+673)外功伤害，并使其晕眩5秒。",
+          "distance": 4,
+          "name": "崩",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "打断"
+            },
+            {
+              "title": "眩晕"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 1460,
+          "coolDownTime": 20,
+          "describe": "对目标及其附近额外的3个目标造成200%武器伤害并附加203-224点(+3077)外功伤害，使目标受到的疗伤成效降低50%，持续10秒。",
+          "distance": 4,
+          "name": "霹雳",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "减疗"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 501,
+          "coolDownTime": 30,
+          "describe": "解除自身所有移动限制，冲刺到友方目标身边，为其承受3次伤害，并使自身外功基础攻击力提高50%(585点)，每承受一次伤害，调息时间降低5秒。",
+          "distance": 20,
+          "name": "渊",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "解控"
+            },
+            {
+              "title": "冲刺"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 1809,
+          "coolDownTime": 40,
+          "describe": "纵马疾驰，控制目标并连续造成大量外功伤害效果并使目标无法施展轻功，骑马时方可施展此招式。",
+          "distance": 0,
+          "name": "破重围",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
         }
-    ]
+      ],
+      "xinFaId": 0
+    },
+    {
+      "describe": "外功近战，外功防御位列各大门派之首。",
+      "name": "铁牢律",
+      "qiXueGroups": [],
+      "skills": [
+        {
+          "arm": "长兵",
+          "consumption": 554,
+          "coolDownTime": 8,
+          "describe": "对目标造成100%的武器伤害外加39-44(+1034)点外功伤害。",
+          "distance": 4,
+          "name": "龙吟",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 554,
+          "coolDownTime": 2,
+          "describe": "对目标造成100%的武器伤害外加35-40点(+625)外功伤害，并对其造成致伤效果。",
+          "distance": 4,
+          "name": "穿云",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 929,
+          "coolDownTime": 0,
+          "describe": "对目标造成100%的武器伤害外加70-75(+1647)点外功伤害。当目标致残时方可施展该招式。",
+          "distance": 4,
+          "name": "龙牙",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 956,
+          "coolDownTime": 20,
+          "describe": "击倒当前目标，并击退其周围6尺内最多5个其他的敌对目标，造成20-25点(+192)外功伤害。成功击倒当前目标后，使目标附带“致残”不利效果。",
+          "distance": 4,
+          "name": "沧月",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "击倒"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 265,
+          "coolDownTime": 30,
+          "describe": "运功0.5秒，对目标造成218-241点(+1923)外功伤害，并使其外功防御等级降低10%，持续6秒。对有致残效果的目标造成50%的额外伤害。可打断目标运功，马上方可施展。",
+          "distance": 25,
+          "name": "乘龙箭",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.5
+        },
+        {
+          "arm": "长兵",
+          "consumption": 1809,
+          "coolDownTime": 1,
+          "describe": "每0.5秒对自身周围6尺内最多5个目标均造成100%的武器伤害外加33-36点(+228)外功伤害，持续3秒。骑马时方可施展此招式。",
+          "distance": 6,
+          "name": "战八方",
+          "skillId": 0,
+          "skillTypes": [],
+          "storingForce": 0.5
+        },
+        {
+          "arm": "长兵",
+          "consumption": 554,
+          "coolDownTime": 25,
+          "describe": "策马猛冲目标，造成100%的武器伤害外加26-29点(+385)外功伤害，将其击晕2秒并造成致残效果。骑马时方可施展此招式。",
+          "distance": 25,
+          "name": "断魂刺",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "冲刺"
+            },
+            {
+              "title": "眩晕"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 39,
+          "coolDownTime": 40,
+          "describe": "军中秘传马技，使你可在战斗中上马并解除自身锁足效果，成功上马后5秒内不受任何招式控制，并且不会被击下马，使自身获得5层驰骋效果，每层使自身外功基础攻击提高5%，受到技能攻击则消除一层。",
+          "distance": 0,
+          "name": "任驰骋",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "爆发"
+            },
+            {
+              "title": "解控"
+            }
+          ],
+          "storingForce": 1.5
+        },
+        {
+          "arm": "长兵",
+          "consumption": 454,
+          "coolDownTime": 15,
+          "describe": "骑马时方可施展，若目标带有致残效果或者正在运功，则击倒目标。",
+          "distance": 4,
+          "name": "破坚阵",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "击倒"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 654,
+          "coolDownTime": 18,
+          "describe": "快速冲向目标，对目标造成17-20点(+385)外功伤害，并将其击倒。",
+          "distance": 25,
+          "name": "突",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "冲刺"
+            },
+            {
+              "title": "击倒"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 1208,
+          "coolDownTime": 20,
+          "describe": "立刻重置游龙骑法下其余技能调息时间，并使骑乘速度提高30%，持续12秒。骑马时方可施展此招式。",
+          "distance": 0,
+          "name": "御",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "渊"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "任意兵器",
+          "consumption": 302,
+          "coolDownTime": 25,
+          "describe": "解除所有控制效果，并不受控制效果的影响，持续3秒。同时使自身外功基础攻击力提高10%，外功会心几率提高20%，持续10秒。",
+          "distance": 0,
+          "name": "疾",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "突进"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 1992,
+          "coolDownTime": 0,
+          "describe": "使周围队友外功基础攻击力提高1%，气血最大值提高1%，持续30分钟。",
+          "distance": 20,
+          "name": "撼如雷",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "爆发"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 202,
+          "coolDownTime": 300,
+          "describe": "使自身受到的伤害降低80%，持续8秒。",
+          "distance": 0,
+          "name": "守如山",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "减伤"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 351,
+          "coolDownTime": 90,
+          "describe": "解除所有控制效果，并不受控制效果的影响，持续3秒。同时使自身外功基础攻击力提高10%，外功会心几率提高20%，持续10秒。",
+          "distance": 0,
+          "name": "疾如风",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "解控"
+            },
+            {
+              "title": "爆发"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 554,
+          "coolDownTime": 8,
+          "describe": "对敌人造成20-25点(+75)外功伤害，并强迫其对你发起攻击。",
+          "distance": 4,
+          "name": "定军",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "嘲讽"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 454,
+          "coolDownTime": 15,
+          "describe": "对吟唱状态的目标造成70-75点(+673)外功伤害，并使其晕眩5秒。",
+          "distance": 4,
+          "name": "崩",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "打断"
+            },
+            {
+              "title": "眩晕"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 501,
+          "coolDownTime": 30,
+          "describe": "解除自身所有移动限制，冲刺到友方目标身边，为其承受3次伤害，并使自身外功基础攻击力提高50%(585点)，每承受一次伤害，调息时间降低5秒。",
+          "distance": 20,
+          "name": "渊",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "解控"
+            },
+            {
+              "title": "冲刺"
+            }
+          ],
+          "storingForce": 0.0
+        },
+        {
+          "arm": "长兵",
+          "consumption": 1809,
+          "coolDownTime": 180,
+          "describe": "一鼓，团队成员内外功破防等级提高40%，持续30秒；二鼓，团队成员内外功破防等级提高20%，持续30秒；三鼓，团队成员受到的所有伤害提高10%，持续至战斗结束，该招式每场战斗只能施展一次。",
+          "distance": 20,
+          "name": "号令三军",
+          "skillId": 0,
+          "skillTypes": [
+            {
+              "title": "爆发"
+            }
+          ],
+          "storingForce": 3.0
+        }
+      ],
+      "xinFaId": 0
+    }
+  ]
 }

@@ -15,6 +15,9 @@
         <action name="changePasswords">
             <result name="success">/WEB-INF/content/user/changePasswords.jsp</result>
         </action>
+        <action name="test123">
+            <result name="success">/WEB-INF/content/user/changePasswords.jsp</result>
+        </action>
     </package>
 
     <package name="userapi" extends="api">
