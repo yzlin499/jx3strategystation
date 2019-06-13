@@ -93,7 +93,20 @@
                 <h3 align="center">
                     第${num}层&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <c:forEach items="${requestScope.qiXueGroupList[numS.index].qiXues}" var="qixue">
-                        <img src="/static/img/test.jpg" alt="${qixue.name}" class="img-circle" width=64px height=64px>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="data:image/png;base64,${qixue.imgBase64}" alt="${qixue.name}"
+                            ${qixue.skill==null? '' :'data-toggle="modal" data-target="#skill-'+=qixue.skill.name+='"'}
+                             class="${qixue.skill==null? 'img-circle':'img-rounded'}" width=64px height=64px>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <c:if test="${qixue.skill!=null}">
+                            <div class="modal fade bs-example-modal-sm" id="skill-${qixue.skill.name}"
+                                 tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                                <div class="modal-dialog modal-sm" role="document">
+                                    <div class="modal-content">
+                                            ${qixue.skill.describe}
+                                    </div>
+                                </div>
+                            </div>
+                        </c:if>
+
                     </c:forEach>
                 </h3>
             </c:forEach>
