@@ -12,12 +12,11 @@
     <title>攻略区</title>
     <jsp:include page="../templates/base-lib.jsp"/>
     <style>
-        .imgm1 {
+        .imgm1{
             width: 100%;
             padding-left: 10px;
             height: 100%;
         }
-
         .db1 {
             height: 9.5%;
         }
@@ -27,14 +26,13 @@
             color: black;
         }
 
-        .linkl {
+        .linkl{
             font-size: 35px;
             text-align: center;
             padding-bottom: 0px;
             width: 100%;
             color: white;
         }
-
         .linkl:hover {
             background-color: white;
             color: #46b8da;
