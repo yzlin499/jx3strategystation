@@ -32,7 +32,6 @@ public class NewTest {
             jo.put(skill.getName(), "");
         }
         System.out.println(jo);
-
 //        session.get(QiXue.class, 95)
     }
 }
