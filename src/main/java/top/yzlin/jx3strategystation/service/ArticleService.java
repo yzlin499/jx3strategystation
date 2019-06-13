@@ -10,7 +10,6 @@ import top.yzlin.jx3strategystation.entity.community.TradingArticle;
 
 import java.util.List;
 
-
 @Service
 @Transactional(rollbackFor = Exception.class)
 public class ArticleService {
