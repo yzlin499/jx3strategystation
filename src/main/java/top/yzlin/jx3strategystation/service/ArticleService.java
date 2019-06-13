@@ -37,4 +37,8 @@ public class ArticleService {
     public List<BaseArticle> findArticle(OperateQuery operateQuery) {
         return articleDAO.findArticle(operateQuery);
     }
+
+    public void deleteArticleById(int id) {
+        articleDAO.deleteArticleById(id);
+    }
 }
