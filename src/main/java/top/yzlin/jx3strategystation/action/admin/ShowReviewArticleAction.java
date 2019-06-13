@@ -1,6 +1,5 @@
 package top.yzlin.jx3strategystation.action.admin;
 
-import com.opensymphony.xwork2.ActionSupport;
 import org.springframework.stereotype.Component;
 import top.yzlin.jx3strategystation.entity.community.ReviewArticle;
 import top.yzlin.jx3strategystation.service.ReviewArticleService;
@@ -8,7 +7,7 @@ import top.yzlin.jx3strategystation.service.ReviewArticleService;
 import java.util.List;
 
 @Component
-public class ShowReviewArticleAction extends ActionSupport {
+public class ShowReviewArticleAction extends BaseAdminAction {
 
     private ReviewArticleService reviewArticleService;
 //    private List<ReviewArticle> reviewArticleList;
@@ -19,10 +18,5 @@ public class ShowReviewArticleAction extends ActionSupport {
 
     public List<ReviewArticle> getReviewArticleList() {
         return reviewArticleService.findReviewArticleList();
-    }
-
-    @Override
-    public String execute() throws Exception {
-        return SUCCESS;
     }
 }

@@ -10,6 +10,7 @@ import top.yzlin.jx3strategystation.entity.community.TradingArticle;
 
 import java.util.List;
 
+
 @Service
 @Transactional(rollbackFor = Exception.class)
 public class ArticleService {
@@ -37,6 +38,10 @@ public class ArticleService {
 
     public List<BaseArticle> findArticle(OperateQuery operateQuery) {
         return articleDAO.findArticle(operateQuery);
+    }
+
+    public void deleteArticleById(int id) {
+        articleDAO.deleteArticleById(id);
     }
 
     public List<StrategyArticle> findStrategyArticle() {

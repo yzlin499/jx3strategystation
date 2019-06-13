@@ -34,4 +34,8 @@ public class ReviewArticleService {
     public boolean isBanned(int articleId) {
         return reviewArticleDAO.isBanned(articleId);
     }
+
+    public int findArticleIdByReviewId(int id) {
+        return reviewArticleDAO.findArticleIdByReviewId(id);
+    }
 }
