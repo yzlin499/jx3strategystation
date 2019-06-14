@@ -96,7 +96,8 @@
                         <c:if test="${qixue.skill!=null}">
                             <img src="data:image/png;base64,${qixue.imgBase64}" alt="${qixue.name}" data-toggle="modal"
                                  data-target="#skill-${qixue.skill.name}" class="img-rounded"
-                                 width=64px height=64px>&nbsp;&nbsp;&nbsp;&nbsp;
+                                 width=64px height=64px>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
                             <div class="modal fade bs-example-modal-sm" id="skill-${qixue.skill.name}"
                                  tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
                                 <div class="modal-dialog modal-sm" role="document">
