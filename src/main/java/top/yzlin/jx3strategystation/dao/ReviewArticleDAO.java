@@ -21,4 +21,7 @@ public interface ReviewArticleDAO {
 
     @Select("select count(*)>0 from ReviewArticle where article.articleId=:articleId")
     boolean isBanned(@QueryParam("articleId") int articleId);
+
+    @Select("select ra.article.articleId from ReviewArticle ra where reviewId=:reviewId")
+    int findArticleIdByReviewId(@QueryParam("reviewId") int id);
 }

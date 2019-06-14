@@ -4,10 +4,24 @@
     <c:forEach items="${[
             {
                 'title':'社区管理',
-                'list':['帖子审核']
+                'list':[
+                    {
+                        'name':'帖子审核',
+                        'link':'/admin/reviewArticle'
+                    }
+                ]
             },{
                 'title':'审核记录',
-                'list':['审核通过','黑名单']
+                'list':[
+                    {
+                        'name':'审核通过',
+                        'link':'#'
+                    },
+                    {
+                        'name':'黑名单',
+                        'link':'/admin/showBanedUser'
+                    }
+                ]
             }
     ]}" var="i" varStatus="num">
         <div class="panel panel-default">
@@ -21,7 +35,7 @@
             <div id="collapse${num.index}" class="panel-collapse collapse">
                 <ul class="list-group">
                     <c:forEach items="${i.list}" var="item">
-                        <li class="list-group-item">${item}</li>
+                        <li class="list-group-item"><a href="${item.link}">${item.name}</a></li>
                     </c:forEach>
                 </ul>
             </div>

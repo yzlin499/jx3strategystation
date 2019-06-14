@@ -17,7 +17,6 @@
             padding-left: 10px;
             height: 100%;
         }
-
         .db1 {
             height: 9.5%;
         }
@@ -34,7 +33,6 @@
             width: 100%;
             color: white;
         }
-
         .linkl:hover {
             background-color: white;
             color: #46b8da;
