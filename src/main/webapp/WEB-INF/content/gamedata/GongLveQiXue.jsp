@@ -94,25 +94,19 @@
                     第${num}层&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <c:forEach items="${requestScope.qiXueGroupList[numS.index].qiXues}" var="qixue">
                         <c:if test="${qixue.skill!=null}">
-                            <img src="data:image/png;base64,${qixue.imgBase64}" alt="${qixue.name}" data-toggle="modal"
-                                 data-target="#skill-${qixue.skill.name}" class="img-rounded"
-                                 width=64px height=64px>
+                            <a tabindex="0" data-toggle="popover" data-trigger="focus" title="<h4>${qixue.name}</h4>"
+                               data-placement="left"
+                               data-content="<h4>${qixue.describe}</h4>">
+                                <img src="data:image/png;base64,${qixue.imgBase64}" alt="${qixue.name}"
+                                     class="img-rounded" width=64px height=64px></a>
                             &nbsp;&nbsp;&nbsp;&nbsp;
-                            <div class="modal fade bs-example-modal-sm" id="skill-${qixue.skill.name}"
-                                 tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-                                <div class="modal-dialog modal-sm" role="document">
-                                    <div class="modal-content">
-                                        <b>${qixue.skill.name}:</b>${qixue.skill.describe}
-                                    </div>
-                                </div>
-                            </div>
                         </c:if>
                         <c:if test="${qixue.skill==null}">
                             <a tabindex="0" data-toggle="popover" data-trigger="focus" title="<h4>${qixue.name}</h4>"
                                data-placement="left"
-                               data-content="<h4>${qixue.describe}</h4>"><img
-                                    src="data:image/png;base64,${qixue.imgBase64}" alt="${qixue.name}"
-                                    class="img-circle" width=64px height=64px></a>
+                               data-content="<h4>${qixue.describe}</h4>">
+                                <img src="data:image/png;base64,${qixue.imgBase64}" alt="${qixue.name}"
+                                     class="img-circle" width=64px height=64px></a>
                             &nbsp;&nbsp;&nbsp;&nbsp;
                         </c:if>
                     </c:forEach>

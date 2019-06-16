@@ -17,6 +17,11 @@ public class DAOConfig {
     }
 
     @Bean
+    public GameDataDAO gameDataDAO(@Autowired SessionFactory sessionFactory) {
+        return createDAO(GameDataDAO.class, sessionFactory);
+    }
+
+    @Bean
     public ReviewArticleDAO reviewArticleDAO(@Autowired SessionFactory sessionFactory) {
         return createDAO(ReviewArticleDAO.class, sessionFactory);
     }
