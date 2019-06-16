@@ -25,7 +25,9 @@ public class NewTest {
 
     @Test
     public void test() {
-        System.out.println(gameDataService.findMenPaiNameList());
+        gameDataService.findMenPaiXinFasByXinFaName("铁牢律").forEach(i -> {
+            System.out.println(i.getName());
+        });
 
     }
 }

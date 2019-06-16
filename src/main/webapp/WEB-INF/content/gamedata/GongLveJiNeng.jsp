@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -71,12 +72,18 @@
         </div>
         <div id="right" class="col-xs-10">
             <div id="Lrighthead">
-                &nbsp;&nbsp;<img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=48px
-                                 height=48px>
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=48px height=48px>
+                <c:forEach items="${requestScope.xinFaList}" var="xinfa">
+                    <p>
+                        <a href="?xinFaName=${xinfa}" role="button"
+                           class="btn btn-default btn-lg" style="float: left">${xinfa}</a>
+                    </p>
+                </c:forEach>
+
             </div>
             <div id="Rrighthead">
-                <a href="GongLveQiXue.jsp"><br>查看奇穴</a>&nbsp;&nbsp;
+                <s:a namespace="/gamedata" action="qixue"><br>查看奇穴
+                    <s:param name="xinFaName">${requestScope.xinFaName}</s:param>
+                </s:a>&nbsp;&nbsp;
             </div>
             <div id="rightbody">
                 <h3 align="center">

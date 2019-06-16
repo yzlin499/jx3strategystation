@@ -15,7 +15,7 @@ public class QiXueGroupAction extends BaseGameDataAction {
     }
 
     public List<QiXueGroup> getQiXueGroupList() {
-        return qiXueGroupService.findQiXueGroupByXinFaName(xinFaName);
+        return qiXueGroupService.findQiXueGroupByXinFaName(getXinFaName());
     }
 
     @Override

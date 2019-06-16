@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import top.yzlin.jx3strategystation.dao.GameDataDAO;
 import top.yzlin.jx3strategystation.entity.game.MenPai;
+import top.yzlin.jx3strategystation.entity.game.XinFa;
 
 import java.util.List;
 
@@ -22,5 +23,13 @@ public class GameDataService {
 
     public List<String> findMenPaiNameList() {
         return gameDataDAO.findMenPaiNameList();
+    }
+
+    public List<XinFa> findMenPaiXinFasByXinFaName(String xinFaName) {
+        return gameDataDAO.findMenPaiXinFasByXinFaName(xinFaName);
+    }
+
+    public List<String> findMenPaiXinFaNamesByXinFaName(String xinFaName) {
+        return gameDataDAO.findMenPaiXinFaNamesByXinFaName(xinFaName);
     }
 }

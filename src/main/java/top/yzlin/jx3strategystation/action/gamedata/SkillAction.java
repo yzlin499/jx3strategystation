@@ -15,9 +15,6 @@ public class SkillAction extends BaseGameDataAction {
     }
 
     public List<Skill> getSkillList() {
-        if (xinFaName == null) {
-            xinFaName = getMenPaiList().get(0).getXinFas()[0].getName();
-        }
-        return skillService.findSkillByXinFaName(xinFaName);
+        return skillService.findSkillByXinFaName(getXinFaName());
     }
 }
