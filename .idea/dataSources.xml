@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="skill" uuid="ca25de5d-8a21-4f96-8bfe-4f1bb19e7e7e">
+    <data-source source="LOCAL" name="skill [2]" uuid="f9273816-be82-4d86-ae1a-3ba962023dd8">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>SQLite</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:D:\49968\Workspaces\InttlliJ IDEA\jx3strategystation\src\main\resources\db\skill.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:D:\Java编译\workspace\jx3strategystation\src\main\resources\db\skill.db</jdbc-url>
       <driver-properties>
         <property name="enable_load_extension" value="true" />
       </driver-properties>

@@ -1,455 +1,455 @@
 [
-    {
-        "qiXueGroupId": 0,
-        "qiXueIndex": 0,
-        "qiXues": [
-            {
-                "describe": "“三环套月”伤害提高10%。",
-                "name": "挫锐",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“三环套月”会心提高10%，会心效果提高10%。",
-                "name": "心固",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“三环套月”附带60%减速效果，持续5秒。",
-                "name": "不善",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "减速",
-                        "typeId": 35
-                    }
-                ]
-            }
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 0,
+    "qiXues": [
+      {
+        "describe": "“三环套月”伤害提高10%。",
+        "name": "挫锐",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“三环套月”会心提高10%，会心效果提高10%。",
+        "name": "心固",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“三环套月”附带60%减速效果，持续5秒。",
+        "name": "不善",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "减速",
+            "typeId": 35
+          }
         ]
-    },
-    {
-        "qiXueGroupId": 0,
-        "qiXueIndex": 1,
-        "qiXues": [
-            {
-                "describe": "“万剑归宗”调息时间降低3秒，“无我无剑”“万剑归宗”的伤害提高10%。",
-                "name": "同根",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "外功招式会心后，自身立即回复1格气。",
-                "name": "深埋",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "处于自身“生太极”气场当中，自身受到的伤害降低10%，受到攻击有15%几率令攻击者锁足3秒，并恢复自身10％的内力，该效果每20秒只能触发一次。",
-                "name": "吐故纳新",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "减伤",
-                        "typeId": 31
-                    },
-                    {
-                        "title": "锁足",
-                        "typeId": 36
-                    }
-                ]
-            }
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 1,
+    "qiXues": [
+      {
+        "describe": "“万剑归宗”调息时间降低3秒，“无我无剑”“万剑归宗”的伤害提高10%。",
+        "name": "同根",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "外功招式会心后，自身立即回复1格气。",
+        "name": "深埋",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "处于自身“生太极”气场当中，自身受到的伤害降低10%，受到攻击有15%几率令攻击者锁足3秒，并恢复自身10％的内力，该效果每20秒只能触发一次。",
+        "name": "吐故纳新",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "减伤",
+            "typeId": 31
+          },
+          {
+            "title": "锁足",
+            "typeId": 36
+          }
         ]
-    },
-    {
-        "qiXueGroupId": 0,
-        "qiXueIndex": 2,
-        "qiXues": [
-            {
-                "describe": "施展招式消耗5格气时，有25%几率立即回复3格气。",
-                "name": "昆吾",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“无我无剑”命中目标后，会对目标周围6尺内最多5个目标造成外功伤害，消耗的气越多，伤害越高。该效果不受到“无我无剑”秘籍的影响。",
-                "name": "白虹",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“万剑归宗”范围扩大2尺，命中目标后立即使目标锁足2秒。",
-                "name": "数穷",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "锁足",
-                        "typeId": 36
-                    }
-                ]
-            },
-            {
-                "describe": "产生一个10尺的气场，自身每3秒回复20%内力，小队成员每3秒回复5%内力，持续期间不受打退、打断影响，持续9秒。",
-                "name": "化三清",
-                "qiXueId": 0,
-                "skillTypes": []
-            }
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 2,
+    "qiXues": [
+      {
+        "describe": "施展招式消耗5格气时，有25%几率立即回复3格气。",
+        "name": "昆吾",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“无我无剑”命中目标后，会对目标周围6尺内最多5个目标造成外功伤害，消耗的气越多，伤害越高。该效果不受到“无我无剑”秘籍的影响。",
+        "name": "白虹",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“万剑归宗”范围扩大2尺，命中目标后立即使目标锁足2秒。",
+        "name": "数穷",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "锁足",
+            "typeId": 36
+          }
         ]
-    },
-    {
-        "qiXueGroupId": 0,
-        "qiXueIndex": 3,
-        "qiXues": [
-            {
-                "describe": "“三环套月”“八荒归元”施展距离增加2尺，且额外续气一格。",
-                "name": "风逝",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "消耗5格气施展无我无剑，会心几率提高10%，会心效果提高20%。",
-                "name": "无意",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“八荒归元”的会心提高10%，会心效果提高20%。",
-                "name": "元剑",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "使目标下马并且使其移动速度降低60%，持续5秒，续气一格。若你攻击的目标正在运功，对目标造成28-42点（+0.1*攻击力）外功伤害，并令你额外续气两格并使该目标5秒内无法运功。",
-                "name": "剑飞惊天",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "打断",
-                        "typeId": 30
-                    },
-                    {
-                        "title": "沉默",
-                        "typeId": 52
-                    },
-                    {
-                        "title": "减速",
-                        "typeId": 35
-                    }
-                ]
-            }
+      },
+      {
+        "describe": "产生一个10尺的气场，自身每3秒回复20%内力，小队成员每3秒回复5%内力，持续期间不受打退、打断影响，持续9秒。",
+        "name": "化三清",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 3,
+    "qiXues": [
+      {
+        "describe": "“三环套月”“八荒归元”施展距离增加2尺，且额外续气一格。",
+        "name": "风逝",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "消耗5格气施展无我无剑，会心几率提高10%，会心效果提高20%。",
+        "name": "无意",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“八荒归元”的会心提高10%，会心效果提高20%。",
+        "name": "元剑",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "使目标下马并且使其移动速度降低60%，持续5秒，续气一格。若你攻击的目标正在运功，对目标造成28-42点（+0.1*攻击力）外功伤害，并令你额外续气两格并使该目标5秒内无法运功。",
+        "name": "剑飞惊天",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "打断",
+            "typeId": 30
+          },
+          {
+            "title": "沉默",
+            "typeId": 52
+          },
+          {
+            "title": "减速",
+            "typeId": 35
+          }
         ]
-    },
-    {
-        "qiXueGroupId": 0,
-        "qiXueIndex": 4,
-        "qiXues": [
-            {
-                "describe": "“转乾坤”伤害降低效果提高10%，不受招式控制的效果提高2秒，并在期间免疫推拉。",
-                "name": "独笑",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "免控",
-                        "typeId": 49
-                    }
-                ]
-            },
-            {
-                "describe": "每格“气点”增加“三环套月”5%伤害，“三环套月”命中目标后额外回复一格气。",
-                "name": "心转",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“人剑合一”每引爆一个气场，自身回复2格气，并为自身和小队成员回复5%内力和1%气血。",
-                "name": "狂歌",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "处于“吞日月”作用范围内的友方目标受到的伤害会被化解，化解的总伤害超过自身气血最大值的10%时，则\"吞日月\"消失，该招式无法在秘境中生效。",
-                "name": "合真",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "减伤",
-                        "typeId": 31
-                    }
-                ]
-            }
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 4,
+    "qiXues": [
+      {
+        "describe": "“转乾坤”伤害降低效果提高10%，不受招式控制的效果提高2秒，并在期间免疫推拉。",
+        "name": "独笑",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "免控",
+            "typeId": 49
+          }
         ]
-    },
-    {
-        "qiXueGroupId": 0,
-        "qiXueIndex": 5,
-        "qiXues": [
-            {
-                "describe": "对被定身、锁足、眩晕的目标伤害提高20%。",
-                "name": "解牛",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“剑冲阴阳”调息时间降低10秒，眩晕效果增加1秒。",
-                "name": "解纷",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "眩晕",
-                        "typeId": 38
-                    }
-                ]
-            },
-            {
-                "describe": "“无我无剑”会心后附带1层叠刃效果，最多叠加5层。",
-                "name": "叠刃",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“吞日月”可额外解除友方目标阳性，阴性，混元性和毒性不利效果各一个。",
-                "name": "开兑",
-                "qiXueId": 0,
-                "skillTypes": []
-            }
+      },
+      {
+        "describe": "每格“气点”增加“三环套月”5%伤害，“三环套月”命中目标后额外回复一格气。",
+        "name": "心转",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“人剑合一”每引爆一个气场，自身回复2格气，并为自身和小队成员回复5%内力和1%气血。",
+        "name": "狂歌",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "处于“吞日月”作用范围内的友方目标受到的伤害会被化解，化解的总伤害超过自身气血最大值的10%时，则\"吞日月\"消失，该招式无法在秘境中生效。",
+        "name": "合真",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "减伤",
+            "typeId": 31
+          }
         ]
-    },
-    {
-        "qiXueGroupId": 0,
-        "qiXueIndex": 6,
-        "qiXues": [
-            {
-                "describe": "“八荒归元”命中40%气血以下目标，能够使“叠刃”的持续伤害立即生效。",
-                "name": "切玉",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "除“镇山河”外所有气场招式的调息时间降低1秒，施展气场后额外回复1格气，成功运功施展气场，则使下一个气场无需运功。",
-                "name": "雾外江山",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“转乾坤”调息时间降低15秒，施展“转乾坤”重置“万剑归宗”“人剑合一”“大道无术”“八荒归元”“剑冲阴阳”的调息时间。",
-                "name": "惊世",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "处于自身“生太极”气场范围中的团队成员受到的外功伤害降低10%，每秒回复自身0.4%气血最大值。",
-                "name": "凌太虚",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "减伤",
-                        "typeId": 31
-                    }
-                ]
-            }
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 5,
+    "qiXues": [
+      {
+        "describe": "对被定身、锁足、眩晕的目标伤害提高20%。",
+        "name": "解牛",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“剑冲阴阳”调息时间降低10秒，眩晕效果增加1秒。",
+        "name": "解纷",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "眩晕",
+            "typeId": 38
+          }
         ]
-    },
-    {
-        "qiXueGroupId": 0,
-        "qiXueIndex": 7,
-        "qiXues": [
-            {
-                "describe": "“碎星辰”气场持续时间增加12秒，对自身的增益效果提高100%。",
-                "name": "负阴",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "爆发",
-                        "typeId": 33
-                    }
-                ]
-            },
-            {
-                "describe": "“坐忘无我”每点根骨或身法化解的伤害提高20%，效果期间自身受到的伤害降低50%。",
-                "name": "无我",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "减伤",
-                        "typeId": 31
-                    }
-                ]
-            },
-            {
-                "describe": "剑冲阴阳”伤害提高100%，施展后立即重置“八荒归元”调息时间。",
-                "name": "匣中",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“大道无术”定身目标后，重置自身 “生太极”、“吞日月”、“碎星辰”调息时间。",
-                "name": "云凌",
-                "qiXueId": 0,
-                "skillTypes": []
-            }
+      },
+      {
+        "describe": "“无我无剑”会心后附带1层叠刃效果，最多叠加5层。",
+        "name": "叠刃",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“吞日月”可额外解除友方目标阳性，阴性，混元性和毒性不利效果各一个。",
+        "name": "开兑",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 6,
+    "qiXues": [
+      {
+        "describe": "“八荒归元”命中40%气血以下目标，能够使“叠刃”的持续伤害立即生效。",
+        "name": "切玉",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "除“镇山河”外所有气场招式的调息时间降低1秒，施展气场后额外回复1格气，成功运功施展气场，则使下一个气场无需运功。",
+        "name": "雾外江山",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“转乾坤”调息时间降低15秒，施展“转乾坤”重置“万剑归宗”“人剑合一”“大道无术”“八荒归元”“剑冲阴阳”的调息时间。",
+        "name": "惊世",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "处于自身“生太极”气场范围中的团队成员受到的外功伤害降低10%，每秒回复自身0.4%气血最大值。",
+        "name": "凌太虚",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "减伤",
+            "typeId": 31
+          }
         ]
-    },
-    {
-        "qiXueGroupId": 0,
-        "qiXueIndex": 8,
-        "qiXues": [
-            {
-                "describe": "“八荒归元”命中有自身“叠刃”效果目标，额外造成25%伤害效果。",
-                "name": "和光",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“大道无术”“人剑合一”控制时间延长1秒。",
-                "name": "实腹",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "定身",
-                        "typeId": 37
-                    }
-                ]
-            },
-            {
-                "describe": "“三柴剑法”命中目标则添加一层“玄一”效果。",
-                "name": "故长",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "减疗",
-                        "typeId": 43
-                    }
-                ]
-            },
-            {
-                "describe": "“剑冲阴阳”可对拥有“叠刃”目标直接施展，命中后自身“剑灵”将对目标造成外功伤害，持续6秒。",
-                "name": "随物",
-                "qiXueId": 0,
-                "skillTypes": []
-            }
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 7,
+    "qiXues": [
+      {
+        "describe": "“碎星辰”气场持续时间增加12秒，对自身的增益效果提高100%。",
+        "name": "负阴",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "爆发",
+            "typeId": 33
+          }
         ]
-    },
-    {
-        "qiXueGroupId": 0,
-        "qiXueIndex": 9,
-        "qiXues": [
-            {
-                "describe": "位于增益气场中自身混元内功和外功基础攻击提高10%。",
-                "name": "期声",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "爆发",
-                        "typeId": 33
-                    }
-                ]
-            },
-            {
-                "describe": "“人剑合一”引爆及定身效果范围提高3尺，每成功定身一个目标“人剑合一”调息时间降低1秒。",
-                "name": "物我两忘",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "施展“剑冲阴阳”后，在目标区域生成“生太极”气场。",
-                "name": "剑势",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“人剑合一”引爆不同的气场，可以使自身获得不同的效果。\\n“生太极”使自身移动速度提高10%，可以叠加3层，持续8秒。\\n“吞日月”使自身不受招式控制效果的影响，持续2秒，可以累加3次。\\n“化三清”使自身3秒内不消耗内力，持续3秒，可以累加3次。\\n“碎星辰”使自身基础攻击提高5%，持续8秒，可以叠加3层。\\n“破苍穹”使自己加速率提高3%，持续8秒，可以叠加3层。",
-                "name": "心剑两望",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "加速",
-                        "typeId": 46
-                    },
-                    {
-                        "title": "免控",
-                        "typeId": 49
-                    },
-                    {
-                        "title": "爆发",
-                        "typeId": 33
-                    }
-                ]
-            }
+      },
+      {
+        "describe": "“坐忘无我”每点根骨或身法化解的伤害提高20%，效果期间自身受到的伤害降低50%。",
+        "name": "无我",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "减伤",
+            "typeId": 31
+          }
         ]
-    },
-    {
-        "qiXueGroupId": 0,
-        "qiXueIndex": 10,
-        "qiXues": [
-            {
-                "describe": "“无我无剑”命中有自身“叠刃”效果的目标则减少“八荒归元”调息时间，每消耗1格气则减少1秒。",
-                "name": "无欲",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“生太极”作用范围提高5尺，减速效果提高到45%。",
-                "name": "凶年",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "减速",
-                        "typeId": 35
-                    }
-                ]
-            },
-            {
-                "describe": "“坐忘无我”消失后，重置“八荒归元”调息时间，并使下一个“八荒归元”伤害提高40%，持续10秒。",
-                "name": "静笃",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“万剑归宗”命中目标将使其获得“叠刃”效果且“叠刃”伤害提高10%。",
-                "name": "虚极",
-                "qiXueId": 0,
-                "skillTypes": []
-            }
+      },
+      {
+        "describe": "剑冲阴阳”伤害提高100%，施展后立即重置“八荒归元”调息时间。",
+        "name": "匣中",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“大道无术”定身目标后，重置自身 “生太极”、“吞日月”、“碎星辰”调息时间。",
+        "name": "云凌",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 8,
+    "qiXues": [
+      {
+        "describe": "“八荒归元”命中有自身“叠刃”效果目标，额外造成25%伤害效果。",
+        "name": "和光",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“大道无术”“人剑合一”控制时间延长1秒。",
+        "name": "实腹",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "定身",
+            "typeId": 37
+          }
         ]
-    },
-    {
-        "qiXueGroupId": 0,
-        "qiXueIndex": 11,
-        "qiXues": [
-            {
-                "describe": "“紫气东来”持续时间降低至8秒，时间可累加，为3层充能技能，60秒充能时间。",
-                "name": "若水",
-                "qiXueId": 0,
-                "skillTypes": []
-            },
-            {
-                "describe": "“紫气东来”施展后获得的内功和外功基础攻击力的加成效果提高到50％，持续时间提高3秒，额外提高20%加速率。",
-                "name": "固本",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "爆发",
-                        "typeId": 33
-                    }
-                ]
-            },
-            {
-                "describe": "“生太极”调息时间增加15秒，“人剑合一”只能引爆自身气场，每引爆一个气场，破防等级提高20%，外功会心几率提高5%，持续40秒，可叠加3层。",
-                "name": "玄门",
-                "qiXueId": 0,
-                "skillTypes": [
-                    {
-                        "title": "爆发",
-                        "typeId": 33
-                    }
-                ]
-            },
-            {
-                "describe": "吸收20尺范围内自身的气场，使其聚集形成10尺的“天道剑阵”，“天道剑阵”使该区域同时附带“生太极”“吞日月”“碎星辰”效果，剑阵内剑灵会持续对区域内敌人造成1233-1450点（+0.43*攻击力）外功伤害，若短时间内连续命中同一个目标，则降低为369-434点（+0.13*攻击力）外功伤害，剑灵每3秒会使范围内的敌人获得1层“叠刃”效果，“天道剑阵”初始持续12秒，每吸收一个气场额外增加4秒。",
-                "name": "行天道",
-                "qiXueId": 0,
-                "skillTypes": []
-            }
+      },
+      {
+        "describe": "“三柴剑法”命中目标则添加一层“玄一”效果。",
+        "name": "故长",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "减疗",
+            "typeId": 43
+          }
         ]
-    }
+      },
+      {
+        "describe": "“剑冲阴阳”可对拥有“叠刃”目标直接施展，命中后自身“剑灵”将对目标造成外功伤害，持续6秒。",
+        "name": "随物",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 9,
+    "qiXues": [
+      {
+        "describe": "位于增益气场中自身混元内功和外功基础攻击提高10%。",
+        "name": "期声",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "爆发",
+            "typeId": 33
+          }
+        ]
+      },
+      {
+        "describe": "“人剑合一”引爆及定身效果范围提高3尺，每成功定身一个目标“人剑合一”调息时间降低1秒。",
+        "name": "物我两忘",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "施展“剑冲阴阳”后，在目标区域生成“生太极”气场。",
+        "name": "剑势",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“人剑合一”引爆不同的气场，可以使自身获得不同的效果。\\n“生太极”使自身移动速度提高10%，可以叠加3层，持续8秒。\\n“吞日月”使自身不受招式控制效果的影响，持续2秒，可以累加3次。\\n“化三清”使自身3秒内不消耗内力，持续3秒，可以累加3次。\\n“碎星辰”使自身基础攻击提高5%，持续8秒，可以叠加3层。\\n“破苍穹”使自己加速率提高3%，持续8秒，可以叠加3层。",
+        "name": "心剑两望",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "加速",
+            "typeId": 46
+          },
+          {
+            "title": "免控",
+            "typeId": 49
+          },
+          {
+            "title": "爆发",
+            "typeId": 33
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 10,
+    "qiXues": [
+      {
+        "describe": "“无我无剑”命中有自身“叠刃”效果的目标则减少“八荒归元”调息时间，每消耗1格气则减少1秒。",
+        "name": "无欲",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“生太极”作用范围提高5尺，减速效果提高到45%。",
+        "name": "凶年",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "减速",
+            "typeId": 35
+          }
+        ]
+      },
+      {
+        "describe": "“坐忘无我”消失后，重置“八荒归元”调息时间，并使下一个“八荒归元”伤害提高40%，持续10秒。",
+        "name": "静笃",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“万剑归宗”命中目标将使其获得“叠刃”效果且“叠刃”伤害提高10%。",
+        "name": "虚极",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  },
+  {
+    "qiXueGroupId": 0,
+    "qiXueIndex": 11,
+    "qiXues": [
+      {
+        "describe": "“紫气东来”持续时间降低至8秒，时间可累加，为3层充能技能，60秒充能时间。",
+        "name": "若水",
+        "qiXueId": 0,
+        "skillTypes": []
+      },
+      {
+        "describe": "“紫气东来”施展后获得的内功和外功基础攻击力的加成效果提高到50％，持续时间提高3秒，额外提高20%加速率。",
+        "name": "固本",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "爆发",
+            "typeId": 33
+          }
+        ]
+      },
+      {
+        "describe": "“生太极”调息时间增加15秒，“人剑合一”只能引爆自身气场，每引爆一个气场，破防等级提高20%，外功会心几率提高5%，持续40秒，可叠加3层。",
+        "name": "玄门",
+        "qiXueId": 0,
+        "skillTypes": [
+          {
+            "title": "爆发",
+            "typeId": 33
+          }
+        ]
+      },
+      {
+        "describe": "吸收20尺范围内自身的气场，使其聚集形成10尺的“天道剑阵”，“天道剑阵”使该区域同时附带“生太极”“吞日月”“碎星辰”效果，剑阵内剑灵会持续对区域内敌人造成1233-1450点（+0.43*攻击力）外功伤害，若短时间内连续命中同一个目标，则降低为369-434点（+0.13*攻击力）外功伤害，剑灵每3秒会使范围内的敌人获得1层“叠刃”效果，“天道剑阵”初始持续12秒，每吸收一个气场额外增加4秒。",
+        "name": "行天道",
+        "qiXueId": 0,
+        "skillTypes": []
+      }
+    ]
+  }
 ]

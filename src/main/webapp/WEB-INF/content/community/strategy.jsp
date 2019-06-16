@@ -11,10 +11,11 @@
     <title>攻略区</title>
     <jsp:include page="../templates/base-lib.jsp"/>
     <style>
-        .db1{
+        .db1 {
             height: 100px;
         }
-        .db1:hover{
+
+        .db1:hover {
             background-color: black;
             filter: alpha(opacity=50);
             moz-opacity: 0.5;

@@ -10,9 +10,9 @@
 <head>
     <title>Cropper</title>
     <link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/static/css/userCss/testCss/amazeui.min.css">
-    <link rel="stylesheet" href="/static/css/userCss/testCss/amazeui.cropper.css">
-    <link rel="stylesheet" href="/static/css/userCss/testCss/custom_up_img.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/userCss/testCss/amazeui.min.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/userCss/testCss/amazeui.cropper.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/userCss/testCss/custom_up_img.css">
     <style type="text/css">
         .up-img-cover {
             width: 100px;
@@ -26,7 +26,7 @@
 </head>
 <body>
 <div class="up-img-cover" id="up-img-touch">
-    <img class="am-circle" alt="点击图片上传" src="img/hu.jpg" data-am-popover="{content: '点击上传', trigger: 'hover focus'}">
+    <img class="am-circle" alt="点击图片上传" src=" " data-am-popover="{content: '点击上传', trigger: 'hover focus'}">
 </div>
 <div><a style="text-align: center; display: block;" id="pic"></a></div>
 
@@ -89,10 +89,10 @@
         </div>
     </div>
 </div>
-<script src="/static/js/jquery.min.js" charset="utf-8"></script>
-<script src="/static/js/user/amazeui.min.js" charset="utf-8"></script>
-<script src="/static/js/user/cropper.min.js" charset="utf-8"></script>
-<script src="/static/js/user/custom_up_img.js" charset="utf-8"></script>
+<script src="${pageContext.request.contextPath}/static/js/jquery.min.js" charset="utf-8"></script>
+<script src="${pageContext.request.contextPath}/static/js/user/amazeui.min.js" charset="utf-8"></script>
+<script src="${pageContext.request.contextPath}/static/js/user/cropper.min.js" charset="utf-8"></script>
+<script src="${pageContext.request.contextPath}/static/js/user/custom_up_img.js" charset="utf-8"></script>
 
 
 </body>

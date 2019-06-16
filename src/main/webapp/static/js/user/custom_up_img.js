@@ -5,7 +5,7 @@ $(document).ready(function () {
 });
 $(function () {
     'use strict';
-    // 鍒濆鍖�
+    //初始化
     var $image = $('#image');
     $image.cropper({
         aspectRatio: '1',
@@ -14,7 +14,7 @@ $(function () {
 
     });
 
-    // 浜嬩欢浠ｇ悊缁戝畾浜嬩欢
+    //事件代理绑定事件
     $('.docs-buttons').on('click', '[data-method]', function () {
 
         var $this = $(this);
@@ -23,7 +23,7 @@ $(function () {
         switch (data.method) {
             case 'getCroppedCanvas':
                 if (result) {
-                    // 鏄剧ず Modal
+                    // 显示Modal
                     $('#cropped-modal').modal().find('.am-modal-bd').html(result);
                     $('#download').attr('href', result.toDataURL('image/jpeg'));
                 }
@@ -32,7 +32,7 @@ $(function () {
     });
 
 
-    // 涓婁紶鍥剧墖
+
     var $inputImage = $('#inputImage');
     var URL = window.URL || window.webkitURL;
     var blobURL;
@@ -56,8 +56,7 @@ $(function () {
                     window.alert('Please choose an image file.');
                 }
             }
-
-            // Amazi UI 涓婁紶鏂囦欢鏄剧ず浠ｇ爜
+            // Amazi UI 上传文件显示代码
             var fileNames = '';
             $.each(this.files, function () {
                 fileNames += '<span class="am-badge">' + this.name + '</span> ';
@@ -67,14 +66,13 @@ $(function () {
     } else {
         $inputImage.prop('disabled', true).parent().addClass('disabled');
     }
-
-    //缁戝畾涓婁紶浜嬩欢
+    //绑定上传事件
     $('#up-btn-ok').on('click', function () {
         var $modal = $('#my-modal-loading');
         var $modal_alert = $('#my-alert');
         var img_src = $image.attr("src");
         if (img_src == "") {
-            set_alert_info("娌℃湁閫夋嫨涓婁紶鐨勫浘鐗�");
+            set_alert_info("没有选择上传的图片");
             $modal_alert.modal();
             return false;
         }
@@ -83,9 +81,9 @@ $(function () {
 
         var url = $(this).attr("url");
         var canvas = $("#image").cropper('getCroppedCanvas');
-        var data = canvas.toDataURL(); //杞垚base64
+        var data = canvas.toDataURL(); //转成base64
         $.ajax({
-            url: url,
+            url: url,//写接口地址
             dataType: 'json',
             type: "POST",
             data: {"image": data.toString()},
@@ -103,7 +101,7 @@ $(function () {
             },
             error: function () {
                 $modal.modal('close');
-                set_alert_info("涓婁紶鏂囦欢澶辫触浜嗭紒");
+                set_alert_info("上传文件失败了！");
                 $modal_alert.modal();
                 //console.log('Upload error');
             }

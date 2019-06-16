@@ -1,135 +1,135 @@
 {
-    "definitions": {},
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "$id": "http://example.com/root.json",
-    "type": "object",
-    "title": "menpai Schema",
-    "required": [
-        "describe",
-        "menPaiId",
-        "name",
-        "xinFas"
-    ],
-    "properties": {
-        "describe": {
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "menpai Schema",
+  "required": [
+    "describe",
+    "menPaiId",
+    "name",
+    "xinFas"
+  ],
+  "properties": {
+    "describe": {
+      "type": "string"
+    },
+    "xinFas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "describe",
+          "name",
+          "qiXueGroups",
+          "skills",
+          "xinFaId"
+        ],
+        "properties": {
+          "xinFaId": {
+            "type": "integer"
+          },
+          "name": {
             "type": "string"
-        },
-        "xinFas": {
+          },
+          "describe": {
+            "type": "string"
+          },
+          "qiXueGroups": {
+            "type": "array"
+          },
+          "skills": {
             "type": "array",
             "items": {
-                "type": "object",
-                "required": [
-                    "describe",
-                    "name",
-                    "qiXueGroups",
-                    "skills",
-                    "xinFaId"
-                ],
-                "properties": {
-                    "xinFaId": {
-                        "type": "integer"
-                    },
-                    "name": {
-                        "type": "string"
-                    },
-                    "describe": {
-                        "type": "string"
-                    },
-                    "qiXueGroups": {
-                        "type": "array"
-                    },
-                    "skills": {
-                        "type": "array",
-                        "items": {
-                            "type": "object",
-                            "required": [
-                                "arm",
-                                "consumption",
-                                "coolDownTime",
-                                "describe",
-                                "distance",
-                                "name",
-                                "skillId",
-                                "skillTypes",
-                                "storingForce"
-                            ],
-                            "properties": {
-                                "arm": {
-                                    "type": "string",
-                                    "default": "任意兵器"
-                                },
-                                "consumption": {
-                                    "type": "integer"
-                                },
-                                "coolDownTime": {
-                                    "type": "integer"
-                                },
-                                "describe": {
-                                    "type": "string"
-                                },
-                                "distance": {
-                                    "type": "integer"
-                                },
-                                "name": {
-                                    "type": "string"
-                                },
-                                "skillId": {
-                                    "type": "integer"
-                                },
-                                "skillTypes": {
-                                    "type": "array",
-                                    "items": {
-                                        "type": "object",
-                                        "required": [
-                                            "title"
-                                        ],
-                                        "properties": {
-                                            "title": {
-                                                "type": "string",
-                                                "enum": [
-                                                    "冲刺",
-                                                    "打断",
-                                                    "减伤",
-                                                    "闪避",
-                                                    "爆发",
-                                                    "控制",
-                                                    "减速",
-                                                    "锁足",
-                                                    "定身",
-                                                    "眩晕",
-                                                    "击倒",
-                                                    "缴械",
-                                                    "解控",
-                                                    "嘲讽",
-                                                    "减疗",
-                                                    "位移",
-                                                    "封轻功",
-                                                    "加速",
-                                                    "封内",
-                                                    "无敌",
-                                                    "免控",
-                                                    "推",
-                                                    "拉",
-                                                    "沉默"
-                                                ]
-                                            }
-                                        }
-                                    }
-                                },
-                                "storingForce": {
-                                    "type": "number"
-                                }
-                            }
-                        }
+              "type": "object",
+              "required": [
+                "arm",
+                "consumption",
+                "coolDownTime",
+                "describe",
+                "distance",
+                "name",
+                "skillId",
+                "skillTypes",
+                "storingForce"
+              ],
+              "properties": {
+                "arm": {
+                  "type": "string",
+                  "default": "任意兵器"
+                },
+                "consumption": {
+                  "type": "integer"
+                },
+                "coolDownTime": {
+                  "type": "integer"
+                },
+                "describe": {
+                  "type": "string"
+                },
+                "distance": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "skillId": {
+                  "type": "integer"
+                },
+                "skillTypes": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "title"
+                    ],
+                    "properties": {
+                      "title": {
+                        "type": "string",
+                        "enum": [
+                          "冲刺",
+                          "打断",
+                          "减伤",
+                          "闪避",
+                          "爆发",
+                          "控制",
+                          "减速",
+                          "锁足",
+                          "定身",
+                          "眩晕",
+                          "击倒",
+                          "缴械",
+                          "解控",
+                          "嘲讽",
+                          "减疗",
+                          "位移",
+                          "封轻功",
+                          "加速",
+                          "封内",
+                          "无敌",
+                          "免控",
+                          "推",
+                          "拉",
+                          "沉默"
+                        ]
+                      }
                     }
+                  }
+                },
+                "storingForce": {
+                  "type": "number"
                 }
+              }
             }
-        },
-        "menPaiId": {
-            "type": "integer"
-        },
-        "name": {
-            "type": "string"
+          }
         }
+      }
+    },
+    "menPaiId": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
     }
+  }
 }

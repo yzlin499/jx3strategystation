@@ -31,15 +31,15 @@
         <p>祝你游戏开心</p>
     </div>
     <div class="centers">
-        <form>
+        <form action="#" id="form" data-form="ajax">
             <div class="form-group">
-                <input type="text" class="form-control" id="nickName" placeholder="网站呢称">
+                <input type="text" class="form-control" id="nickName" placeholder="网站呢称" data-required="参数不能为空">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" id="userName" placeholder="用户名">
+                <input type="text" class="form-control" id="userName" placeholder="用户名" data-required="参数不能为空">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="password" placeholder="密码">
+                <input type="password" class="form-control" id="password" placeholder="密码" data-required="参数不能为空">
             </div>
             <div class="form-group">
                 <button type="button" onclick="register()" class="btn btn-default">立即注册</button>
@@ -59,6 +59,8 @@
         </div>
     </div>
 </div>
+<script src="/static/js/user/verJs.js"></script>
+<script src="/static/js/jquery.min.js"></script>
 <script>
     function register() {
         $.post("/v1/api/register", {
@@ -73,6 +75,16 @@
             }
         });
     }
+
+    new VerJs({
+        form: "#form",
+        success: function (d) {
+            alert(1)
+        },
+        fail: function (d) {
+            alert(2)
+        }
+    });
 
 </script>
 </body>

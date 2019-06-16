@@ -16,13 +16,16 @@
                 <p><b>剑网三攻略网会员登录</b></p>
             </div>
             <div class="modal-body">
-                <div class="form-group">
-                    <input type="email" class="form-control" id="uesrName" placeholder="用户名">
-                </div>
-                <div class="form-group" style="margin-top:35px">
-                    <input type="password" class="form-control" id="password" placeholder="密码">
-                </div>
-                <div id="errerMsg" class="text-warning"></div>
+                <form action="#" id="form" data-form="ajax">
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="uesrName" placeholder="用户名" data-required="参数不能为空">
+                    </div>
+                    <div class="form-group" style="margin-top:35px">
+                        <input type="password" class="form-control" id="password" placeholder="密码"
+                               data-required="参数不能为空">
+                    </div>
+                    <div id="errerMsg" class="text-warning"></div>
+                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" onclick="login()" class="btn btn-info">立即登录</button>
@@ -32,7 +35,8 @@
         </div>
     </div>
 </div>
-
+<script src="/static/js/user/verJs.js"></script>
+<script src="/static/js/jquery.min.js"></script>
 <script>
     function login() {
         $.post("/v1/api/login", {
@@ -47,4 +51,14 @@
             }
         );
     }
+
+    new VerJs({
+        form: "#form",
+        success: function (d) {
+            alert(1)
+        },
+        fail: function (d) {
+            alert(2)
+        }
+    });
 </script>

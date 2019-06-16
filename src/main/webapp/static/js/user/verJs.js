@@ -1,4 +1,4 @@
-window.VerJs = (function() {
+window.VerJs = (function () {
     var form;
     var MESSAGE = {
         required: "当前选项不能为空！",
@@ -13,9 +13,9 @@ window.VerJs = (function() {
         idcard: "请输入有效的身份证号码"
     };
     var change;
-    var vers = function(param) {
+    var vers = function (param) {
         if (!ie()) {
-            fail(function(d) {
+            fail(function (d) {
                 alert(d)
             }, "不支持的浏览器插件");
             return false
@@ -35,11 +35,11 @@ window.VerJs = (function() {
         form.onsubmit = submits;
         form.onreset = rests
     };
-    var _1 = function(data, message) {
+    var _1 = function (data, message) {
         if (data) {
             for (var i in data) {
                 var names = document.getElementsByName(i);
-                [].forEach.call(names, function(item) {
+                [].forEach.call(names, function (item) {
                     for (var j in data[i]) {
                         var messages = message && message[i] && message[i][j] ? message[i][j] : _0.messages[j];
                         if (j != "min" && j != "max" && j != "minlength" && j != "maxlength" && j != "rule" && j != "equal") {
@@ -56,7 +56,7 @@ window.VerJs = (function() {
         }
         for (var i in MESSAGE) {
             var names = form.querySelectorAll("[data-" + i + "]");
-            [].forEach.call(names, function(items) {
+            [].forEach.call(names, function (items) {
                 var val = items.getAttribute("data-" + i);
                 if (val == "true" || val == "false") {
                     items.setAttribute("data-" + i, MESSAGE[i])
@@ -70,7 +70,7 @@ window.VerJs = (function() {
             })
         }
     };
-    var query = function(e) {
+    var query = function (e) {
         var data = {
             required: required,
             min: minOrMax,
@@ -191,7 +191,7 @@ window.VerJs = (function() {
             return true
         }
     };
-    var error_tag = function(errorMessage, target) {
+    var error_tag = function (errorMessage, target) {
         clear_error(target);
         var block = target.getAttribute("data-block");
         target.classList.add("ver-error-input");
@@ -218,7 +218,7 @@ window.VerJs = (function() {
             iconcirle.classList.add("ver-error-inputs")
         }
     };
-    var clear_error = function(e) {
+    var clear_error = function (e) {
         if (e.target) {
             var _0 = e.target
         } else {
@@ -240,7 +240,7 @@ window.VerJs = (function() {
             }
         }
     };
-    var submits = function() {
+    var submits = function () {
         verifications();
         var error = form.querySelectorAll(".ver-error-input").length;
         if (error > 0) {
@@ -254,13 +254,13 @@ window.VerJs = (function() {
         }
         return true
     };
-    var sends = function() {
+    var sends = function () {
         var forms = form.getAttribute("data-form");
         var xhr = new XMLHttpRequest();
         xhr.open("POST", form.action, true);
         xhr.setRequestHeader("x-requested-with", "XMLHttpRequest");
         var data = new FormData(form);
-        xhr.onreadystatechange = function() {
+        xhr.onreadystatechange = function () {
             if (xhr.readyState == 4) {
                 if (xhr.status == 203) {
                     return false
@@ -273,35 +273,35 @@ window.VerJs = (function() {
         };
         xhr.send(data)
     };
-    var rests = function() {
+    var rests = function () {
         form.reset();
         for (var i in MESSAGE) {
             var names = form.querySelectorAll("[data-" + i + "]");
             if (names.length > 0) {
-                [].forEach.call(names, function(items) {
+                [].forEach.call(names, function (items) {
                     clear_error(items)
                 })
             }
         }
     };
-    var verifications = function() {
+    var verifications = function () {
         for (var i in MESSAGE) {
             var names = form.querySelectorAll("[data-" + i + "]");
             if (names.length > 0) {
-                [].forEach.call(names, function(items) {
+                [].forEach.call(names, function (items) {
                     query(items)
                 })
             }
         }
     };
-    var success = function(data) {
+    var success = function (data) {
         console.log(data)
     };
-    var fail = function(fn, data) {
+    var fail = function (fn, data) {
         console.log(data)
     };
-    var getPath = function() {
-        var jsPath = document.currentScript ? document.currentScript.src : function() {
+    var getPath = function () {
+        var jsPath = document.currentScript ? document.currentScript.src : function () {
             var js = document.scripts,
                 last = js.length - 1,
                 src;
@@ -315,7 +315,7 @@ window.VerJs = (function() {
         }();
         return jsPath.substring(0, jsPath.lastIndexOf('/') + 1)
     }();
-    var style = function() {
+    var style = function () {
         var css = document.createElement("link"),
             icon = document.createElement("link");
         css.href = getPath + "need/common.css?v=1.1.0";
@@ -326,7 +326,7 @@ window.VerJs = (function() {
         link.appendChild(css);
         link.appendChild(icon)
     };
-    var ie = function() {
+    var ie = function () {
         var DEFAULT_VERSION = 8.0;
         var ua = navigator.userAgent.toLowerCase();
         var isIE = ua.indexOf("msie") > -1;
@@ -339,7 +339,7 @@ window.VerJs = (function() {
         }
         return true
     };
-    var insertAfter = function(item, afters) {
+    var insertAfter = function (item, afters) {
         var parent = afters.parentNode;
         if (parent.lastChild == afters) {
             parent.appendChild(item)
@@ -347,9 +347,9 @@ window.VerJs = (function() {
             parent.insertBefore(item, afters.nextSibling)
         }
     };
-    var props = function() {
+    var props = function () {
         if (!Array.prototype.forEach) {
-            Array.prototype.forEach = function(callback, thisArg) {
+            Array.prototype.forEach = function (callback, thisArg) {
                 var T, k;
                 if (this == null) {
                     throw new TypeError(" this is null or not defined")
@@ -375,32 +375,33 @@ window.VerJs = (function() {
         }
         if (!("classList" in document.documentElement)) {
             Object.defineProperty(HTMLElement.prototype, 'classList', {
-                get: function() {
+                get: function () {
                     var self = this;
 
                     function update(fn) {
-                        return function(value) {
+                        return function (value) {
                             var classes = self.className.split(/\s+/g),
                                 index = classes.indexOf(value);
                             fn(classes, index, value);
                             self.className = classes.join(" ")
                         }
                     }
+
                     return {
-                        add: update(function(classes, index, value) {
+                        add: update(function (classes, index, value) {
                             if (!~index) classes.push(value)
                         }),
-                        remove: update(function(classes, index) {
+                        remove: update(function (classes, index) {
                             if (~index) classes.splice(index, 1)
                         }),
-                        toggle: update(function(classes, index, value) {
+                        toggle: update(function (classes, index, value) {
                             if (~index) classes.splice(index, 1);
                             else classes.push(value)
                         }),
-                        contains: function(value) {
+                        contains: function (value) {
                             return !!~self.className.split(/\s+/g).indexOf(value)
                         },
-                        item: function(i) {
+                        item: function (i) {
                             return self.className.split(/\s+/g)[i] || null
                         }
                     }

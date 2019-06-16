@@ -16,7 +16,7 @@
             <result name="success">/WEB-INF/content/user/changePasswords.jsp</result>
         </action>
         <action name="test123">
-            <result name="success">/WEB-INF/content/user/changePasswords.jsp</result>
+            <result name="success">/WEB-INF/content/user/test123.jsp</result>
         </action>
     </package>
 

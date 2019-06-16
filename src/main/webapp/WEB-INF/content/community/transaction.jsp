@@ -64,8 +64,8 @@
 <div class="carousel-inner" role="listbox">
     <div class="item active">
         <img src="/static/img/community/timg2.jpg" class="header1">
-        <div class="carousel-caption"  >
-            <h1 >
+        <div class="carousel-caption">
+            <h1>
                 <a style="text-shadow: black 1.5px 1.5px 1.5px; color: white; font-size: 70px;">剑网三交易市场</a>
             </h1>
         </div>
@@ -116,7 +116,7 @@
                             <div class="row">
                                 <img class="img1 col-sm-4" width="50%" style="height: 200px"
                                      src="/static/img/community/timg2.jpg">
-                                  <div class=" col-sm-8">
+                                <div class=" col-sm-8">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <div class="panel-title">
@@ -152,7 +152,7 @@
                             <div class="row">
                                 <img class="img1 col-sm-4" width="50%" style="height: 200px"
                                      src="/static/img/community/222.jpg">
-                                  <div class=" col-sm-8">
+                                <div class=" col-sm-8">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <div class="panel-title">
@@ -188,7 +188,7 @@
                             <div class="row">
                                 <img class="img1 col-sm-4" width="50%" style="height: 200px"
                                      src="/static/img/community/321.jpeg">
-                                  <div class=" col-sm-8">
+                                <div class=" col-sm-8">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <div class="panel-title">
@@ -224,7 +224,7 @@
                             <div class="row">
                                 <img class="img1 col-sm-4" width="50%" style="height: 200px"
                                      src="/static/img/community/222.jpg">
-                                  <div class=" col-sm-8">
+                                <div class=" col-sm-8">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <div class="panel-title">
@@ -260,7 +260,7 @@
                             <div class="row">
                                 <img class="img1 col-sm-4" width="50%" style="height: 200px"
                                      src="/static/img/community/321.jpeg">
-                                  <div class=" col-sm-8">
+                                <div class=" col-sm-8">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <div class="panel-title">
@@ -296,7 +296,7 @@
                             <div class="row">
                                 <img class="img1 col-sm-4" width="50%" style="height: 200px"
                                      src="/static/img/community/222.jpg">
-                                  <div class=" col-sm-8">
+                                <div class=" col-sm-8">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <div class="panel-title">
@@ -332,7 +332,7 @@
                             <div class="row">
                                 <img class="img1 col-sm-4" width="50%" style="height: 200px"
                                      src="/static/img/community/321.jpeg">
-                                  <div class=" col-sm-8">
+                                <div class=" col-sm-8">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <div class="panel-title">
@@ -368,7 +368,7 @@
                             <div class="row">
                                 <img class="img1 col-sm-4" width="50%" style="height: 200px"
                                      src="/static/img/community/222.jpg">
-                                  <div class=" col-sm-8">
+                                <div class=" col-sm-8">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <div class="panel-title">
@@ -403,7 +403,7 @@
                             <div class="row">
                                 <img class="img1 col-sm-4" width="50%" style="height: 200px"
                                      src="/static/img/community/321.jpeg">
-                                  <div class=" col-sm-8">
+                                <div class=" col-sm-8">
                                     <div class="panel panel-default">
                                         <div class="panel-heading">
                                             <div class="panel-title">
