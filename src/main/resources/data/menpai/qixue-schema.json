@@ -1,0 +1,86 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/root.json",
+    "type": "array",
+    "title": "qixue Schema",
+    "items": {
+        "type": "object",
+        "required": [
+            "qiXueGroupId",
+            "qiXueIndex",
+            "qiXues"
+        ],
+        "properties": {
+            "qiXueGroupId": {
+                "type": "integer"
+            },
+            "qiXueIndex": {
+                "type": "integer"
+            },
+            "qiXues": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "required": [
+                        "describe",
+                        "name",
+                        "qiXueId",
+                        "skillTypes"
+                    ],
+                    "properties": {
+                        "skillTypes": {
+                            "type": "array",
+                            "items": {
+                                "type": "object",
+                                "required": [
+                                    "title"
+                                ],
+                                "properties": {
+                                    "title": {
+                                        "type": "string",
+                                        "enum": [
+                                            "冲刺",
+                                            "打断",
+                                            "减伤",
+                                            "闪避",
+                                            "爆发",
+                                            "控制",
+                                            "减速",
+                                            "锁足",
+                                            "定身",
+                                            "眩晕",
+                                            "击倒",
+                                            "缴械",
+                                            "解控",
+                                            "嘲讽",
+                                            "减疗",
+                                            "位移",
+                                            "封轻功",
+                                            "加速",
+                                            "封内",
+                                            "无敌",
+                                            "免控",
+                                            "推",
+                                            "拉",
+                                            "沉默"
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "describe": {
+                            "type": "string"
+                        },
+                        "name": {
+                            "type": "string"
+                        },
+                        "qiXueId": {
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

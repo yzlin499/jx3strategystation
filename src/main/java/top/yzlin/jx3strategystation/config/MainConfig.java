@@ -30,6 +30,20 @@ public class MainConfig {
         this.environment = environment;
     }
 
+//    @Bean
+//    @Profile("dev")
+//    public File imgPath() throws IOException {
+//        String imgPath = environment.getProperty(CmdUtils.getGitUserName() + ".imgPath");
+//        if (imgPath == null) {
+//            imgPath = ServletActionContext.getServletContext().getRealPath("/upload/image");
+//        }
+//        File file = ResourceUtils.getFile(imgPath);
+//        if (!file.exists()) {
+//            file.mkdirs();
+//        }
+//        return file;
+//    }
+
     @Bean
     @Profile("dev")
     public DataSource dataSource() throws PropertyVetoException, IOException {

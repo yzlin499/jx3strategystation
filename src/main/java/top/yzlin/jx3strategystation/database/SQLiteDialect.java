@@ -81,7 +81,17 @@ public class SQLiteDialect extends Dialect {
     @Override
     public String getLimitString(String query, boolean hasOffset) {
         return new StringBuffer(query.length() + 20).append(query).append(
-                hasOffset ? " limit ? offset ?" : " limit ?").toString();
+                hasOffset ? " limit ?  offset ?" : " limit ?").toString();
+    }
+
+    /**
+     * 网上大部分关于sqlite的方言没有提供这句话会导致翻页出错
+     *
+     * @return
+     */
+    @Override
+    public boolean bindLimitParametersInReverseOrder() {
+        return true;
     }
 
     public boolean supportsTemporaryTables() {

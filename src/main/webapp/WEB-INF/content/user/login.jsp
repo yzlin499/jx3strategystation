@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="<c:url value="/static/css/userCss/loginStyle.css"/>">
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
+        <div class="modal-content login-modal-content">
             <div class="modal-header">
                 <p><b>剑网三攻略网会员登录</b></p>
             </div>
