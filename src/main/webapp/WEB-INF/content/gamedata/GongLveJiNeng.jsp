@@ -10,28 +10,24 @@
     <title>剑网三攻略站</title>
     <style type="text/css">
         #page {
-            background-color: white;
         }
 
         #left {
             /*width: 15%;*/
             /*height: 100%;*/
             /*float: left;*/
-            background-color: beige;
         }
 
         #right {
             /*width: 85%;*/
             /*height: 100%;*/
             /*float: left;*/
-            background-color: aliceblue;
         }
 
         #Lrighthead {
             width: 80%;
             height: 54px;
             float: left;
-            background-color: antiquewhite;
         }
 
         #Rrighthead {
@@ -40,7 +36,6 @@
             float: left;
             text-align: right;
             font-size: 18px;
-            background-color: aquamarine;
         }
 
         #rightbody {
@@ -61,11 +56,11 @@
 <div id="page" class="container" style="margin-top: 10px">
     <div class="row">
         <div id="left" align="center" class="col-xs-2">
-
+            <h2>门派列表</h2>
             <c:forEach items="${requestScope.menPaiList}" var="menPai">
                 <p>
                     <a href="?xinFaName=${menPai.xinFas[0].name}" role="button"
-                       class="btn btn-default btn-lg">${menPai.name}</a>
+                       class="btn btn-default btn-lg">&nbsp;&nbsp;&nbsp;&nbsp;${menPai.name}&nbsp;&nbsp;&nbsp;&nbsp;</a>
                 </p>
             </c:forEach>
 
@@ -73,22 +68,18 @@
         <div id="right" class="col-xs-10">
             <div id="Lrighthead">
                 <c:forEach items="${requestScope.xinFaList}" var="xinfa">
-                    <p>
-                        <a href="?xinFaName=${xinfa}" role="button"
-                           class="btn btn-default btn-lg" style="float: left">${xinfa}</a>
-                    </p>
+                    <a href="?xinFaName=${xinfa}" role="button"
+                       class="btn btn-default" style="float: left">${xinfa}</a>
                 </c:forEach>
 
             </div>
             <div id="Rrighthead">
-                <s:a namespace="/gamedata" action="qixue"><br>查看奇穴
+                <s:a namespace="/gamedata" action="qixue"><h3>查看奇穴</h3>
                     <s:param name="xinFaName">${requestScope.xinFaName}</s:param>
                 </s:a>&nbsp;&nbsp;
             </div>
             <div id="rightbody">
-                <h3 align="center">
-                    门派武学<br>
-                </h3>
+                <h4 align="left">当前位置：${xinFaName}&nbsp;&nbsp;技能页面</h4>
                 <div class="row">
                     <c:forEach items="${requestScope.skillList}" var="skill">
                         <div class="skill-item text-center col-xs-3 col-md-2">
@@ -129,6 +120,7 @@
     </div>
 
 </div>
+<jsp:include page="../templates/footer.jsp"/>
 <script src="http://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
 </body>
 </html>
