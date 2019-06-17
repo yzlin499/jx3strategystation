@@ -12,22 +12,22 @@
     <title>攻略区</title>
     <jsp:include page="../templates/base-lib.jsp"/>
     <style>
-        .imgm1{
+        .imgm1 {
             width: 100%;
             padding-left: 10px;
             height: 100%;
         }
 
-        .db1{
+        .db1 {
             height: 9.5%;
         }
 
-        .db1:hover{
+        .db1:hover {
             background-color: lightgray;
             color: black;
         }
 
-        .linkl{
+        .linkl {
             font-size: 35px;
             text-align: center;
             padding-bottom: 0px;
@@ -35,7 +35,7 @@
             color: white;
         }
 
-        .linkl:hover{
+        .linkl:hover {
             background-color: white;
             color: #46b8da;
         }
@@ -48,7 +48,7 @@
     <div class="row">
         <div class="col-sm-2" style="background: #46b8da; height: 100%">
             <div align="center" style="">
-                <p style="width: 100%;font-size: 40px;color: white" >剑三攻略站</p>
+                <p style="width: 100%;font-size: 40px;color: white">剑三攻略站</p>
             </div>
             <hr>
             <div style="height: 55%">
