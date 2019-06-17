@@ -5,13 +5,14 @@
         "http://struts.apache.org/dtds/struts-2.5.dtd">
 
 <struts>
-    <package name="gamedata" extends="struts-default" namespace="/">
+    <package name="gamedata" extends="struts-default" namespace="/gamedata">
         <action name="skill">
             <result>/WEB-INF/content/gamedata/GongLveJiNeng.jsp</result>
         </action>
         <action name="qixue" class="qiXueGroupAction">
             <result>/WEB-INF/content/gamedata/GongLveQiXue.jsp</result>
         </action>
+
 
     </package>
 </struts>

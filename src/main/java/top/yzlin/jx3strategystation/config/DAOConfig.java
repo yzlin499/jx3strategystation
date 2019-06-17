@@ -23,6 +23,11 @@ public class DAOConfig {
     }
 
     @Bean
+    public BanedUserDAO banedUserDAO(@Autowired SessionFactory sessionFactory) {
+        return createDAO(BanedUserDAO.class, sessionFactory);
+    }
+
+    @Bean
     public ArticleDAO articleDAO(@Autowired SessionFactory sessionFactory) {
         return createDAO(ArticleDAO.class, sessionFactory);
     }

@@ -6,16 +6,22 @@
 
 <struts>
 
-    <package name="admin" extends="struts-default" namespace="/">
-        <action name="admin" class="showReviewArticleAction">
+    <package name="admin" extends="struts-default" namespace="/admin">
+        <action name="reviewArticle" class="showReviewArticleAction">
+            <param name="listView">ban-list.jsp</param>
             <result>/WEB-INF/content/admin/jx3.jsp</result>
         </action>
-        <action name="test">
-            <result>/WEB-INF/content/admin/ticket-list.jsp</result>
+        <action name="showBanedUser" class="showBanedUserAction">
+            <param name="listView">Baned.jsp</param>
+            <result>/WEB-INF/content/admin/jx3.jsp</result>
         </action>
+
     </package>
     <package name="review-api" extends="api" namespace="/v1/api">
         <action name="passArticle" class="passArticleAction">
+            <result type="json"/>
+        </action>
+        <action name="deleteArticle" class="deleteArticleAction">
             <result type="json"/>
         </action>
     </package>

@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -11,87 +12,108 @@
     <title>攻略区</title>
     <jsp:include page="../templates/base-lib.jsp"/>
     <style>
+        .imgm1{
+            width: 100%;
+            padding-left: 10px;
+            height: 100%;
+        }
         .db1 {
-            height: 100px;
+            height: 9.5%;
         }
 
         .db1:hover {
-            background-color: black;
-            filter: alpha(opacity=50);
-            moz-opacity: 0.5;
-            opacity: 0.1;
+            background-color: lightgray;
+            color: black;
+        }
+
+        .linkl{
+            font-size: 35px;
+            text-align: center;
+            padding-bottom: 0px;
+            width: 100%;
+            color: white;
+        }
+        .linkl:hover {
+            background-color: white;
+            color: #46b8da;
         }
     </style>
     <jsp:include page="../templates/bootstarp-lib.jsp"/>
 </head>
 <body>
 <jsp:include page="../templates/navbar.jsp"/>
-<div class="row">
-    <div class="col-sm-2" style="background: #46b8da; height: 100%">
-        <img style="width: 100%;" src="/static/img/community/3213.jpg">
-        <br>
-        <p></p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-2" style="background: #46b8da; height: 100%">
+            <div align="center" style="">
+                <p style="width: 100%;font-size: 40px;color: white">剑三攻略站</p>
+            </div>
+            <hr>
+            <div style="height: 55%">
+                <img class="imgm1" src="/static/img/community/3213.jpg">
+            </div>
 
-    </div>
-    <div class="col-sm-10" style="height: 100%">
-        <h1>剑网三攻略区</h1>
-        <ul class="list-group">
-            <li class="list-group-item db1">
-                实例1
-            </li>
-            <li class="list-group-item db1">
-                实例1
-            </li>
-            <li class="list-group-item db1">
-                实例1
-            </li>
-            <li class="list-group-item db1">
-                实例1
-            </li>
-            <li class="list-group-item db1">
-                实例1
-            </li>
-            <li class="list-group-item db1">
-                实例1
-            </li>
-            <li class="list-group-item db1">
-                实例1
-            </li>
-        </ul>
-        <div align="center">
-            <nav aria-label="Page navigation">
-                <ul class="pagination">
-                    <li>
-                        <a href="#" aria-label="Previous">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
+            <hr>
+            <div align="center">
+                <a class="linkl" href="http://jx3.xoyo.com">官网首页</a>
+            </div>
+            <hr>
+            <div align="center">
+                <a class="linkl" href="http://jx3.xoyo.com/gl/">更多攻略</a>
+            </div>
+            <hr>
+        </div>
+
+        <div class="col-sm-10" style="height: 100%; background-color: #edefea">
+            <img src="/static/img/community/glz.png">
+            <ul class="list-group">
+                <c:forEach items="${requestScope.strategyList}" var="article">
+                    <li class="list-group-item db1">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <p href="${'/'+=article.user.userName+='/article/'+=article.articleId}"
+                                   style="font-size: 20px">${article.title}</p>
+                            </div>
+                            <div class="col-sm-3">
+                                <a href="" style="text-align: right">${article.user.nickName}</a>
+                            </div>
+                            <div class="col-sm-12">
+                                    ${article.instance}
+                            </div>
+                        </div>
                     </li>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li>
-                        <a href="#" aria-label="Next">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+                </c:forEach>
+
+            </ul>
+            <div align="center" style="padding-top: 440px">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </div>
 </div>
-<div class="footer">
-    <div class="container">
-        <div class="footer-navbar">
-            <a href="#">GitHub仓库</a>
-            <a href="#">关于我们</a>
-        </div>
-        <p class="footer-content">
-            CopyRight © 2019 jx3strategystation<br>
-            All rights reserved. jx3strategystation 版权所有
-        </p>
-    </div>
-</div>
+
+<jsp:include page="../templates/footer.jsp">
+    <jsp:param name="footerMarginTop" value="''"/>
+</jsp:include>
+
+
 </body>
 </html>
