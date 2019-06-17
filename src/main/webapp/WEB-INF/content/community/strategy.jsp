@@ -17,6 +17,7 @@
             padding-left: 10px;
             height: 100%;
         }
+
         .db1 {
             height: 9.5%;
         }
@@ -33,6 +34,7 @@
             width: 100%;
             color: white;
         }
+
         .linkl:hover {
             background-color: white;
             color: #46b8da;
@@ -71,8 +73,8 @@
                     <li class="list-group-item db1">
                         <div class="row">
                             <div class="col-sm-9">
-                                <p href="${'/'+=article.user.userName+='/article/'+=article.articleId}"
-                                   style="font-size: 20px">${article.title}</p>
+                                <a href="${'/'+=article.user.userName+='/article/'+=article.articleId}"
+                                   style="font-size: 20px">${article.title}</a>
                             </div>
                             <div class="col-sm-3">
                                 <a href="" style="text-align: right">${article.user.nickName}</a>

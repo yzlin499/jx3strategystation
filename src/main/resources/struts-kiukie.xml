@@ -12,12 +12,20 @@
         <action name="strategy" class="showStrategyAction">
             <result>/WEB-INF/content/community/strategy.jsp</result>
         </action>
-        <action name="entertainment">
+        <action name="entertainment" class="showCommonAction">
             <result>/WEB-INF/content/community/entertainment.jsp</result>
         </action>
         <action name="transaction" class="showTradingAction">
             <result>/WEB-INF/content/community/transaction.jsp</result>
         </action>
-
+        <action name="commitCommon">
+            <result>/WEB-INF/content/article/article-commit-common.jsp</result>
+        </action>
+        <action name="commitStrategy">
+            <result>/WEB-INF/content/article/article-commit-strategy.jsp</result>
+        </action>
+        <action name="commitTrading">
+            <result>/WEB-INF/content/article/article-commit-trading.jsp</result>
+        </action>
     </package>
 </struts>

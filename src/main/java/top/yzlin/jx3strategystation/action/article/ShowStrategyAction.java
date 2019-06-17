@@ -10,6 +10,7 @@ import java.util.List;
 
 @Component
 public class ShowStrategyAction extends ActionSupport {
+    private String Actionname = "StrageAction";
     private final ArticleService articleService;
 
     @Autowired
@@ -19,6 +20,10 @@ public class ShowStrategyAction extends ActionSupport {
 
     public List<StrategyArticle> getStrategyList() {
         return articleService.findStrategyArticle();
+    }
+
+    public String getSActionname() {
+        return Actionname;
     }
 
     @Override

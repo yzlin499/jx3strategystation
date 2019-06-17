@@ -11,15 +11,15 @@ public class BaseGameDataAction extends ActionSupport {
     private String xinFaName;
     private GameDataService gameDataService;
 
-    public void setXinFaName(String xinFaName) {
-        this.xinFaName = xinFaName;
-    }
-
     public String getXinFaName() {
         if (xinFaName == null) {
             xinFaName = getMenPaiList().get(0).getXinFas()[0].getName();
         }
         return xinFaName;
+    }
+
+    public void setXinFaName(String xinFaName) {
+        this.xinFaName = xinFaName;
     }
 
     @Autowired

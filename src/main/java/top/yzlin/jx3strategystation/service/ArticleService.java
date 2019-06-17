@@ -5,6 +5,7 @@ import org.springframework.transaction.annotation.Transactional;
 import top.yzlin.jx3strategystation.dao.ArticleDAO;
 import top.yzlin.jx3strategystation.database.OperateQuery;
 import top.yzlin.jx3strategystation.entity.community.BaseArticle;
+import top.yzlin.jx3strategystation.entity.community.CommonArticle;
 import top.yzlin.jx3strategystation.entity.community.StrategyArticle;
 import top.yzlin.jx3strategystation.entity.community.TradingArticle;
 
@@ -49,5 +50,9 @@ public class ArticleService {
 
     public List<TradingArticle> findTradingArticle() {
         return articleDAO.findTradingArticle();
+    }
+
+    public List<CommonArticle> findCommonArticle() {
+        return articleDAO.findCommonArticle();
     }
 }
