@@ -15,14 +15,17 @@ public class QiXueGroupService {
     private final QiXueGroupDAO qiXueGroupDAO;
 
     public QiXueGroupService(QiXueGroupDAO qiXueGroupDAO) {
+
         this.qiXueGroupDAO = qiXueGroupDAO;
     }
 
     public MenPai findMenPaiByName(String name) {
+
         return qiXueGroupDAO.findMenPaiByName(name);
     }
 
     public XinFa findXinFaByName(String name) {
+
         return qiXueGroupDAO.findXinFaByName(name);
     }
 

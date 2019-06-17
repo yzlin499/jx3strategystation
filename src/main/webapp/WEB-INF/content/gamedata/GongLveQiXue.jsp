@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -54,38 +55,27 @@
 <jsp:include page="../templates/navbar.jsp"/>
 <div id="page" class="container" style="margin-top: 10px">
     <div id="left" align="center">
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
+        <c:forEach items="${requestScope.menPaiList}" var="menPai">
+            <p>
+                <a href="?xinFaName=${menPai.xinFas[0].name}" role="button"
+                   class="btn btn-default btn-lg">${menPai.name}</a>
+            </p>
+        </c:forEach>
+
     </div>
     <div id="right">
         <div id="Lrighthead">
-            &nbsp;&nbsp;<img src="/static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=48px height=48px>
-            <img src="/static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=48px height=48px>
+            <c:forEach items="${requestScope.xinFaList}" var="xinfa">
+                <p>
+                    <a href="?xinFaName=${xinfa}" role="button"
+                       class="btn btn-default btn-lg" style="float: left">${xinfa}</a>
+                </p>
+            </c:forEach>
         </div>
         <div id="Rrighthead">
-            <a href="GongLveJiNeng.jsp"><br>查看技能</a>&nbsp;&nbsp;
+            <s:a namespace="/gamedata" action="skill"><br>查看技能
+                <s:param name="xinFaName">${requestScope.xinFaName}</s:param>
+            </s:a>
         </div>
         <div id="rightbody">
             <c:forEach items="${['一','二','三','四','五','六','七','八','九','十','十一','十二']}" begin="0" var="num"
@@ -94,24 +84,19 @@
                     第${num}层&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <c:forEach items="${requestScope.qiXueGroupList[numS.index].qiXues}" var="qixue">
                         <c:if test="${qixue.skill!=null}">
-                            <img src="data:image/png;base64,${qixue.imgBase64}" alt="${qixue.name}" data-toggle="modal"
-                                 data-target="#skill-${qixue.skill.name}" class="img-rounded"
-                                 width=64px height=64px>&nbsp;&nbsp;&nbsp;&nbsp;
-                            <div class="modal fade bs-example-modal-sm" id="skill-${qixue.skill.name}"
-                                 tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-                                <div class="modal-dialog modal-sm" role="document">
-                                    <div class="modal-content">
-                                        <b>${qixue.skill.name}:</b>${qixue.skill.describe}
-                                    </div>
-                                </div>
-                            </div>
+                            <a tabindex="0" data-toggle="popover" data-trigger="focus" title="<h4>${qixue.name}</h4>"
+                               data-placement="left"
+                               data-content="<h4>${qixue.describe}</h4>">
+                                <img src="data:image/png;base64,${qixue.imgBase64}" alt="${qixue.name}"
+                                     class="img-rounded" width=64px height=64px></a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;
                         </c:if>
                         <c:if test="${qixue.skill==null}">
                             <a tabindex="0" data-toggle="popover" data-trigger="focus" title="<h4>${qixue.name}</h4>"
                                data-placement="left"
-                               data-content="<h4>${qixue.describe}</h4>"><img
-                                    src="data:image/png;base64,${qixue.imgBase64}" alt="${qixue.name}"
-                                    class="img-circle" width=64px height=64px></a>
+                               data-content="<h4>${qixue.describe}</h4>">
+                                <img src="data:image/png;base64,${qixue.imgBase64}" alt="${qixue.name}"
+                                     class="img-circle" width=64px height=64px></a>
                             &nbsp;&nbsp;&nbsp;&nbsp;
                         </c:if>
                     </c:forEach>

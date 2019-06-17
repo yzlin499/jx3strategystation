@@ -35,7 +35,7 @@ public interface ArticleDAO {
 
     @Select("from TradingArticle")
     List<TradingArticle> findTradingArticle();
-  
+
     @Delete("delete from BaseArticle where articleId=:articleId")
     void deleteArticleById(@QueryParam("articleId") int id);
 
