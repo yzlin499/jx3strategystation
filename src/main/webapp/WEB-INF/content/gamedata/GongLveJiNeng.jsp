@@ -1,3 +1,5 @@
+<%@ taglib prefix="s" uri="/struts-tags" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -53,30 +55,13 @@
 <jsp:include page="../templates/navbar.jsp"/>
 <div id="page" class="container" style="margin-top: 10px">
     <div id="left" align="center">
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
+        <c:forEach items="${requestScope.menPailist}" var="menpai">
+            <p>
+                <a href="/gamedata/skill?xinFaName=${menpai.xinFas[0].name}" type="button"
+                   class="btn btn-defualt btn-lg">${menpai.name}</a>
+            </p>
+        </c:forEach>
+
     </div>
     <div id="right">
         <div id="Lrighthead">
@@ -84,64 +69,15 @@
             <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=48px height=48px>
         </div>
         <div id="Rrighthead">
-            <a href="GongLveQiXue.jsp"><br>查看奇穴</a>&nbsp;&nbsp;
+            <s:a action="qixue" namespace="/gamedata"><br>查看奇穴</s:a>&nbsp;&nbsp;
         </div>
         <div id="rightbody">
-            <h3 align="center">
-                此处为门派招式套路&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-            </h3>
-            <h3 align="center">
-                此处为门派招式套路&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-            </h3>
-            <h3 align="center">
-                此处为门派招式套路&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-            </h3>
-            <h3 align="center">
-                此处为门派招式套路&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-            </h3>
-            <h3 align="center">
-                此处为门派招式套路&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-                <img src="../../../static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
-            </h3>
+            <c:forEach items="${requestScope.skillList}" var="skill">
+                <h3 align="center">
+                    <img src="${skill.imgBase64}" class="img-circle" width=64px height=64px>&nbsp;&nbsp;
+                    <p>${skill.name}</p>
+                </h3>
+            </c:forEach>
         </div>
     </div>
 </div>

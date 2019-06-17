@@ -2,6 +2,7 @@ package top.yzlin.jx3strategystation.action.gamedata;
 
 import com.opensymphony.xwork2.ActionSupport;
 import org.springframework.stereotype.Component;
+import top.yzlin.jx3strategystation.entity.game.MenPai;
 import top.yzlin.jx3strategystation.entity.game.QiXueGroup;
 import top.yzlin.jx3strategystation.service.QiXueGroupService;
 
@@ -24,6 +25,9 @@ public class QiXueGroupAction extends ActionSupport {
         return qiXueGroupService.findQiXueGroupByXinFaName(xinFaName);
     }
 
+    public List<MenPai> getMenPailist() {
+        return qiXueGroupService.findMenPai();
+    }
     @Override
     public String execute() throws Exception {
         return SUCCESS;

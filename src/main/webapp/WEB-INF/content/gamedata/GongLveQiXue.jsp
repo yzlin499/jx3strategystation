@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -54,30 +55,12 @@
 <jsp:include page="../templates/navbar.jsp"/>
 <div id="page" class="container" style="margin-top: 10px">
     <div id="left" align="center">
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
-        <p>
-            <button type="button" class="btn btn-defualt btn-lg">门派</button>
-        </p>
+        <c:forEach items="${requestScope.menPailist}" var="menpai">
+            <p>
+                <button type="button" class="btn btn-defualt btn-lg">${menpai.name}</button>
+            </p>
+        </c:forEach>
+
     </div>
     <div id="right">
         <div id="Lrighthead">
@@ -85,7 +68,7 @@
             <img src="/static/img/test.jpg" alt="此处应该有文字" class="img-circle" width=48px height=48px>
         </div>
         <div id="Rrighthead">
-            <a href="GongLveJiNeng.jsp"><br>查看技能</a>&nbsp;&nbsp;
+            <s:a action="skill" namespace="/gamedata"><br>查看技能</s:a>&nbsp;&nbsp;
         </div>
         <div id="rightbody">
             <c:forEach items="${['一','二','三','四','五','六','七','八','九','十','十一','十二']}" begin="0" var="num"
