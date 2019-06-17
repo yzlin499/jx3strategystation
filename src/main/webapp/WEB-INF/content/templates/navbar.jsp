@@ -41,6 +41,15 @@
                             <li><a href="#">个人信息</a></li>
                             <li><a href="#">个人中心</a></li>
                             <li><a href="#">消息</a></li>
+                            <c:if test="${requestScope.cActionName eq 'CommonAction'}">
+                                <li><s:a action="commitCommon">发帖</s:a></li>
+                            </c:if>
+                            <c:if test="${requestScope.sActionName eq 'StrageAction'}">
+                                <li><s:a action="commitStrategy">发帖</s:a></li>
+                            </c:if>
+                            <c:if test="${requestScope.tActionName eq 'TradingAction'}">
+                                <li><s:a action="commitTrading">发帖</s:a></li>
+                            </c:if>
                             <li role="separator" class="divider"></li>
                             <li><a href="" data-toggle="modal" data-target="#myModal1">修改密码</a></li>
                             <li><a onclick="logOut()">退出登录</a></li>

@@ -1,6 +1,7 @@
 package top.yzlin.jx3strategystation.action.gamedata;
 
 import org.springframework.stereotype.Component;
+import top.yzlin.jx3strategystation.entity.game.MenPai;
 import top.yzlin.jx3strategystation.entity.game.QiXueGroup;
 import top.yzlin.jx3strategystation.service.QiXueGroupService;
 
@@ -18,6 +19,9 @@ public class QiXueGroupAction extends BaseGameDataAction {
         return qiXueGroupService.findQiXueGroupByXinFaName(getXinFaName());
     }
 
+    public List<MenPai> getMenPailist() {
+        return qiXueGroupService.findMenPai();
+    }
     @Override
     public String execute() throws Exception {
         return SUCCESS;
