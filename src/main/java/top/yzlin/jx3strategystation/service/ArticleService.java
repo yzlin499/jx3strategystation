@@ -40,6 +40,10 @@ public class ArticleService {
         return articleDAO.findArticle(operateQuery);
     }
 
+    public void deleteArticleById(int id) {
+        articleDAO.deleteArticleById(id);
+    }
+
     public List<StrategyArticle> findStrategyArticle() {
         return articleDAO.findStrategyArticle();
     }

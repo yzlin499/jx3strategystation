@@ -18,11 +18,11 @@
             height: 100%;
         }
 
-        .db1{
+        .db1 {
             height: 9.5%;
         }
 
-        .db1:hover{
+        .db1:hover {
             background-color: lightgray;
             color: black;
         }
@@ -35,7 +35,7 @@
             color: white;
         }
 
-        .linkl:hover{
+        .linkl:hover {
             background-color: white;
             color: #46b8da;
         }
@@ -48,7 +48,7 @@
     <div class="row">
         <div class="col-sm-2" style="background: #46b8da; height: 100%">
             <div align="center" style="">
-                <p style="width: 100%;font-size: 40px;color: white" >剑三攻略站</p>
+                <p style="width: 100%;font-size: 40px;color: white">剑三攻略站</p>
             </div>
             <hr>
             <div style="height: 55%">
