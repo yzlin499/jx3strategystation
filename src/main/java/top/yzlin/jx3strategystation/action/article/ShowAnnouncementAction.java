@@ -11,6 +11,7 @@ public class ShowAnnouncementAction extends ActionSupport {
         return ActionName;
     }
 
+    @Override
     public String execute() {
         return SUCCESS;
     }

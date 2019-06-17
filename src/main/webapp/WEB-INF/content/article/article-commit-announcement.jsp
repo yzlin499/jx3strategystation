@@ -2,7 +2,7 @@
 <%--
   Created by IntelliJ IDEA.
   User: yzlin
-  Date: 2019/4/21
+  Date: 2019/4/15
   Time: 21:04
   To change this template use File | Settings | File Templates.
 --%>
@@ -17,8 +17,8 @@
         }
 
         .ck-content {
-            min-height: 600px;
-            max-height: 600px;
+            min-height: 700px;
+            max-height: 700px;
         }
     </style>
 </head>
@@ -27,8 +27,8 @@
 
 <div class="container">
     <div class="page-header">
-        <h1>攻略社区
-            <small>这都不会？去百度啊</small>
+        <h1>公告
+            <small>管理自嗨</small>
         </h1>
     </div>
 
@@ -36,20 +36,12 @@
         <label for="title" class="h3">标题</label>
         <input type="text" class="form-control input-lg" id="title" placeholder="你需要一个好标题">
     </div>
-    <div class="form-group">
-        <label class="h3" for="instance">内容</label>
-        <select id="instance" class="form-control input-lg">
-            <jsp:include page="../templates/select-item.jsp">
-                <jsp:param name="selectList" value="strategy"/>
-            </jsp:include>
-        </select>
-    </div>
 
     <div class="form-group">
         <div id="content"></div>
     </div>
     <c:if test="${sessionScope.user != null}">
-        <button class="btn btn-success" onclick="commitStrategyArticle()">提交</button>
+        <button class="btn btn-success" onclick="commitAnnouncementArticle()">提交</button>
     </c:if>
     <c:if test="${sessionScope.user == null}">
         <button class="btn btn-danger" onclick="" disabled="disabled">登录后发帖哦！</button>

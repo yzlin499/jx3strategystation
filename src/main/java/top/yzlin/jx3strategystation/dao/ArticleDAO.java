@@ -1,6 +1,7 @@
 package top.yzlin.jx3strategystation.dao;
 
 import top.yzlin.jx3strategystation.database.OperateQuery;
+import top.yzlin.jx3strategystation.database.annotation.Delete;
 import top.yzlin.jx3strategystation.database.annotation.QueryParam;
 import top.yzlin.jx3strategystation.database.annotation.Save;
 import top.yzlin.jx3strategystation.database.annotation.Select;
@@ -38,4 +39,7 @@ public interface ArticleDAO {
 
     @Select("from CommonArticle")
     List<CommonArticle> findCommonArticle();
+
+    @Delete("from BaseArticle where articleId=:articleId")
+    void deleteArticleById(@QueryParam("articleId") int id);
 }
