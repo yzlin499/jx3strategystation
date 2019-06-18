@@ -67,7 +67,7 @@
         </div>
 
         <div class="col-sm-10" style="height: 100%; background-color: #edefea">
-            <img src="/static/img/community/glz.png">
+            <img src="${pageContext.request.contextPath}/static/img/community/glz.png" alt="攻略站">
             <ul class="list-group">
                 <c:forEach items="${requestScope.strategyList}" var="article">
                     <li class="list-group-item db1">

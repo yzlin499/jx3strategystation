@@ -64,7 +64,7 @@
 
 <div class="carousel-inner" role="listbox">
     <div class="item active">
-        <img src="/static/img/community/timg1.jpg" class="header1">
+        <img src="${pageContext.request.contextPath}/static/img/community/timg1.jpg" class="header1" alt="header">
         <div class="carousel-caption">
             <h1>
                 <a style="text-shadow: black 1.5px 1.5px 1.5px; color: white; font-size: 70px;">剑网三交易市场</a>
@@ -85,7 +85,7 @@
                                style="">
                                 <div class="row">
                                     <img class="img1 col-sm-4" width="50%" style="height: 200px"
-                                         src="/static/img/community/222.jpg">
+                                         src="${article.imgPath}">
                                     <div class=" col-sm-8">
                                         <div class="panel panel-default">
                                             <div class="panel-heading">
