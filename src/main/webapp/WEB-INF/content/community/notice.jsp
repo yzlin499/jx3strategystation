@@ -1,4 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -60,158 +61,45 @@
     <p class="img1">剑网三公告区</p>
 
     <ul class="nav nav-tabs" role="tablsit">
-        <li role="presentation" class="active"><a class="wenzi" href="#latest" aria-controls="home" role="tab"
-                                                  data-toggle="tab">最新</a></li>
-        <li role="presentation"><a class="wenzi" href="#news" aria-controls="profile" role="tab"
-                                   data-toggle="tab">新闻</a></li>
-        <li role="presentation"><a class="wenzi" href="#active" aria-controls="messages" role="tab"
-                                   data-toggle="tab">活动</a></li>
-        <li role="presentation"><a class="wenzi" href="#renew" aria-controls="settings" role="tab"
-                                   data-toggle="tab">更新</a></li>
+        <li role="presentation" class=" ${requestScope.instance eq '最新' ?'active':''}">
+            <a class="wenzi" href="?instance=最新" aria-controls="home" role="tab">最新</a>
+        </li>
+        <li role="presentation" class="${requestScope.instance eq '新闻' ?'active':''}">
+            <a class="wenzi" href="?instance=新闻" aria-controls="profile" role="tab">新闻</a>
+        </li>
+        <li role="presentation" class=" ${requestScope.instance eq '活动' ?'active':''}">
+            <a class="wenzi" href="?instance=活动" aria-controls="messages" role="tab">活动</a>
+        </li>
+        <li role="presentation" class=" ${requestScope.instance eq '更新' ?'active':''}">
+            <a class="wenzi" href="?instance=更新" aria-controls="settings" role="tab">更新</a>
+        </li>
     </ul>
+
     <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="latest">
-            <div class="panel-primary">
-                <div class="panel-heading">
-                    <h3>最新</h3>
-                </div>
-                <div class="panel-body">
-                    <ul class="list-group img2">
-                        <c:forEach items="" var="">
-                            <li class="list-group-item">实例一</li>
-                        </c:forEach>
-                    </ul>
-                </div>
-            </div>
-            <div align="center">
-                <nav aria-label="Page navigation">
-                    <ul class="pagination">
-                        <li>
-                            <a href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                            <a href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="news">
-            <div class="panel-success">
-                <div class="panel-heading">
-                    <h3>新闻</h3>
-                </div>
-                <div class="panel-body">
-                    <ul class="list-group img2">
-                        <c:forEach items="" var="">
-                            <li class="list-group-item">实例二</li>
-                        </c:forEach>
-                    </ul>
+        <c:forEach items="${['最新','新闻','活动','更新']}" var="instance">
+            <div role="tabpanel" class="tab-pane ${requestScope.instance eq instance ?'active':''}">
+                <div class="panel-primary">
+                    <div class="panel-heading">
+                        <h3>${instance}</h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group img2">
+                            <c:forEach items="${requestScope.announcementArticleList}" var="article">
+                                <li class="list-group-item">
+                                    <a class="h3"
+                                       href="${'/'+=article.user.userName+='/article/'+=article.articleId}">${article.title}</a>
+                                </li>
+                            </c:forEach>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div align="center">
-                <nav aria-label="Page navigation">
-                    <ul class="pagination">
-                        <li>
-                            <a href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                            <a href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="active">
-            <div class="panel-info">
-                <div class="panel-heading">
-                    <h3>活动</h3>
-                </div>
-                <div class="panel-body">
-                    <ul class="list-group img2">
-                        <c:forEach items="" var="">
-                            <li class="list-group-item">实例三</li>
-                        </c:forEach>
-                    </ul>
-                </div>
-            </div>
-            <div align="center">
-                <nav aria-label="Page navigation">
-                    <ul class="pagination">
-                        <li>
-                            <a href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                            <a href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div role="tabpanel" class="tab-pane" id="renew">
-            <div class="panel-danger">
-                <div class="panel-heading">
-                    <h3>更新</h3>
-                </div>
-                <div class="panel-body">
-                    <ul class="list-group img2">
-                        <c:forEach items="" var="">
-                            <li class="list-group-item">实例四</li>
-                        </c:forEach>
-                    </ul>
-                </div>
-            </div>
-            <div align="center">
-                <nav aria-label="Page navigation">
-                    <ul class="pagination">
-                        <li>
-                            <a href="#" aria-label="Previous">
-                                <span aria-hidden="true">&laquo;</span>
-                            </a>
-                        </li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
-                        <li><a href="#">5</a></li>
-                        <li>
-                            <a href="#" aria-label="Next">
-                                <span aria-hidden="true">&raquo;</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+        </c:forEach>
     </div>
 </div>
-<jsp:include page="../templates/footer.jsp"/>
+<div style="margin-top: ${fn:length(requestScope.announcementArticleList)>8?90:((8-fn:length(requestScope.announcementArticleList))*37+90)}">
+    <jsp:include page="../templates/footer.jsp"/>
+</div>
+
 </body>
 </html>

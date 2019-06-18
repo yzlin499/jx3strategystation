@@ -34,8 +34,8 @@ public interface ArticleDAO {
     @Select("from TradingArticle")
     List<TradingArticle> findTradingArticle();
 
-    @Select("from AnnouncementArticle")
-    List<AnnouncementArticle> findAnnouncementArticle();
+    @Select("from AnnouncementArticle where instance=:instance")
+    List<AnnouncementArticle> findAnnouncementArticleByInstance(@QueryParam("instance") String instance);
 
     @Select("from CommonArticle")
     List<CommonArticle> findCommonArticle();

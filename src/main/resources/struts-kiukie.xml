@@ -6,7 +6,7 @@
 
 <struts>
     <package name="community" extends="default" namespace="/community">
-        <action name="notice">
+        <action name="notice" class="showAnnouncementAction">
             <result>/WEB-INF/content/community/notice.jsp</result>
         </action>
         <action name="strategy" class="showStrategyAction">
@@ -17,15 +17,6 @@
         </action>
         <action name="transaction" class="showTradingAction">
             <result>/WEB-INF/content/community/transaction.jsp</result>
-        </action>
-        <action name="commitCommon">
-            <result>/WEB-INF/content/article/article-commit-common.jsp</result>
-        </action>
-        <action name="commitStrategy">
-            <result>/WEB-INF/content/article/article-commit-strategy.jsp</result>
-        </action>
-        <action name="commitTrading">
-            <result>/WEB-INF/content/article/article-commit-trading.jsp</result>
         </action>
     </package>
 </struts>
