@@ -34,16 +34,16 @@
     <div class="centers">
         <form>
             <div class="form-group">
-                <input type="text" class="form-control" id="nickName" placeholder="网站呢称">
+                <input type="text" class="form-control" id="nickName" placeholder="网站呢称  (由2-6个汉字组成)">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" id="userName" placeholder="用户名">
+                <input type="text" class="form-control" id="userName" placeholder="用户名 (由英文字母和数字组成的4-16位字符，以字母开头)">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="password" placeholder="密码">
+                <input type="text" class="form-control" id="mail" placeholder="邮箱  (邮箱账号@域名)">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" id="mail" placeholder="邮箱">
+                <input type="password" class="form-control" id="password" placeholder="密码  (长度4到10字符)">
             </div>
             <div class="btn-group">
                 <button type="button" id="submit_btn" class="btn btn-info">立即注册</button>
@@ -65,12 +65,12 @@
 </div>
 <script src="<c:url value="/static/js/jquery.min.js"/>"></script>
 <script>
-
     $(function () {
         var errMsg;
         var nickC;
         var uNC;
         var pwdC;
+        var mailC;
         $.each($("input"), function (i, val) {
             $(val).blur(function () {
                 if ($(val).attr("id") === "userName") {
@@ -89,9 +89,10 @@
                 } else if ($(val).attr("id") === "nickName") {
                     $(".nickMsg").remove();
                     var nickName = val.value;
+                    var regName = /[\u4e00-\u9fa5]{2,6}/;
                     if (nickName === "" || nickName.trim() === "") {
                         errMsg = "<span class='nickMsg label label-danger'>昵称不能为空</span>";
-                    } else if (!/^[\u4e00-\u9fa5a-zA-Z0-9]{2,6}$/.test(nickName)) {
+                    } else if (!regName.test(nickName)) {
                         errMsg = "<span class='nickMsg label label-danger'>由2-6个汉字组成</span>";
                     } else {
                         errMsg = "<span class='nickMsg label label-success' >OK！</span>";
@@ -105,17 +106,30 @@
                     if (pwd === "" || pwd.trim() === "") {
                         errMsg = "<span class='pwdMsg label label-danger' >密码不能为空</span>";
                     } else if (!regPwd.test(pwd)) {
-                        errMsg = "<span class='pwdMsg label label-danger' >格式错误</span>";
+                        errMsg = "<span class='pwdMsg label label-danger' >长度4到10字符</span>";
                     } else {
                         errMsg = "<span class='pwdMsg label label-success' >OK！</span>";
                         pwdC = true;
+                    }
+                    $(this).parent().append(errMsg);
+                } else if ($(val).attr("id") == "mail") {
+                    $(".emailMsg").remove();
+                    var email = val.value;
+                    var regEmail = /^\w+@\w+((\.\w+)+)$/;
+                    if (email == "" || email.trim() == "") {
+                        errMsg = "<span class='emailMsg label label-danger' >邮箱不能为空</span>";
+                    } else if (!regEmail.test(email)) {
+                        errMsg = "<span class='emailMsg label label-danger' >邮箱账号@域名。如good@tom.com、whj@sina.com.cn</span>";
+                    } else {
+                        errMsg = "<span class='emailMsg label label-success' >OK！</span>";
+                        mailC = true;
                     }
                     $(this).parent().append(errMsg);
                 }
             });
         });
         $('#submit_btn').on('click', function () {
-            if (uNC === true && pwdC === true && nickC === true) {
+            if (uNC === true && pwdC === true && nickC === true && mailC == true) {
                 $.post("/v1/api/register", {
                     "user.userName": $("#userName").val(),
                     "user.nickName": $("#nickName").val(),

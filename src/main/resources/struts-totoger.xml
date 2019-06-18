@@ -6,20 +6,8 @@
 
 <struts>
     <package name="user" extends="default" namespace="/user">
-        <action name="register">
-            <result name="success">/WEB-INF/content/user/register.jsp</result>
-        </action>
         <action name="personalHomepage" class="userPersonalHomepageAction">
             <result name="success">/WEB-INF/content/user/personalHomepage.jsp</result>
-        </action>
-        <action name="changePasswords">
-            <result name="success">/WEB-INF/content/user/changePasswords.jsp</result>
-        </action>
-        <action name="avatar">
-            <result name="success">/WEB-INF/content/user/avatar.html</result>
-        </action>
-        <action name="table">
-            <result name="success">/WEB-INF/content/user/tableModel.jsp</result>
         </action>
     </package>
 

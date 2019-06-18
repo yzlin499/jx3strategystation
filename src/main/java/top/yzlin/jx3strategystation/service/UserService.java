@@ -14,7 +14,6 @@ public class UserService {
         this.userDAO = userDAO;
     }
 
-
     public User findUserByUserNameAndPassword(User user) {
         return findUserByUserNameAndPassword(user.getUserName(), user.getPassword());
     }
@@ -31,4 +30,7 @@ public class UserService {
         userDAO.updatePassword(user);
     }
 
+    public void updateUser(User user) {
+        userDAO.updateUser(user);
+    }
 }

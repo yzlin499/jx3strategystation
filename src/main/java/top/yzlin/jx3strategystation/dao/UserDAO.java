@@ -19,4 +19,9 @@ public interface UserDAO {
     @SaveOrUpdate
     void updatePassword(User user);
 
+    @SaveOrUpdate
+    void updateUser(User user);
+
+
+
 }
