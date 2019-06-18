@@ -19,4 +19,7 @@ public interface UserDAO {
     @SaveOrUpdate
     void updatePassword(User user);
 
+    @Select("select count(*)>0 from User as l where l.userName = :userName")
+    boolean isExistUser(@QueryParam("userName") String userName);
+
 }

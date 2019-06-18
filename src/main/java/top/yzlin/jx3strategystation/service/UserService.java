@@ -31,4 +31,7 @@ public class UserService {
         userDAO.updatePassword(user);
     }
 
+    public boolean isExistUser(String userName) {
+        return userDAO.isExistUser(userName);
+    }
 }
