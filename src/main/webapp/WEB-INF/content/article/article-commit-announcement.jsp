@@ -38,6 +38,16 @@
     </div>
 
     <div class="form-group">
+        <label class="h3" for="instance">内容</label>
+        <select id="instance" class="form-control input-lg">
+            <option value="最新">最新</option>
+            <option value="新闻">新闻</option>
+            <option value="活动">活动</option>
+            <option value="更新">更新</option>
+        </select>
+    </div>
+
+    <div class="form-group">
         <div id="content"></div>
     </div>
     <c:if test="${sessionScope.user != null}">

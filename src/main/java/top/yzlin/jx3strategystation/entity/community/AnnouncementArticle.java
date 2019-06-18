@@ -7,15 +7,21 @@ import javax.persistence.Entity;
 @DiscriminatorValue("announcement")
 public class AnnouncementArticle extends BaseArticle {
 
+
+    private String instance;
+
+    public String getInstance() {
+        return instance;
+    }
+
+    public void setInstance(String instance) {
+        this.instance = instance;
+    }
+
     @Override
     public String toString() {
         return "AnnouncementArticle{" +
-                "articleId=" + getArticleId() +
-                ", user=" + getUser() +
-                ", imgPath='" + getImgPath() + '\'' +
-                ", title='" + getTitle() + '\'' +
-                ", community=" + getCommunity() +
-                ", content='" + getContent() + '\'' +
-                '}';
+                "instance='" + instance + '\'' +
+                "} " + super.toString();
     }
 }

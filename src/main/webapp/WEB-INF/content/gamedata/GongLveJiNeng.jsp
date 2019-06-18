@@ -120,7 +120,9 @@
     </div>
 
 </div>
-<jsp:include page="../templates/footer.jsp"/>
+<div style="margin-top: 350px">
+    <jsp:include page="../templates/footer.jsp"/>
+</div>
 <script src="http://cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
 </body>
 </html>
