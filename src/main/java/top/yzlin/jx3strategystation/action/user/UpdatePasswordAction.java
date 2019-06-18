@@ -37,6 +37,10 @@ public class UpdatePasswordAction extends ActionSupport implements SessionAware 
         this.userService = userService;
     }
 
+    public boolean isUpDateSuccess() {
+        return upDateSuccess;
+    }
+
     @Override
     public String execute() throws Exception {
         User user = (User) session.get("user");

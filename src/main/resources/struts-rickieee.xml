@@ -7,13 +7,23 @@
 <struts>
 
     <package name="admin" extends="struts-default" namespace="/admin">
+        <interceptors>
+            <interceptor name="adminInterceptor" class="adminInterceptor"/>
+            <interceptor-stack name="adminInterceptor-stack">
+                <interceptor-ref name="adminInterceptor"/>
+            </interceptor-stack>
+        </interceptors>
+
         <action name="reviewArticle" class="showReviewArticleAction">
-            <param name="listView">ban-list.jsp</param>
+            <interceptor-ref name="adminInterceptor-stack"/>
             <result>/WEB-INF/content/admin/jx3.jsp</result>
+            <result name="login">/WEB-INF/content/error/403.jsp</result>
         </action>
+
         <action name="showBanedUser" class="showBanedUserAction">
-            <param name="listView">Baned.jsp</param>
+            <interceptor-ref name="adminInterceptor-stack"/>
             <result>/WEB-INF/content/admin/jx3.jsp</result>
+            <result name="login">/WEB-INF/content/error/403.jsp</result>
         </action>
     </package>
 

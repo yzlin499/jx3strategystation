@@ -14,6 +14,13 @@
     </package>
 
     <package name="article-commit" extends="default" namespace="/commit">
+        <interceptors>
+            <interceptor name="adminInterceptor" class="adminInterceptor"/>
+            <interceptor-stack name="adminInterceptor-stack">
+                <interceptor-ref name="adminInterceptor"/>
+            </interceptor-stack>
+        </interceptors>
+
         <action name="common">
             <result name="success">/WEB-INF/content/article/article-commit-common.jsp</result>
         </action>
@@ -24,7 +31,9 @@
             <result name="success">/WEB-INF/content/article/article-commit-strategy.jsp</result>
         </action>
         <action name="announcement">
+            <interceptor-ref name="adminInterceptor-stack"/>
             <result name="success">/WEB-INF/content/article/article-commit-announcement.jsp</result>
+            <result name="login">/WEB-INF/content/error/403.jsp</result>
         </action>
     </package>
 

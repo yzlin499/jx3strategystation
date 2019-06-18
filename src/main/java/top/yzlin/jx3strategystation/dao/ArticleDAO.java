@@ -42,4 +42,7 @@ public interface ArticleDAO {
 
     @Delete("from BaseArticle where articleId=:articleId")
     void deleteArticleById(@QueryParam("articleId") int id);
+
+    @Select("from BaseArticle where user.userId=:userId")
+    List<BaseArticle> findArticleByUserId(@QueryParam("userId") int userId);
 }

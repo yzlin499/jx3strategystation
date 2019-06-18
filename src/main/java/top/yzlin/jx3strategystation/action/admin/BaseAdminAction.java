@@ -9,7 +9,7 @@ public class BaseAdminAction extends ActionSupport {
         return listView;
     }
 
-    public void setListView(String listView) {
+    public BaseAdminAction(String listView) {
         this.listView = listView;
     }
 }

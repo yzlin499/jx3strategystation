@@ -31,6 +31,7 @@ public class RegisterAction extends ActionSupport {
 
     @Override
     public String execute() throws Exception {
+        user.setPortrait("/static/img/test/testHead.jpg");
         userId = userService.saveUser(user);
         return SUCCESS;
     }

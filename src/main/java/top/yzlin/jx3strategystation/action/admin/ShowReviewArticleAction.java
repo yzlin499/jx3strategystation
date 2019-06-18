@@ -13,6 +13,7 @@ public class ShowReviewArticleAction extends BaseAdminAction {
 //    private List<ReviewArticle> reviewArticleList;
 
     public ShowReviewArticleAction(ReviewArticleService reviewArticleService) {
+        super("ban-list.jsp");
         this.reviewArticleService = reviewArticleService;
     }
 

@@ -29,20 +29,6 @@
 </div>
 <script src="${pageContext.request.contextPath}/static/js/jquery.min.js"></script>
 <script>
-    function updatePassword() {
-        if (oldC == true && newC == true) {
-            $.post("/v1/api/updatePassword", {
-                "oldPassword": $("#oldPassword").val(),
-                "newPassword": $("#newPassword").val()
-            }, function (data, status) {
-                window.location.reload();
-            });
-        } else {
-            $("#oldPassword").blur()
-            $("#newPassword").blur()
-        }
-    }
-
     $(function () {
         var errMsg;
         var oldC;
@@ -77,12 +63,16 @@
             });
         });
         $('#submit_btn').on('click', function () {
-            if (oldC == true && newC == true) {
+            if (oldC === true && newC === true) {
                 $.post("/v1/api/updatePassword", {
                     "oldPassword": $("#oldPassword").val(),
                     "newPassword": $("#newPassword").val()
                 }, function (data, status) {
-                    window.location.reload();
+                    if (data.upDateSuccess) {
+                        window.location.href = "/index";
+                    } else {
+                        alert("修改失败");
+                    }
                 });
             }
         });

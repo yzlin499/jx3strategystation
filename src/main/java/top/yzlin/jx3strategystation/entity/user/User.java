@@ -12,7 +12,16 @@ public class User {
     private String userName;
     private String nickName;
     private String password;
+    private String mail;
     private String portrait;
+
+    public String getMail() {
+        return mail;
+    }
+
+    public void setMail(String mail) {
+        this.mail = mail;
+    }
 
     public String getNickName() {
         return nickName;
