@@ -56,4 +56,10 @@ public class ArticleService {
     public List<AnnouncementArticle> findAnnouncementArticleByInstance(String instance) {
         return articleDAO.findAnnouncementArticleByInstance(instance);
     }
+
+    public List<BaseArticle> findArticleByUserId(int userId) {
+        return articleDAO.findArticleByUserId(userId);
+    }
+
+
 }

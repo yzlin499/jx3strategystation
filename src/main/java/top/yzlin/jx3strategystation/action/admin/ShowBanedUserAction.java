@@ -12,6 +12,7 @@ public class ShowBanedUserAction extends BaseAdminAction {
     private BanedUserService banedUserService;
 
     public ShowBanedUserAction(BanedUserService banedUserService) {
+        super("Baned.jsp");
         this.banedUserService = banedUserService;
     }
 

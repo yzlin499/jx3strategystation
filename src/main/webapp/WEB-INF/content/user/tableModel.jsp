@@ -1,3 +1,9 @@
+<%@ page import="top.yzlin.jx3strategystation.entity.community.AnnouncementArticle" %>
+<%@ page import="top.yzlin.jx3strategystation.entity.community.CommonArticle" %>
+<%@ page import="top.yzlin.jx3strategystation.entity.community.StrategyArticle" %>
+<%@ page import="top.yzlin.jx3strategystation.entity.community.TradingArticle" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="s" uri="/struts-tags" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -6,36 +12,34 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/bootstrap.min.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/css/userCss/testCss/bootstrap-table.min.css">
 <div class="container">
-    <table id="table"
-           data-toggle="table"
-           data-url="data/data1.json"
-           data-show-columns="true"
-           data-search="true"
-           data-show-refresh="true"
-           data-show-toggle="true"
-           data-pagination="true"
-           data-height="500">
-        <thead>
+    <table class="table">
         <tr>
-            <th data-field="id" data-formatter="idFormatter">ID</th>
-            <th data-field="name">Item Name</th>
-            <th data-field="price">Item Price</th>
+            <th>标题</th>
+            <th>社区</th>
         </tr>
-        </thead>
+        <c:forEach items="${requestScope.articleList}" var="article">
+            <tr>
+                <td><a href="${'/'+=article.user.userName+='/article/'+=article.articleId}">${article.title}</a></td>
+                <td>
+                    <c:set var="item" value="${article}" scope="request"/>
+                    <c:choose>
+                        <c:when test='<%= request.getAttribute("item") instanceof TradingArticle%>'>
+                            <s:a action="transaction" namespace="/community" class="small">交易区</s:a>
+                        </c:when>
+                        <c:when test='<%= request.getAttribute("item") instanceof StrategyArticle%>'>
+                            <s:a action="strategy" namespace="/community" class="small">攻略区</s:a>
+                        </c:when>
+                        <c:when test='<%= request.getAttribute("item") instanceof CommonArticle%>'>
+                            <s:a action="entertainment" namespace="/community" class="small">休闲区</s:a>
+                        </c:when>
+                        <c:when test='<%= request.getAttribute("item") instanceof AnnouncementArticle%>'>
+                            <s:a action="notice" namespace="/community" class="small">公告区</s:a>
+                        </c:when>
+                    </c:choose>
+                </td>
+            </tr>
+        </c:forEach>
     </table>
+
 </div>
-<script src="${pageContext.request.contextPath}/static/js/jquery.min.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/bootstrap.min.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/user/table/tableExport.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/user/table/jquery.base64.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/user/table/bootstrap-table.js"></script>
-<script src="${pageContext.request.contextPath}/static/js/user/table/bootstrap-table-export.js"></script>
-<script>
-    function idFormatter(value) {
-        return value + 100;
-    }
-</script>
