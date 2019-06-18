@@ -4,9 +4,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import top.yzlin.jx3strategystation.dao.ArticleDAO;
 import top.yzlin.jx3strategystation.database.OperateQuery;
-import top.yzlin.jx3strategystation.entity.community.BaseArticle;
-import top.yzlin.jx3strategystation.entity.community.StrategyArticle;
-import top.yzlin.jx3strategystation.entity.community.TradingArticle;
+import top.yzlin.jx3strategystation.entity.community.*;
 
 import java.util.List;
 
@@ -49,5 +47,13 @@ public class ArticleService {
 
     public List<TradingArticle> findTradingArticle() {
         return articleDAO.findTradingArticle();
+    }
+
+    public List<CommonArticle> findCommonArticle() {
+        return articleDAO.findCommonArticle();
+    }
+
+    public List<AnnouncementArticle> findAnnouncementArticleByInstance(String instance) {
+        return articleDAO.findAnnouncementArticleByInstance(instance);
     }
 }

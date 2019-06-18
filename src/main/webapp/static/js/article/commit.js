@@ -26,6 +26,14 @@ function commitCommonArticle() {
     });
 }
 
+function commitAnnouncementArticle() {
+    commit("/v1/api/commit/announcementArticle", {
+        'article.title': $('#title').val(),
+        'article.content': myEditor.getData(),
+        'article.instance': $("#instance").val()
+    });
+}
+
 function commitComment(articleId) {
     $.post("/v1/api/commit/comment", {
             'comment.article.articleId': articleId,

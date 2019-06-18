@@ -11,6 +11,15 @@ import java.lang.reflect.Proxy;
 
 @Configuration
 public class DAOConfig {
+    @Bean
+    public SkillDAO skillDAO(@Autowired SessionFactory sessionFactory) {
+        return createDAO(SkillDAO.class, sessionFactory);
+    }
+
+    @Bean
+    public GameDataDAO gameDataDAO(@Autowired SessionFactory sessionFactory) {
+        return createDAO(GameDataDAO.class, sessionFactory);
+    }
 
     @Bean
     public ReviewArticleDAO reviewArticleDAO(@Autowired SessionFactory sessionFactory) {

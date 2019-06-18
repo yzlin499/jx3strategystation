@@ -15,8 +15,8 @@
             <param name="listView">Baned.jsp</param>
             <result>/WEB-INF/content/admin/jx3.jsp</result>
         </action>
-
     </package>
+
     <package name="review-api" extends="api" namespace="/v1/api">
         <action name="passArticle" class="passArticleAction">
             <result type="json"/>

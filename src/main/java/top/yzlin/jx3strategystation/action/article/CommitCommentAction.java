@@ -42,4 +42,6 @@ public class CommitCommentAction extends ActionSupport implements SessionAware {
         commentService.saveComment(comment);
         return SUCCESS;
     }
+
+
 }
