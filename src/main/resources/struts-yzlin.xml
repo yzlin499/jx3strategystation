@@ -23,6 +23,9 @@
         <action name="strategy">
             <result name="success">/WEB-INF/content/article/article-commit-strategy.jsp</result>
         </action>
+        <action name="announcement">
+            <result name="success">/WEB-INF/content/article/article-commit-announcement.jsp</result>
+        </action>
     </package>
 
 
@@ -53,6 +56,12 @@
             </result>
         </action>
 
+        <action name="announcementArticle" class="commitAnnouncementArticleAction">
+            <result type="json">
+                <param name="excludeProperties">article</param>
+            </result>
+        </action>
+
         <action name="strategyArticle" class="commitStrategyArticleAction">
             <result type="json">
                 <param name="excludeProperties">article</param>
@@ -70,6 +79,7 @@
                 <param name="excludeProperties">comment</param>
             </result>
         </action>
+
     </package>
 
     <package name="login" extends="api">

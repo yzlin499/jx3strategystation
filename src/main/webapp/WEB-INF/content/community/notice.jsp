@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   Created by IntelliJ IDEA.
   User: Administrator
@@ -76,19 +77,9 @@
                 </div>
                 <div class="panel-body">
                     <ul class="list-group img2">
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
+                        <c:forEach items="" var="">
+                            <li class="list-group-item">实例一</li>
+                        </c:forEach>
                     </ul>
                 </div>
             </div>
@@ -121,19 +112,9 @@
                 </div>
                 <div class="panel-body">
                     <ul class="list-group img2">
-                        <li class="list-group-item">实例2</li>
-                        <li class="list-group-item">实例2</li>
-                        <li class="list-group-item">实例2</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
+                        <c:forEach items="" var="">
+                            <li class="list-group-item">实例二</li>
+                        </c:forEach>
                     </ul>
                 </div>
             </div>
@@ -166,19 +147,9 @@
                 </div>
                 <div class="panel-body">
                     <ul class="list-group img2">
-                        <li class="list-group-item">实例3</li>
-                        <li class="list-group-item">实例3</li>
-                        <li class="list-group-item">实例3</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
+                        <c:forEach items="" var="">
+                            <li class="list-group-item">实例三</li>
+                        </c:forEach>
                     </ul>
                 </div>
             </div>
@@ -211,19 +182,9 @@
                 </div>
                 <div class="panel-body">
                     <ul class="list-group img2">
-                        <li class="list-group-item">实例4</li>
-                        <li class="list-group-item">实例4</li>
-                        <li class="list-group-item">实例4</li>
-                        <li class="list-group-item">实例4</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
-                        <li class="list-group-item">实例1</li>
+                        <c:forEach items="" var="">
+                            <li class="list-group-item">实例四</li>
+                        </c:forEach>
                     </ul>
                 </div>
             </div>
