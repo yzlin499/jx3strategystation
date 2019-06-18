@@ -16,16 +16,12 @@
                 <p><b>剑网三攻略网会员登录</b></p>
             </div>
             <div class="modal-body">
-                <form action="#" id="form" data-form="ajax">
                     <div class="form-group">
-                        <input type="email" class="form-control" id="uesrName" placeholder="用户名" data-required="参数不能为空">
+                        <input type="email" class="form-control" id="userName" placeholder="用户名">
                     </div>
                     <div class="form-group" style="margin-top:35px">
-                        <input type="password" class="form-control" id="password" placeholder="密码"
-                               data-required="参数不能为空">
+                        <input type="password" class="form-control" id="password" placeholder="密码">
                     </div>
-                    <div id="errerMsg" class="text-warning"></div>
-                </form>
             </div>
             <div class="modal-footer">
                 <button type="button" onclick="login()" class="btn btn-info">立即登录</button>
@@ -35,30 +31,51 @@
         </div>
     </div>
 </div>
-<script src="/static/js/user/verJs.js"></script>
-<script src="/static/js/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/static/js/jquery.min.js"></script>
 <script>
     function login() {
-        $.post("/v1/api/login", {
-                "user.userName": $("#uesrName").val(),
-                "user.password": $("#password").val()
-            }, function (data, status) {
-                if (data.loginStatic) {
-                    window.location.reload()
-                } else {
-                    $("#errerMsg").text('用户名或密码错误')
+        if ($("#userName").val() != "" || $("#password").val() != "") {
+            $.post("/v1/api/login", {
+                    "user.userName": $("#userName").val(),
+                    "user.password": $("#password").val()
+                }, function (data, status) {
+                    if (data.loginStatic) {
+                        window.location.reload()
+                    } else {
+                        alert('用户名或密码错误')
+                    }
                 }
-            }
-        );
+            );
+        } else {
+            $("#userName").blur()
+            $("#password").blur()
+        }
     }
 
-    new VerJs({
-        form: "#form",
-        success: function (d) {
-            alert(1)
-        },
-        fail: function (d) {
-            alert(2)
-        }
+    $(function () {
+        var errMsg;
+        $.each($("input"), function (i, val) {
+            $(val).blur(function () {
+                if ($(val).attr("id") == "userName") {
+                    $(".nameMsg").remove();
+                    var userName = val.value;
+                    if (userName == "" || userName.trim() == "") {
+                        errMsg = "<span class='nameMsg label label-danger' >用户名不能为空</span>";
+                    } else {
+                        return true;
+                    }
+                    $(this).parent().append(errMsg);
+                } else if ($(val).attr("id") == "password") {
+                    $(".pwdMsg").remove();
+                    var pwd = val.value;
+                    if (pwd == "" || pwd.trim() == "") {
+                        errMsg = "<span class='pwdMsg label label-danger' >密码不能为空</span>";
+                    } else {
+                        return true;
+                    }
+                    $(this).parent().append(errMsg);
+                }
+            });
+        });
     });
 </script>

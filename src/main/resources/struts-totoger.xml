@@ -15,8 +15,11 @@
         <action name="changePasswords">
             <result name="success">/WEB-INF/content/user/changePasswords.jsp</result>
         </action>
-        <action name="test123">
-            <result name="success">/WEB-INF/content/user/test123.jsp</result>
+        <action name="avatar">
+            <result name="success">/WEB-INF/content/user/avatar.html</result>
+        </action>
+        <action name="table">
+            <result name="success">/WEB-INF/content/user/tableModel.jsp</result>
         </action>
     </package>
 

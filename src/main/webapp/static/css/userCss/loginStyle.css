@@ -26,7 +26,7 @@
 .modal-body input {
     margin-top: 15px;
     margin-left: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     width: 550px;
     height: 50px;
 }
@@ -45,4 +45,10 @@
     background-color: white;
     float: left;
     margin-top: 32px;
+}
+
+.form-group span {
+    font-family: "微软雅黑 Light";
+    font-size: 15px;
+    margin-left: 10px;
 }

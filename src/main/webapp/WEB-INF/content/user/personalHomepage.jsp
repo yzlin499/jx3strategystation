@@ -24,22 +24,48 @@
         </div>
         <div class="content-right">
             <ul class="nav nav-tabs">
-                <li role="presentation"><a href="#posting" data-toggle="tab" role="tab">帖子管理</a></li>
                 <li role="presentation"><a href="#profile" data-toggle="tab" role="tab">个人信息</a></li>
+                <li role="presentation"><a href="#posting" data-toggle="tab" role="tab">帖子管理</a></li>
+                <li role="presentation"><a href="#message" data-toggle="tab" role="tab">消息管理</a></li>
             </ul>
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="posting">
-                    <div class="show">
-                        <table class="table table-hover" id="table">
-                        </table>
-                    </div>
-                    <div class="form-group">
-                        <button type="button" onclick="" class="btn btn-default">查询</button>
-                        <button type="button" onclick="" class="btn btn-default">修改</button>
+                <div role="tabpanel" class="tab-pane active" id="profile">
+                    <div class="show2">
+                        <form class="form-horizontal ">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">昵称:</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static">email@example.com</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">用户名:</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static">email@example.com</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">邮箱:</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static">email@example.com</p>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">联系方式:</label>
+                                <div class="col-sm-10">
+                                    <p class="form-control-static">email@example.com</p>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div role="tabpanel" class="tab-pane" id="profile">
-                    123456s
+                <div role="tabpanel" class="tab-pane" id="posting">
+                    <div>
+                        <jsp:include page="../user/tableModel.jsp"/>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="message">
+
                 </div>
             </div>
         </div>
@@ -58,9 +84,7 @@
             {"BrandName": "ADI", "Modul": "ADR02AUJZ-REEL7", "Quantity": "2131", "Datecode": "W2Y", "Remark": "stock"}];
 
 
-        var table = document.getElementById("table");
-
-
+        var table = document.getElementById("table1");
         for (var i = 0; i < data.length; i++) {
             var row = table.insertRow(table.rows.length);
             var c1 = row.insertCell(0);
@@ -69,10 +93,6 @@
             c2.innerHTML = data[i].Modul;
             var c3 = row.insertCell(2);
             c3.innerHTML = data[i].Quantity;
-            var c4 = row.insertCell(3);
-            c4.innerHTML = data[i].Datecode;
-            var c5 = row.insertCell(4);
-            c5.innerHTML = data[i].Remark;
         }
     }
 </script>
