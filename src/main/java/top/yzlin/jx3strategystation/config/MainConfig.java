@@ -4,14 +4,15 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.apache.commons.io.FileUtils;
+import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Profile;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.*;
 import org.springframework.core.env.Environment;
 import org.springframework.core.io.Resource;
+import org.springframework.orm.hibernate5.HibernateTransactionManager;
+import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.util.ResourceUtils;
 import top.yzlin.jx3strategystation.entity.templates.SelectItem;
 import top.yzlin.jx3strategystation.tools.CmdUtils;
@@ -19,9 +20,12 @@ import top.yzlin.jx3strategystation.tools.CmdUtils;
 import javax.sql.DataSource;
 import java.beans.PropertyVetoException;
 import java.io.IOException;
+import java.util.Properties;
 
 @Configuration
+@ComponentScan("top.yzlin.jx3strategystation")
 @PropertySource("classpath:config.properties")
+@EnableTransactionManagement
 public class MainConfig {
     private Environment environment;
 
@@ -29,20 +33,6 @@ public class MainConfig {
     public void setEnvironment(Environment environment) {
         this.environment = environment;
     }
-
-//    @Bean
-//    @Profile("dev")
-//    public File imgPath() throws IOException {
-//        String imgPath = environment.getProperty(CmdUtils.getGitUserName() + ".imgPath");
-//        if (imgPath == null) {
-//            imgPath = ServletActionContext.getServletContext().getRealPath("/upload/image");
-//        }
-//        File file = ResourceUtils.getFile(imgPath);
-//        if (!file.exists()) {
-//            file.mkdirs();
-//        }
-//        return file;
-//    }
 
     @Bean
     @Profile("dev")
@@ -55,7 +45,6 @@ public class MainConfig {
         return dataSource;
     }
 
-
     @Bean
     @Profile("prod")
     public DataSource prodDataSource(@Value("${sqlite.dbpath}") Resource dbPath) throws PropertyVetoException, IOException {
@@ -63,6 +52,26 @@ public class MainConfig {
         dataSource.setDriverClass("org.sqlite.JDBC");
         dataSource.setJdbcUrl("jdbc:sqlite:" + dbPath.getFile().getAbsolutePath());
         return dataSource;
+    }
+
+    @Bean
+    LocalSessionFactoryBean sessionFactory(DataSource dataSource,
+                                           @Value("${hibernate.dialect}") String dialect) {
+        LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
+        sessionFactory.setDataSource(dataSource);
+        Properties properties = new Properties();
+        properties.setProperty("hibernate.dialect", dialect);
+        properties.setProperty("hbm2ddl.auto", "update");
+        sessionFactory.setHibernateProperties(properties);
+        sessionFactory.setPackagesToScan("top.yzlin.jx3strategystation.entity");
+        return sessionFactory;
+    }
+
+    @Bean
+    HibernateTransactionManager transactionManager(SessionFactory sessionFactory) {
+        HibernateTransactionManager hibernateTransactionManager = new HibernateTransactionManager();
+        hibernateTransactionManager.setSessionFactory(sessionFactory);
+        return hibernateTransactionManager;
     }
 
     @Bean
