@@ -2,16 +2,17 @@ package top.yzlin.test;
 
 import org.junit.Test;
 
-import java.io.File;
 import java.io.IOException;
+import java.util.Optional;
+import java.util.regex.Pattern;
 
 public class CommonTest {
 
     @Test
     public void skilltest() throws IOException {
-
-        File file = new File("c:/yzlin");
-        System.out.println(new File(file, "/upload/js/yzlin"));
+        String a = null;
+        Pattern pattern = Pattern.compile("\\d+");
+        System.out.println(pattern.matcher(Optional.ofNullable(a).orElse("")));
     }
 
 }
