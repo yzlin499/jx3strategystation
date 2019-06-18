@@ -18,7 +18,7 @@
     <div class="nav ">
         <p>剑网三攻略网欢迎你</p>
         <ul>
-            <li><a href=" ">休闲社区</a></li>
+            <li><a href="">休闲社区</a></li>
             <li><a href="">交易社区</a></li>
             <li><a href="">攻略社区</a></li>
             <li><a href="">公告社区</a></li>
@@ -31,18 +31,18 @@
         <p>祝你游戏开心</p>
     </div>
     <div class="centers">
-        <form action="#" id="form" data-form="ajax">
+        <form>
             <div class="form-group">
-                <input type="text" class="form-control" id="nickName" placeholder="网站呢称" data-required="参数不能为空">
+                <input type="text" class="form-control" id="nickName" placeholder="网站呢称">
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" id="userName" placeholder="用户名" data-required="参数不能为空">
+                <input type="text" class="form-control" id="userName" placeholder="用户名">
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" id="password" placeholder="密码" data-required="参数不能为空">
+                <input type="password" class="form-control" id="password" placeholder="密码">
             </div>
-            <div class="form-group">
-                <button type="button" onclick="register()" class="btn btn-default">立即注册</button>
+            <div class="btn-group">
+                <button type="button" id="submit_btn" class="btn btn-info">立即注册</button>
             </div>
         </form>
     </div>
@@ -59,8 +59,7 @@
         </div>
     </div>
 </div>
-<script src="/static/js/user/verJs.js"></script>
-<script src="/static/js/jquery.min.js"></script>
+<script src="<c:url value="/static/js/jquery.min.js"/>"></script>
 <script>
     function register() {
         $.post("/v1/api/register", {
@@ -69,23 +68,80 @@
             "user.password": $("#password").val()
         }, function (data, status) {
             if (data.userId > 0) {
-                alert("success");
+                alert("注册成功！");
             } else {
-                alert("false");
+                alert("注册失败！")
             }
         });
     }
 
-    new VerJs({
-        form: "#form",
-        success: function (d) {
-            alert(1)
-        },
-        fail: function (d) {
-            alert(2)
-        }
+    $(function () {
+        var errMsg;
+        var nickC;
+        var uNC;
+        var pwdC;
+        $.each($("input"), function (i, val) {
+            $(val).blur(function () {
+                if ($(val).attr("id") == "userName") {
+                    $(".nameMsg").remove();
+                    var userName = val.value;
+                    var regName = /[a-zA-Z]\w{4,16}/
+                    if (userName == "" || userName.trim() == "") {
+                        errMsg = "<span class='nameMsg label label-danger' >用户名不能为空</span>";
+                    } else if (!regName.test(userName)) {
+                        errMsg = "<span class='nameMsg label label-danger'>由英文字母和数字组成的4-16位字符，以字母开头</span>";
+                    } else {
+                        errMsg = "<span class='nameMsg label label-success'>OK！</span>";
+                        uNC = true;
+                    }
+                    $(this).parent().append(errMsg);
+                } else if ($(val).attr("id") == "nickName") {
+                    $(".nickMsg").remove();
+                    var nickName = val.value;
+                    var regName = /[\u4e00-\u9fa5]{2,6}/
+                    if (nickName == "" || nickName.trim() == "") {
+                        errMsg = "<span class='nickMsg label label-danger'>昵称不能为空</span>";
+                    } else if (!regName.test(nickName)) {
+                        errMsg = "<span class='nickMsg label label-danger'>由2-6个汉字组成</span>";
+                    } else {
+                        errMsg = "<span class='nickMsg label label-success' >OK！</span>";
+                        nickC = true;
+                    }
+                    $(this).parent().append(errMsg);
+                } else if ($(val).attr("id") == "password") {
+                    $(".pwdMsg").remove();
+                    var pwd = val.value;
+                    var regPwd = /^\w{4,10}$/;
+                    if (pwd == "" || pwd.trim() == "") {
+                        errMsg = "<span class='pwdMsg label label-danger' >密码不能为空</span>";
+                    } else if (!regPwd.test(pwd)) {
+                        errMsg = "<span class='pwdMsg label label-danger' >格式错误</span>";
+                    } else {
+                        errMsg = "<span class='pwdMsg label label-success' >OK！</span>";
+                        pwdC = true;
+                    }
+                    $(this).parent().append(errMsg);
+                }
+            });
+        });
+        $('#submit_btn').on('click', function () {
+            if (uNC == true && pwdC == true && nickC == true) {
+                $.post("/v1/api/register", {
+                    "user.userName": $("#userName").val(),
+                    "user.nickName": $("#nickName").val(),
+                    "user.password": $("#password").val()
+                }, function (data, status) {
+                    if (data.userId > 0) {
+                        alert("注册成功！");
+                        window.location.replace("http://localhost:8080");
+                    }
+                    else {
+                        alert("注册失败！")
+                    }
+                });
+            }
+        });
     });
-
 </script>
 </body>
 </html>

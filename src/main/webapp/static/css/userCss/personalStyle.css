@@ -47,6 +47,24 @@
     height: 480px;
 }
 
+.show2 {
+    background-color: ghostwhite;
+    margin-top: 30px;
+    margin-left: 10%;
+    width: 80%;
+    height: 480px;
+    font-size: 40px;
+    algin: center;
+}
+
+.show2 form {
+    margin-left: 20%;
+    width: 1200px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    float: left;
+}
+
 .tab-pane nav {
     margin-left: 40%;
 }
