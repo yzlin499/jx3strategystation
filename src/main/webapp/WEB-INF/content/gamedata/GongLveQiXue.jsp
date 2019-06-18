@@ -82,7 +82,7 @@
                         <c:if test="${qixue.skill!=null}">
                             <a tabindex="0" data-toggle="popover" data-trigger="focus" title="<h4>${qixue.name}</h4>"
                                data-placement="left"
-                               data-content="<h4>${qixue.describe}</h4>">
+                               data-content="<h4>${qixue.describe}</h4>" role="button">
                                 <img src="data:image/png;base64,${qixue.imgBase64}" alt="${qixue.name}"
                                      class="img-rounded" width=64px height=64px></a>
                             &nbsp;&nbsp;&nbsp;&nbsp;
@@ -90,7 +90,7 @@
                         <c:if test="${qixue.skill==null}">
                             <a tabindex="0" data-toggle="popover" data-trigger="focus" title="<h4>${qixue.name}</h4>"
                                data-placement="left"
-                               data-content="<h4>${qixue.describe}</h4>">
+                               data-content="<h4>${qixue.describe}</h4>" role="button">
                                 <img src="data:image/png;base64,${qixue.imgBase64}" alt="${qixue.name}"
                                      class="img-circle" width=64px height=64px></a>
                             &nbsp;&nbsp;&nbsp;&nbsp;

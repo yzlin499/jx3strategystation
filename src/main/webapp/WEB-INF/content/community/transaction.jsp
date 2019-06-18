@@ -9,11 +9,8 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <link href="/assets/css/site.min.css?v=9e0a081675" rel="stylesheet" type="text/css">
-    <link href="https://staff.bootcss.com/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <title>交易区</title>
     <jsp:include page="../templates/base-lib.jsp"/>
-    <jsp:include page="../templates/bootstarp-lib.jsp"/>
     <style>
         .view {
             background: black;

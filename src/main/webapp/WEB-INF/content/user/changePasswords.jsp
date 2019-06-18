@@ -27,7 +27,6 @@
         </div>
     </div>
 </div>
-<script src="${pageContext.request.contextPath}/static/js/jquery.min.js"></script>
 <script>
     $(function () {
         var errMsg;

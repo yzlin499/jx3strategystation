@@ -63,7 +63,6 @@
         </div>
     </div>
 </div>
-<script src="<c:url value="/static/js/jquery.min.js"/>"></script>
 <script>
 
     $(function () {

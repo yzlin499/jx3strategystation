@@ -40,7 +40,6 @@
             color: #46b8da;
         }
     </style>
-    <jsp:include page="../templates/bootstarp-lib.jsp"/>
 </head>
 <body>
 <jsp:include page="../templates/navbar.jsp"/>
