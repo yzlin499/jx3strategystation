@@ -61,7 +61,7 @@
                 </div>
                 <div role="tabpanel" class="tab-pane" id="posting">
                     <div>
-                        <jsp:include page="../user/tableModel.jsp"/>
+
                     </div>
                 </div>
                 <div role="tabpanel" class="tab-pane" id="message">
@@ -72,7 +72,7 @@
     </div>
 </div>
 <script>
-    window.onload = function () {
+    /*window.onload = function () {
         var data = [{
             "BrandName": "ACES",
             "Modul": "91906-0227P",
@@ -94,7 +94,7 @@
             var c3 = row.insertCell(2);
             c3.innerHTML = data[i].Quantity;
         }
-    }
+    }*/
 </script>
 </body>
 </html>

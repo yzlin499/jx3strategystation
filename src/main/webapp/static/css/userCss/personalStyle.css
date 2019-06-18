@@ -3,9 +3,10 @@
     padding: 0;
 }
 
+
 .content-left {
     background-color: whitesmoke;
-    width: 320px;
+    width: 22%;
     float: left;
     height: 680px;
 }
@@ -33,8 +34,7 @@
 }
 
 .content-right {
-    width: 1199px;
-
+    width: 78%;
     float: left;
 }
 
