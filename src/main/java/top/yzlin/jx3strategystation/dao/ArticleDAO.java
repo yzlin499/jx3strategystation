@@ -40,7 +40,7 @@ public interface ArticleDAO {
     @Select("from CommonArticle")
     List<CommonArticle> findCommonArticle();
 
-    @Delete("from BaseArticle where articleId=:articleId")
+    @Delete("delete from BaseArticle where articleId=:articleId")
     void deleteArticleById(@QueryParam("articleId") int id);
 
     @Select("from BaseArticle where user.userId=:userId")

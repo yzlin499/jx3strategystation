@@ -64,6 +64,7 @@
                     <p class="panel-body"
                        style=" word-wrap:break-word; word-break:break-all;overflow: hidden;width:250px;text-overflow:ellipsis; white-space:nowrap;">
                             ${article.content}
+
                     </p>
                     <p class="panel-footer"><a href="${'/'+=article.user.userName+='/article/'+=article.articleId}"
                                                class="btn btn-primary" role="button">进入</a></p>
